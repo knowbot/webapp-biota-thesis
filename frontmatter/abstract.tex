@@ -1,8 +1,7 @@
 %!TEX root = ../dissertation.tex
 % the abstract
 
-\newthought{L'applicazione web ``Biota''} è una piattaforma per la gestione di esami della flora gastrointestinale, che permette ai clienti di una farmacia di richiedere un esame mediante la compilazione di un questionario ; un campione di materia fecale viene quindi inviato al laboratorio per le analisi, al cui termine viene fornito un referto sulla base del quale vengono consigliati prodotti atti a migliorare il benessere del cliente.
-
-``Biota'' si basa su un \textit{back end} realizzato in Ruby on Rails 5, un \textit{framework} per applicazioni web con cui sono stati realizzati celebri siti come GitHub, SoundCloud e Twitch, caratterizzato dalla forte astrazione e semplificazione di \textit{task} altrimenti ripetitivi.
-Tale \textit{back end} espone due tipi di API: API GraphQL per l'interazione con il \textit{front end} tramite semplici query, e API RESTful HTTP per l'integrazione con il gestionale del laboratorio di analisi con modallità di autenticazione HMAC.
-È inoltre integrato in Amazon AWS per l'invio di SMS tramite Simple Notification Service, e con le API del corriere SDA, permettendo di spedire i campione al laboratorio direttamente dalla piattaforma.
+\newthought{L'applicazione web ``Biota''} è una piattaforma per la gestione di esami della flora gastrointestinale, che permette ai clienti di una farmacia di richiedere un esame mediante la compilazione di un questionario ; un campione di materia fecale viene quindi inviato al laboratorio per le analisi, al cui termine viene fornito un referto sulla base del quale vengono consigliati prodotti atti a migliorare il benessere del cliente.\\\\
+``Biota'' si basa su un \textit{back end} realizzato in Ruby on Rails 5, un \textit{framework} per applicazioni web caratterizzato dalla forte astrazione e semplificazione di \textit{task} ripetitivi.\\\\
+``Biota'' prevede l'utilizzo da parte di utenti registrati alla piattaforma, che possono essere farmacisti, clienti o gastroenterologi affiliati. Per interazioni con servizi esterni, il \textit{back end} espone due tipi di API: API GraphQL per l'interazione tramite query, utilizzate principalmente dal \textit{front end}, e API RESTful HTTP, per l'integrazione con il gestionale del laboratorio di analisi.\\\\
+Il progetto è stato realizzato nel corso di uno stage della durata di 300 ore, seguendo metodologie di sviluppo agili. La piattaforma è correntemente in stato di produzione.

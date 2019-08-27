@@ -95,7 +95,7 @@
                 margin=0pt,
                 figurewithin=chapter,
                 tablewithin=chapter]{caption}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \RequirePackage{microtype}
 
 % Tikz
@@ -114,6 +114,9 @@
 \usepackage{tabulary}
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 
+\usepackage{xr}
+\RequirePackage{xr}
+
 
 % Pseudocode
 \usepackage{algorithm}
@@ -124,21 +127,26 @@
 \usepackage{lscape}
 \renewcommand{\thealgorithm}{\thechapter.\arabic{algorithm}}% Algorithm # is <chapter>.<algorithm>
 
-
 % Abbreviations
 \newcommand{\abbrlabel}[1]{\makebox[3cm][l]{\textbf{#1}\ \dotfill}}
 \newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}}}{\end{list}}
+
+\def\namedlabel#1#2{\begingroup
+    #2%
+    \def\@currentlabel{#2}%
+    \phantomsection\label{#1}\endgroup
+}
 
 
 % Headings and headers.
 \RequirePackage{fancyhdr}
 \RequirePackage[tiny, md, sc]{titlesec}
-\setlength{\headheight}{15pt}
+%\setlength{\headheight}{15pt}
 \pagestyle{plain}
 \RequirePackage{titling}
 
 % Front matter.
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \usepackage[titles]{tocloft}
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -257,7 +265,7 @@
 	\phantomsection
 	\cleardoublepage
 
-	% \acronyms
+	\acronyms
 
 	\cleardoublepage
 	\setcounter{page}{1}
@@ -307,6 +315,9 @@
 	  \vspace{1pt}
 	  \@advisor \hfill \@author\\
 	  Università di Padova \\
+	  \vspace{10pt}
+	  \textit{Tutor aziendale} \\
+	  \@coadvisorOne \\
 	  \vspace{10pt}
 	\end{flushleft}
 	\end{normalsize}
@@ -365,7 +376,7 @@
 \newcommand{\acronyms}{
 	\phantomsection
 	\addcontentsline{toc}{chapter}{Elenco degli acronimi}
-	\chapter*{Listing of acronyms}
+	\chapter*{Elenco degli acronimi}
 	\input{frontmatter/abbr.tex}
 }
 

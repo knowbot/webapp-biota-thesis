@@ -1,11 +1,10 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-
-
 \documentclass{Dissertate}
-
+\setcounter{secnumdepth}{3}
 \begin{document}
-
+\titleformat{\section}{\Large\bfseries\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\scshape}{\thesection}{1em}{}
 % the front matter
 \input{frontmatter/personalize}
 % \maketitle
@@ -30,7 +29,7 @@
 \include{chapters/conclusion}
 
 \addcontentsline{toc}{chapter}{Bibliografia}
-%\bibliographystyle{unstr}
+\bibliographystyle{unstr}
 \bibliography{references}
 \cleardoublepage
 \phantomsection
