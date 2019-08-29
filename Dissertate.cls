@@ -266,6 +266,8 @@
 	\cleardoublepage
 
 	\acronyms
+	\phantomsection
+	\cleardoublepage
 
 	\cleardoublepage
 	\setcounter{page}{1}

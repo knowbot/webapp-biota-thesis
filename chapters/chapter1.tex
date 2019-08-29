@@ -11,7 +11,6 @@
 \section{Obiettivi dello stage}
 
 \section{Tecnologie utilizzate}
-
 \subsection{Ruby}
 Ruby è un linguaggio di programmazione ad alto livello, interpretato, e orientato agli oggetti con paradigma puro: ogni componente del linguaggio è trattato come un oggetto. 
 
@@ -19,54 +18,93 @@ Alcune tra le caratteristiche più rilevanti di Ruby sono la presenza di tipizza
 
 Si tratta un linguaggio molto flessibile che offre grande libertà allo sviluppatore e supporta pratiche come il \textit{monkey patching} (ridefinire una classe in un punto diverso dalla definizione originale) e la ridefinizione di metodi a \textit{run-time}.
 Esiste una grande varietà di programmi e librerie Ruby, noti come ``gemme'', il cui utilizzo verrà discusso in seguito.
-\subsection{Gemme}
-Le gemme sono librerie e programmi Ruby distribuiti sotto forma di pacchetti in modo non dissimile dai moduli in Node.js: l'installazione è gestita \textit{package manage} RubyGem, singolarmente tramite terminale (con il comando \texttt{gem install nomegemma}) oppure di gruppo specificando le gemme desiderate nel file \texttt{Gemfile}, che viene letto automaticamente da RubyGem con l'esecuzione del comando \texttt{bundle install}.
 
-\subsubsection{JBuilder}
-Utile gemma che fornisce un \ref{itm:dsl} per la dichiarazione di strutture \ref{itm:json} tramite builder pattern, semplificando di molto la generazione di contenuti JSON a partire da oggetti in Ruby. Utilizzata principalmente per l'implementazione di richieste e risposte \ref{itm:http}.
+\subsection{Gemme}
+Le gemme sono librerie e programmi Ruby distribuiti sotto forma di pacchetti in modo non dissimile dai moduli in Node.js: l'installazione è gestita dal \textit{package manager} RubyGem, individualmente tramite terminale (con il comando \texttt{gem install nomegemma}) oppure di gruppo specificando le gemme desiderate nel file \texttt{Gemfile}, che viene automaticamente letto da RubyGem con l'esecuzione del comando \texttt{bundle install}.
 
 \subsubsection{HexaPDF}
-Libreria che permette interazioni ad alto e basso livello con file \ref{itm:pdf}: è possibile leggere e modificare il codice sorgente di un documento, oppure sfruttare i \textit{wrapper} presenti per effettuare operazioni ad alto livello come l'inserimento di immagini o figure. Utilizzata per la generazione dinamica di referti.
+Libreria che permette interazioni ad alto e basso livello con file \ref{itm:pdf}: è possibile leggere e modificare il codice sorgente di un documento, oppure sfruttare i \textit{wrappers} presenti per effettuare operazioni ad alto livello come l'inserimento di immagini o figure. Utilizzata per la generazione dinamica di referti.
 
 \subsubsection{ROTP}
 Acronimo di ``Ruby One Time Password'', questa gemma permette di generare e verificare codici \ref{itm:hotp} e \ref{itm:totp} in accordo agli standard RFC 4426 \footnote[1]{http://tools.ietf.org/html/rfc4226} e RFC 6238 \footnote[2]{http://tools.ietf.org/html/rfc6238}. ROTP è inoltre compatibile con Google Authenticator su dispositivi Android e iOS. La gemma è stata sfruttata per verificare il consenso al trattamento dei dati mediante codici TOTP inviati per SMS.
 
 \subsubsection{AWS SDK for Ruby}
+Insieme di gemme che facilitano l'interazione con i servizi web di Amazon, fornendo classi e metodi ad-hoc; l'\ref{itm:sdk} è suddiviso in moduli specifiche per ogni servizio, permettendo di scegliere quali gemme usare a seconda delle necessità, e di aggiornare le gemme utilizzate in modo indipendente. In particolare è stata utilizzata la gemma \texttt{aws-sdk-sns} per l'invio di SMS tramite Amazon Simple Notification Service.
 
 \subsection{Ruby on Rails}
 Per la realizzazione del progetto Moku ha scelto di usare Ruby on Rails 5 (noto anche come Rails), un \textit{framework} \textit{open source} per applicativi web realizzato in Ruby e utilizzato da celebri siti come GitHub (servizio di hosting per \textit{repository} Git), Twitch (servizio di \textit{live streaming}) e SoundCloud (piattaforma di distribuzione musicale). Rails è stato scelto per la caratteristica di velocizzare notevolmente lo sviluppo di nuovi applicativi, rimuovendo le parti "ripetitive": ad esempio offrendo alias concisi per operazioni di base (e.g. iterazioni su collezioni di oggetti, strutture if/else) che riducono la verbosità del codice.
 
-Rails è un \textit{framework full-stack}, ovvero offre tutti i componenti richiesti per lo sviluppo di un applicativo web, nativamente integrati tra di loro;gli applicativi realizzati in Rails seguono necessariamente un pattern \textit{MVC}.
+I principi cardine di Rails sono due:
+\begin{itemize}
+    \item\textbf{Do not Repeat Yourself}: il principio \ref{itm:dry} sostiene che vadano evitate tutte le forme di ripetizione e ridondanza logica nell'implementazione del software; ad esempio, non è necessario specificare le colonne della tabella del database nella definizione di una classe, in quanto Rails recupera automaticamente tale informazione.
+    \item\textbf{Convention over Configuration}: il principio \ref{itm:coc} sostiene che il programmatore dovrebbe esplicitare solo le parti ``non convenzionali'' del codice; ad esempio in Rails esiste per convenzione una corrispondenza tra il nome di una classe e il nome di una tabella del database, quindi essa non va specificata.
+\end{itemize}
+\vspace{-25pt}
+\subsubsection{Integrazione tra i componenti}
+Rails è un \textit{framework full-stack}, ovvero offre tutti i componenti richiesti per lo sviluppo di un applicativo web, nativamente integrati tra di loro: tramite l'uso di script per la creazione di file, detti \textit{generators}, è possibile creare contemporaneamente sia una tabella del database che la classe corrispondente; essi sono automaticamente associati tramite convenzioni di nomenclatura. 
+
+Il database, indipendentemente dall'implementazione, può essere modificato tramite \textit{migrations}, istruzioni per la modifica dello schema da parte di Rails. Le \textit{migrations} sono scritte in un \ref{itm:dsl} in Ruby e versionate automaticamente, permettendo di effettuare un \textit{rollback} ad una versione precedente dello schema.
+ 
+\subsubsection{Pattern architetturale}
+Gli applicativi realizzati in Rails seguono necessariamente un pattern \textit{MVC}.
+\paragraph{Model}
+Un \textit{model} è una classe associata ad una tabella del database secondo uno standard convenzionale: una tabella corrisponde una classe, le colonne sono convertite in attributi e le righe rappresentate come istanze della classe. I \textit{models} possono venire generati automaticamente dalla definizione della tabella. Oltre ai normali vincoli di database, in Rails è possibile definire ulteriori controlli sui valori in database direttamente nel \textit{model}. La filosofia di Rails prevede che essi contengano la quasi interezza della \textit{business logic}.
+
+\paragraph{Controller}
+I \textit{controllers} sono componenti che rispondo alle richieste del server web, determinando quale \textit{view} caricare; essi possono anche interrogare i \textit{models} per mostrare informazioni aggiuntive, e rendere disponibili "azioni" per fare richieste al server. I controller sono resi disponibili mediante il file di \textit{routing} \texttt{routes.rb}, in cui vengono associati a delle specifiche richieste; Rails incoraggia gli sviluppatori all'uso di \textit{RESTful routes}, che includono azioni come ``index'', ``new'', ``show'', ``edit''.
+
+\paragraph{View}
+Di default le \textit{views} sono file con estensione \texttt{.erb} contenenti codice HTML misto a codice Ruby, che vengono elaborati a \textit{run-time} permettendo una visualizzazione dinamica delle informazioni. In alternativa, per esempio nell'implementazione di una RESTful API, una \textit{view}può essere un file JSON contenente il \textit{body} di una risposta.
 
 \subsubsection{Devise}
-ActiveAdmin è un \textit{framework} per Ruby on Rails per la generazione di interfacce per l'amministrazione del \textit{back end} di applicativi web. ActiveAdmin astrae \textit{pattern} ricorrenti per automatizzare la generazione di elementi comuni dell'interfaccia, come ad esempio la visualizzazione dei record in database, la ricerca (anche con filtri) e varie operazioni come la creazione di nuovi record o la modifica di record esistenti. ActiveAdmin 
+Framework di autenticazione utenti per Rails. Si tratta di una gemma altamente modulare e flessibile, composta 10 sotto-moduli, ognuno dei quali implementa una data funzionalità, permettendo di "comporre" a proprio piacimento un sistema di autenticazione con le caratteristiche desiderate (e.g. recupero password, tracciamento di orari e indirizzi IP per ogni accesso e validazione tramite e-mail). Devise è stato utilizzato per l'autenticazione sulla piattaforma da parte degli utenti registrati.
 
 \subsubsection{ActiveAdmin}
-ActiveAdmin è un \textit{framework} per Ruby on Rails per la generazione di interfacce per l'amministrazione del \textit{back end} di applicativi web. ActiveAdmin astrae \textit{pattern} ricorrenti per automatizzare la generazione di elementi comuni dell'interfaccia, ad esempio operazioni quali la creazione, visualizzazione o modifica di oggetti appartenenti a uno o più modelli. ActiveAdmin si integra con la configurazione presente di Devise per gestire l'autenticazione.
+ActiveAdmin è un \textit{framework} per la generazione di interfacce amministrative per applicativi web realizzati con Rails. ActiveAdmin astrae pattern ricorrenti per automatizzare la generazione di elementi comuni dell'interfaccia, ad esempio operazioni quali la creazione, visualizzazione o modifica di oggetti appartenenti a uno o più \textit{models}. ActiveAdmin si integra con la configurazione presente di Devise per gestire l'autenticazione.
+
 \subsection{RubyMine}
-\subsection{PostgreSQL}
+Ambiente di sviluppo integrato multipiattaforma, progettato specificamente per Ruby on Rails e realizzato da JetBrains. RubyMine mette a disposizione vari strumenti per facilitare lo sviluppo, tra cui completamento automatico del codice, linting avanzato con calcolo della complessità ciclomatica, e creazione guidata di \textit{migrations} e \textit{generators}. Altre caratteristiche che hanno portato a sceglierlo come \ref{itm:ide} di riferimento sono la possibilità di testare ed eseguire l'applicativo in locale, il controllo di versione integrato (comodo per cambiare il \textit{branch} corrente senza dover utilizzare Sourcetree) e lo strumento di \textit{refactoring} che rispetta le convenzioni di Rails (e.g. modificando il nome di un \textit{model}, i rispettivi \textit{controller} e \textit{view} vengono aggiornati.) 
+
 \subsection{GraphQL}
+Linguaggio di query \textit{open source}, sviluppato da Facebook nel 2012 e disponibile al pubblico dal 2015. La sintassi di GraphQL è molto simile a quella del formato \ref{itm:json}, pensata per una lettura più facile da parte di operatori umani. La particolarità di GraphQL è che include anche il \textit{runtime system} e il sistema dei tipi, quindi non dipende dalla specifica implementazione del database. I tipi sono definiti dallo sviluppatore e vengono utilizzati da GraphQL per validare le richieste e respingere query errate.
+
+GraphQL offre due tipi di operazioni: query, semplici interrogazioni al database, e \textit{mutations}, ovvero operazioni di modifica del database o interazioni particolari (autenticazione, esecuzione di un comando).
+
+Il \textit{runtime system} di GraphQL, eseguito sul server, è responsabile della validazione delle richieste e della serializzazione delle risposte in formato \ref{itm:json}. Sono disponibili librerie per creare \ref{itm:api} in vari linguaggi di programmazione, tra cui Ruby.
+
+Nel progetto GraphQL è stato usato per implementare l'API di comunicazione con il \textit{front end} della piattaforma, mettendo a disposizione varie query rilevanti nonché \textit{mutations} per autenticazione, interazione con il database e richieste di elaborazione al \textit{back end}.
+
 \subsubsection{Altair}
+Ambiente di sviluppo integrato \textit{open source} e multipiattaforma per GraphQL. Altair fornisce una semplice interfaccia per testare \ref{itm:api} GraphQL, mettendo a disposizione funzioni utili quali  formattazione automatica,generazione automatica della documentazione del sistema dei tipi e aggiunta di \textit{headers} alla richiesta. Altair è stato utilizzato per testare le \ref{itm:api} GraphQL prima di renderle disponibili al \textit{front end}.
+
 \subsection{HTTP}
+Noto protocollo a livello applicativo per la trasmissione di informazioni in una rete. Il protocollo \ref{itm:http} prevede un'architettura di tipo \textit{client/server}, in cui il \textit{client} esegue una richiesta e il \textit{server} la elabora, fornendo una risposta adeguata.
+
+Una richiesta \ref{itm:http} si compone di quattro parti:
+\begin{itemize}
+    \item una ``riga di richiesta'' che specifica il tipo di operazione e l'\ref{itm:uri} dell'oggetto della richiesta;
+    \item una ``sezione \textit{header}'' in cui vengono fornite informazioni aggiuntive (e.g. credenziali di autenticazione);
+    \item una riga vuota che contiene i due caratteri \textit{carriage return} e \textit{line feed};
+    \item un \textit{body}, ovvero il corpo del messaggio.
+\end{itemize}
+
+Il messaggio di risposta segue una struttura simile, con l'eccezione della riga di richiesta che viene sostituita da una ``riga di stato'',contenente informazioni sul risultato della richiesta sotto forma di codici standard.
+
+Il protocollo HTTP è largamente utilizzato per l'implementazione di \ref{itm:rest}ful \ref{itm:api}; per quanto riguarda il progetto, è stato utilizzato per realizzare l'\ref{itm:api} che si sarebbe interfacciata con il software gestionale del laboratorio di analisi, esponendo determinati \textit{endpoint} per le richieste.
+
 \subsubsection{Insomnia}
-
-$x = 1/\alpha$
-\cite{Eigen1971, Knuth1968}
-$$\zeta = \frac{1039}{\pi}$$
+Client \textit{open source} e multipiattaforma per \ref{itm:api} GraphQL e \ref{itm:rest}, consente di gestire facilmente lo sviluppo e il testing di richieste HTTP e GraphQL; offre funzionalità di formattazione automatica, variabili d'ambiente e supporto a vari tipi di autenticazione. Insomnia è stato utilizzato per testare gli endpoint delle \ref{itm:api} per il laboratorio di analisi, nonché per sviluppare un client per le \ref{itm:api} del corriere SDA.
 
 
-% For an example of a full page figure, see Fig.~\ref{fig:myFullPageFigure}.
+% $x = 1/\alpha$
+% \cite{Eigen1971, Knuth1968}
+% $$\zeta = \frac{1039}{\pi}$$
 
 
-\texttt{This is a line of code.}
+% % For an example of a full page figure, see Fig.~\ref{fig:myFullPageFigure}.
 
 
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/fig1}
-\caption[Short figure name.]{This is a figure that floats inline and here is its caption.
-\label{fig:myInlineFigure}}
-\end{figure}
-
+% \texttt{This is a line of code.}
 
 
 %% Requires fltpage2 package

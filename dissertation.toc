@@ -28,24 +28,24 @@
 \contentsline {section}{\numberline {2.3}Tecnologie utilizzate}{7}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Ruby}{7}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Gemme}{8}{subsection.2.3.2}% 
-\contentsline {subsubsection}{\numberline {2.3.2.1}JBuilder}{8}{subsubsection.2.3.2.1}% 
-\contentsline {subsubsection}{\numberline {2.3.2.2}HexaPDF}{8}{subsubsection.2.3.2.2}% 
-\contentsline {subsubsection}{\numberline {2.3.2.3}ROTP}{8}{subsubsection.2.3.2.3}% 
-\contentsline {subsubsection}{\numberline {2.3.2.4}AWS SDK for Ruby}{8}{subsubsection.2.3.2.4}% 
+\contentsline {subsubsection}{\numberline {2.3.2.1}HexaPDF}{8}{subsubsection.2.3.2.1}% 
+\contentsline {subsubsection}{\numberline {2.3.2.2}ROTP}{8}{subsubsection.2.3.2.2}% 
+\contentsline {subsubsection}{\numberline {2.3.2.3}AWS SDK for Ruby}{8}{subsubsection.2.3.2.3}% 
 \contentsline {subsection}{\numberline {2.3.3}Ruby on Rails}{8}{subsection.2.3.3}% 
-\contentsline {subsubsection}{\numberline {2.3.3.1}Devise}{9}{subsubsection.2.3.3.1}% 
-\contentsline {subsubsection}{\numberline {2.3.3.2}ActiveAdmin}{9}{subsubsection.2.3.3.2}% 
+\contentsline {subsubsection}{\numberline {2.3.3.1}Integrazione tra i componenti}{9}{subsubsection.2.3.3.1}% 
+\contentsline {subsubsection}{\numberline {2.3.3.2}Pattern architetturale}{9}{subsubsection.2.3.3.2}% 
+\contentsline {paragraph}{Model}{9}{subsubsection.2.3.3.2}% 
+\contentsline {paragraph}{Controller}{10}{subsubsection.2.3.3.2}% 
+\contentsline {paragraph}{View}{10}{subsubsection.2.3.3.2}% 
+\contentsline {subsubsection}{\numberline {2.3.3.3}Devise}{10}{subsubsection.2.3.3.3}% 
+\contentsline {subsubsection}{\numberline {2.3.3.4}ActiveAdmin}{10}{subsubsection.2.3.3.4}% 
 \contentsline {subsection}{\numberline {2.3.4}RubyMine}{10}{subsection.2.3.4}% 
-\contentsline {subsection}{\numberline {2.3.5}PostgreSQL}{10}{subsection.2.3.5}% 
-\contentsline {subsection}{\numberline {2.3.6}GraphQL}{10}{subsection.2.3.6}% 
-\contentsline {subsubsection}{\numberline {2.3.6.1}Altair}{10}{subsubsection.2.3.6.1}% 
-\contentsline {subsection}{\numberline {2.3.7}HTTP}{10}{subsection.2.3.7}% 
-\contentsline {subsubsection}{\numberline {2.3.7.1}Insomnia}{10}{subsubsection.2.3.7.1}% 
-\contentsline {chapter}{\numberline {3}Rails 5}{11}{chapter.3}% 
-\contentsline {subsubsection}{\numberline {3.0.0.1}Model}{11}{subsubsection.3.0.0.1}% 
-\contentsline {subsubsection}{\numberline {3.0.0.2}Controller}{12}{subsubsection.3.0.0.2}% 
-\contentsline {subsubsection}{\numberline {3.0.0.3}View}{12}{subsubsection.3.0.0.3}% 
-\contentsline {chapter}{\numberline {4}Consectetuer adipiscing elit}{13}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Conclusion}{39}{chapter.5}% 
-\contentsline {chapter}{Bibliografia}{41}{chapter.5}% 
-\contentsline {chapter}{Ringraziamenti}{41}{section*.32}% 
+\contentsline {subsection}{\numberline {2.3.5}GraphQL}{11}{subsection.2.3.5}% 
+\contentsline {subsubsection}{\numberline {2.3.5.1}Altair}{11}{subsubsection.2.3.5.1}% 
+\contentsline {subsection}{\numberline {2.3.6}HTTP}{12}{subsection.2.3.6}% 
+\contentsline {subsubsection}{\numberline {2.3.6.1}Insomnia}{12}{subsubsection.2.3.6.1}% 
+\contentsline {chapter}{\numberline {3}Rails 5}{13}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Consectetuer adipiscing elit}{15}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Conclusion}{41}{chapter.5}% 
+\contentsline {chapter}{Bibliografia}{43}{chapter.5}% 
+\contentsline {chapter}{Ringraziamenti}{43}{section*.34}% 

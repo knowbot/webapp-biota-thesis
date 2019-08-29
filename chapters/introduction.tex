@@ -38,9 +38,9 @@ Alla base del \textit{framework} vi è la teoria dei controlli empirici dell'ana
 \subsubsection{Sprint}
 \paragraph{}
 Scrum prevede di dividere il progetto in blocchi contigui di lavoro, denominati \textit{sprint}, che prevedono un incremento del prodotto software rilasciabile al termine di ciascuno di essi.
-Uno \textit{sprint} dura da 1 a 4 settimane, ed è preceduto da una riunione di pianificazione (\textit{sprint planning}) in cui vengono discussi e definiti obiettivi e stimate le tempistiche. Gli obiettivi stabiliti per uno \textit{sprint} possono variare solo allo \textit{sprint planning}successivo; ogni giorno viene fatta una breve riunione, detta \textit{daily scrum}, in cui viene brevemente discusso il lavoro da svolgere.
+Uno \textit{sprint} dura da 1 a 4 settimane, ed è preceduto da una riunione di pianificazione (\textit{sprint planning}) in cui vengono discussi e definiti obiettivi e stimate le tempistiche. Gli obiettivi stabiliti per uno \textit{sprint} possono variare solo allo \textit{sprint planning} successivo; ogni giorno viene fatta una breve riunione, detta \textit{daily scrum}, in cui viene brevemente discusso il lavoro da svolgere.
 
-Nel corso di uno \textit{sprint}, il team realizza incrementi completi del prodotto: l'insieme di funzionalità inserite in un dato \textit{sprint} sono definite nel \textit{product backlog}, una lista ordinata di requisiti del prodotto che copre l'intero progetto. I requisiti scelti per essere soddisfatti durante un determinato sprint vanno a costituire \textit{sprint backlog}.
+Nel corso di uno \textit{sprint}, il team realizza incrementi completi del prodotto: l'insieme di funzionalità inserite in un dato \textit{sprint} sono definite nel \textit{product backlog}, una lista ordinata di requisiti del prodotto che copre l'intero progetto. I requisiti scelti per essere soddisfatti durante un determinato sprint vanno a costituire lo \textit{sprint backlog}.
 
 Gli \textit{sprint} in Moku durano generalmente 10/15 giorni, seguiti da una fase di valutazione del progresso rispetto alle aspettative e di pianificazione dello \textit{sprint} successivo, in cui viene stabilito il nuovo \textit{sprint backlog}. Dato il disaccoppiamento tra \textit{back end} e \textit{front end} nel progetto, i requisiti erano separati in due \textit{backlog differenti}.
 
@@ -55,7 +55,7 @@ Gli \textit{sprint} in Moku durano generalmente 10/15 giorni, seguiti da una fas
 
 In un team Scrum sono presenti i seguenti ruoli:
 \begin{itemize}
-    \item \textbf{Product Owner}: responsabile della massimizzazione del valore del prodotto, rappresenta la "voce" degli stakeholders; definisce gli \textit{item} in base alle \textit{user stories} del cliente, ne assegna la priorità e li aggiunge al \textit{product backlog}.
+    \item \textbf{Product Owner}: responsabile della massimizzazione del valore del prodotto, rappresenta la "voce" degli stakeholders; definisce gli \textit{items} in base alle \textit{user stories} del cliente, ne assegna la priorità e li aggiunge al \textit{product backlog}.
     \item \textbf{Team di sviluppo}: responsabile della consegna del prodotto, con funzionalità incrementali e rilasciabile al termine di ogni \textit{sprint}; generalmente composto da 3-9 persone con competenze interfunzionali, che realizzano il prodotto effettivo.
     \item \textbf{Scrum Master}: responsabile della rimozione degli ostacoli che intralciano il team di sviluppo nel raggiungimento degli obiettivi dello \textit{sprint}; aiuta il team di sviluppo a comprendere e mettere in pratica la metodologia Scrum, assumendo un ruolo di "\textit{servant/leader}".
 \end{itemize}
@@ -68,11 +68,11 @@ Per quanto riguarda gli strumenti di supporto ai processi, Moku usa per la maggi
 \subsubsection{Project management}
 Per quanto riguarda la gestione dei progetti, Moku fa affidamento a Jira, un prodotto proprietario di Atlassian. Jira è uno strumento estremamente versatile che offre funzioni di \textit{issue tracking}, \textit{project management} e \textit{bug tracking}. Jira è inoltre fortemente orientato all'utilizzo della metodologia Scrum, permettendo di creare degli \textit{sprint} e di gestire il rispettivo \textit{backlog}.
 \begin{itemize}
-    \item \textbf{Issue tracking}: in Jira è possibile creare \textit{issue} di tipo \textit{Task} per compiti da completare, \textit{Story} per nuove (\textit{user stories}) e \textit{Feature/Improvement} per funzionalità o miglioramenti a funzionalità esistenti. Ogni \textit{issue} può essere assegnata ad uno o più membri del team, che può aggiornarne il progresso, dividerla in \textit{sub-task} e registrare le ore di lavoro. 
+    \item \textbf{Issue tracking}: in Jira è possibile creare \textit{issues} di tipo \textit{Task} per compiti da completare, \textit{Story} per nuove (\textit{user stories}) e \textit{Feature/Improvement} per funzionalità o miglioramenti a funzionalità esistenti. Ogni \textit{issue} può essere assegnata ad uno o più membri del team, che può aggiornarne il progresso, dividerla in \textit{sub-task} e registrare le ore di lavoro. 
     \item \textbf{Enterprise resource planning}: Jira mette a disposizione uno strumento di pianificazione della distribuzione delle risorse temporali ed economiche, sotto il nome di \textit{Tempo}; esso permette di pianificare in anticipo il lavoro da dedicare ad una certa \textit{issue} per ogni membro del team, nonché di tenere traccia dei budget assegnati al progetto.
     \item \textbf{Bug tracking}: in Jira avviene creando issue di tipo \textit{Bug}.
 \end{itemize}
-Jira mette a disposizione un'interfaccia \textit{drag-and-drop}, che ne rende l'uso veloce ed intuitivo.
+Jira mette a disposizione un'interfaccia drag-and-drop, che ne rende l'uso veloce ed intuitivo.
 
 \begin{figure}[h!]
     \includegraphics[width=\textwidth]{figures/Jira.png}

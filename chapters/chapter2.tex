@@ -7,18 +7,3 @@ This is some random quote to start off the chapter.
 \chapter{Rails 5}
 
 
-I principi cardine di Rails sono due:
-\begin{itemize}
-    \item\textbf{Do not Repeat Yourself}: noto come principio DRY, sostiene che vadano evitate tutte le forme di ripetizione e ridondanza logica nell'implementazione del software, evitando duplicazione di codice e semplificando lo sviluppo.
-    \item\textbf{Convention over Configuration}: noto come principio CoC, sostiene il programmatore dovrebbe dover esplicitare solo le parti ``non convenzionali'' del codice; ad esempio, se esiste \textit{per convenzione} una corrispondenza tra il nome di una classe e il nome di una tabella del database, essa non dovrebbe essere specificata.
-\end{itemize}
-
-
-\subsubsection{Model}
-In Rails un \textit{model} è una classe associata ad una tabella del database secondo uno standard convenzionale: una tabella corrisponde una classe, le colonne sono convertite in attributi e le righe rappresentate come istanze della classe. I modelli possono venire generati automaticamente dalla definizione della tabella. Oltre ai normali vincoli di database, in Rails è possibile definire ulteriori controlli sui valori in database direttamente nel \textit{model}. La filosofia di Rails prevede che i \textit{model} contengano la quasi interezza della \textit{business logic}.
-
-\subsubsection{Controller}
-I \textit{controller} sono componenti che rispondo alle richieste del server web all'applicazione, determinando quale \textit{view} caricare; essi possono anche interrogare i \textit{model} per mostrare informazioni aggiuntive, e rendere disponibili "azioni" per fare richieste al server. I controller sono resi disponibili mediante il file di \textit{routing} \texttt{routes.rb}, in cui vengono associati a delle specifiche richieste; Rails incoraggia gli sviluppatori all'uso di \textit{RESTful routes}, che includono azioni come ``index'', ``new'', ``show'', ``edit''.
-
-\subsubsection{View}
-Di default le \textit{view} sono file con estensione \texttt{.erb} contenenti codice HTML misto a codice Ruby, che vengono elaborati a \textit{run-time} permettendo una visualizzazione dinamica delle informazioni. In alternativa, per esempio nell'implementazione di una RESTful API, una \textit{view}può essere un file JSON contenente il \textit{body} di una risposta.
