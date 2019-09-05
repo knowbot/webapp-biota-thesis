@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  28 AUG 2019 20:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  5 SEP 2019 18:07
 entering extended mode
 **c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
 (c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
@@ -1530,25 +1530,7 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-(frontmatter/abstract.tex
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 5.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
-
- []
-
-[5
+(frontmatter/abstract.tex) [5
 
 ] [6
 
@@ -1607,6 +1589,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  (chapters/introduction.tex
 Chapter 1.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 11.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
@@ -1650,7 +1634,11 @@ File: figures/Jira.png Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]) [6]
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6])
+[7]
 \openout2 = `chapters/chapter1.aux'.
 
  (chapters/chapter1.tex
@@ -1668,54 +1656,67 @@ le
 ine 3.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 3.
+[8
+
+
+
+]
 Chapter 2.
+[9]
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 10.25006pt on input line 23.
+(Font)              scaled to size 10.25006pt on input line 31.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceCodePro' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 1354) has occurred while \output is active []
-
- [7
-
-
-
-]
+ [10]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 29.
+(Font)              scaled to size 8.0pt on input line 37.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 29.
-
-[8] [9] [10]
+(Font)              scaled to size 7.0pt on input line 37.
+ [11] [12] [13]
 Underfull \vbox (badness 6641) has occurred while \output is active []
 
- [11])
-[12]
+ [14])
+[15]
 \openout2 = `chapters/chapter2.aux'.
 
  (chapters/chapter2.tex
-Chapter 3.
-) [13
+
+Package xr Warning: 
+No file ../frontmatter/abbr.aux
+LABELS NOT IMPORTED.
+ on input line 2.
+
+[16
 
 
 
 ]
+Chapter 3.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+[18]
 \openout2 = `chapters/chapter3.aux'.
 
- (chapters/chapter3.tex [14
+ (chapters/chapter3.tex
+
+Package xr Warning: 
+No file ../frontmatter/abbr.aux
+LABELS NOT IMPORTED.
+ on input line 2.
+
+Chapter 4.
+) [19
 
 
 
 ]
-Chapter 4.
-[15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
-[30] [31] [32] [33] [34] [35] [36] [37] [38]) [39]
 \openout2 = `chapters/conclusion.aux'.
 
- (chapters/conclusion.tex
-[40
+ (chapters/conclusion.tex [20
 
 
 
@@ -1727,9 +1728,9 @@ Overfull \hbox (5.63692pt too wide) in paragraph at lines 5--6
 c ullamcorper orci, fermentum biben-
  []
 
-[41]) [42]
+[21]) [22]
 No file dissertation.bbl.
-(frontmatter/thanks.tex) [43
+(frontmatter/thanks.tex) [23
 
 
 
@@ -1742,15 +1743,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: C7853A854EB40D7FEE1B8F51BEF29DEB.
+(rerunfilecheck)             Checksum: C5EA7F942BB795874C7D61080101FC54.
  ) 
 Here is how much of TeX's memory you used:
- 47311 strings out of 427669
- 1050277 string characters out of 3149215
- 1289167 words of memory out of 3000000
- 50660 multiletter control sequences out of 15000+200000
+ 47317 strings out of 427669
+ 1050363 string characters out of 3149215
+ 1288167 words of memory out of 3000000
+ 50666 multiletter control sequences out of 15000+200000
  541138 words of font info for 105 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 85i,8n,138p,1234b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 85i,8n,138p,1378b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (57 pages).
+Output written on dissertation.pdf (37 pages).

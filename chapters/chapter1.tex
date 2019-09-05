@@ -7,8 +7,16 @@
 \chapter{Progetto di stage}
 
 \section{Descrizione del progetto}
+Il progetto di stage prevedeva lo sviluppo della parte \textit{back end} dell'applicazione web ``Biota''. ``Biota'' è una piattaforma per la gestione di esami della flora gastrointestinale, che permette ai clienti di una farmacia di richiedere un esame mediante la compilazione di un questionario; un campione di materia fecale viene quindi inviato al laboratorio per le analisi, al cui termine viene fornito un referto sulla base del quale vengono consigliati prodotti atti a migliorare il benessere del cliente.
 
-\section{Obiettivi dello stage}
+\subsection{Contesto di sviluppo}
+La piattaforma fa parte di un ecosistema già esistente di servizi per la salute, fruibili presso farmacie affiliate. Esiste, quindi, come parte di un insieme di applicativi paralleli e ne condivide il database e parte della codifica: questo documento si limiterà a descrivere i moduli, le classi e le funzionalità realizzate o adattate per l'implementazione dellla piattaforma ``Biota''.
+L'applicativo si compone di una parte \textit{back end} e una \textit{front end} sviluppate separatamente e integrate grazie all'uso di \ref{itm:api} specifiche; obiettivo dello stage è stata la realizzazione del primo, in modo funzionale all'utilizzo con il secondo. La tecnologia principale, descritta più avanti nel documento, è Ruby on Rails 5 (\textit{framework} per lo sviluppo di applicativi web).
+
+\subsection{Contesto di utilizzo}
+``Biota'' prevede l'utilizzo da parte di utenti registrati alla piattaforma, che possono essere farmacisti, clienti o gastroenterologi affiliati. A questi viene offerta un'interfaccia grafica facente parte del \textit{front end}. Per interazioni con servizi esterni sono inoltre disponibili delle \ref{itm:api} \ref{itm:rest}, utilizzate principalmente per l'integrazione con il gestionale del laboratorio di analisi. 
+
+Il flusso operativo previsto è il seguente: il cliente richiede al farmacista di effettuare un esame, e inserisce i propri dati registrandosi alla piattaforma; il farmacista quindi ottiene il consenso al trattamento dei dati e fa compilare un breve questionario al cliente, consegnando un kit per il prelievo del campione di materia fecale. Questo viene poi restituito, registrato al cliente ed inviato al laboratorio previa prenotazione della spedizione: grazie alla corrispondenza univoca tra il codice identificativo del campione e la sessione associata all'esame, è garantito l'anonimato del cliente. Il laboratorio, ricevuto il campione, ne effettua il check-in nel proprio gestionale (aggiornandone automaticamente lo stato nella piattaforma) e procede alle analisi necessarie. Viene quindi inviato una bozza di referto insieme a dei dettagli aggiuntivi, che viene reso disponibile nella piattaforma al gastroenterologo affiliato che aggiunge una sua valutazione e dieta consigliata. Dopo un'ulteriore controllo da parte del laboratorio, il referto personalizzato viene generato reso disponibile al cliente, concludendo la procedura.
 
 \section{Tecnologie utilizzate}
 \subsection{Ruby}
@@ -95,6 +103,7 @@ Il protocollo HTTP è largamente utilizzato per l'implementazione di \ref{itm:re
 \subsubsection{Insomnia}
 Client \textit{open source} e multipiattaforma per \ref{itm:api} GraphQL e \ref{itm:rest}, consente di gestire facilmente lo sviluppo e il testing di richieste HTTP e GraphQL; offre funzionalità di formattazione automatica, variabili d'ambiente e supporto a vari tipi di autenticazione. Insomnia è stato utilizzato per testare gli endpoint delle \ref{itm:api} per il laboratorio di analisi, nonché per sviluppare un client per le \ref{itm:api} del corriere SDA.
 
+\subsection{PostgreSQL}
 
 % $x = 1/\alpha$
 % \cite{Eigen1971, Knuth1968}
