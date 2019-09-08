@@ -6,17 +6,464 @@ This is some random quote to start off the chapter.
 \end{savequote}
 \chapter{Analisi dei requisiti}
 \section{Definizione dei requisiti}
-\subsection{Piano di progetto}
-\subsubsection{Obiettivi}
-\subsubsection{Milestones}
-\subsection{Requisiti effettivi}
-\subsubsection{Notazione}
-\subsubsection{Requisiti fissati}
+Nella seguente sezione verranno esposti in via generale i requisiti che l'applicativo realizzato doveva soddisfare. È importante notare che, data la natura agile del metodo di lavoro impiegato dall'azienda, gli obiettivi presentati nel piano di lavoto sono stati soggetti a modifiche e aggiunte di lieve e media entità; per completezza e possibilità di confronto, di seguito verranno esposti sia i requisiti iniziali che quelli elaborati a fronte dell'interazione con il cliente.
+\subsection{Notazione}
+Si farà riferimento a requisiti ed obiettivi secondo le rispettive notazioni:
+\begin{itemize}
+    \item \textbf{O} indica un requisito obbligatorio, vincolante in quanto obiettivo primario richiesto dal committente.
+    \item \textbf{D} indica un requisito desiderabile, non vincolante o strettamente necessario, ma dal riconoscibile valore aggiunto.
+    \item \textbf{F} indica un requisito facoltativo, rappresentante un valore aggiunto non necessariamente competitivo.
+\end{itemize}
+\subsection{Piano di lavoro}
+Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziendale nella settimana precedente all'inizio dello stage, espone una serie di requisiti emersi dalle esigenze del cliente emerse in fase di avvio del progetto.
+\subsubsection{Requisiti}
+\paragraph{Obbligatori}
+\begin{itemize}
+    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
+    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Desiderabili}
+\begin{itemize}
+    \item \underline{D01}: Analisi ed implementazione di test dei sistemi di pagamento e fatturazione
+    \item \underline{D02}: Suite di testing del software prodotto
+    \item \underline{D03}: Documentazione completa
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Facoltativi}
+\begin{itemize}
+    \item \underline{F01}: Ulteriori modifiche all’applicazione che esulano da quando riportato nel piano di lavoro
+\end{itemize}
+\subsection{Modifiche al piano}
+Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da parte del tutor aziendale, ci sono state varie interazioni con il cliente che hanno portato a ridefinire alcuni requisiti desiderabili e a specificare in modo più preciso i requisiti facoltativi. Tali modifiche sono sempre state fatte in accordo alle possibilità di soddisfazione entro i tempi previsti, e tenendo in mente che la piattaforma sarebbe entrata in produzione al completamento dellle funzionalità per l'esecuzione flusso di attività base.
+\subsubsection{Requisiti rivisti}
+\paragraph{Obbligatori}
+\begin{itemize}
+    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
+    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
+    \item \underline{O03}: Implementazione delle strutture per il questionario
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Desiderabili}
+\begin{itemize}
+    \item \underline{D01}: Generazione PDF con informazioni specifiche
+    \item \underline{D02}: Suite di testing del software prodotto
+    \item \underline{D03}: Documentazione completa
+    \item \underline{D04}: Registrazione del consenso al trattamento dei dati
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Facoltativi}
+\begin{itemize}
+    \item \underline{F01}: Autenticazione mediante HMAC
+    \item \underline{F02}: Ulteriori modifiche all’applicazione
+\end{itemize}
 \section{Casi d'uso}
+Di seguito verranno descritti i casi d'uso dell'applicazione, per quanto riguarda le funzionalità da me progettate; non verranno quindi tenute in considerazione eventuali funzionalità pre-esistenti che fossero parte dell'ecosistema a cui appartiene la piattaforma.
+
+I casi d'uso verranno inoltre considerati per quanto concerne il \textit{back end} dell'applicazione, ovvero sulla base delle funzionalità realizzate per essere utilizzate dal \textit{front end}: eventuali aggiunte, quali la visualizzazione di messaggi di errore dettagliati o reindirizzamenti a pagine differenti della piattaforma web, verranno ignorate.
+
+I casi d'uso verranno descritti mediante dei diagrammi \ref{itm:uml} che rappresentano le possibili interazioni tra gli \textbf{attori} ed il \textbf{sistema} dal punto di vista dei primi. È importante notare che il sistema, ovvero il \textit{back end} sviluppato, non viene utilizzato direttamente dagli utenti finali ma risponde a richieste di servizi esterni come il \textit{front end} (con l'eccezione degli utenti amministrativi, a cui viene fornita un'interfaccia di interazione ad-hoc): i casi d'uso verranno dunque trattati di conseguenza.
+
 \subsection{Attori}
+\begin{itemize}
+    \item \textbf{Utente non autenticato}: un utente che deve effettuare l'autenticazione per accedere alle funzionalità disponibili al suo ruolo;
+    \item \textbf{Amministratore}: un utente autenticato con privilegi di accesso al pannello amministrativo.
+    \item \textbf{Front end}: una istanza del \textit{front end} della piattaforma;
+    \item \textbf{Gestionale laboratorio}: il software gestionale del laboratorio;
+\end{itemize}
 \subsection{Struttura}
-\subsection{Panoramica}
-\subsection{UC 1}
+Per ogni caso d'uso, identificato da un codice univoco, vengono specificati gli attori coinvolti, lo scopo da raggiungere, le azioni previste e le condizioni del sistema prima e dopo tali azioni. I casi d'uso verranno descritti dalla seguente struttura:
+\begin{itemize}
+    \item Codice identificativo: \textbf{UC \{codice\_padre\}.\{codice\_figlio\}}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item \textbf{UC} indica che si tratta di un caso d'uso;
+            \item \textbf{codice\_padre} identifica il caso d'uso principale a cui si fa riferimento;
+            \item \textbf{codice\_figlio} identifica il sottocaso specifico;
+        \end{itemize}
+        \vspace{-5pt}
+    \item Titolo
+    \item Diagramma UML
+    \item Attori
+    \item Attori secondari, se presenti
+    \item Scopo e descrizione
+    \item Precondizioni
+    \item Scenario principale
+    \item Postcondizioni
+    \item Inclusioni (se presenti)
+    \item Estensioni (se presenti)
+\end{itemize}
+\subsection{Casi d'uso generali}
+Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto simili (principalmente quelle che possono essere richieste da un utente autenticato con un determinato ruolo) saranno raggruppate in dei casi d'uso di alto livello, d'ora in poi ``casi d'uso generali", identificati dalla lettera \textbf{G} prefissa al loro codice numerico. Tali casi d'uso servono solo per una miglior comprensione, quindi il loro codice non verrà considerato come \textbf{codice\_padre} nell'identificazione dei casi d'uso raggruppati.
 
+\setlength{\parindent}{0cm}
+\section{UC1: Autenticazione amministratore}
+\label{sec:uc1}
+\textsc{\textsc{\textbf{Attori:}}} Utente non autenticato.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione al pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'applicativo è stato avviato con successo e l'attore ha accesso alla pagina di autenticazione.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore inserisce un indirizzo email valido (\hyperref[sec:uc11]{UC 1.1});
+    \item L'attore inserisce la password associata a tale indirizzo email (UC 1.2);
+    \item L'attore clicca sul pulsante di \textit{login}.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore viene autenticato dal sistema e ha accesso al pannello di amministrazione.\\
+\textsc{\textbf{Estensioni:}} L'attore non viene autenticato e visualizza un messaggio di errore (\hyperref[sec:uc2]UC2{}).
 
+\subsection{UC1.1: Inserimento email}
+\label{sec:uc11}
+\textsc{\textbf{Attori:}} Utente non autenticato.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire un indirizzo email per l'autenticazione al pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso alla pagina di autenticazione.\\
+\textsc{\textbf{Scenario principale:}} L'attore inserisce un indirizzo mail nell'apposito campo.\\
+\textsc{\textbf{Postcondizioni:}} L'attore ha inserito un indirizzo email valido.
 
+\subsection{UC1.2: Inserimento password}
+\label{sec:uc12}
+\textsc{\textbf{Attori:}} Utente non autenticato.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire una password per l'autenticazione al pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso alla pagina di autenticazione.\\
+\textsc{\textbf{Scenario principale:}} L'attore inserisce una password nel campo apposito.\\
+\textsc{\textbf{Postcondizioni:}} L'attore ha inserito una password corretta.
+
+\section{UC2: Visualizzazione errore di autenticazione}
+\label{sec:uc2}
+\textsc{\textbf{Attori:}} Utente non autenticato.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione al pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha inserito le proprie credenziali negli appositi campi.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore clicca sul pulsante di \textit{login};
+    \item L'attore visualizza un messaggio di errore che lo informa che le credenziali non sono corrette.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore non viene autenticato dal sistema e rimane nella pagina di autenticazione.
+
+\section{UC3: Autenticazione front end}
+\label{sec:uc3}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'applicativo è stato avviato con successo e l'attore è collegato correttamente al sistema.\\
+\textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di autenticazione contenente le credenziali di accesso di un utente autorizzato.\\
+\textsc{\textbf{Postcondizioni:}} L'utente specificato dall'attore viene autenticato, e l'attore riceve in risposta i parametri della relativa sessione attiva.\\
+\textsc{\textbf{Estensioni:}}  L'utente specificato dall'attore non viene riconosciuto, e l'attore riceve in risposta un messaggio di errore che lo informa che le credenziali non sono corrette (\hyperref[sec:UC5]{UC5}).
+
+\section{UC4: Reset password per accesso alla piattaforma}
+\label{sec:uc4}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di reset della password per un utente della piattaforma.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'applicativo è stato avviato con successo e l'attore è collegato correttamente al sistema.\\
+\textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di reset della password di accesso di un utente autorizzato.\\
+\textsc{\textbf{Postcondizioni:}} È stata generata ed inviata all'utente una nuova password,e l'attore riceve una risposta di conferma del successo dell'operazione.
+
+\section{UC5: Errore autenticazione front end}
+\label{sec:UC5}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha inviato una richiesta di autenticazione al sistema.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore è in attesa di una risposta dal sistema;
+    \item L'attore riceve in risposta un messaggio di errore che lo informa che le credenziali non sono corrette.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'utente specificato dall'attore non viene riconosciuto e non riceve i dati di una sessione valida.
+
+\section{UC G1: Operazioni amministrative}
+\label{sec:ucg1}
+Questo caso d'uso generale riassume le operazioni disponibili ad un utente autorizzato che abbia eseguito l'accesso al pannello di amministrazione. La maggior parte delle operazioni sui record sono identiche tra loro, e verranno quindi riportate in modo generalizzato; eventuali operazioni specifiche verranno contestualizzate nel proprio caso d'uso.
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni di amministrazione della piattaforma.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha ottenuto l'accesso al pannello di amministrazione.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore visualizza e gestisce una categoria di record (\hyperref[sec:UC6]{UC6});
+    \item L'attore visualizza la \textit{dashboard} (\hyperref[sec:uc7]{UC7}).
+    \item L'attore effettua la disconnessione dal pannello di amministrazione (\hyperref[sec:UC8]{UC8}).
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
+
+\section{UC6: Gestione categoria di record}
+\label{sec:UC6}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire una particolare categoria di record.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è nella \textit{dashboard} del pannello di amministrazione.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore seleziona una scheda associato alla categoria desiderata e visualizza la tabella dei record.
+    \item L'attore modifica l'ordine della tabella dei record (\hyperref[sec:UC61]{UC6.1});
+    \item L'attore applica un filtro alla tabella dei record (\hyperref[sec:UC62]{UC6.2});
+    \item L'attore rimuove un filtro dalla tabella dei record (\hyperref[sec:UC63]{UC6.3});
+    \item L'attore aggiunge un nuovo record (\hyperref[sec:UC64]{UC6.4});
+    \item L'attore visualizza un record particolare (\hyperref[sec:UC65]{UC6.5});
+    \item L'attore modifica un record particolare (\hyperref[sec:UC66]{UC6.6});
+    \item L'attore elimina un record particolare (\hyperref[sec:UC67]{UC6.7});
+    \item L'attore gestisce un utente (\hyperref[UC610]{UC6.10}).
+    \item L'attore gestisce un cliente (\hyperref[UC611]{UC6.11}).
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione della categoria di record selezionata con successo.
+
+\subsection{UC6.1: Modifica ordine della tabella dei record}
+\label{sec:UC61}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole cambiare l'ordine della tabella dei record secondo un certo campo.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
+\textsc{\textbf{Scenario principale:}} L'attore seleziona la colonna del campo in base al quale ordinare la tabella.
+\textsc{\textbf{Postcondizioni:}} L'attore ha riordinato la tabella secondo il campo desiderato.
+
+\subsection{UC6.2: Applicazione filtro alla tabella dei record}
+\label{sec:UC62}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole filtrare alcune righe della tabella dei record.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore seleziona l'icona del filtro;
+    \item L'attore imposta il filtro desiderato;
+    \item L'attore clicca sul pulsante``Filtra".
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha applicato il filtro desiderato alla tabella dei record.
+
+\subsection{UC6.3: Rimozione filtro alla tabella dei record}
+\label{sec:UC63}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole rimuovere un filtro dalla tabella dei record.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record con un filtro attivo.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore seleziona l'icona del filtro;
+    \item L'attore clicca sul pulsante ``Rimuovi filtri".
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha rimosso il filtro desiderato alla tabella dei record.
+
+\subsection{UC6.4: Aggiunta di un nuovo record}
+\label{sec:UC64}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiungere un record alla tabella.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore clicca sul pulsante ``Aggiungi \textbf{\{record\}}", dove \textbf{\{record\}} è il nome della categoria selezionata;
+    \item L'attore viene reindirizzato al \textit{form} di creazione del record;
+    \item L'attore riempe gli appositi campi con i dati desiderati;
+    \item L'attore clicca sul pulsante ``Crea \textbf{\{record\}}".
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha creato con successo un nuovo record.\\
+\textsc{\textbf{Estensioni:}} L'attore annulla la creazione di un nuovo record (\hyperref[sec:UC69]{UC6.9}).
+
+\subsection{UC6.5: Visualizzazione di un record}
+\label{sec:UC65}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare un record della tabella.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando la .\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore clicca sul pulsante ``Mostra" sulla riga corrispondente al record desiderato;
+    \item L'attore visualizza i dati relativi al record;
+    \item L'attore modifica il record;
+    \item L'attore elimina il record.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione della categoria di record selezionata con successo.
+
+\subsection{UC6.6: Modifica di un record}
+\label{sec:UC66}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare un record della tabella.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore clicca sul pulsante ``Modifica'' sulla riga corrispondente al record desiderato;
+    \item L'attore viene reindirizzato al \textit{form} di modifica del record;
+    \item L'attore modifica il contenuto dei campi disponibili;
+    \item L'attore clicca sul pulsante ``Aggiorna \textbf{\{record\}}", dove \textbf{\{record\}} è il nome della categoria selezionata.
+\end{itemize}
+\textsc{\textbf{Scenario alternativo:}}
+\begin{itemize}
+    \item L'attore visualizza il record desiderato (\hyperref[sec:UC65]{UC6.5});
+    \item L'attore clicca sul pulsante ``Modifica \textbf{\{record\}}", dove \textbf{\{record\}} è il nome della categoria selezionata;
+    \item L'attore viene reindirizzato al \textit{form} di modifica del record;
+    \item L'attore modifica il contenuto dei campi disponibili;
+    \item L'attore clicca sul pulsante ``Aggiorna \textbf{\{record\}}";
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente aggiornato il record con i dati desiderati.
+\textsc{\textbf{Estensioni:}} \begin{itemize}
+    \item L'attore annulla la modifica del record (\hyperref[sec:UC69]{UC6.9});
+    \item L'attore commette un errore nela modifica del record (\hyperref[sec:UC69]{UC6.9}).
+\end{itemize}
+
+\subsection{UC6.7: Eliminazione di un record}
+\label{sec:UC67}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare un record della tabella.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore clicca sul pulsante ``Rimuovi'' sulla riga corrispondente al record desiderato;
+    \item L'attore visualizza un \textit{pop-up} di conferma dell'operazione;
+    \item L'attore clicca sul pulsante ``Ok'' per confermare l'operazione.
+\end{itemize}
+\textsc{\textbf{Scenario alternativo:}}
+\begin{itemize}
+    \item L'attore visualizza il record desiderato (\hyperref[sec:UC65]{UC6.5});
+    \item L'attore clicca sul pulsante ``Rimuovi \textbf{\{record\}}", dove \textbf{\{record\}} è il nome della categoria selezionata;
+    \item L'attore visualizza un \textit{pop-up} di conferma dell'operazione;
+    \item L'attore clicca sul pulsante ``Ok'' per confermare l'operazione.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente rimosso il record.
+\textsc{\textbf{Estensioni:}} L'attore annulla la rimozione del record (\hyperref[sec:UC69]{UC6.9}).
+
+\subsection{UC6.8: Errore nella modifica di un record}
+\label{sec:UC68}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare un record.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualzzando il \textit{form} di modifica del record.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore inserisce uno o più valori non validi in uno o più dei campi disponibili;
+    \item L'attore visualizza un messaggio di errore, il quale descrive il valore invalido inserito e l'errore riscontrato.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} Il messaggio di errore rimane in cima al \textit{form} di modifica e la modifica viene prevenuta.
+
+\subsection{UC6.9: Annullamento operazione}
+\label{sec:UC69}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole annullare l'operazione in corso.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore non ha ancora terminato l'operazione precedentemente selezionata.\\
+\textsc{\textbf{Scenario principale:}} L'attore clicca sul pulsante ``Annulla".\\
+\textsc{\textbf{Postcondizioni:}} L'attore ha annullato correttamente l'operazione ed eventuali modifiche vengono prevenute.
+
+\subsection{UC6.10: Gestione di un utente}
+\label{sec:UC610}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire un utente autorizzato.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha seleziona la scheda ``Utenti''.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore visualizza il record corrispondente all'utente desiderato (\hyperref[sec:UC65]{UC6.5});
+    \item L'attore genera una nuova password per l'utente (\hyperref[sec:UC6101]{UC6.10.1}).
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione dell'utente desiderato con successo.
+
+\subsection{UC6.10.1: Generazione nuova password per un utente}
+\label{sec:UC6101}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole generare una nuova password per un utente autorizzato.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando il record relativo all'utente.\\
+\textsc{\textbf{Scenario principale:}} L'attore preme sul pulsante ``Rigenera password''.\\
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente generato una nuova password per l'utente desiderato.
+
+\subsection{UC6.11: Gestione di un cliente}
+\label{sec:UC611}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire un cliente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha seleziona la scheda ``Clienti''.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore visualizza il record corrispondente all'utente desiderato (\hyperref[sec:UC65]{UC6.5});
+    \item L'attore scarica il modulo di consenso al trattamento dei dati (\hyperref[sec:UC6101]{UC6.11.1}).
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione del cliente desiderato con successo.
+
+\subsection{UC6.11.1: Scaricamento modulo di consenso al trattamento dei dati}
+\label{sec:UC6111}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole scaricare il modulo per il consenso al trattamento dei dati firmato da un cliente (se presente).\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando il record relativo al cliente desiderato.\\
+\textsc{\textbf{Scenario principale:}} L'attore preme sul pulsante ``Scarica privacy policy''.
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente scaricato il modulo (se presente).
+
+\section{UC7: Visualizzazione dashboard}
+\label{sec:UC7}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare la \textit{dashboard} del pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una pagina diversa dalla \textit{dashboard}.\\
+\textsc{\textbf{Scenario principale:}} L'attore seleziona la scheda ``Dashboard".\\
+\textsc{\textbf{Postcondizioni:}} L'attore viene reindirizzato alla pagina della \textit{dashboard}.
+
+\section{UC8: Gestione profilo}
+\label{sec:UC8}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire il proprio profilo utente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso al pannello di amministrazione.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore clicca sull'icona del profilo.
+    \item L'attore visualizza il record relativo al proprio profilo (\hyperref[sec:UC65]{UC6.5})
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha gestito correttamente il proprio profilo.
+
+\section{UC9: Disconnessione}
+\label{sec:UC9}
+\textsc{\textbf{Attori:}} Amministratore.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole disconnettersi dal pannello di amministrazione.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso al pannello di amministrazione.\\
+\textsc{\textbf{Scenario principale:}} L'attore clicca sull'icona di disconnessione.\\
+\textsc{\textbf{Postcondizioni:}} L'attore viene correttamente disconnesso dal pannello di amministrazione.
+
+\section{UC G2: Operazioni per utente farmacista}
+\label{sec:UCG2}
+Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di farmacista. Come anticipato, le operazioni vengono considerate non dal punto di vista dell'utente finale della piattaforma, cioè il farmacista o cliente che si interfaccia con il \textit{front end}, ma come richieste che l'istanza di \textit{front end} può effettuare alle \ref{itm:api} del servizio \textit{back end}. Non verranno, per questo motivo, quindi fatte distinzioni tra interazioni che verrebbero effettuate da un farmacista o da un cliente. Infine, va considerato implicito che ognuna delle seguenti operazioni è ristretta ai record del database resi visibili dalla sessione attiva (nella fattispecie i record associati alla farmacia a cui appartiente l'utente autenticato).\\
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni permesse ad un utente con ruolo di farmacista.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo di farmacista.\\
+\textsc{\textbf{Scenario principale:}} 
+\begin{itemize}
+    \item L'attore modifica i dati della farmacia;
+    \item L'attore gestisce gli utenti autorizzati;
+    \item L'attore gestisce gli esami;
+    \item L'attore gestisce i clienti;
+    \item L'attore gestisce le spedizioni;
+    \item L'attore effettua la disconnessione dalla piattaforma.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
+
+\section{UC10: Aggiornamento dati della farmacia}
+\label{sec:UC10}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati della farmacia corrente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo di farmacista.\\
+\textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di aggiornamento del record della farmacia con i nuovi dati, potenzialmente allegando un'immagine da sostituire al logo corrente.
+\textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore riceve una risposta che conferma il successo dell'operazione.
+
+\section{UC11: Gestione utenti autorizzati}
+\label{sec:UC11}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti autorizzati appartenenti alla farmacia corrente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo di farmacista.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore visualizza la lista degli utenti autorizzati;
+    \item L'attore effettua il reset della password di un utente autorizzato;
+    \item L'attore crea un utente autorizzato;
+    \item L'attore elimina un utente autorizzato.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.
+
+\section{UC12: Gestione esami}
+\label{sec:UC12}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti autorizzati appartenenti alla farmacia corrente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo di farmacista.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore visualizza lo storico degli esami;
+    \item L'attore crea un nuovo esame;
+    \item L'attore aggiorna un esame;
+    \item L'attore elimina un esame;
+    \item L'attore visualizza solo esami in un determinato stadio di avanzamento;
+    \item L'attore effettua la ricerca di un esame in base al codice identificativo del campione.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.
+
+\section{UC13: Gestione clienti}
+\label{sec:UC13}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti autorizzati appartenenti alla farmacia corrente.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo di farmacista.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore visualizza la lista degli utenti autorizzati;
+    \item L'attore crea un utente autorizzato;
+    \item L'attore elimina un utente autorizzato;
+    \item L'attore effettua il reset della password di un utente autorizzato;
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.

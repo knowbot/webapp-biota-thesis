@@ -61,6 +61,8 @@
     {\begin{spacing}{\dcompressedspacing}\oldenumerate}
     {\endoldenumerate\end{spacing}}
 
+\usepackage{hyperref}
+
 % Text layout.
 \RequirePackage[outer=1in, inner=1.55in, twoside, a4paper]{geometry}
 \usepackage{ragged2e}
@@ -146,7 +148,6 @@
 \RequirePackage{titling}
 
 % Front matter.
-\setcounter{tocdepth}{3}
 \usepackage[titles]{tocloft}
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
