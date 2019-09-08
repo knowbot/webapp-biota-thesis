@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  8 SEP 2019 09:26
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  8 SEP 2019 10:55
 entering extended mode
 **c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
 (c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
@@ -1386,7 +1386,14 @@ Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
 Package hyperref Info: Option `colorlinks' set `true' on input line 243.
 )
 (dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux)
-(chapters/chapter2.aux) (chapters/chapter3.aux) (chapters/conclusion.aux))
+(chapters/chapter2.aux
+
+LaTeX Warning: Label `sec:UC112' multiply defined.
+
+
+LaTeX Warning: Label `sec:UC13' multiply defined.
+
+) (chapters/chapter3.aux) (chapters/conclusion.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1685,12 +1692,6 @@ Chapter 3.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/sc' will be
 (Font)              scaled to size 12.0pt on input line 102.
  [21]
-Overfull \hbox (10.3741pt too wide) in paragraph at lines 130--130
-|[]\TU/EBGaramond(0)/bx/sc/17.28 UC2: Visualizzazione errore di autenticazione|
- 
- []
-
-
 Overfull \hbox (11.63687pt too wide) in paragraph at lines 144--150
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’utente sp
 ecificato dall’attore viene autenticato, e l’attore riceve in risposta
@@ -1731,7 +1732,16 @@ Overfull \hbox (10.02887pt too wide) in paragraph at lines 396--401
 ene correttamente disconnesso dal pannello di amministrazione. 
  []
 
-[31] [32]) [33] [34]
+[31]
+
+LaTeX Warning: Hyper reference `sec:UC14' on page 32 undefined on input line 41
+4.
+
+
+LaTeX Warning: Hyper reference `sec:UC15' on page 32 undefined on input line 41
+5.
+
+[32] [33] [34] [35]) [36]
 \openout2 = `chapters/chapter3.aux'.
 
  (chapters/chapter3.tex
@@ -1742,14 +1752,14 @@ LABELS NOT IMPORTED.
  on input line 2.
 
 Chapter 4.
-) [35
+) [37
 
 
 
 ]
 \openout2 = `chapters/conclusion.aux'.
 
- (chapters/conclusion.tex [36
+ (chapters/conclusion.tex [38
 
 
 
@@ -1761,15 +1771,15 @@ Overfull \hbox (5.63692pt too wide) in paragraph at lines 5--6
 c ullamcorper orci, fermentum biben-
  []
 
-[37]
+[39]
 Overfull \hbox (5.63692pt too wide) in paragraph at lines 15--16
 \TU/EBGaramond(0)/m/n/12 Sed aliquam, nunc eget euismod ullamcorper, lectus nun
 c ullamcorper orci, fermentum biben-
  []
 
-) [38]
+) [40]
 No file dissertation.bbl.
-(frontmatter/thanks.tex) [39
+(frontmatter/thanks.tex) [41
 
 
 
@@ -1781,20 +1791,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
 (chapters/conclusion.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
-Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 89CECC26A09E086AF9BC8E5304DC6867.
 
+
+Package rerunfilecheck Warning: File `dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dissertation.out':
+(rerunfilecheck)             Before: 85AF746BD4AC3A4858A05948A373EDA1
+(rerunfilecheck)             After:  37DAFB2C53B5C65B33978E06649DBE67.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 47353 strings out of 427669
- 1050751 string characters out of 3149215
+ 47362 strings out of 427669
+ 1050850 string characters out of 3149215
  1288900 words of memory out of 3000000
- 50707 multiletter control sequences out of 15000+200000
+ 50716 multiletter control sequences out of 15000+200000
  541146 words of font info for 106 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  85i,8n,138p,1378b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (55 pages).
+Output written on dissertation.pdf (57 pages).

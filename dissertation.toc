@@ -68,10 +68,10 @@
 \contentsline {section}{\numberline {3.3}UC1: Autenticazione amministratore}{21}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}UC1.1: Inserimento email}{21}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}UC1.2: Inserimento password}{22}{subsection.3.3.2}% 
-\contentsline {section}{\numberline {3.4}UC2: Visualizzazione errore di autenticazione}{22}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}UC2: Errore autenticazione amministratore}{22}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}UC3: Autenticazione front end}{22}{section.3.5}% 
 \contentsline {section}{\numberline {3.6}UC4: Reset password per accesso alla piattaforma}{23}{section.3.6}% 
-\contentsline {section}{\numberline {3.7}UC5: Errore autenticazione front end}{23}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}UC5: Errore di autenticazione front end}{23}{section.3.7}% 
 \contentsline {section}{\numberline {3.8}UC G1: Operazioni amministrative}{23}{section.3.8}% 
 \contentsline {section}{\numberline {3.9}UC6: Gestione categoria di record}{24}{section.3.9}% 
 \contentsline {subsection}{\numberline {3.9.1}UC6.1: Modifica ordine della tabella dei record}{25}{subsection.3.9.1}% 
@@ -93,9 +93,15 @@
 \contentsline {section}{\numberline {3.13}UC G2: Operazioni per utente farmacista}{31}{section.3.13}% 
 \contentsline {section}{\numberline {3.14}UC10: Aggiornamento dati della farmacia}{32}{section.3.14}% 
 \contentsline {section}{\numberline {3.15}UC11: Gestione utenti autorizzati}{32}{section.3.15}% 
-\contentsline {section}{\numberline {3.16}UC12: Gestione esami}{33}{section.3.16}% 
-\contentsline {section}{\numberline {3.17}UC13: Gestione clienti}{33}{section.3.17}% 
-\contentsline {chapter}{\numberline {4}Progettazione}{35}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}% 
-\contentsline {chapter}{Bibliografia}{39}{chapter.5}% 
-\contentsline {chapter}{Ringraziamenti}{39}{section*.35}% 
+\contentsline {subsection}{\numberline {3.15.1}UC11.1: Visualizzazione lista degli utenti autorizzati}{33}{subsection.3.15.1}% 
+\contentsline {subsection}{\numberline {3.15.2}UC11.2: Visualizzazione utente autorizzato}{33}{subsection.3.15.2}% 
+\contentsline {subsection}{\numberline {3.15.3}UC11.3: Richiesta reset della password di un utente autorizzato}{33}{subsection.3.15.3}% 
+\contentsline {section}{\numberline {3.16}UC11.4: Impostazione nuova password per un utente autorizzato}{34}{section.3.16}% 
+\contentsline {subsection}{\numberline {3.16.1}UC11.5: Creazione utente autorizzato}{34}{subsection.3.16.1}% 
+\contentsline {section}{\numberline {3.17}UC13: Gestione clienti}{35}{section.3.17}% 
+\contentsline {section}{\numberline {3.18}UC14: Gestione spedizioni}{35}{section.3.18}% 
+\contentsline {section}{\numberline {3.19}UC16: Invio di una richiesta invalida}{36}{section.3.19}% 
+\contentsline {chapter}{\numberline {4}Progettazione}{37}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Conclusion}{39}{chapter.5}% 
+\contentsline {chapter}{Bibliografia}{41}{chapter.5}% 
+\contentsline {chapter}{Ringraziamenti}{41}{section*.35}% 
