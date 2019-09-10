@@ -94,7 +94,7 @@ Ogni \textit{model} è associato ad una tabella del database convenzionalmente a
         \begin{tabular}{|c||c|}
         \hline % linea orizzontale
         \hspace{5pt}\textbf{Active Record}\hspace{5pt} & \textbf{Database}  \\\hline\hline
-        \textit{model} & Tabella \cr\hline
+        \textit{Model} & Tabella \cr\hline
         Attributo & Colonna \cr\hline
         Istanza di un \textit{model} & Riga \cr\hline
         \textit{Association} & Relazione \cr\hline
@@ -111,10 +111,23 @@ I \textit{model} accentrano anche tutta la \textit{business logic} dell'applicat
 Il \textbf{controller} è costituito dall'insieme dei \textit{controllers} definiti con Active Controller. Active Controller è un modulo di Rails che permette di applicare il principio \ref{itm:coc} alla creazione di controller per l'applicazione. In generale un \textit{controller} riceve una richiesta \ref{itm:http}, esegue il proprio metodo corrispondente all'interazione desiderata con il \textbf{model} e usa una \textit{view} per creare un output. La corrispondenza tra ciascun \textit{endpoint}, \textit{controller} e metodo del \textit{controller} viene semplicemente specificata all'interno di uno speciale file di \textit{routing}; il resto della configurazione è trasparente allo sviluppatore. La progettazione dell'applicativo prevede un \textit{controller} per ogni attore esterno.
 
 \subsubsection{View}
-La \textbf{view} è costituita dall'insieme delle \textit{views} definite tramite la libreria Jbuilder. Jbuilder permette di definire una struttura dati \ref{itm:json} generale all'interno, che può quindi essere ``riempita'' con i dati necessari di volta in volta. Tali \textit{view} vengono utilizzate come \textit{body} delle risposte \ref{itm:http} date dal \textbf{controller} in seguito all'elaborazione di una richiesta, e contengono le informazioni richieste in un formato concordato con il destinatario.
+La \textbf{view} è costituita dall'insieme delle \textit{views} definite tramite la gemma Jbuilder. Jbuilder permette di definire una struttura dati \ref{itm:json} generale all'interno, che può quindi essere ``riempita'' con i dati necessari di volta in volta. Tali \textit{view} vengono utilizzate come \textit{body} delle risposte \ref{itm:http} date dal \textbf{controller} in seguito all'elaborazione di una richiesta, e contengono le informazioni richieste in un formato concordato con il destinatario.
+
 \section{Struttura dell'applicazione}
-% \section{Database}
-% \subsubsection{Migrations}
+L'applicazione è stata strutturata in modo da riflettere la separazione concettuale dei componenti prevista dalle scelte architetturali e rispettando le linee guida fornite da Rails. Le cartelle di maggior interesse sono le seguenti:
+\begin{itemize}
+    \item Nel percorso \textbf{\textit{root}} si trovano i file di configurazione di progetto richiesti da Rails, tra cui il \texttt{Gemfile} che specifica la versione di Ruby e le gemme richieste.
+    \item Nella cartella \textbf{\texttt{app}} risiede il cuore dell'applicativo, ovvero tutti i file integrali al suo funzionamento per quanto riguarda la logica di programmazione: i vari \textit{models}, \textit{views} e \textit{controllers}, le definizioni del sistema dei tipi di GraphQL, i file che descrivono i componenti del pannello di amministrazione, il \textit{mailer} e i servizi aggiuntivi (logger, client per \ref{itm:sns} e spedizioni, gestore dei codici OTP).
+    \item La cartella \textbf{\texttt{config}} contiene i file di configurazione dell'applicativo: di rilevanza sono il file di \textit{routing}, i file di configurazione dell'esecuzione del server, il file di definizione degli \textit{environment} di sviluppo e i file contenenti le credenziali. Questi ultimi sono crittografati automaticamente da Rails, permettendone l'accesso solo al codice in esecuzione sul server tramite un apposito metodo.
+    \item La cartella \textbf{\texttt{db}} contiene le varie \textit{migrations} con la storia delle modifiche allo schema del database e i \textit{seeds} di inizializzazione.
+    \item Infine, la cartella \textbf{\texttt{spec}} contiene i vari test di unità e di integrazione, nonché varie classi \textit{helper} di supporto all'esecuzione dei test. 
+\end{itemize}
+\vspace{-20pt}
+\subsection{Database}
+Il database dell'applicazione è un database relazionale implementato con PostgreSQL, un \ref{itm:dbms} \textit{open source} basato sul linguaggio SQL. PostgreSQL non viene mai usato direttamente dallo sviluppatore se non nella fase iniziale di configurazione; Rails permette infatti di gestire il database attraverso un \ref{itm:dsl} specializzato, che non richiede quindi di scrivere alcuna riga di codice SQL. PostgreSQL è stato configurato come \ref{itm:dbms} di default per l'applicazione Rails e il database ``vero e proprio'' viene creato, gestito e acceduto in modo trasparente allo sviluppatore, eccezion fatta per situazioni di emergenza in cui sia necessario intervenire manualmente (e.g. per ripopolare il database dopo averlo svuotato).
+\subsubsection{Migrations}
+Le \textit{migrations} sono dei file realizzati con un \ref{itm:dsl} specifico, facente parte del modulo Active Record di Rails, che contengono alterazioni allo schema del database dell'applicazione. In una \textit{migration} vengono descritte le operazioni di manipolazione dello schema che si desidera effettuare. Le \textit{migrations} vengono create attraverso una procedura di generazione automatizzata (\textit{generator}) fornita da Active Record; il nome di ognuna è costituito dal \textit{timestamp} in formato \texttt{YYYYMMDDHHMMSS} seguito da un nome descrittivo dell'operazione eseguita. Questo permette di effettuare un versionamento delle modifiche allo schema del database: con il comando \texttt{rails db:migrate} vengono eseguite tutte le \textit{migrations} in coda di esecuzione, mentre con \texttt{rails db:rollback} è possibile annullare le ultime modifiche.
+
 % \section{Models}
 % \section{Views}
 % \section{Controllers}
