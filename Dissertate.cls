@@ -81,6 +81,10 @@
 \RequirePackage{url}
 \RequirePackage{amssymb}
 \RequirePackage{mathspec}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{tabu}
 %\setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
 %\setmathrm{EB Garamond}
 \AtBeginEnvironment{tabular}{\addfontfeature{RawFeature=+tnum}}
@@ -249,19 +253,17 @@
 	\maketitle
 	\frontispiece
 	\dedicationpage
-	\abstractpage
+	% \abstractpage
 	\tableofcontents
 	\phantomsection
 	\clearpage
 
 	% figure listing - required if you have any figures
-	\addcontentsline{toc}{chapter}{Elenco delle figure}
 	\listoffigures
 	\phantomsection
 	\cleardoublepage
 
 	% table listing - required if you have any tables
-	\addcontentsline{toc}{chapter}{Elenco delle tabelle}
 	\listoftables
 	\phantomsection
 	\cleardoublepage
@@ -378,7 +380,6 @@
 
 \newcommand{\acronyms}{
 	\phantomsection
-	\addcontentsline{toc}{chapter}{Elenco degli acronimi}
 	\chapter*{Elenco degli acronimi}
 	\input{frontmatter/abbr.tex}
 }

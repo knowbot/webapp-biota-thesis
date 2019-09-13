@@ -7,58 +7,6 @@ This is some random quote to start off the chapter.
 \end{savequote}
 \chapter{Analisi dei requisiti}
 \label{sec:chap3}
-\section{Definizione dei requisiti}
-Nella seguente sezione verranno esposti in via generale i requisiti che l'applicativo realizzato doveva soddisfare. È importante notare che, data la natura agile del metodo di lavoro impiegato dall'azienda, gli obiettivi presentati nel piano di lavoto sono stati soggetti a modifiche e aggiunte di lieve e media entità; per completezza e possibilità di confronto, di seguito verranno esposti sia i requisiti iniziali che quelli elaborati a fronte dell'interazione con il cliente.
-\subsection{Notazione}
-Si farà riferimento a requisiti ed obiettivi secondo le rispettive notazioni:
-\begin{itemize}
-    \item \textbf{O} indica un requisito obbligatorio, vincolante in quanto obiettivo primario richiesto dal committente.
-    \item \textbf{D} indica un requisito desiderabile, non vincolante o strettamente necessario, ma dal riconoscibile valore aggiunto.
-    \item \textbf{F} indica un requisito facoltativo, rappresentante un valore aggiunto non necessariamente competitivo.
-\end{itemize}
-\subsection{Piano di lavoro}
-Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziendale nella settimana precedente all'inizio dello stage, espone una serie di requisiti emersi dalle esigenze del cliente emerse in fase di avvio del progetto.
-\subsubsection{Requisiti}
-\paragraph{Obbligatori}
-\begin{itemize}
-    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
-    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
-\end{itemize}
-\vspace{-15pt}
-\paragraph{Desiderabili}
-\begin{itemize}
-    \item \underline{D01}: Analisi ed implementazione di test dei sistemi di pagamento e fatturazione
-    \item \underline{D02}: Suite di testing del software prodotto
-    \item \underline{D03}: Documentazione completa
-\end{itemize}
-\vspace{-15pt}
-\paragraph{Facoltativi}
-\begin{itemize}
-    \item \underline{F01}: Ulteriori modifiche all’applicazione che esulano da quando riportato nel piano di lavoro
-\end{itemize}
-\subsection{Modifiche al piano}
-Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da parte del tutor aziendale, ci sono state varie interazioni con il cliente che hanno portato a ridefinire alcuni requisiti desiderabili e a specificare in modo più preciso i requisiti facoltativi. Tali modifiche sono sempre state fatte in accordo alle possibilità di soddisfazione entro i tempi previsti, e tenendo in mente che la piattaforma sarebbe entrata in produzione al completamento delle funzionalità per l'esecuzione flusso di attività base.
-\subsubsection{Requisiti rivisti}
-\paragraph{Obbligatori}
-\begin{itemize}
-    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
-    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
-    \item \underline{O03}: Implementazione delle strutture per il questionario
-\end{itemize}
-\vspace{-15pt}
-\paragraph{Desiderabili}
-\begin{itemize}
-    \item \underline{D01}: Generazione PDF con informazioni specifiche
-    \item \underline{D02}: Suite di testing del software prodotto
-    \item \underline{D03}: Documentazione completa
-    \item \underline{D04}: Registrazione del consenso al trattamento dei dati
-\end{itemize}
-\vspace{-15pt}
-\paragraph{Facoltativi}
-\begin{itemize}
-    \item \underline{F01}: Autenticazione mediante HMAC
-    \item \underline{F02}: Ulteriori modifiche all’applicazione
-\end{itemize}
 \section{Casi d'uso}
 \label{sec:usecase}
 Di seguito verranno descritti i casi d'uso dell'applicazione, per quanto riguarda le funzionalità da me progettate; non verranno quindi tenute in considerazione eventuali funzionalità pre-esistenti che fossero parte dell'ecosistema a cui appartiene la piattaforma.
@@ -68,14 +16,15 @@ I casi d'uso verranno inoltre considerati per quanto concerne il \textit{back en
 I casi d'uso verranno descritti mediante dei diagrammi \ref{itm:uml} che rappresentano le possibili interazioni tra gli \textbf{attori} ed il \textbf{sistema} dal punto di vista dei primi. È importante notare che il sistema, ovvero il \textit{back end} sviluppato, non viene utilizzato direttamente dagli utenti finali ma risponde a richieste di servizi esterni come il \textit{front end} (con l'eccezione degli utenti amministrativi, a cui viene fornita un'interfaccia di interazione ad-hoc): i casi d'uso verranno dunque trattati di conseguenza.
 
 Di seguito verranno elencati solo i casi d'uso principali; per quelli secondari consultare l'\hyperref[sec:AppendixA]{appendice A}.
-\subsection{Attori}
+\subsection{Organizzazione dei casi d'uso}
+\subsubsection{Attori}
 \begin{itemize}
     \item \textbf{Utente non autenticato}: un utente che deve effettuare l'autenticazione per accedere alle funzionalità disponibili al suo ruolo;
     \item \textbf{Amministratore}: un utente autenticato con privilegi di accesso al pannello amministrativo.
     \item \textbf{Front end}: una istanza del \textit{front end} della piattaforma;
     \item \textbf{Gestionale laboratorio}: il software gestionale del laboratorio;
 \end{itemize}
-\subsection{Struttura}
+\subsubsection{Struttura}
 Per ogni caso d'uso, identificato da un codice univoco, vengono specificati gli attori coinvolti, lo scopo da raggiungere, le azioni previste e le condizioni del sistema prima e dopo tali azioni. I casi d'uso verranno descritti dalla seguente struttura:
 \begin{itemize}
     \item Codice identificativo: \textbf{UC \{codice\_padre\}.\{codice\_figlio\}}
@@ -97,11 +46,11 @@ Per ogni caso d'uso, identificato da un codice univoco, vengono specificati gli 
     \item Inclusioni (se presenti)
     \item Estensioni (se presenti)
 \end{itemize}
-\subsection{Casi d'uso generali}
+\subsubsection{Casi d'uso generali}
 Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto simili (principalmente quelle che possono essere richieste da un utente autenticato con un determinato ruolo) saranno raggruppate in dei casi d'uso di alto livello, d'ora in poi ``casi d'uso generali", identificati dalla lettera \textbf{G} prefissa al loro codice numerico. Tali casi d'uso servono solo per una miglior comprensione, quindi il loro codice non verrà considerato come \textbf{codice\_padre} nell'identificazione dei casi d'uso raggruppati.
 
 \setlength{\parindent}{0cm}
-\section{UC1: Autenticazione amministratore}
+\subsection{UC1: Autenticazione amministratore}
 \label{sec:uc1}
 \textsc{\textsc{\textbf{Attori:}}} Utente non autenticato.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione al pannello di amministrazione.\\
@@ -115,7 +64,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \textsc{\textbf{Postcondizioni:}} L'attore viene autenticato dal sistema e ha accesso al pannello di amministrazione.\\
 \textsc{\textbf{Estensioni:}} L'attore non viene autenticato e visualizza un messaggio di errore (\hyperref[sec:uc2]UC2{}).
 
-\section{UC2: Errore autenticazione amministratore}
+\subsection{UC2: Errore autenticazione amministratore}
 \label{sec:uc2}
 \textsc{\textbf{Attori:}} Utente non autenticato.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione al pannello di amministrazione.\\
@@ -127,7 +76,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore non viene autenticato dal sistema e rimane nella pagina di autenticazione.
 
-\section{UC3: Autenticazione front end}
+\subsection{UC3: Autenticazione front end}
 \label{sec:uc3}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
@@ -136,7 +85,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \textsc{\textbf{Postcondizioni:}} L'utente specificato dall'attore viene autenticato, e l'attore ha ricevuto in risposta i parametri della relativa sessione attiva.\\
 \textsc{\textbf{Estensioni:}}  L'utente specificato dall'attore non viene riconosciuto, e l'attore ha ricevuto in risposta un messaggio di errore che lo informa che le credenziali non sono corrette (\hyperref[sec:UC5]{UC5}).
 
-\section{UC4: Reset password per accesso alla piattaforma}
+\subsection{UC4: Reset password per accesso alla piattaforma}
 \label{sec:uc4}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di reset della password per un utente della piattaforma.\\
@@ -144,7 +93,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di reset della password di accesso di un utente autorizzato.\\
 \textsc{\textbf{Postcondizioni:}} È stata generata ed inviata all'utente una nuova password,e l'attore ha ricevuto una risposta di conferma del successo dell'operazione.
 
-\section{UC5: Errore di autenticazione front end}
+\subsection{UC5: Errore di autenticazione front end}
 \label{sec:UC5}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
@@ -156,7 +105,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'utente specificato dall'attore non viene riconosciuto e non ha ricevuto i dati di una sessione valida.
 
-\section{UC G1: Operazioni amministrative}
+\subsection{UCG1: Operazioni amministrative}
 \label{sec:ucg1}
 Questo caso d'uso generale riassume le operazioni disponibili ad un utente autorizzato che abbia eseguito l'accesso al pannello di amministrazione. La maggior parte delle operazioni sui record sono identiche tra loro, e verranno quindi riportate in modo generalizzato; eventuali operazioni specifiche verranno contestualizzate nel proprio caso d'uso.
 \textsc{\textbf{Attori:}} Amministratore.\\
@@ -170,7 +119,7 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\section{UC6: Gestione categoria di record}
+\subsubsection{UC6: Gestione categoria di record}
 \label{sec:UC6}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire una particolare categoria di record.\\
@@ -190,7 +139,7 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione della categoria di record selezionata con successo.
 
-\section{UC7: Visualizzazione dashboard}
+\subsubsection{UC7: Visualizzazione dashboard}
 \label{sec:UC7}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare la \textit{dashboard} del pannello di amministrazione.\\
@@ -198,7 +147,7 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \textsc{\textbf{Scenario principale:}} L'attore seleziona la scheda ``Dashboard".\\
 \textsc{\textbf{Postcondizioni:}} L'attore viene reindirizzato alla pagina della \textit{dashboard}.
 
-\section{UC8: Gestione profilo}
+\subsubsection{UC8: Gestione profilo}
 \label{sec:UC8}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire il proprio profilo utente.\\
@@ -210,7 +159,7 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha gestito correttamente il proprio profilo.
 
-\section{UC9: Disconnessione}
+\subsubsection{UC9: Disconnessione}
 \label{sec:UC9}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole disconnettersi dal pannello di amministrazione.\\
@@ -218,7 +167,7 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \textsc{\textbf{Scenario principale:}} L'attore clicca sull'icona di disconnessione.\\
 \textsc{\textbf{Postcondizioni:}} L'attore viene correttamente disconnesso dal pannello di amministrazione.
 
-\section{UCG2: Operazioni per utente ``pharmacy''}
+\subsection{UCG2: Operazioni per utente ``pharmacy''}
 \label{sec:UCG2}
 Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``pharmacy''. Come anticipato, le operazioni vengono considerate non dal punto di vista dell'utente finale della piattaforma, cioè il farmacista o cliente che si interfaccia con il \textit{front end}, ma come richieste che l'istanza di \textit{front end} può effettuare alle \ref{itm:api} del servizio \textit{back end}. Non verranno, per questo motivo, quindi fatte distinzioni tra interazioni che verrebbero effettuate da un farmacista o da un cliente. Infine, va considerato implicito che ognuna delle seguenti operazioni è ristretta ai record del database resi visibili dalla sessione attiva (nella fattispecie i record associati alla farmacia a cui appartiene l'utente autenticato).\\
 \textsc{\textbf{Attori:}} Front end.\\
@@ -236,7 +185,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\section{UC10: Aggiornamento dati della farmacia}
+\subsubsection{UC10: Aggiornamento dati della farmacia}
 \label{sec:UC10}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati della farmacia corrente.\\
@@ -244,7 +193,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di aggiornamento del record della farmacia con i nuovi dati, potenzialmente allegando un'immagine da sostituire al logo corrente.\\
 \textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.
 
-\section{UC11: Gestione utenti}
+\subsubsection{UC11: Gestione utenti}
 \label{sec:UC11}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti con ruolo ``pharmacy'' appartenenti alla farmacia corrente.\\
@@ -261,7 +210,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.
 
-\section{UC12: Gestione esami}
+\subsubsection{UC12: Gestione esami}
 \label{sec:UC11}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti con ruolo ``pharmacy'' appartenenti alla farmacia corrente.\\
@@ -279,7 +228,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.
 
-\section{UC13: Gestione clienti}
+\subsubsection{UC13: Gestione clienti}
 \label{sec:UC13}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire i clienti appartenenti alla farmacia corrente.\\
@@ -297,7 +246,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione dei clienti.
 
-\section{UC14: Gestione spedizioni}
+\subsubsection{UC14: Gestione spedizioni}
 \label{sec:UC14}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire le spedizioni per la farmacia corrente.\\
@@ -314,7 +263,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione delle spedizioni.
 
-\section{UC15: Generazione referto specifico}
+\subsubsection{UC15: Generazione referto specifico}
 \label{sec:UC15}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare il referto di un esame, completo delle informazioni specifiche risultate dall'analisi e delle informazioni personali del cliente.\\
@@ -328,7 +277,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha visualizzato correttamente il referto specifico.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC16: Invio di una richiesta invalida}
+\subsubsection{UC16: Invio di una richiesta invalida}
 \label{sec:UC16}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inviare una richiesta al sistema.\\
@@ -340,7 +289,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} La richiesta dell'attore viene rifiutata e l'attore ha ricevuto un messaggio di errore appropriato.
 
-\section{UC17: Superamento tentativi di invio del codice OTP}
+\subsubsection{UC17: Superamento tentativi di invio del codice OTP}
 \label{sec:UC17}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inviare il codice per l'accettazione della privacy policy ad un cliente della farmacia corrente.\\
@@ -352,7 +301,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} La richiesta dell'attore viene rifiutata e l'attore ha ricevuto un messaggio di errore appropriato.
 
-\section{UC18: Disconnessione dalla piattaforma}
+\subsubsection{UC18: Disconnessione dalla piattaforma}
 \label{sec:UC18}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole disconnettersi dalla piattaforma.\\
@@ -364,7 +313,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore viene disconnesso correttamente e il sistema non accetta più richieste con i parametri della sessione invalidata.
 
-\section{UCG3: Operazioni per utente ``gastroenterologist''}
+\subsection{UCG3: Operazioni per utente ``gastroenterologist''}
 \label{sec:UCG3}
 Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``gastroenterologist''. Valgono le stesse considerazioni fatte per \hyperref[sec:UCG2]{UCG2}, con l'eccezione dei record disponibili: nella descrizione dei seguenti casi d'uso le operazioni non sono ristrette ai record associati ad una farmacia, ma escludono rigorosamente i dati personali dei clienti.\\
 \textsc{\textbf{Attori:}} Front end.\\
@@ -380,7 +329,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\section{UC19: Richiesta lista esami in attesa di diagnosi}
+\subsubsection{UC19: Richiesta lista esami in attesa di diagnosi}
 \label{sec:UC19}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli esami per cui è disponibile il referto delle analisi e sono quindi in attesa di diagnosi.\\
@@ -389,7 +338,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC20: Richiesta informazioni per un esame in attesa di diagnosi}
+\subsubsection{UC20: Richiesta informazioni per un esame in attesa di diagnosi}
 \label{sec:UC20}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame  per cui è disponibile il referto delle analisi ed è quindi in attesa di diagnosi.\\
@@ -398,7 +347,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC21: Inserimento diagnosi per un esame}
+\subsubsection{UC21: Inserimento diagnosi per un esame}
 \label{sec:UC21}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire una diagnosi per un esame.\\
@@ -407,7 +356,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato correttamente la diagnosi e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC22: Inserimento della tabella della dieta}
+\subsubsection{UC22: Inserimento della tabella della dieta}
 \label{sec:UC22}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire la tabella della dieta associata ad un esame.\\
@@ -416,7 +365,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato correttamente la tabella della dieta e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UCG4: Operazioni per utente ``bmr''}
+\subsection{UCG4: Operazioni per utente ``bmr''}
 \label{sec:UCG4}
 Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``bmr'' (supervisore del laboratorio). Valgono le stesse considerazioni fatte per \hyperref[sec:UCG3]{UCG3}.
 \textsc{\textbf{Attori:}} Front end.\\
@@ -432,7 +381,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\section{UC23: Richiesta lista esami con diagnosi}
+\subsubsection{UC23: Richiesta lista esami con diagnosi}
 \label{sec:UC23}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli esami per cui è stata emessa una diagnosi.\\
@@ -441,7 +390,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC24: Richiesta informazioni esame per cui è stata emessa una diagnosi}
+\subsubsection{UC24: Richiesta informazioni esame per cui è stata emessa una diagnosi}
 \label{sec:UC24}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame per cui è stata emessa una diagnosi.\\
@@ -450,7 +399,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC25: Aggiornamento diagnosi per un esame}
+\subsubsection{UC25: Aggiornamento diagnosi per un esame}
 \label{sec:UC25}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare la diagnosi emessa per un esame.\\
@@ -459,7 +408,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente la diagnosi e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UC26: Aggiornamento tabella della dieta}
+\subsubsection{UC26: Aggiornamento tabella della dieta}
 \label{sec:UC26}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare la tabella della dieta associata ad un esame.\\
@@ -468,7 +417,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente la tabella della dieta e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\section{UCG5: Operazioni per il gestionale del laboratorio}
+\subsection{UCG5: Operazioni per il gestionale del laboratorio}
 \label{sec:UCG5}
 Questo caso d'uso generale riassume le operazioni disponibili al software gestionale del laboratorio attraverso gli appositi \textit{endpoint} \ref{itm:http}. Si prevede che le richieste \ref{itm:http} contengano, nella sezione \textit{header}, le credenziali necessarie per l'autenticazione tramite HMAC.\\ 
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
@@ -483,7 +432,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\section{UC27: Richiesta lista esami con campione}
+\subsubsection{UC27: Richiesta lista esami con campione}
 \label{sec:UC27}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli esami il cui campione è stato raccolto, compresi quelli il cui iter di avanzamento è stato completato.\\
@@ -491,7 +440,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
 \textsc{\textbf{Scenario principale:}}  L'attore invia la richiesta \ref{itm:http} di sincronizzazione della lista degli esami all'\textit{endpoint} appropriato.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta contenente i dati richiesti in formato \ref{itm:json}.
 
-\section{UC28: Aggiornamento stato di avanzamento di un esame}
+\subsubsection{UC28: Aggiornamento stato di avanzamento di un esame}
 \label{sec:UC28}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare lo stato di avanzamento di un esame ad uno di quello disponibili.\\
@@ -499,7 +448,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
 \textsc{\textbf{Scenario principale:}}  L'attore invia la richiesta \ref{itm:http} corretta per il nuovo stato dell'esame all'\textit{endpoint} appropriato, specificando il codice campione a cui l'esame è associato.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta che conferma il successo dell'operazione.
 
-\section{UC29: Rifiuto di un campione}
+\subsubsection{UC29: Rifiuto di un campione}
 \label{sec:UC29}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole segnalare che il campione per un determinato esame è stato rifiutato.\\
@@ -511,7 +460,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente l'esame e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.
 
-\section{UC30: Caricamento referto delle analisi}
+\subsubsection{UC30: Caricamento referto delle analisi}
 \label{sec:UC30}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole caricare il referto delle analisi per un esame, assieme ad eventuali appunti sul referto.\\

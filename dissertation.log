@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  10 SEP 2019 13:16
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  13 SEP 2019 15:57
 entering extended mode
 **c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
 (c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
@@ -529,6 +529,78 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \c@eu@i=\count279
 \c@mkern=\count280
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box49
+\extrarowheight=\dimen173
+\NC@list=\toks23
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box50
+)
+\TX@col@width=\dimen174
+\TX@old@table=\dimen175
+\TX@old@col=\dimen176
+\TX@target=\dimen177
+\TX@delta=\dimen178
+\TX@cols=\count281
+\TX@ftn=\toks24
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip66
+\LTright=\skip67
+\LTpre=\skip68
+\LTpost=\skip69
+\LTchunksize=\count282
+\LTcapwidth=\dimen179
+\LT@head=\box51
+\LT@firsthead=\box52
+\LT@foot=\box53
+\LT@lastfoot=\box54
+\LT@cols=\count283
+\LT@rows=\count284
+\c@LT@tables=\count285
+\c@LT@chunks=\count286
+\LT@p@ftn=\toks25
+)
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/tabu\tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box55
+\sift@deathcycles=\count287
+\@vwid@loff=\dimen180
+\@vwid@roff=\dimen181
+)
+\c@taburow=\count288
+\tabu@nbcols=\count289
+\tabu@cnt=\count290
+\tabu@Xcol=\count291
+\tabu@alloc=\count292
+\tabu@nested=\count293
+\tabu@target=\dimen182
+\tabu@spreadtarget=\dimen183
+\tabu@naturalX=\dimen184
+\tabucolX=\dimen185
+\tabu@Xsum=\dimen186
+\extrarowdepth=\dimen187
+\abovetabulinesep=\dimen188
+\belowtabulinesep=\dimen189
+\tabustrutrule=\dimen190
+\tabu@thebody=\toks26
+\tabu@footnotes=\toks27
+\tabu@box=\box56
+\tabu@arstrutbox=\box57
+\tabu@hleads=\box58
+\tabu@vleads=\box59
+\tabu@cellskip=\skip70
+)
 
 Package fontspec Info: Font family 'EBGaramond(0)' created for font 'EB
 (fontspec)             Garamond' with options
@@ -566,9 +638,9 @@ ping=tex-text;"
 (fontspec)             Garamond/BI/OT:script=latn;language=DFLT;+onum;+liga;+sm
 cp;mapping=tex-text;"
 
-LaTeX Info: Redefining \rmfamily on input line 90.
+LaTeX Info: Redefining \rmfamily on input line 94.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 90.
+(Font)              scaled to size 12.0pt on input line 94.
 
 Package fontspec Info: Font family 'EBGaramond(1)' created for font 'EB
 (fontspec)             Garamond' with options [RawFeature={+c2sc,+scmp}].
@@ -640,7 +712,7 @@ Package fontspec Info: Font family 'LatoRegular(0)' created for font 'Lato
 (fontspec)             Bold/I/OT:script=latn;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \sffamily on input line 92.
+LaTeX Info: Redefining \sffamily on input line 96.
 
 Package fontspec Info: Source Code Pro scale = 0.8541671633725133.
 
@@ -694,7 +766,7 @@ Space,Scale=MatchLowercase].
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-LaTeX Info: Redefining \ttfamily on input line 93.
+LaTeX Info: Redefining \ttfamily on input line 97.
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
@@ -702,31 +774,35 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen172
-\captionmargin@=\dimen173
-\captionwidth=\dimen174
-\caption@tempdima=\dimen175
-\caption@indent=\dimen176
-\caption@parindent=\dimen177
-\caption@hangindent=\dimen178
+\captionmargin=\dimen191
+\captionmargin@=\dimen192
+\captionwidth=\dimen193
+\caption@tempdima=\dimen194
+\caption@indent=\dimen195
+\caption@parindent=\dimen196
+\caption@hangindent=\dimen197
 )
 Package caption Info: We need package `newfloat' on input line 289.
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\newfloat.sty
 Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
 )
-\c@caption@flags=\count281
-\c@ContinuedFloat=\count282
+\c@caption@flags=\count294
+\c@ContinuedFloat=\count295
 Package caption Info: hyperref package is loaded.
-)
+Package caption Info: longtable package is loaded.
+
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype.sty
 Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
-\MT@toks=\toks23
-\MT@count=\count283
+\MT@toks=\toks28
+\MT@count=\count296
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen179
+\MT@outer@kern=\dimen198
 LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
-\MT@listname@count=\count284
+\MT@listname@count=\count297
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype-xetex.
 def
@@ -743,15 +819,15 @@ File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon.tex
-\pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen180
-\pgfutil@tempdimb=\dimen181
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen199
+\pgfutil@tempdimb=\dimen256
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon-lists.tex))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-la
 tex.def
-\pgfutil@abb=\box49
+\pgfutil@abb=\box60
  (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -772,33 +848,33 @@ Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.co
 de.tex
-\pgfkeys@pathtoks=\toks25
-\pgfkeys@temptoks=\toks26
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfil
 tered.code.tex
-\pgfkeys@tmptoks=\toks27
+\pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen182
-\pgf@y=\dimen183
-\pgf@xa=\dimen184
-\pgf@ya=\dimen185
-\pgf@xb=\dimen186
-\pgf@yb=\dimen187
-\pgf@xc=\dimen188
-\pgf@yc=\dimen189
-\pgf@xd=\dimen190
-\pgf@yd=\dimen191
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count285
-\c@pgf@countb=\count286
-\c@pgf@countc=\count287
-\c@pgf@countd=\count288
-\t@pgf@toka=\toks28
-\t@pgf@tokb=\toks29
-\t@pgf@tokc=\toks30
-\pgf@sys@id@count=\count289
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count302
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
@@ -817,13 +893,13 @@ File: pgfsys-dvipdfmx.def 2019/08/03 v3.1.4b (3.1.4b)
 ommon-pdf.def
 File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
 )
-\pgfsys@objnum=\count290
+\pgfsys@objnum=\count303
 )))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfsyssoftpath@smallbuffer@items=\count291
-\pgfsyssoftpath@bigbuffer@items=\count292
+\pgfsyssoftpath@smallbuffer@items=\count304
+\pgfsyssoftpath@bigbuffer@items=\count305
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspr
 otocol.code.tex
@@ -841,12 +917,12 @@ e.tex
 e.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.c
 ode.tex
-\pgfmath@dimen=\dimen192
-\pgfmath@count=\count293
-\pgfmath@box=\box50
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
+\pgfmath@dimen=\dimen267
+\pgfmath@count=\count306
+\pgfmath@box=\box61
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunction
 s.code.tex
@@ -868,59 +944,59 @@ s.misc.code.tex)
 s.integerarithmetics.code.tex)))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count294
+\c@pgfmathroundto@lastzeros=\count307
 ))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepo
 ints.code.tex
 File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@picminx=\dimen193
-\pgf@picmaxx=\dimen194
-\pgf@picminy=\dimen195
-\pgf@picmaxy=\dimen196
-\pgf@pathminx=\dimen197
-\pgf@pathmaxx=\dimen198
-\pgf@pathminy=\dimen199
-\pgf@pathmaxy=\dimen256
-\pgf@xx=\dimen257
-\pgf@xy=\dimen258
-\pgf@yx=\dimen259
-\pgf@yy=\dimen260
-\pgf@zx=\dimen261
-\pgf@zy=\dimen262
+\pgf@picminx=\dimen268
+\pgf@picmaxx=\dimen269
+\pgf@picminy=\dimen270
+\pgf@picmaxy=\dimen271
+\pgf@pathminx=\dimen272
+\pgf@pathmaxx=\dimen273
+\pgf@pathminy=\dimen274
+\pgf@pathmaxy=\dimen275
+\pgf@xx=\dimen276
+\pgf@xy=\dimen277
+\pgf@yx=\dimen278
+\pgf@yy=\dimen279
+\pgf@zx=\dimen280
+\pgf@zy=\dimen281
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@path@lastx=\dimen263
-\pgf@path@lasty=\dimen264
+\pgf@path@lastx=\dimen282
+\pgf@path@lasty=\dimen283
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thusage.code.tex
 File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@shorten@end@additional=\dimen265
-\pgf@shorten@start@additional=\dimen266
+\pgf@shorten@end@additional=\dimen284
+\pgf@shorten@start@additional=\dimen285
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresc
 opes.code.tex
 File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfpic=\box51
-\pgf@hbox=\box52
-\pgf@layerbox@main=\box53
-\pgf@picture@serial@count=\count295
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count308
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregr
 aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgflinewidth=\dimen267
+\pgflinewidth=\dimen286
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretr
 ansformations.code.tex
 File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@pt@x=\dimen268
-\pgf@pt@y=\dimen269
-\pgf@pt@temp=\dimen270
+\pgf@pt@x=\dimen287
+\pgf@pt@y=\dimen288
+\pgf@pt@temp=\dimen289
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequ
 ick.code.tex
@@ -937,14 +1013,14 @@ File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorear
 rows.code.tex
 File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowsep=\dimen271
+\pgfarrowsep=\dimen290
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresh
 ade.code.tex
 File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@max=\dimen272
-\pgf@sys@shading@range@num=\count296
-\pgf@shadingcount=\count297
+\pgf@max=\dimen291
+\pgf@sys@shading@range@num=\count309
+\pgf@shadingcount=\count310
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreim
 age.code.tex
@@ -953,7 +1029,7 @@ File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreex
 ternal.code.tex
 File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfexternal@startupbox=\box54
+\pgfexternal@startupbox=\box65
 ))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorela
 yers.code.tex
@@ -974,7 +1050,7 @@ File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulesha
 pes.code.tex
 File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfnodeparttextbox=\box55
+\pgfnodeparttextbox=\box66
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleplo
 t.code.tex
@@ -983,8 +1059,8 @@ File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-0-65.sty
 Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@nodesepstart=\dimen273
-\pgf@nodesepend=\dimen274
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-1-18.sty
@@ -1003,10 +1079,10 @@ Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.te
 x)
-\pgffor@iter=\dimen275
-\pgffor@skip=\dimen276
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 ))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\t
 ikz.code.tex
@@ -1015,34 +1091,34 @@ Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@plot@mark@count=\count298
-\pgfplotmarksize=\dimen277
+\pgf@plot@mark@count=\count311
+\pgfplotmarksize=\dimen296
 )
-\tikz@lastx=\dimen278
-\tikz@lasty=\dimen279
-\tikz@lastxsaved=\dimen280
-\tikz@lastysaved=\dimen281
-\tikz@lastmovetox=\dimen282
-\tikz@lastmovetoy=\dimen283
-\tikzleveldistance=\dimen284
-\tikzsiblingdistance=\dimen285
-\tikz@figbox=\box56
-\tikz@figbox@bg=\box57
-\tikz@tempbox=\box58
-\tikz@tempbox@bg=\box59
-\tikztreelevel=\count299
-\tikznumberofchildren=\count300
-\tikznumberofcurrentchild=\count301
-\tikz@fig@count=\count302
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count312
+\tikznumberofchildren=\count313
+\tikznumberofcurrentchild=\count314
+\tikz@fig@count=\count315
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfmatrixcurrentrow=\count303
-\pgfmatrixcurrentcolumn=\count304
-\pgf@matrix@numberofcolumns=\count305
+\pgfmatrixcurrentrow=\count316
+\pgfmatrixcurrentcolumn=\count317
+\pgf@matrix@numberofcolumns=\count318
 )
-\tikz@expandcount=\count306
+\tikz@expandcount=\count319
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarytopaths.code.tex
@@ -1057,12 +1133,12 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 ex
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots\pgfplotscore.co
 de.tex
-\t@pgfplots@toka=\toks36
-\t@pgfplots@tokb=\toks37
-\t@pgfplots@tokc=\toks38
-\pgfplots@tmpa=\dimen286
-\c@pgfplots@coordindex=\count307
-\c@pgfplots@scanlineindex=\count308
+\t@pgfplots@toka=\toks41
+\t@pgfplots@tokb=\toks42
+\t@pgfplots@tokc=\toks43
+\pgfplots@tmpa=\dimen305
+\c@pgfplots@coordindex=\count320
+\c@pgfplots@scanlineindex=\count321
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgfplotssys
 generic.code.tex))
@@ -1080,14 +1156,14 @@ gfplotsliststructure.code.tex)
 gfplotsliststructureext.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
 gfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count309
+\c@pgfplotsarray@tmp=\count322
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
 gfplotsmatrix.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/numtable\pgfplo
 tstableshared.code.tex
-\c@pgfplotstable@counta=\count310
-\t@pgfplotstable@a=\toks39
+\c@pgfplotstable@counta=\count323
+\t@pgfplotstable@a=\toks44
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
 gfplotsdeque.code.tex)
@@ -1099,13 +1175,13 @@ nary.data.code.tex))
 il.verb.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/libs\pgflibrary
 pgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count311
+\c@pgfplotslibrarysurf@no=\count324
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgflibraryp
 gfplots.surfshading.pgfsys-xetex.def
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgflibraryp
 gfplots.surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count312
+\c@pgfplotslibrarysurf@streamlen=\count325
 ))))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/util\pgfplotsco
 lormap.code.tex
@@ -1135,16 +1211,16 @@ code.tex)
 ibraries\tikzlibrarydecorations.code.tex
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduledec
 orations.code.tex
-\pgfdecoratedcompleteddistance=\dimen287
-\pgfdecoratedremainingdistance=\dimen288
-\pgfdecoratedinputsegmentcompleteddistance=\dimen289
-\pgfdecoratedinputsegmentremainingdistance=\dimen290
-\pgf@decorate@distancetomove=\dimen291
-\pgf@decorate@repeatstate=\count313
-\pgfdecorationsegmentamplitude=\dimen292
-\pgfdecorationsegmentlength=\dimen293
+\pgfdecoratedcompleteddistance=\dimen306
+\pgfdecoratedremainingdistance=\dimen307
+\pgfdecoratedinputsegmentcompleteddistance=\dimen308
+\pgfdecoratedinputsegmentremainingdistance=\dimen309
+\pgf@decorate@distancetomove=\dimen310
+\pgf@decorate@repeatstate=\count326
+\pgfdecorationsegmentamplitude=\dimen311
+\pgfdecorationsegmentlength=\dimen312
 )
-\tikz@lib@dec@box=\box60
+\tikz@lib@dec@box=\box71
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -1154,13 +1230,13 @@ s\pgflibrarydecorations.pathmorphing.code.tex))
 ibraries\tikzlibrarydecorations.pathreplacing.code.tex
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/decoration
 s\pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count314
-\pgfplots@xmin@reg=\dimen294
-\pgfplots@xmax@reg=\dimen295
-\pgfplots@ymin@reg=\dimen296
-\pgfplots@ymax@reg=\dimen297
-\pgfplots@zmin@reg=\dimen298
-\pgfplots@zmax@reg=\dimen299
+\pgfplots@numplots=\count327
+\pgfplots@xmin@reg=\dimen313
+\pgfplots@xmax@reg=\dimen314
+\pgfplots@ymin@reg=\dimen315
+\pgfplots@ymax@reg=\dimen316
+\pgfplots@zmin@reg=\dimen317
+\pgfplots@zmax@reg=\dimen318
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibraryplotmarks.code.tex
@@ -1170,40 +1246,40 @@ File: tikzlibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 plotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 )))
-\fheight=\skip64
-\fwidth=\skip65
+\fheight=\skip71
+\fwidth=\skip72
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen300
-\lightrulewidth=\dimen301
-\cmidrulewidth=\dimen302
-\belowrulesep=\dimen303
-\belowbottomsep=\dimen304
-\aboverulesep=\dimen305
-\abovetopsep=\dimen306
-\cmidrulesep=\dimen307
-\cmidrulekern=\dimen308
-\defaultaddspace=\dimen309
-\@cmidla=\count315
-\@cmidlb=\count316
-\@aboverulesep=\dimen310
-\@belowrulesep=\dimen311
-\@thisruleclass=\count317
-\@lastruleclass=\count318
-\@thisrulewidth=\dimen312
+\heavyrulewidth=\dimen319
+\lightrulewidth=\dimen320
+\cmidrulewidth=\dimen321
+\belowrulesep=\dimen322
+\belowbottomsep=\dimen323
+\aboverulesep=\dimen324
+\abovetopsep=\dimen325
+\cmidrulesep=\dimen326
+\cmidrulekern=\dimen327
+\defaultaddspace=\dimen328
+\@cmidla=\count328
+\@cmidlb=\count329
+\@aboverulesep=\dimen329
+\@belowrulesep=\dimen330
+\@thisruleclass=\count330
+\@lastruleclass=\count331
+\@thisrulewidth=\dimen331
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip66
-\multirow@cntb=\count319
-\multirow@dima=\skip67
-\bigstrutjot=\dimen313
+\multirow@colwidth=\skip73
+\multirow@cntb=\count332
+\multirow@dima=\skip74
+\bigstrutjot=\dimen332
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\subcaption.sty
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count320
-\c@subtable=\count321
+\c@subfigure=\count333
+\c@subtable=\count334
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarypatterns.code.tex
@@ -1216,8 +1292,8 @@ File: pgflibrarypatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@layerbox@background=\box61
-\pgf@layerboxsaved@background=\box62
+\pgf@layerbox@background=\box72
+\pgf@layerboxsaved@background=\box73
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarycalc.code.tex
@@ -1225,28 +1301,17 @@ File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\afterpage.sty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks40
-\AP@partial=\box63
-\AP@footins=\box64
+\AP@output=\toks45
+\AP@partial=\box74
+\AP@footins=\box75
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/tabulary\tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen314
-\ar@mcellbox=\box65
-\extrarowheight=\dimen315
-\NC@list=\toks41
-\extratabsurround=\skip68
-\backup@length=\skip69
-\ar@cellbox=\box66
-)
-\TY@count=\count322
-\TY@linewidth=\dimen316
-\tymin=\dimen317
-\tymax=\dimen318
-\TY@tablewidth=\dimen319
+\TY@count=\count335
+\TY@linewidth=\dimen333
+\tymin=\dimen334
+\tymax=\dimen335
+\TY@tablewidth=\dimen336
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xr.sty"
 Package: xr 2019/01/05 v5.04 eXternal References (DPC)
@@ -1258,17 +1323,17 @@ nment
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count323
-\float@exts=\toks42
-\float@box=\box67
-\@float@everytoks=\toks43
-\@floatcapt=\box68
+\c@float@type=\count336
+\float@exts=\toks46
+\float@box=\box76
+\@float@everytoks=\toks47
+\@floatcapt=\box77
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks44
-\c@algorithm=\count324
+\@float@every@algorithm=\toks48
+\c@algorithm=\count337
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithmicx\algpseudocode
 .sty
@@ -1279,16 +1344,16 @@ sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count325
-\c@ALG@rem=\count326
-\c@ALG@nested=\count327
-\ALG@tlm=\skip70
-\ALG@thistlm=\skip71
-\c@ALG@Lnr=\count328
-\c@ALG@blocknr=\count329
-\c@ALG@storecount=\count330
-\c@ALG@tmpcounter=\count331
-\ALG@tmplength=\skip72
+\c@ALG@line=\count338
+\c@ALG@rem=\count339
+\c@ALG@nested=\count340
+\ALG@tlm=\skip75
+\ALG@thistlm=\skip76
+\c@ALG@Lnr=\count341
+\c@ALG@blocknr=\count342
+\c@ALG@storecount=\count343
+\c@ALG@tmpcounter=\count344
+\ALG@tmplength=\skip77
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
@@ -1297,101 +1362,104 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip73
-\f@nch@O@elh=\skip74
-\f@nch@O@erh=\skip75
-\f@nch@O@olh=\skip76
-\f@nch@O@orh=\skip77
-\f@nch@O@elf=\skip78
-\f@nch@O@erf=\skip79
-\f@nch@O@olf=\skip80
-\f@nch@O@orf=\skip81
+\f@nch@headwidth=\skip78
+\f@nch@O@elh=\skip79
+\f@nch@O@erh=\skip80
+\f@nch@O@olh=\skip81
+\f@nch@O@orh=\skip82
+\f@nch@O@elf=\skip83
+\f@nch@O@erf=\skip84
+\f@nch@O@olf=\skip85
+\f@nch@O@orf=\skip86
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/07/16 v2.11 Sectioning titles
-\ttl@box=\box69
-\beforetitleunit=\skip82
-\aftertitleunit=\skip83
-\ttl@plus=\dimen320
-\ttl@minus=\dimen321
-\ttl@toksa=\toks45
-\titlewidth=\dimen322
-\titlewidthlast=\dimen323
-\titlewidthfirst=\dimen324
+\ttl@box=\box78
+\beforetitleunit=\skip87
+\aftertitleunit=\skip88
+\ttl@plus=\dimen337
+\ttl@minus=\dimen338
+\ttl@toksa=\toks49
+\titlewidth=\dimen339
+\titlewidthlast=\dimen340
+\titlewidthfirst=\dimen341
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip84
-\thanksmargin=\skip85
-\droptitle=\skip86
+\thanksmarkwidth=\skip89
+\thanksmargin=\skip90
+\droptitle=\skip91
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip87
-\cftbeforetoctitleskip=\skip88
-\cftaftertoctitleskip=\skip89
-\cftbeforepartskip=\skip90
-\cftpartnumwidth=\skip91
-\cftpartindent=\skip92
-\cftbeforechapskip=\skip93
-\cftchapindent=\skip94
-\cftchapnumwidth=\skip95
-\cftbeforesecskip=\skip96
-\cftsecindent=\skip97
-\cftsecnumwidth=\skip98
-\cftbeforesubsecskip=\skip99
-\cftsubsecindent=\skip100
-\cftsubsecnumwidth=\skip101
-\cftbeforesubsubsecskip=\skip102
-\cftsubsubsecindent=\skip103
-\cftsubsubsecnumwidth=\skip104
-\cftbeforeparaskip=\skip105
-\cftparaindent=\skip106
-\cftparanumwidth=\skip107
-\cftbeforesubparaskip=\skip108
-\cftsubparaindent=\skip109
-\cftsubparanumwidth=\skip110
-\cftbeforeloftitleskip=\skip111
-\cftafterloftitleskip=\skip112
-\cftbeforefigskip=\skip113
-\cftfigindent=\skip114
-\cftfignumwidth=\skip115
-\c@lofdepth=\count332
-\c@lotdepth=\count333
-\cftbeforelottitleskip=\skip116
-\cftafterlottitleskip=\skip117
-\cftbeforetabskip=\skip118
-\cfttabindent=\skip119
-\cfttabnumwidth=\skip120
+\cftparskip=\skip92
+\cftbeforetoctitleskip=\skip93
+\cftaftertoctitleskip=\skip94
+\cftbeforepartskip=\skip95
+\cftpartnumwidth=\skip96
+\cftpartindent=\skip97
+\cftbeforechapskip=\skip98
+\cftchapindent=\skip99
+\cftchapnumwidth=\skip100
+\cftbeforesecskip=\skip101
+\cftsecindent=\skip102
+\cftsecnumwidth=\skip103
+\cftbeforesubsecskip=\skip104
+\cftsubsecindent=\skip105
+\cftsubsecnumwidth=\skip106
+\cftbeforesubsubsecskip=\skip107
+\cftsubsubsecindent=\skip108
+\cftsubsubsecnumwidth=\skip109
+\cftbeforeparaskip=\skip110
+\cftparaindent=\skip111
+\cftparanumwidth=\skip112
+\cftbeforesubparaskip=\skip113
+\cftsubparaindent=\skip114
+\cftsubparanumwidth=\skip115
+\cftbeforeloftitleskip=\skip116
+\cftafterloftitleskip=\skip117
+\cftbeforefigskip=\skip118
+\cftfigindent=\skip119
+\cftfignumwidth=\skip120
+\c@lofdepth=\count345
+\c@lotdepth=\count346
+\cftbeforelottitleskip=\skip121
+\cftafterlottitleskip=\skip122
+\cftbeforetabskip=\skip123
+\cfttabindent=\skip124
+\cfttabnumwidth=\skip125
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/appendix\appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count334
-\c@@ppsavesec=\count335
-\c@@ppsaveapp=\count336
+\c@@pps=\count347
+\c@@ppsavesec=\count348
+\c@@ppsaveapp=\count349
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip121
-\bibsep=\skip122
+\bibhang=\skip126
+\bibsep=\skip127
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count337
+\c@NAT@ctr=\count350
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/quotchap\quotchap.sty
 Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
-\@quotebox=\box70
+\@quotebox=\box79
 )
-\mybibindent=\skip123
-Package hyperref Info: Option `colorlinks' set `true' on input line 243.
+\mybibindent=\skip128
+Package hyperref Info: Option `colorlinks' set `true' on input line 247.
 )
 (dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux)
 (chapters/chapter2.aux
 
 LaTeX Warning: Label `sec:UC11' multiply defined.
 
-) (chapters/chapter3.aux) (chapters/chapter4.aux) (chapters/chapter5.aux)
-(chapters/conclusion.aux) (chapters/appendixA.aux
+) (chapters/chapter3.aux
+
+LaTeX Warning: Label `tab:gqmeth' multiply defined.
+
+) (chapters/chapter5.aux) (chapters/conclusion.aux) (chapters/appendixA.aux
 
 LaTeX Warning: Label `sec:UC144' multiply defined.
 
@@ -1416,7 +1484,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-\AtBeginShipoutBox=\box71
+\AtBeginShipoutBox=\box80
 Package hyperref Info: Link coloring ON on input line 6.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1424,7 +1492,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count351
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1531,11 +1599,7 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-(frontmatter/abstract.tex) [5
-
-] [6
-
-] (dissertation.toc
+(dissertation.toc
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 
@@ -1559,34 +1623,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-[7] [8] [9]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 180.
- [10])
+[5
+
+] [6])
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
 
- [11] [12
+ [7] [8
 
 
 ] (dissertation.lof)
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [13] [14
+ [9] [10
 
-] (dissertation.lot)
+] (dissertation.lot
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 7.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
+(Font)              scaled to size 10.25006pt on input line 7.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceCodePro' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [11
+
+])
 \tf@lot=\write7
 \openout7 = `dissertation.lot'.
 
+ [12]
+(frontmatter/abbr.tex) [13
 
-[15
 
-] [16
-
-] (frontmatter/abbr.tex) [17
-
-] [18
+] [14
 
 ]
 \openout2 = `chapters/introduction.aux'.
@@ -1597,50 +1668,42 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 11.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
 (Font)              scaled to size 17.28pt on input line 11.
-File: figures/logo_moku.png Graphic file (type bmp)
-<figures/logo_moku.png>
-LaTeX Font Info:    Font shape `TU/LatoRegular(0)/bx/n' will be
-(Font)              scaled to size 9.5907pt on input line 19.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LatoRegular' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/LatoRegular(0)/bx/n' will be
-(Font)              scaled to size 7.99225pt on input line 19.
-LaTeX Font Info:    Font shape `TU/LatoRegular(0)/m/n' will be
-(Font)              scaled to size 9.71375pt on input line 19.
-LaTeX Font Info:    Font shape `TU/LatoRegular(0)/m/n' will be
-(Font)              scaled to size 8.09479pt on input line 19.
 [1
 
 
 
 ]
+File: figures/logo_moku.png Graphic file (type bmp)
+<figures/logo_moku.png>
+LaTeX Font Info:    Font shape `TU/LatoRegular(0)/bx/n' will be
+(Font)              scaled to size 9.5907pt on input line 22.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LatoRegular' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/LatoRegular(0)/bx/n' will be
+(Font)              scaled to size 7.99225pt on input line 22.
+LaTeX Font Info:    Font shape `TU/LatoRegular(0)/m/n' will be
+(Font)              scaled to size 9.71375pt on input line 22.
+LaTeX Font Info:    Font shape `TU/LatoRegular(0)/m/n' will be
+(Font)              scaled to size 8.09479pt on input line 22.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 23.
+(Font)              scaled to size 14.4pt on input line 26.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
-(Font)              scaled to size 14.4pt on input line 23.
+(Font)              scaled to size 14.4pt on input line 26.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/sc' will be
-(Font)              scaled to size 14.4pt on input line 23.
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [2]
+(Font)              scaled to size 14.4pt on input line 26.
+ [2] [3]
 File: figures/agile-development-process.png Graphic file (type bmp)
 <figures/agile-development-process.png>
-
-[3] [4]
+ [4]
 File: figures/Jira.png Graphic file (type bmp)
 <figures/Jira.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6])
-[7]
+[5] [6]) [7]
 \openout2 = `chapters/chapter1.aux'.
 
  (chapters/chapter1.tex
@@ -1664,18 +1727,20 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 
 ]
 Chapter 2.
-[9] [10]
-LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 10.25006pt on input line 38.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `SourceCodePro' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11] [12] [13]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 44.
+(Font)              scaled to size 8.0pt on input line 111.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 44.
- [11] [12] [13] [14] [15]) [16]
+(Font)              scaled to size 7.0pt on input line 111.
+ [14] [15] [16] [17]
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [18]
+[19]) [20]
 \openout2 = `chapters/chapter2.aux'.
 
  (chapters/chapter2.tex
@@ -1692,66 +1757,53 @@ LABELS NOT IMPORTED.
  on input line 3.
 
 Chapter 3.
-[17
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
 
 
 
-] [18] [19] [20]
+]
+[22]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/sc' will be
-(Font)              scaled to size 12.0pt on input line 106.
- [21]
-Overfull \hbox (40.85606pt too wide) in paragraph at lines 139--139
-|[]\TU/EBGaramond(0)/bx/sc/17.28 UC4: Reset password per accesso alla piattafor
-ma| 
- []
-
-[22] [23] [24]
-Overfull \hbox (10.02887pt too wide) in paragraph at lines 215--220
+(Font)              scaled to size 12.0pt on input line 55.
+ [23] [24] [25] [26]
+Overfull \hbox (10.02887pt too wide) in paragraph at lines 164--169
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore vi
 ene correttamente disconnesso dal pannello di amministrazione. 
  []
 
-[25]
+[27]
 
-LaTeX Warning: Hyper reference `sec:UC12' on page 26 undefined on input line 23
-1.
+LaTeX Warning: Hyper reference `sec:UC12' on page 28 undefined on input line 18
+0.
 
-[26] [27] [28] [29]
-Overfull \hbox (27.11845pt too wide) in paragraph at lines 343--343
-|[]\TU/EBGaramond(0)/bx/sc/17.28 UC17: Superamento tentativi di invio del codic
-e
- []
-
-[30]
-Overfull \hbox (11.8602pt too wide) in paragraph at lines 367--367
-|[]\TU/EBGaramond(0)/bx/sc/17.28 UCG3: Operazioni per utente “gastroenterol-
- []
-
-[31]
-Overfull \hbox (2.42888pt too wide) in paragraph at lines 403--409
+[28] [29] [30] [31] [32]
+Overfull \hbox (2.42888pt too wide) in paragraph at lines 352--358
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia una richiesta di inserimento della diagnosi per l’esame
  []
 
-[32] [33] [34]
-Overfull \hbox (1.1969pt too wide) in paragraph at lines 464--470
+[33] [34] [35]
+Overfull \hbox (1.1969pt too wide) in paragraph at lines 413--419
 \TU/EBGaramond(0)/bx/sc/12 Scopo e descrizione: \TU/EBGaramond(0)/m/n/12 L’atto
 re vuole aggiornare la tabella della dieta associata ad un esame. 
  []
 
-[35]
-Overfull \hbox (10.1841pt too wide) in paragraph at lines 496--501
+[36]
+Overfull \hbox (10.1841pt too wide) in paragraph at lines 445--450
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia la richiesta [][]HTTP[][] corretta per il nuovo stato dell’esame
  []
 
 
-Overfull \hbox (2.75288pt too wide) in paragraph at lines 496--501
+Overfull \hbox (2.75288pt too wide) in paragraph at lines 445--450
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore ha
  ricevuto una risposta che conferma il successo dell’operazione. 
  []
 
-[36]) [37] [38]
+[37]) [38] [39]
 \openout2 = `chapters/chapter3.aux'.
 
  (chapters/chapter3.tex
@@ -1767,12 +1819,13 @@ No file ./chapter1.aux
 LABELS NOT IMPORTED.
  on input line 3.
 
+[40
+
+
+
+]
 Chapter 4.
-[39
-
-
-
-] [40]
+[41] [42]
 
 Package fontspec Info: Font family 'EBGaramond(2)' created for font 'EB
 (fontspec)             Garamond' with options
@@ -1814,43 +1867,535 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(2)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 45.
 LaTeX Font Info:    Font shape `TU/EBGaramond(2)/bx/n' will be
 (Font)              scaled to size 12.0pt on input line 47.
- [41]
+ [43]
 Underfull \vbox (badness 6775) has occurred while \output is active []
 
- [42]
-[43]
+ [44]
+[45]
 LaTeX Font Info:    Font shape `TU/EBGaramond(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 97.
+(Font)              scaled to size 12.0pt on input line 98.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44]
-Underfull \vbox (badness 6032) has occurred while \output is active []
-
- [45]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/it' will be
-(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/bx/n' will be
-(Font)              scaled to size 10.25006pt on input line 120.
-
-[46]) [47]
-\openout2 = `chapters/chapter4.aux'.
-
- (chapters/chapter4.tex
-
-Package xr Warning: 
-No file ../frontmatter/abbr.aux
-LABELS NOT IMPORTED.
- on input line 2.
-
-[48
+(Font)              scaled to size 10.25006pt on input line 110.
+[46] [47]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/it' will be
+(Font)              scaled to size 12.0pt on input line 129.
+ [48] [49]
+Underfull \hbox (badness 4832) in paragraph at lines 170--170
+[]\TU/EBGaramond(0)/m/n/12 Un esame appartiene ad un
+ []
 
 
+Underfull \hbox (badness 5908) in paragraph at lines 170--170
+\TU/EBGaramond(0)/m/n/12 solo cliente, un cliente può
+ []
 
-]
-Chapter 5.
-) [49]
+
+Underfull \hbox (badness 1515) in paragraph at lines 170--170
+[]\TU/EBGaramond(0)/m/n/12 Un esame è effettuato presso
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 170--170
+[]\TU/EBGaramond(0)/m/n/12 Un esame può usare un solo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+\TU/EBGaramond(0)/m/it/12 template \TU/EBGaramond(0)/m/n/12 di questionario, il
+
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 170--170
+\TU/EBGaramond(0)/m/n/12 quale viene condiviso da più
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 170--170
+[]\TU/EBGaramond(0)/m/n/12 Il questionario di un esame
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 170
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Stato di avanzamento
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Data e ora di ultima
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 compilazione del ques-
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 ciato ad un esame, im-
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Data e ora di ricezione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 del campione dal
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 del campione associato
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Referto delle analisi in
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Data e ora di ricezione
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Note allegate al referto
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Diagnosi generale del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Diagnosi specifica del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Principio attivo con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\TU/EBGaramond(0)/m/n/12 Tabella della dieta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 (una rappresentazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/it/12 color-coded \TU/EBGaramond(0)/m/n/12 del benefi-
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 194--194
+\TU/EBGaramond(0)/m/n/12 cio apportato da certi
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 194
+ []
+
+[51]
+Underfull \hbox (badness 4266) in paragraph at lines 213--213
+[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 che verifica se i
+l campione
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 213--213
+\TU/EBGaramond(0)/m/n/12 è stato spedito e aggiorna l’attributo
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 213--213
+[]\TU/EBGaramond(0)/m/n/12 Invoca il servizio di generazione del
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 213--213
+\TU/EBGaramond(0)/m/n/12 referto dettagliato, con l’opzione di
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 213
+ []
+
+[52] [53]
+Underfull \vbox (badness 10000) detected at line 232
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]\TU/EBGaramond(0)/m/n/12 [C] Insieme degli attributi che de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\TU/EBGaramond(0)/m/n/12 scrivono le informazioni personali
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\TU/EBGaramond(0)/m/n/12 del cliente, inserite in fase di reg-
+ []
+
+
+Underfull \hbox (badness 7397) in paragraph at lines 256--256
+\TU/EBGaramond(0)/m/n/12 istrazione. Ne fa parte l’attributo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]\TU/EBGaramond(0)/m/n/12 [P,G,B] Password dell’utente crit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]\TU/EBGaramond(0)/m/n/12 [P,G,B] Insieme di token che de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\TU/EBGaramond(0)/m/n/12 scrivono una sessione dell’utente,
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 256--256
+[]\TU/EBGaramond(0)/m/n/12 [C] Data e ora dell’ultimo invio del
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 256
+ []
+
+[55]
+Underfull \vbox (badness 10000) detected at line 272
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \hbox (badness 2065) in paragraph at lines 296--296
+[]\TU/EBGaramond(0)/m/n/12 Una farmacia può fare più spedizioni,
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 296
+ []
+
+[57]
+Underfull \vbox (badness 10000) detected at line 316
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) detected at line 332
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 342
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 359--359
+\TU/EBGaramond(0)/m/n/12 sola domanda; le domande aperte non
+ []
+
+
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+ [59]
+Underfull \vbox (badness 10000) detected at line 359
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 372
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 383
+ []
+
+
+Overfull \vbox (1.96684pt too high) has occurred while \output is active []
+
+
+[60]
+Underfull \vbox (badness 10000) detected at line 398
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 411
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 421
+ []
+
+[61]
+Underfull \hbox (badness 1983) in paragraph at lines 441--441
+\TU/EBGaramond(0)/m/n/12 possibile può essere selezionata in più
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 441
+ []
+
+[62]
+Underfull \hbox (badness 1596) in paragraph at lines 454--454
+[]\TU/EBGaramond(0)/m/n/12 Testo della risposta, denormaliz-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 454
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 465--465
+[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 eseguito prima di
+ ogni validazione per risposte a do-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 465--465
+\TU/EBGaramond(0)/m/n/12 mande a scelta singola o multipla, denormalizza i test
+i ed i valori
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 465--465
+\TU/EBGaramond(0)/m/n/12 delle \TU/SourceCodePro(0)/m/n/12 PossibleAnswer \TU/E
+BGaramond(0)/m/n/12 associate e li assegna ai rispettivi attributi
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 465
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Underfull \vbox (badness 10000) detected at line 483
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 499
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+[]\TU/EBGaramond(0)/m/n/12 Prenota il ritiro della spedizione, creando un’istan
+za di
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 511--511
+\TU/SourceCodePro(0)/m/n/12 SDA::Client \TU/EBGaramond(0)/m/n/12 e richiedendo 
+l’invio di una richiesta di preno-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 511
+ []
+
+[65]
+Underfull \vbox (badness 10000) detected at line 533
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 544--544
+[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 eseguito alla cre
+azione di un account, genera
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 544
+ []
+
+[66]
+Underfull \vbox (badness 10000) detected at line 565
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 10000) detected at line 591
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
+\TU/EBGaramond(0)/m/n/12 includendo le generalità a seconda del ruolo
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 605
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 616
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Underfull \vbox (badness 10000) detected at line 639
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 649
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 659
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo enumerativo per la rappresentazione della
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo enumerativo per la rappresentazione di un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
+/m/it/12 model
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 699
+ []
+
+[71]
+Underfull \hbox (badness 3240) in paragraph at lines 720--720
+[]\TU/EBGaramond(0)/m/n/12 Restituisce tutti gli utenti con ruolo “cus-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 720
+ []
+
+[72]
+Underfull \vbox (badness 10000) detected at line 752
+ []
+
+[73] [74]
+Overfull \hbox (2.78891pt too wide) in paragraph at lines 763--764
+[]\TU/EBGaramond(0)/m/n/12 Per poter generare anche referti anonimizzati, quest
+e aggiunte sono state separate in metodi
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 777
+ []
+
+[75]
+Underfull \vbox (badness 10000) detected at line 794
+ []
+
+[76]
+Underfull \vbox (badness 10000) detected at line 808
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 816--816
+[]\TU/EBGaramond(0)/m/n/12 Invia un messaggio ad un numero adattando la relativ
+a funzione di
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 816
+ []
+
+[77]
+File: figures/classdia.png Graphic file (type bmp)
+<figures/classdia.png>
+
+Underfull \vbox (badness 10000) detected at line 843
+ []
+
+[78]
+Underfull \vbox (badness 10000) detected at line 852
+ []
+
+[79] [80]
+Underfull \hbox (badness 10000) in paragraph at lines 901--901
+[]\TU/EBGaramond(0)/m/n/12 Download dell’eventuale mod-
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 901--901
+[]\TU/SourceCodePro(0)/m/n/12 User \TU/EBGaramond(0)/m/n/12 con role “gastroent
+erolo-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 901
+ []
+
+) [81]
 \openout2 = `chapters/chapter5.aux'.
 
  (chapters/chapter5.tex
@@ -1860,32 +2405,28 @@ No file ../frontmatter/abbr.aux
 LABELS NOT IMPORTED.
  on input line 2.
 
-[50
+[82
+
+
+
+]
+Chapter 5.
+) [83]
+\openout2 = `chapters/conclusion.aux'.
+
+ (chapters/conclusion.tex [84
 
 
 
 ]
 Chapter 6.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51]
-[52]
-\openout2 = `chapters/conclusion.aux'.
-
- (chapters/conclusion.tex
-Chapter 7.
 
 Overfull \hbox (5.63692pt too wide) in paragraph at lines 5--6
 \TU/EBGaramond(0)/m/n/12 Sed aliquam, nunc eget euismod ullamcorper, lectus nun
 c ullamcorper orci, fermentum biben-
  []
 
-[53
-
-
-
-]) [54]
+[85]) [86]
 \openout2 = `chapters/appendixA.aux'.
 
  (chapters/appendixA.tex
@@ -1896,86 +2437,71 @@ LABELS NOT IMPORTED.
  on input line 2.
 
 Appendix A.
-[55
+[87
 
 
 
-] [56] [57] [58] [59]
-Overfull \hbox (1.11911pt too wide) in paragraph at lines 167--167
-|[]\TU/EBGaramond(0)/bx/sc/14.4 UC6.10.1: Generazione nuova password per un ute
-nte| 
- []
-
-[60] [61]
-Overfull \hbox (0.3169pt too wide) in paragraph at lines 229--235
+] [88] [89] [90] [91] [92] [93]
+Overfull \hbox (0.3169pt too wide) in paragraph at lines 230--236
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 Il sistema 
 ha reimpostato correttamente la password per l’utente desider-
  []
 
-[62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-Overfull \hbox (8.47748pt too wide) in paragraph at lines 274--274
-|[]\TU/EBGaramond(0)/bx/sc/14.4 UC12.2: Richiesta storico degli esami in base a
-llo stato
- []
-
-[64] [65] [66]
-Overfull \hbox (8.16489pt too wide) in paragraph at lines 338--344
+[94] [95] [96] [97]
+Overfull \hbox (8.16489pt too wide) in paragraph at lines 339--345
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia al sistema una richiesta di aggiornamento delle risposte
  []
 
 
-Overfull \hbox (25.51692pt too wide) in paragraph at lines 338--344
+Overfull \hbox (25.51692pt too wide) in paragraph at lines 339--345
 \TU/EBGaramond(0)/m/n/12 ato all’esame desiderato e l’attore ha ricevuto un mes
 saggio di conferma del successo dell’operazione. 
  []
 
-[67] [68] [69]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/itsc' will be
-(Font)              scaled to size 14.4pt on input line 419.
-
-Overfull \hbox (11.83289pt too wide) in paragraph at lines 421--427
+[98] [99] [100]
+Overfull \hbox (11.83289pt too wide) in paragraph at lines 422--428
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia al sistema una richiesta di registrazione dell’accettazione
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--436
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 431--437
 
  []
 
 
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
- [70]
-Overfull \hbox (7.3582pt too wide) in paragraph at lines 439--445
+Overfull \hbox (7.3582pt too wide) in paragraph at lines 440--446
 \TU/EBGaramond(0)/m/n/12 alla farmacia corrente fornendone il codice identifica
 tivo interno. \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/
 12 L’attore
  []
 
-[71] [72]) [73]
+[102] [103]) [104] [105]
 No file dissertation.bbl.
-[74
+[106
 
 
-] (frontmatter/thanks.tex) [75
+] (frontmatter/thanks.tex) [107
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
- (dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux) (chapter
-s/chapter2.aux) (chapters/chapter3.aux)
-(chapters/chapter4.aux) (chapters/chapter5.aux) (chapters/conclusion.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+ (dissertation.aux
+(chapters/introduction.aux) (chapters/chapter1.aux) (chapters/chapter2.aux)
+(chapters/chapter3.aux) (chapters/chapter5.aux) (chapters/conclusion.aux)
 (chapters/appendixA.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 06EF743C789634FB058EF5C4EC3EDDF5.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 
+
+Package rerunfilecheck Warning: File `dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dissertation.out':
+(rerunfilecheck)             Before: 631946288DC2F98B0AA17FDC71862ADF
+(rerunfilecheck)             After:  68CF941612EFD9007EF526F01361ABC0.
 
 LaTeX Warning: There were undefined references.
 
@@ -1984,12 +2510,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47481 strings out of 427669
- 1053857 string characters out of 3149215
- 1297037 words of memory out of 3000000
- 50807 multiletter control sequences out of 15000+200000
- 541194 words of font info for 112 fonts, out of 3000000 for 9000
+ 48459 strings out of 427669
+ 1066915 string characters out of 3149215
+ 1324193 words of memory out of 3000000
+ 51778 multiletter control sequences out of 15000+200000
+ 541202 words of font info for 113 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 85i,9n,138p,1460b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 85i,11n,138p,1460b,654s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (93 pages).
+Output written on dissertation.pdf (121 pages).

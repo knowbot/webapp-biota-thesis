@@ -5,10 +5,7 @@
 \qauthor{Douglas Adams}
 \end{savequote}
 \chapter{Progetto di stage}
-
-\section{Descrizione del progetto}
-Il progetto di stage prevedeva lo sviluppo della parte \textit{back end} dell'applicazione web ``Biota''. ``Biota'' è una piattaforma per la gestione di esami della flora gastrointestinale, che permette ai clienti di una farmacia di richiedere un esame mediante la compilazione di un questionario; un campione di materia fecale viene quindi inviato al laboratorio per le analisi, al cui termine viene fornito un referto contenente i risultati delle analisi, la diagnosi del gastroenterologo affiliato e una dieta progettata per migliorare il benessere del paziente. Il \textit{back end} comprende un pannello amministrativo per la gestione dei record del database, permettendone creazione, distruzione e modifica nonché consentendo operazioni aggiuntive quali il caricamento e lo scaricamento di file per i record designati.
-
+\section{Approfondimento del contesto}
 \subsection{Contesto di sviluppo}
 \label{sec:devctx}
 La piattaforma fa parte di un ecosistema già esistente di servizi per la salute, fruibili presso farmacie affiliate. Esiste, quindi, come parte di un insieme di applicativi paralleli e ne condivide il database e parte della codifica: questo documento si limiterà a descrivere i moduli, le classi e le funzionalità realizzate o adattate per l'implementazione della piattaforma ``Biota''.
@@ -25,7 +22,65 @@ Il flusso operativo previsto è il seguente: il cliente richiede al farmacista d
 
 L'accesso al pannello amministrativo consente di creare, distruggere e modificare alcune categorie di record del database, come ad esempio le varie tipologie di utenti o le farmacie affiliate. Esso viene utilizzato principalmente per l'inserimento di nuovi utenti autorizzati, il recupero di informazioni rilevanti quali il consenso al trattamento dei dati, e per la risoluzione di problematiche grazie all'accesso privilegiato al database.
 
+\section{Definizione dei requisiti}
+Nella seguente sezione verranno esposti in via generale i requisiti che l'applicativo realizzato doveva soddisfare. È importante notare che, data la natura agile del metodo di lavoro impiegato dall'azienda, gli obiettivi presentati nel piano di lavoto sono stati soggetti a modifiche e aggiunte di lieve e media entità; per completezza e possibilità di confronto, di seguito verranno esposti sia i requisiti iniziali che quelli elaborati a fronte dell'interazione con il cliente.
+\subsection{Notazione}
+Si farà riferimento a requisiti ed obiettivi secondo le rispettive notazioni:
+\begin{itemize}
+    \item \textbf{O} indica un requisito obbligatorio, vincolante in quanto obiettivo primario richiesto dal committente.
+    \item \textbf{D} indica un requisito desiderabile, non vincolante o strettamente necessario, ma dal riconoscibile valore aggiunto.
+    \item \textbf{F} indica un requisito facoltativo, rappresentante un valore aggiunto non necessariamente competitivo.
+\end{itemize}
+\subsection{Piano di lavoro}
+Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziendale nella settimana precedente all'inizio dello stage, espone una serie di requisiti emersi dalle esigenze del cliente emerse in fase di avvio del progetto.
+\subsubsection{Requisiti}
+\paragraph{Obbligatori}
+\begin{itemize}
+    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
+    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Desiderabili}
+\begin{itemize}
+    \item \underline{D01}: Analisi ed implementazione di test dei sistemi di pagamento e fatturazione
+    \item \underline{D02}: Suite di testing del software prodotto
+    \item \underline{D03}: Documentazione completa
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Facoltativi}
+\begin{itemize}
+    \item \underline{F01}: Ulteriori modifiche all’applicazione che esulano da quando riportato nel piano di lavoro
+\end{itemize}
+\subsection{Modifiche al piano}
+Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da parte del tutor aziendale, ci sono state varie interazioni con il cliente che hanno portato a ridefinire alcuni requisiti desiderabili e a specificare in modo più preciso i requisiti facoltativi. Tali modifiche sono sempre state fatte in accordo alle possibilità di soddisfazione entro i tempi previsti, e tenendo in mente che la piattaforma sarebbe entrata in produzione al completamento delle funzionalità per l'esecuzione flusso di attività base.
+\subsubsection{Requisiti rivisti}
+\paragraph{Obbligatori}
+\begin{itemize}
+    \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
+    \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
+    \item \underline{O03}: Implementazione delle strutture per il questionario
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Desiderabili}
+\begin{itemize}
+    \item \underline{D01}: Generazione PDF con informazioni specifiche
+    \item \underline{D02}: Suite di testing del software prodotto
+    \item \underline{D03}: Documentazione completa
+    \item \underline{D04}: Registrazione del consenso al trattamento dei dati
+\end{itemize}
+\vspace{-15pt}
+\paragraph{Facoltativi}
+\begin{itemize}
+    \item \underline{F01}: Autenticazione mediante HMAC
+    \item \underline{F02}: Ulteriori modifiche all’applicazione
+\end{itemize}
+
+\section{Pianificazione delle attività}
+
+
 \section{Tecnologie utilizzate}
+Di seguito vengono discusse le tecnologie individuate per la realizzazione del progetto. Alcune di esse, quali Ruby on Rails e RubyMine, sono state richieste dell'azienda; altre (principalmente gemme per Ruby) sono state ricercate e proposte dal laureando per soddisfare alcuni dei requisiti individuati.
+
 \subsection{Ruby}
 Ruby è un linguaggio di programmazione ad alto livello, interpretato, e orientato agli oggetti con paradigma puro: ogni componente del linguaggio è trattato come un oggetto. 
 
@@ -35,16 +90,36 @@ Si tratta un linguaggio molto flessibile che offre grande libertà allo sviluppa
 Esiste una grande varietà di programmi e librerie Ruby, noti come ``gemme'', il cui utilizzo verrà discusso in seguito.
 
 \subsection{Gemme}
-Le gemme sono librerie e programmi Ruby distribuiti sotto forma di pacchetti in modo non dissimile dai moduli in Node.js: l'installazione è gestita dal \textit{package manager} RubyGem, individualmente tramite terminale (con il comando \texttt{gem install nomegemma}) oppure di gruppo specificando le gemme desiderate nel file \texttt{Gemfile}, che viene automaticamente letto da RubyGem con l'esecuzione del comando \texttt{bundle install}.
+Le gemme sono librerie e programmi Ruby distribuiti sotto forma di pacchetti in modo non dissimile dai moduli in Node.js: l'installazione è gestita dal \textit{package manager} RubyGem, individualmente tramite terminale (con il comando \texttt{gem install nome\_gemma}) oppure di gruppo specificando le gemme desiderate nel file \texttt{Gemfile}, che viene automaticamente letto da RubyGem con l'esecuzione del comando \texttt{bundle install}.
+
+\subsubsection{AWS SDK for Ruby}
+Insieme di gemme che facilitano l'interazione con i servizi web di Amazon, fornendo classi e metodi ad-hoc; l'\ref{itm:sdk} è suddiviso in moduli specifici per ogni servizio, permettendo di scegliere quali gemme usare a seconda delle necessità, e di aggiornare le gemme utilizzate in modo indipendente. In particolare è stata utilizzata la gemma \texttt{aws-sdk-sns} per l'invio di SMS tramite Amazon Simple Notification Service.
+
+\subsubsection{Database Cleaner}
+Gemma di supporto all'esecuzione dei test, offre varie strategie di pulizia di un database per il testing di una applicazione in Ruby. Il caso d'uso principale di questa gemma è l'assicurare di avere un database pulito prima di eseguire i test e di non avere record residui dopo ciascun test, in modo da non avere interferenze nei risultati. Supporta il \ref{itm:dbms} PostgreSQL.
+
+\subsubsection{Factory Bot}
+Gemma di supporto alla realizzazione di test, permette di definire la procedura di creazione di oggetti complessi attraverso metodi a cui passare pochi parametri (detti \textit{factory}). Definire una \textit{factory} per una classe consente di richiamarla in seguito per generare nuove istanze di quella classe, con attributi generati casualmente o specificati manualmente. Factory Bot offre molte altre funzionalità, quali la possibilità di definire vari \textit{trait} (collezioni di attributi assegnati in un modo specifico) per la creazione di un oggetto e di introdurre ereditarietà tra \textit{factories}. È stato scelto di usare questa gemma in quanto permette di realizzare facilmente istanze di \textit{models} di Rails replicandone anche le relazioni con altri \textit{models}. 
 
 \subsubsection{HexaPDF}
 Libreria che permette interazioni ad alto e basso livello con file \ref{itm:pdf}: è possibile leggere e modificare il codice sorgente di un documento, oppure sfruttare i \textit{wrappers} presenti per effettuare operazioni ad alto livello come l'inserimento di immagini o figure. Utilizzata per la generazione dinamica di referti.
 
+\subsubsection{Jbuilder}
+Jbuilder è una gemma molto utile che fornisce un \ref{itm:dsl} per dichiarare strutture \ref{itm:json} anche complesse, utilizzando strutture \textit{if/else} e cicli. Un file \texttt{.jbuilder} contiene la dichiarazione di una struttura dati \ref{itm:json} che, al momento del \textit{rendering} da parte di un \textit{controller} di Ruby on Rails, viene elaborata e generata secondo i dati disponibili. Questa gemma è stata utilizzata per generare i body delle risposte HTTP date dai \textit{controller}, data la necessità di utilizzare strutture ricorsive.
+
 \subsubsection{ROTP}
 Acronimo di ``Ruby One Time Password'', questa gemma permette di generare e verificare codici \ref{itm:hotp} e \ref{itm:totp} in accordo agli standard RFC 4426 \footnote[1]{http://tools.ietf.org/html/rfc4226} e RFC 6238 \footnote[2]{http://tools.ietf.org/html/rfc6238}. ROTP è inoltre compatibile con Google Authenticator su dispositivi Android e iOS. La gemma è stata sfruttata per verificare il consenso al trattamento dei dati mediante codici TOTP inviati per SMS.
 
-\subsubsection{AWS SDK for Ruby}
-Insieme di gemme che facilitano l'interazione con i servizi web di Amazon, fornendo classi e metodi ad-hoc; l'\ref{itm:sdk} è suddiviso in moduli specifici per ogni servizio, permettendo di scegliere quali gemme usare a seconda delle necessità, e di aggiornare le gemme utilizzate in modo indipendente. In particolare è stata utilizzata la gemma \texttt{aws-sdk-sns} per l'invio di SMS tramite Amazon Simple Notification Service.
+\subsubsection{RSpec}
+Framework di \textit{behavior-driven development} per Ruby, RSpec è un \textit{tool} per la creazione di test per codice Ruby. RSpec fornisce un \ref{itm:dsl} molto intuitivo e descrittivo per la realizzazione dei test, permettendo di definire precisamente i vari scenari in cui si desidera verificare il comportamento del codice. Il funzionamento di base di RSpec si basa su ``esempi'' e ``aspettative'': un esempio è un particolare scenario che si desidera testare, e le aspettative descrivono lo stato che il codice dovrebbe raggiungere ad un certo punto della sua esecuzione.
+RSpec, in congiunzione con altre librerie di supporto, è stato utilizzato per realizzare la suite di test per l'applicativo.
+
+\subsubsection{RuboCop}
+Gemma per l'analisi statica e la formattazione del codice, basata sulla \textit{style guide} della community di Ruby. RuboCop permette di scansionare il codice rilevando errori e segnalandoli allo sviluppatore; per errori comuni è anche disponibile una funzione di correzione automatica.
+
+\subsubsection{Shoulda Matchers}
+Gemma di supporto alla creazione di test, semplifica di molto la creazione di nuovi esempi con RSpec fornendo una sintassi più sintetica per le aspettative. È stata utilizzata nel progetto per rendere i test più leggeri, leggibili e veloci da realizzare.
+
 
 \subsection{Ruby on Rails}
 \label{sec:2.2.3}
