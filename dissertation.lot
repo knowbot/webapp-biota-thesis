@@ -1,49 +1,50 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Totale di ore dedicato a ciascuna attività.\relax }}{13}{table.caption.37}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Corrispondenza tra metodi HTTP e operazioni CRUD.\relax }}{44}{table.caption.37}% 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Corrispondenza tra Active Record e database.\relax }}{47}{table.caption.38}% 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Session}.\relax }}{51}{table.4.3}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Session}.\relax }}{52}{table.4.4}% 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Session}.\relax }}{53}{table.4.5}% 
-\contentsline {table}{\numberline {4.6}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {User}.\relax }}{54}{table.4.6}% 
-\contentsline {table}{\numberline {4.7}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {User}.\relax }}{56}{table.4.7}% 
-\contentsline {table}{\numberline {4.8}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {User}.\relax }}{56}{table.4.8}% 
-\contentsline {table}{\numberline {4.9}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Pharmacy}.\relax }}{58}{table.4.9}% 
-\contentsline {table}{\numberline {4.11}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {QuestionnaireTemplate}.\relax }}{59}{table.4.11}% 
-\contentsline {table}{\numberline {4.12}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {QuestionnaireTemplate}.\relax }}{59}{table.4.12}% 
-\contentsline {table}{\numberline {4.13}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Question}.\relax }}{60}{table.4.13}% 
-\contentsline {table}{\numberline {4.14}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Question}.\relax }}{60}{table.4.14}% 
-\contentsline {table}{\numberline {4.15}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Question}.\relax }}{60}{table.4.15}% 
-\contentsline {table}{\numberline {4.16}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {PossibleAnswer}.\relax }}{61}{table.4.16}% 
-\contentsline {table}{\numberline {4.17}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {PossibleAnswer}.\relax }}{61}{table.4.17}% 
-\contentsline {table}{\numberline {4.18}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {PossibleAnswer}.\relax }}{62}{table.4.18}% 
-\contentsline {table}{\numberline {4.19}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{63}{table.4.19}% 
-\contentsline {table}{\numberline {4.20}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{63}{table.4.20}% 
-\contentsline {table}{\numberline {4.21}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{63}{table.4.21}% 
-\contentsline {table}{\numberline {4.22}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Shipment}.\relax }}{64}{table.4.22}% 
-\contentsline {table}{\numberline {4.23}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Shipment}.\relax }}{65}{table.4.23}% 
-\contentsline {table}{\numberline {4.24}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{65}{table.4.24}% 
-\contentsline {table}{\numberline {4.25}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Account}.\relax }}{66}{table.4.25}% 
-\contentsline {table}{\numberline {4.26}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Account}.\relax }}{66}{table.4.26}% 
-\contentsline {table}{\numberline {4.27}{\ignorespaces Elenco delle \textit {views}.\relax }}{67}{table.4.27}% 
-\contentsline {table}{\numberline {4.28}{\ignorespaces Metodi del \textit {controller} \texttt {SampleSessionController}.\relax }}{68}{table.4.28}% 
-\contentsline {table}{\numberline {4.29}{\ignorespaces Metodi del \textit {controller} \texttt {SessionController}.\relax }}{69}{table.4.29}% 
-\contentsline {table}{\numberline {4.30}{\ignorespaces Metodi del \textit {controller} \texttt {GraphqlController}.\relax }}{69}{table.4.30}% 
-\contentsline {table}{\numberline {4.31}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {SampleSessionController}.\relax }}{70}{table.4.31}% 
-\contentsline {table}{\numberline {4.32}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {SessionController}.\relax }}{70}{table.4.32}% 
-\contentsline {table}{\numberline {4.33}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {GraphqlController}.\relax }}{70}{table.4.33}% 
-\contentsline {table}{\numberline {4.34}{\ignorespaces Elenco dei \textit {types} GraphQL.\relax }}{72}{table.4.34}% 
-\contentsline {table}{\numberline {4.35}{\ignorespaces Elenco delle \textit {queries} GraphQL.\relax }}{73}{table.4.35}% 
-\contentsline {table}{\numberline {4.36}{\ignorespaces Elenco delle \textit {mutations} GraphQL.\relax }}{74}{table.4.36}% 
-\contentsline {table}{\numberline {4.37}{\ignorespaces Metodi del \textit {service} \texttt {ReportProcessor}.\relax }}{75}{table.4.37}% 
-\contentsline {table}{\numberline {4.38}{\ignorespaces Metodi del \textit {service} \texttt {OtpManager}.\relax }}{76}{table.4.38}% 
-\contentsline {table}{\numberline {4.39}{\ignorespaces Attributi del \textit {service} \texttt {SMS::Client}.\relax }}{77}{table.4.39}% 
-\contentsline {table}{\numberline {4.40}{\ignorespaces Metodi del \textit {service} \texttt {SMS::Client}.\relax }}{77}{table.4.40}% 
-\contentsline {table}{\numberline {4.41}{\ignorespaces Attributi del \textit {service} \texttt {SDA::Client}.\relax }}{79}{table.4.41}% 
-\contentsline {table}{\numberline {4.42}{\ignorespaces Metodi del \textit {service} \texttt {SDA::Client}.\relax }}{79}{table.4.42}% 
-\contentsline {table}{\numberline {4.43}{\ignorespaces Tabella delle schede del pannello di amministrazione\relax }}{81}{table.4.43}% 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Corrispondenza tra metodi HTTP e operazioni CRUD.\relax }}{46}{table.caption.39}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Corrispondenza tra Active Record e database.\relax }}{49}{table.caption.40}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Session}.\relax }}{53}{table.4.3}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Session}.\relax }}{54}{table.4.4}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Session}.\relax }}{55}{table.4.5}% 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {User}.\relax }}{56}{table.4.6}% 
+\contentsline {table}{\numberline {4.7}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {User}.\relax }}{58}{table.4.7}% 
+\contentsline {table}{\numberline {4.8}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {User}.\relax }}{58}{table.4.8}% 
+\contentsline {table}{\numberline {4.9}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Pharmacy}.\relax }}{60}{table.4.9}% 
+\contentsline {table}{\numberline {4.11}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {QuestionnaireTemplate}.\relax }}{61}{table.4.11}% 
+\contentsline {table}{\numberline {4.12}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {QuestionnaireTemplate}.\relax }}{61}{table.4.12}% 
+\contentsline {table}{\numberline {4.13}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Question}.\relax }}{62}{table.4.13}% 
+\contentsline {table}{\numberline {4.14}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Question}.\relax }}{62}{table.4.14}% 
+\contentsline {table}{\numberline {4.15}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Question}.\relax }}{62}{table.4.15}% 
+\contentsline {table}{\numberline {4.16}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {PossibleAnswer}.\relax }}{63}{table.4.16}% 
+\contentsline {table}{\numberline {4.17}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {PossibleAnswer}.\relax }}{63}{table.4.17}% 
+\contentsline {table}{\numberline {4.18}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {PossibleAnswer}.\relax }}{64}{table.4.18}% 
+\contentsline {table}{\numberline {4.19}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{65}{table.4.19}% 
+\contentsline {table}{\numberline {4.20}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{65}{table.4.20}% 
+\contentsline {table}{\numberline {4.21}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{65}{table.4.21}% 
+\contentsline {table}{\numberline {4.22}{\ignorespaces Tabella delle relazioni del \textit {model} \texttt {Shipment}.\relax }}{66}{table.4.22}% 
+\contentsline {table}{\numberline {4.23}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Shipment}.\relax }}{67}{table.4.23}% 
+\contentsline {table}{\numberline {4.24}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {QuestionnaireAnswer}.\relax }}{67}{table.4.24}% 
+\contentsline {table}{\numberline {4.25}{\ignorespaces Tabella degli attributi del \textit {model} \texttt {Account}.\relax }}{68}{table.4.25}% 
+\contentsline {table}{\numberline {4.26}{\ignorespaces Tabella dei metodi del \textit {model} \texttt {Account}.\relax }}{68}{table.4.26}% 
+\contentsline {table}{\numberline {4.27}{\ignorespaces Elenco delle \textit {views}.\relax }}{69}{table.4.27}% 
+\contentsline {table}{\numberline {4.28}{\ignorespaces Metodi del \textit {controller} \texttt {SampleSessionController}.\relax }}{70}{table.4.28}% 
+\contentsline {table}{\numberline {4.29}{\ignorespaces Metodi del \textit {controller} \texttt {SessionController}.\relax }}{71}{table.4.29}% 
+\contentsline {table}{\numberline {4.30}{\ignorespaces Metodi del \textit {controller} \texttt {GraphqlController}.\relax }}{71}{table.4.30}% 
+\contentsline {table}{\numberline {4.31}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {SampleSessionController}.\relax }}{72}{table.4.31}% 
+\contentsline {table}{\numberline {4.32}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {SessionController}.\relax }}{72}{table.4.32}% 
+\contentsline {table}{\numberline {4.33}{\ignorespaces Elenco delle \textit {routes} previste per il \textit {controller} \texttt {GraphqlController}.\relax }}{72}{table.4.33}% 
+\contentsline {table}{\numberline {4.34}{\ignorespaces Elenco dei \textit {types} GraphQL.\relax }}{74}{table.4.34}% 
+\contentsline {table}{\numberline {4.35}{\ignorespaces Elenco delle \textit {queries} GraphQL.\relax }}{75}{table.4.35}% 
+\contentsline {table}{\numberline {4.36}{\ignorespaces Elenco delle \textit {mutations} GraphQL.\relax }}{76}{table.4.36}% 
+\contentsline {table}{\numberline {4.37}{\ignorespaces Metodi del \textit {service} \texttt {ReportProcessor}.\relax }}{77}{table.4.37}% 
+\contentsline {table}{\numberline {4.38}{\ignorespaces Metodi del \textit {service} \texttt {OtpManager}.\relax }}{78}{table.4.38}% 
+\contentsline {table}{\numberline {4.39}{\ignorespaces Attributi del \textit {service} \texttt {SMS::Client}.\relax }}{79}{table.4.39}% 
+\contentsline {table}{\numberline {4.40}{\ignorespaces Metodi del \textit {service} \texttt {SMS::Client}.\relax }}{79}{table.4.40}% 
+\contentsline {table}{\numberline {4.41}{\ignorespaces Attributi del \textit {service} \texttt {SDA::Client}.\relax }}{81}{table.4.41}% 
+\contentsline {table}{\numberline {4.42}{\ignorespaces Metodi del \textit {service} \texttt {SDA::Client}.\relax }}{81}{table.4.42}% 
+\contentsline {table}{\numberline {4.43}{\ignorespaces Tabella delle schede del pannello di amministrazione\relax }}{83}{table.4.43}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

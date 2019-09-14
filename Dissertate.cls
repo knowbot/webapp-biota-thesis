@@ -254,6 +254,7 @@
 	\frontispiece
 	\dedicationpage
 	% \abstractpage
+	\renewcommand{\contentsname}{Indice}
 	\tableofcontents
 	\phantomsection
 	\clearpage

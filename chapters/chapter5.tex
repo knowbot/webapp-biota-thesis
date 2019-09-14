@@ -1,23 +1,55 @@
 %!TEX root = ../dissertation.tex
 \externaldocument{../frontmatter/abbr}
+\externaldocument{./chapter1}
 \begin{savequote}[75mm]
 Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
 \qauthor{Quoteauthor Lastname}
 \end{savequote}
 
 \chapter{Verifica e validazione}
+\label{chap6}
 \section{Premessa}
-L'applicativo sviluppato nel corso di questo progetto, come peraltro già detto, è entrato in fase di produzione (ovvero è stato rilasciato per l'uso da parte del cliente) relativamente presto, con aggiornamenti regolari che introducevano man mano nuove funzionalità. Tale situazione ha introdotto la forte necessità di controllare che ogni versione rilasciata del prodotto adempiesse correttamente a tutti i bisogni del cliente e fosse priva di inadeguatezze; il che ha reso ancora più fondamentali la verifica e la validazione del codice. In questa sezione verranno esposte le convenzioni e i processi volti ad assicurare la qualità del prodotto, espressa in assenza di errori introdotti da nuove funzionalità e adempimento ai bisogni espressi dal cliente.
-\section{Norme di codifica}
+L'applicativo sviluppato nel corso di questo progetto, come già menzionato, è entrato in fase di produzione (ovvero è stato rilasciato per l'uso da parte del cliente) relativamente presto, con aggiornamenti regolari che introducevano man mano nuove funzionalità. Tale situazione ha introdotto la forte necessità di controllare che ogni versione rilasciata del prodotto adempiesse correttamente a tutti i bisogni del cliente e fosse priva di inadeguatezze.
+
+In questa sezione verranno esposte le convenzioni e i processi volti ad assicurare la qualità del prodotto, valutata in assenza di \textit{failure} e adempimento ai bisogni espressi dal cliente.
+\subsection{Norme di codifica}
 Il primo passo nella realizzazione di un prodotto di qualità consiste nell'adottare norme che minimizzino i rischi e gli errori che si possono verificare. Sono quindi state seguite delle precise norme di codifica volte a rendere il codice funzionale e facilmente comprensibile a sviluppatori diversi dall'autore.
 
-Sono quindi state seguite pedissequamente le norme di codifica stabilite dalla community di Ruby on Rails, raccolte in una \textit{style guide} pubblicamente disponibile.
+Sono quindi state seguite pedissequamente le norme di codifica stabilite dalla community di Ruby on Rails, raccolte in una \textit{style guide} pubblicamente disponibile. L'utilizzo di tali norme ha facilitato il processo di analisi statica che verrà esposto a breve.
 \section{Verifica}
+Il processo di verifica viene attuato durante lo sviluppo del prodotto con lo scopo di accertare che nuove funzionalità introdotte non siano causa di errori o malfunzionamenti. Tale processo deve quindi valutare sia il codice scritto, per rilevare eventuali errori di codifica, che il codice in esecuzione per verificare che si comporti secondo certe aspettative. Il processo di verifica viene effettuato applicando due tecniche: \textbf{analisi statica}, che adempie al primo compito, e \textbf{analisi dinamica} che permette di svolgere il secondo.
 \subsection{Analisi statica}
-\subsection{Analisi dinamica}
-\section{Struttura dei test}
-\subsection{Test di unità}
-\subsection{Test di integrazione}
-\section{Validazione}
+La tecnica di analisi statica prevede di verificare il codice scritto al di fuori della sua esecuzione, effettuando dunque una revisione manuale volta ad evidenziare errori sintattici o altrimenti prontamente visibili allo sviluppatore. Essa permette di individuare subito eventuali imperfezioni che possono portare a comportamenti non previsti, se non a \textit{fault} del sistema.
 
+Nel corso del progetto, l'analisi statica del codice è stata eseguita costantemente durante lo sviluppo sotto la supervisione del tutor aziendale, permettendo di evitare non solo errori sintattici ma anche \textit{bad practices} dovute all'inesperienza con il \textit{framework} Rails.
+
+L'analisi statica è stata supportata dall'utilizzo dell'\ref{itm:ide} RubyMine, che mette a disposizione vari strumenti utili allo scopo ed è in grado di evidenziare alcune \textit{bad practices} comuni, arrivando addirittura a segnalare metodi con eccessiva complessità ciclomatica, in congiunzione con la gemma RuboCop per assicurarsi di seguire la \textit{style guide} di Ruby. RuboCop è stato anche utilizzato per automatizzare parte dell'analisi statica grazie alla sua funzione di autocorrezione, eseguibile sull'intero sorgente.
+\subsection{Analisi dinamica}
+La tecnica di analisi dinamica è complementare a quella di analisi statica, andando ad esaminare il comportamento del programma durante la sua esecuzione. Ciò avviene attraverso la definizione e l'esecuzione di test mirati a verificare il funzionamento del prodotto o di alcune sue componenti.
+
+La realizzazione di una suite di test compare anche come requisito stabilito nella pianificazione dello stage (sezione \hyperref[sec:reqs]{2.2.3.1}, requisito \underline{D02}). I test realizzati sono principalmente test di unità, mirati a verificare il comportamento di componenti specifiche del software, e di integrazione, per testare le interazioni tra tali componenti. I test di sistema e regressione non sono stati implementati a causa della mancanza di tempo.
+
+I test sono stati implementati utilizzando il \textit{framework} RSpec, utilizzando varie gemme di supporto come Factory Bot, Shoulda Matchers e Database Cleaner. L'ambiente di \textit{testing} è stato configurato in modo da effettuare una pulizia completa del database prima dell'esecuzione di ogni test e di ogni esempio parte di un test. I servizi di spedizione, \textit{logging} e invio SMS sono rimpiazzati da classi \textit{stub} create per simularne il comportamento. Le istanze dei \textit{models} vengono create ad-hoc utilizzando Factory Bot prima dell'esecuzione di ogni gruppo di esempi.
+
+I test sono stati eseguiti sia durante lo sviluppo che in presenza del tutor aziendale, per verificare il pieno soddisfacimento dei requisiti.
+\subsubsection{Test di unità}
+I test di unità realizzati vanno a verificare il corretto comportamento dei \textit{models}. È stato realizzato un test per ciascun \textit{model}, ognuno strutturato secondo le linee guida di RSpec: una prima suddivisione in scenari, che descrivono il contesto analizzato, a loro volta divisi in esempi, che implementano il caso specifico. La struttura di un test di unità è la seguente:
+\begin{itemize}
+    \item \textbf{Scenario per i metodi di validazione}, i cui esempi testano i vincoli imposti sul \textit{model};
+    \item \textbf{Scenario per le relazioni}, i cui esempi testano la corretta definizione delle relazioni con altri \textit{models}; non fa parte dei test di integrazione, in quanto fa uso di \textit{stub} e verifica semplicemente la corretta definizione dei vincoli di relazione;
+    \item \textbf{Scenario per i callback}, i cui esempi testano i metodi \textit{callback} definiti in vari contesti;
+    \item \textbf{Scenario per i metodi di classe}, i cui esempi vanno a testare i metodi che esulano dalle categorie precedenti.
+\end{itemize}
+
+Gli esempi di ogni scenario sono raggruppati in contesti, i quali descrivono un particolare stato del sistema.
+\subsubsection{Test di integrazione}
+I test di integrazione realizzati riguardano principalmente il funzionamento della \ref{iitm:api} GraphQL, che richiede appunto una perfetta integrazione tra i vari \textit{models}. Questi test sono strutturati in modo differente, dato il loro diverso scopo: si ha un test per ogni \textit{query}, che ne verifica i risultati in diversi contesti. Si compongono delle seguenti parti:
+\begin{itemize}
+    \item \textbf{Query}, ovvero la definizione della query da testare in linguaggio GraphQL;
+    \item \textbf{Autenticazione}, effettuata da un \textit{callback} eseguito all'inizio di ogni test che fornisce i parametri di una sessione valida per fare la richiesta;
+    \item \textbf{Contesti}, ovvero differenti situazioni ottenute istanziando i \textit{models} coinvolti con vari attributi e relazioni, a cui appartengono gli esempi che verificano la correttezza della risposta alla \textit{query} nel contesto dato.
+\end{itemize}
+
+\section{Validazione}
+Il processo di validazione viene attuato al termine di una fase del progetto di sviluppo ed è mirato a valutare quanto il prodotto risultante rispecchi i bisogni e le esigenze del committente. La validazione eseguita sul prodotto dal tutor aziendale sia al termine dello sviluppo di ogni funzionalità che al termine dello stage ha dato un esito positivi, riscontrando il pieno soddisfacimento dei requisiti stabiliti in fase di pianificazione. Inoltre l'applicativo è entrato in produzione con successo già prima della fine dello stage, dimostrando la qualità della progettazione e dello sviluppo effettuati.
 

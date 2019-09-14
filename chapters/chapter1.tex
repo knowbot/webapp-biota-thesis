@@ -5,6 +5,7 @@
 \qauthor{Douglas Adams}
 \end{savequote}
 \chapter{Progetto di stage}
+\label{chap2}
 \section{Approfondimento del contesto}
 \subsection{Contesto di sviluppo}
 \label{sec:devctx}
@@ -23,7 +24,7 @@ Il flusso operativo previsto è il seguente: il cliente richiede al farmacista d
 L'accesso al pannello amministrativo consente di creare, distruggere e modificare alcune categorie di record del database, come ad esempio le varie tipologie di utenti o le farmacie affiliate. Esso viene utilizzato principalmente per l'inserimento di nuovi utenti autorizzati, il recupero di informazioni rilevanti quali il consenso al trattamento dei dati, e per la risoluzione di problematiche grazie all'accesso privilegiato al database.
 
 \section{Definizione dei requisiti}
-Nella seguente sezione verranno esposti in via generale i requisiti che l'applicativo realizzato doveva soddisfare. È importante notare che, data la natura agile del metodo di lavoro impiegato dall'azienda, gli obiettivi presentati nel piano di lavoto sono stati soggetti a modifiche e aggiunte di lieve e media entità; per completezza e possibilità di confronto, di seguito verranno esposti sia i requisiti iniziali che quelli elaborati a fronte dell'interazione con il cliente.
+Nella seguente sezione verranno esposti in via generale i requisiti che l'applicativo realizzato doveva soddisfare. È importante notare che, data la natura agile del metodo di lavoro impiegato dall'azienda, gli obiettivi presentati nel piano di lavoro sono stati soggetti a modifiche e aggiunte di lieve e media entità; per completezza e possibilità di confronto, di seguito verranno esposti sia i requisiti iniziali che quelli elaborati a fronte dell'interazione con il cliente.
 \subsection{Notazione}
 Si farà riferimento a requisiti ed obiettivi secondo le rispettive notazioni:
 \begin{itemize}
@@ -54,11 +55,12 @@ Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziend
 \subsection{Modifiche al piano}
 Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da parte del tutor aziendale, ci sono state varie interazioni con il cliente che hanno portato a ridefinire alcuni requisiti desiderabili e a specificare in modo più preciso i requisiti facoltativi. Tali modifiche sono sempre state fatte in accordo alle possibilità di soddisfazione entro i tempi previsti, e tenendo in mente che la piattaforma sarebbe entrata in produzione al completamento delle funzionalità per l'esecuzione flusso di attività base.
 \subsubsection{Requisiti rivisti}
+\label{sec:reqs}
 \paragraph{Obbligatori}
 \begin{itemize}
     \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
     \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
-    \item \underline{O03}: Implementazione delle strutture per il questionario
+    \item \underline{O03}: Adattamento e rafforzamento del codice esistente
 \end{itemize}
 \vspace{-15pt}
 \paragraph{Desiderabili}
@@ -76,7 +78,45 @@ Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da pa
 \end{itemize}
 
 \section{Pianificazione delle attività}
+Il piano di lavoro stilato in collaborazione con il tutor aziendale ed il relatore prevedeva una suddivisione settimanale delle attività dedicate alla realizzazione del progetto, distribuendo le 300 ore previste su un periodo di 8 settimane, più una settimana di \textit{slack} per accomodare eventuali impegni accademici.
 
+La suddivisione settimanale prevista era la seguente:
+\begin{itemize}
+    \item \textbf{Prima settimana (20 ore)}: Comprensione del sistema e degli obiettivi;
+    \item \textbf{Seconda settimana (40 ore)}: Analisi dei requisiti;
+    \item \textbf{Terza settimana (40 ore)}: Studio e setup ambiente di sviluppo, progettazione;
+    \item \textbf{Quarta settimana (40 ore)}: Implementazione;
+    \item \textbf{Quinta settimana (40 ore)}: Implementazione;
+    \item \textbf{Sesta settimana (40 ore)}: Implementazione;
+    \item \textbf{Settima settimana (40 ore)}: Implementazione, test e validazione;
+    \item \textbf{Ottava settimana (40 ore)}: Test e validazione, documentazione.
+\end{itemize}
+\vspace{-18pt}
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{|c|c|}
+          \hline % linea orizzontale
+          \hspace{5pt}\textbf{Attività}\hspace{5pt} & \textbf{Monte ore}  \\\hline
+          Comprensione sistema e obiettivi & 20 \cr\hline
+          Analisi dei requisiti & 40 \cr\hline
+          Progettazione  & 20 \cr\hline
+          Studio e setup ambiente di sviluppo &  20 \cr\hline
+          Implementazione &  150 \cr\hline
+          Test e validazione &  30 \cr\hline
+          Documentazione &  20 \cr\hline\hline
+          \textbf{Totale} &  300 \cr\hline
+        \end{tabular}
+        \caption{Totale di ore dedicato a ciascuna attività.}
+        \label{tab:ore}
+    \end{center}
+    \end{table}
+
+    
+\begin{figure}[h!]
+    \includegraphics[width=\textwidth]{figures/gantt.png}
+    \caption[ClassDia]{Diagramma di Gantt di pianificazione delle attività.
+    \label{fig:gantt}}
+\end{figure}    
 
 \section{Tecnologie utilizzate}
 Di seguito vengono discusse le tecnologie individuate per la realizzazione del progetto. Alcune di esse, quali Ruby on Rails e RubyMine, sono state richieste dell'azienda; altre (principalmente gemme per Ruby) sono state ricercate e proposte dal laureando per soddisfare alcuni dei requisiti individuati.
