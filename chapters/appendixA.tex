@@ -1,13 +1,15 @@
 %!TEX root = ../dissertation.tex
 \externaldocument{./chapter2}
 \appendix
-\chapter{Appendice A}
+\cleardoublepage
+\phantomsection
+\addtocontents{toc}{\setcounter{tocdepth}{0}}
+\chapter{Casi d'uso secondari}
 \label{sec:AppendixA}
-\section{Casi d'uso secondari}
-Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principale, in riferimento alla sezione \hyperref[sec:usecase]{3.2} del \hyperref[sec:chap3]{capitolo 3}.
+Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principale, in riferimento alla sezione \hyperref[sec:usecase]{3.2} del \hyperref[chap3]{capitolo 3}.
 \setlength{\parindent}{0cm}
-\subsection{Casi d'uso secondari per UC1}
-\subsubsection{UC1.1: Inserimento email}
+\section{Casi d'uso secondari per UC1}
+\subsection{UC1.1: Inserimento email}
 \label{sec:uc11}
 \textsc{\textbf{Attori:}} Utente non autenticato.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire un indirizzo email per l'autenticazione al pannello di amministrazione.\\
@@ -15,7 +17,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore inserisce un indirizzo mail nell'apposito campo.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha inserito un indirizzo email valido.
 
-\subsubsection{UC1.2: Inserimento password}
+\subsection{UC1.2: Inserimento password}
 \label{sec:uc12}
 \textsc{\textbf{Attori:}} Utente non autenticato.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire una password per l'autenticazione al pannello di amministrazione.\\
@@ -23,8 +25,8 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore inserisce una password nel campo apposito.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha inserito una password corretta.
 
-\subsection{Casi d'uso secondari per UC6}
-\subsubsection{UC6.1: Modifica ordine della tabella dei record}
+\section{Casi d'uso secondari per UC6}
+\subsection{UC6.1: Riordinamento tabella dei record}
 \label{sec:UC61}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole cambiare l'ordine della tabella dei record secondo un certo campo.\\
@@ -32,7 +34,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore seleziona la colonna del campo in base al quale ordinare la tabella.
 \textsc{\textbf{Postcondizioni:}} L'attore ha riordinato la tabella secondo il campo desiderato.
 
-\subsubsection{UC6.2: Applicazione filtro alla tabella dei record}
+\subsection{UC6.2: Applicazione filtro alla tabella dei record}
 \label{sec:UC62}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole filtrare alcune righe della tabella dei record.\\
@@ -45,7 +47,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha applicato il filtro desiderato alla tabella dei record.
 
-\subsubsection{UC6.3: Rimozione filtro alla tabella dei record}
+\subsection{UC6.3: Rimozione filtro alla tabella dei record}
 \label{sec:UC63}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole rimuovere un filtro dalla tabella dei record.\\
@@ -57,7 +59,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha rimosso il filtro desiderato alla tabella dei record.
 
-\subsubsection{UC6.4: Aggiunta di un nuovo record}
+\subsection{UC6.4: Aggiunta di un nuovo record}
 \label{sec:UC64}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiungere un record alla tabella.\\
@@ -72,11 +74,11 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha creato con successo un nuovo record.\\
 \textsc{\textbf{Estensioni:}} L'attore annulla la creazione di un nuovo record (\hyperref[sec:UC69]{UC6.9}).
 
-\subsubsection{UC6.5: Visualizzazione di un record}
+\subsection{UC6.5: Visualizzazione di un record}
 \label{sec:UC65}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare un record della tabella.\\
-\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella do record.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore sta visualizzando una tabella di record.\\
 \textsc{\textbf{Scenario principale:}} 
 \begin{itemize}
     \item L'attore clicca sul pulsante ``Mostra" sulla riga corrispondente al record desiderato;
@@ -86,7 +88,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione della categoria di record selezionata con successo.
 
-\subsubsection{UC6.6: Modifica di un record}
+\subsection{UC6.6: Modifica di un record}
 \label{sec:UC66}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare un record della tabella.\\
@@ -106,13 +108,13 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
     \item L'attore modifica il contenuto dei campi disponibili;
     \item L'attore clicca sul pulsante ``Aggiorna \textbf{\{record\}}";
 \end{itemize}
-\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente aggiornato il record con i dati desiderati.
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente aggiornato il record con i dati desiderati.\\
 \textsc{\textbf{Estensioni:}} \begin{itemize}
     \item L'attore annulla la modifica del record (\hyperref[sec:UC69]{UC6.9});
-    \item L'attore commette un errore nella modifica del record (\hyperref[sec:UC69]{UC6.9}).
+    \item L'attore commette un errore nella modifica del record (\hyperref[sec:UC68]{UC6.8}).
 \end{itemize}
 
-\subsubsection{UC6.7: Eliminazione di un record}
+\subsection{UC6.7: Eliminazione di un record}
 \label{sec:UC67}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare un record della tabella.\\
@@ -130,10 +132,10 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
     \item L'attore visualizza un \textit{pop-up} di conferma dell'operazione;
     \item L'attore clicca sul pulsante ``Ok'' per confermare l'operazione.
 \end{itemize}
-\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente rimosso il record.
+\textsc{\textbf{Postcondizioni:}} L'attore ha correttamente rimosso il record.\\
 \textsc{\textbf{Estensioni:}} L'attore annulla la rimozione del record (\hyperref[sec:UC69]{UC6.9}).
 
-\subsubsection{UC6.8: Errore nella modifica di un record}
+\subsection{UC6.8: Errore nella modifica di un record}
 \label{sec:UC68}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare un record.\\
@@ -145,7 +147,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} Il messaggio di errore rimane in cima al \textit{form} di modifica e la modifica viene prevenuta.
 
-\subsubsection{UC6.9: Annullamento operazione}
+\subsection{UC6.9: Annullamento operazione}
 \label{sec:UC69}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole annullare l'operazione in corso.\\
@@ -153,7 +155,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore clicca sul pulsante ``Annulla".\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha annullato correttamente l'operazione ed eventuali modifiche vengono prevenute.
 
-\subsubsection{UC6.10: Gestione di un utente}
+\subsection{UC6.10: Gestione di un utente}
 \label{sec:UC610}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire un utente autorizzato.\\
@@ -165,7 +167,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione dell'utente desiderato con successo.
 
-\subsubsection{UC6.10.1: Generazione nuova password per un utente}
+\subsection{UC6.10.1: Generazione nuova password per un utente}
 \label{sec:UC6101}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole generare una nuova password per un utente autorizzato.\\
@@ -173,7 +175,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore preme sul pulsante ``Rigenera password''.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente generato una nuova password per l'utente desiderato.
 
-\subsubsection{UC6.11: Gestione di un cliente}
+\subsection{UC6.11: Gestione di un cliente}
 \label{sec:UC611}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire un cliente.\\
@@ -185,7 +187,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha eseguito tutte le operazioni di gestione del cliente desiderato con successo.
 
-\subsubsection{UC6.11.1: Scaricamento modulo di consenso al trattamento dei dati}
+\subsection{UC6.11.1: Scaricamento modulo di consenso al trattamento dei dati}
 \label{sec:UC6111}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole scaricare il modulo per il consenso al trattamento dei dati firmato da un cliente (se presente).\\
@@ -193,8 +195,8 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Scenario principale:}} L'attore preme sul pulsante ``Scarica privacy policy''.\\
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente scaricato il modulo (se presente).
 
-\subsection{Casi d'uso secondari per UC11}
-\subsubsection{UC11.1: Richiesta informazioni lista degli utenti}
+\section{Casi d'uso secondari per UC11}
+\subsection{UC11.1: Richiesta informazioni lista degli utenti}
 \label{sec:UC111}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli utenti con ruolo ``pharmacy'' per la farmacia corrente.\\
@@ -203,7 +205,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.2: Richiesta informazioni utente}
+\subsection{UC11.2: Richiesta informazioni utente}
 \label{sec:UC112}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un utente con ruolo ``pharmacy'' per la farmacia corrente.\\
@@ -212,7 +214,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.3: Richiesta reset della password di un utente}
+\subsection{UC11.3: Richiesta reset della password di un utente}
 \label{sec:UC113}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole richiedere il reset della password per un utente con ruolo ``pharmacy''.\\
@@ -225,16 +227,16 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} La richiesta di reset viene processata correttamente dal sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.4: Impostazione nuova password per un utente}
+\subsection{UC11.4: Impostazione nuova password per un utente}
 \label{sec:UC114}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole impostare.\\
-\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema, possiede una sessione attiva per un utente con ruolo ``pharmacy'' e possiede un \textit{token} valido per la reimpostazione della password per l'utente autorizzato desiderato.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede un \textit{token} valido per la reimpostazione della password per l'utente autorizzato desiderato.\\
 \textsc{\textbf{Scenario principale:}} L'attore invia al sistema la richiesta di reimpostazione contenente il \textit{token} di reset e la nuova password desiderata.\\
 \textsc{\textbf{Postcondizioni:}} Il sistema ha reimpostato correttamente la password per l'utente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.5: Creazione utente}
+\subsection{UC11.5: Creazione utente}
 \label{sec:UC115}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole creare un utente con ruolo ``pharmacy'' per la farmacia corrente.\\
@@ -243,7 +245,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha creato correttamente l'utente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.6: Rimozione utente}
+\subsection{UC11.6: Rimozione utente}
 \label{sec:UC116}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare un utente con ruolo ``pharmacy'' per la farmacia corrente.\\
@@ -252,7 +254,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha rimosso correttamente l'utente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC11.7: Aggiornamento dati utente}
+\subsection{UC11.7: Aggiornamento dati utente}
 \label{sec:UC117}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati di un utente con ruolo ``pharmacy'' per la farmacia corrente.\\
@@ -261,9 +263,9 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente l'utente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsection{Casi d'uso secondari per UC12}
+\section{Casi d'uso secondari per UC12}
 
-\subsubsection{UC12.1: Richiesta storico degli esami}
+\subsection{UC12.1: Richiesta storico degli esami}
 \label{sec:UC121}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere lo storico degli esami per la farmacia corrente.\\
@@ -272,7 +274,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.2: Richiesta storico degli esami in base allo stato di avanzamento}
+\subsection{UC12.2: Richiesta storico degli esami in base all'avanzamento}
 \label{sec:UC122}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere lo storico degli esami per la farmacia corrente che si trovino in un certo stato di avanzamento.\\
@@ -285,7 +287,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.3: Richiesta informazioni esame}
+\subsection{UC12.3: Richiesta informazioni esame}
 \label{sec:UC123}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame  effettuato presso la farmacia corrente.\\
@@ -294,7 +296,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.4: Richiesta informazioni esame in base al campione}
+\subsection{UC12.4: Richiesta informazioni esame in base al campione}
 \label{sec:UC124}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame  effettuato presso la farmacia corrente con uno specifico codice campione.\\
@@ -307,7 +309,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.5: Creazione esame}
+\subsection{UC12.5: Creazione esame}
 \label{sec:UC125}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole creare un esame presso la farmacia corrente.\\
@@ -316,7 +318,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ah creato correttamente l'esame e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.6: Rimozione esame}
+\subsection{UC12.6: Rimozione esame}
 \label{sec:UC126}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare un esame creato presso la farmacia corrente.\\
@@ -325,7 +327,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha rimosso correttamente l'esame desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.7: Aggiornamento dati esame}
+\subsection{UC12.7: Aggiornamento dati esame}
 \label{sec:UC127}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati di un esame effettuato presso la farmacia corrente.\\
@@ -334,7 +336,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente l'esame desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC12.8: Aggiornamento risposte al questionario di un esame}
+\subsection{UC12.8: Aggiornamento risposte al questionario di un esame}
 \label{sec:UC128}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare le risposte date al questionario di un esame.\\
@@ -343,8 +345,8 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente le risposte al questionario associato all'esame desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsection{Casi d'uso secondari per UC13}
-\subsubsection{UC13.1: Richiesta informazioni registro dei clienti}
+\section{Casi d'uso secondari per UC13}
+\subsection{UC13.1: Richiesta informazioni registro dei clienti}
 \label{sec:UC131}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere il registro dei clienti della farmacia corrente.\\
@@ -353,7 +355,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.2: Richiesta informazioni cliente}
+\subsection{UC13.2: Richiesta informazioni cliente}
 \label{sec:UC132}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un cliente della farmacia corrente.\\
@@ -362,7 +364,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.3: Creazione cliente}
+\subsection{UC13.3: Creazione cliente}
 \label{sec:UC133}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole creare un cliente per la farmacia corrente.\\
@@ -371,7 +373,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha creato correttamente il cliente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.4: Rimozione cliente}
+\subsection{UC13.4: Rimozione cliente}
 \label{sec:UC134}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare un cliente per la farmacia corrente.\\
@@ -380,7 +382,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha rimosso correttamente il cliente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.5: Aggiornamento dati cliente}
+\subsection{UC13.5: Aggiornamento dati cliente}
 \label{sec:UC135}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati di un cliente della farmacia corrente.\\
@@ -389,7 +391,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente il cliente desiderato e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.6: Invio codice OTP}
+\subsection{UC13.6: Invio codice OTP}
 \label{sec:UC136}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inviare il codice per l'accettazione della privacy policy ad un cliente della farmacia corrente.\\
@@ -405,7 +407,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
     \item L'attore effettua troppi tentativi di invio (\hyperref[sec:UC17]{UC17}).
 \end{itemize}
 
-\subsubsection{UC13.7: Verifica codice OTP}
+\subsection{UC13.7: Verifica codice OTP}
 \label{sec:UC137}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole verificare il codice per l'accettazione della privacy policy da parte di un cliente della farmacia corrente.\\
@@ -417,7 +419,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato l'accettazione della privacy policy, e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia un codice non valido (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC13.8: Caricamento manuale della \textit{privacy policy}}
+\subsection{UC13.8: Caricamento manuale della \textit{privacy policy}}
 \label{sec:UC138}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiungere al record di un cliente della farmacia una copia del modulo per il consenso al trattamento dei dati, firmato dal cliente .\\
@@ -426,7 +428,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato correttamente l'accettazione della \textit{privacy policy}, ha caricato correttamente la copia del modulo e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
     
-\subsection{Casi d'uso secondari per UC14}\subsubsection{UC14.1: Richiesta informazioni lista delle spedizioni}
+\section{Casi d'uso secondari per UC14}\subsection{UC14.1: Richiesta informazioni lista delle spedizioni}
 \label{sec:UC141}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista delle spedizioni per la farmacia corrente.\\
@@ -435,7 +437,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).\\
 
-\subsubsection{UC14.2: Richiesta informazioni spedizione}
+\subsection{UC14.2: Richiesta informazioni spedizione}
 \label{sec:UC142}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di una spedizione per la farmacia corrente.\\
@@ -444,8 +446,8 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC14.3: Creazione spedizione}
-\label{sec:UC144}
+\subsection{UC14.3: Creazione spedizione}
+\label{sec:UC143}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole creare una spedizione per la farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -453,7 +455,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha creato correttamente la spedizione desiderata e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC14.4: Rimozione spedizione}
+\subsection{UC14.4: Rimozione spedizione}
 \label{sec:UC144}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eliminare una spedizione per la farmacia corrente.\\
@@ -462,7 +464,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha rimosso correttamente la spedizione desiderata e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC14.5: Aggiornamento dati spedizione}
+\subsection{UC14.5: Aggiornamento dati spedizione}
 \label{sec:UC145}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati di un cliente della farmacia corrente.\\
@@ -471,7 +473,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente la spedizione desiderata e l'attore ha ricevuto un messaggio di conferma del successo dell'operazione.
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC14.6: Visualizzazione lettera di vettura}
+\subsection{UC14.6: Visualizzazione lettera di vettura}
 \label{sec:UC146}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare la lettera di vettura di una spedizione per la farmacia corrente.\\
@@ -485,7 +487,7 @@ Di seguito vengono riportati i casi d'uso secondari per ogni caso d'uso principa
 \textsc{\textbf{Postcondizioni:}} L'attore visualizza correttamente la lettera di vettura.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC14.7: Prenotazione spedizione}
+\subsection{UC14.7: Prenotazione spedizione}
 \label{sec:UC147}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole prenotare una spedizione per la farmacia corrente presso SDA.\\

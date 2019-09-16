@@ -1,12 +1,13 @@
 %!TEX root = ../dissertation.tex
 \externaldocument{../frontmatter/abbr}
 \externaldocument{./appendixA}
+\externaldocument{./appendixB}
 \begin{savequote}[75mm]
 This is some random quote to start off the chapter.
 \qauthor{Firstname lastname}
 \end{savequote}
 \chapter{Analisi dei requisiti}
-\label{sec:chap3}
+\label{chap3}
 \section{Casi d'uso}
 \label{sec:usecase}
 Di seguito verranno descritti i casi d'uso dell'applicazione, per quanto riguarda le funzionalità da me progettate; non verranno quindi tenute in considerazione eventuali funzionalità pre-esistenti che fossero parte dell'ecosistema a cui appartiene la piattaforma.
@@ -114,8 +115,9 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 \textsc{\textbf{Scenario principale:}} 
 \begin{itemize}
     \item L'attore visualizza e gestisce una categoria di record (\hyperref[sec:UC6]{UC6});
-    \item L'attore visualizza la \textit{dashboard} (\hyperref[sec:UC7]{UC7}).
-    \item L'attore effettua la disconnessione dal pannello di amministrazione (\hyperref[sec:UC8]{UC8}).
+    \item L'attore visualizza la \textit{dashboard} (\hyperref[sec:UC7]{UC7});
+    \item L'attore gestisce il proprio profilo (\hyperref[sec:UC8]{UC8});
+    \item L'attore effettua la disconnessione dal pannello di amministrazione (\hyperref[sec:UC9]{UC9}).
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
@@ -180,7 +182,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
     \item L'attore gestisce gli esami (\hyperref[sec:UC12]{UC12});
     \item L'attore gestisce i clienti (\hyperref[sec:UC13]{UC13});
     \item L'attore gestisce le spedizioni (\hyperref[sec:UC14]{UC14});
-    \item L'attore visualizza il referto specifico per un esame (\hyperref[sec:UC15]{UC15});
+    \item L'attore visualizza il referto dettagliato per un esame (\hyperref[sec:UC15]{UC15});
     \item L'attore effettua la disconnessione dalla piattaforma (\hyperref[sec:UC18]{UC18}).
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
@@ -191,7 +193,9 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati della farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
 \textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di aggiornamento del record della farmacia con i nuovi dati, potenzialmente allegando un'immagine da sostituire al logo corrente.\\
-\textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.
+\textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.//
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
+
 
 \subsubsection{UC11: Gestione utenti}
 \label{sec:UC11}
@@ -211,7 +215,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione degli utenti.
 
 \subsubsection{UC12: Gestione esami}
-\label{sec:UC11}
+\label{sec:UC12}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti con ruolo ``pharmacy'' appartenenti alla farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -253,17 +257,17 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
 \textsc{\textbf{Scenario principale:}}
 \begin{itemize}
-    \item L'attore visualizza la lista delle spedizioni;
-    \item L'attore visualizza una spedizione;
-    \item L'attore crea una spedizione;
-    \item L'attore elimina una spedizione;
-    \item L'attore modifica i dati di una spedizione;
-    \item L'attore visualizza la lettera di vettura per una spedizione;
-    \item L'attore prenota il ritiro di una spedizione.
+    \item L'attore visualizza la lista delle spedizioni (\hyperref[sec:UC141]{UC14.1});
+    \item L'attore visualizza una spedizione (\hyperref[sec:UC142]{UC14.2});
+    \item L'attore crea una spedizione (\hyperref[sec:UC143]{UC14.3});
+    \item L'attore elimina una spedizione (\hyperref[sec:UC144]{UC14.4});
+    \item L'attore modifica i dati di una spedizione (\hyperref[sec:UC145]{UC14.5});
+    \item L'attore visualizza la lettera di vettura per una spedizione (\hyperref[sec:UC146]{UC14.6});
+    \item L'attore prenota il ritiro di una spedizione (\hyperref[sec:UC147]{UC14.7}).
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha portato a termine con successo le operazioni di gestione delle spedizioni.
 
-\subsubsection{UC15: Generazione referto specifico}
+\subsubsection{UC15: Generazione referto dettagliato}
 \label{sec:UC15}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare il referto di un esame, completo delle informazioni specifiche risultate dall'analisi e delle informazioni personali del cliente.\\
@@ -271,7 +275,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Scenario principale:}}
 \begin{itemize}
     \item L'attore richiede la visualizzazione del referto, fornendo il codice identificativo interno dell'esame cui è associato;
-    \item Il sistema processa il file PDF del referto inviato dal laboratorio aggiungendo la diagnosi del gastroenterologo e le generalità del paziente;
+    \item Il sistema processa il file PDF del referto inviato dal laboratorio aggiungendo la diagnosi del gastroenterologo, la tabella della dieta e le generalità del paziente;
     \item L'attore riceve dal sistema il referto generato.
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha visualizzato correttamente il referto specifico.\\
@@ -325,6 +329,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
     \item L'attore richiede i dati di un esame in attesa di diagnosi (\hyperref[sec:UC20]{UC20});
     \item L'attore inserisce una diagnosi per un esame (\hyperref[sec:UC21]{UC21});
     \item L'attore inserisce la tabella della dieta per un esame (\hyperref[sec:UC22]{UC22});
+    \item L'attore visualizza il referto dettagliato anonimo per un esame (\hyperref[sec:UC23]{UC23});
     \item L'attore effettua la disconnessione dalla piattaforma (\hyperref[sec:UC18]{UC18}).
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
@@ -356,13 +361,27 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato correttamente la diagnosi e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC22: Inserimento della tabella della dieta}
+\subsubsection{UC22: Inserimento tabella della dieta}
 \label{sec:UC22}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole inserire la tabella della dieta associata ad un esame.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``gastroenterologist'', l'esame rientra tra quelli visibili.\\
 \textsc{\textbf{Scenario principale:}}  L'attore invia una richiesta di inserimento della tabella della dieta per l'esame desiderato, fornendo il codice identificativo interno dell'esame.\\
 \textsc{\textbf{Postcondizioni:}} Il sistema ha registrato correttamente la tabella della dieta e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
+
+\subsubsection{UC23: Generazione referto dettagliato anonimo}
+\label{sec:UC23}
+\textsc{\textbf{Attori:}} Front end.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole visualizzare il referto di un esame, completo delle informazioni specifiche risultate dall'analisi.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``gastroenterologist'' o ``bmr'', l'esame rientra tra quelli visibili.\\
+\textsc{\textbf{Scenario principale:}}
+\begin{itemize}
+    \item L'attore richiede la visualizzazione del referto, fornendo il codice identificativo interno dell'esame cui è associato;
+    \item Il sistema processa il file PDF del referto inviato dal laboratorio aggiungendo la diagnosi del gastroenterologo e la tabella della dieta;
+    \item L'attore riceve dal sistema il referto generato.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha visualizzato correttamente il referto specifico.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
 \subsection{UCG4: Operazioni per utente ``bmr''}
@@ -373,16 +392,17 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Precondizioni:}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``bmr''.\\
 \textsc{\textbf{Scenario principale:}} 
 \begin{itemize}
-    \item L'attore richiede la lista di esami per cui è stata emessa una diagnosi (\hyperref[sec:UC23]{UC23});
-    \item L'attore richiede i dati di un esame per cui è stata emessa una diagnosi (\hyperref[sec:UC24]{UC24});
-    \item L'attore aggiorna una diagnosi per un esame (\hyperref[sec:UC25]{UC25});
-    \item L'attore aggiorna la tabella della dieta per un esame (\hyperref[sec:UC26]{UC26});
+    \item L'attore richiede la lista di esami per cui è stata emessa una diagnosi (\hyperref[sec:UC24]{UC24});
+    \item L'attore richiede i dati di un esame per cui è stata emessa una diagnosi (\hyperref[sec:UC25]{UC25});
+    \item L'attore aggiorna una diagnosi per un esame (\hyperref[sec:UC26]{UC26});
+    \item L'attore aggiorna la tabella della dieta per un esame (\hyperref[sec:UC27]{UC27});
+    \item L'attore visualizza il referto dettagliato anonimo per un esame (\hyperref[sec:UC23]{UC23});
     \item L'attore effettua la disconnessione dalla piattaforma (\hyperref[sec:UC18]{UC18}).
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\subsubsection{UC23: Richiesta lista esami con diagnosi}
-\label{sec:UC23}
+\subsubsection{UC24: Richiesta lista esami con diagnosi}
+\label{sec:UC24}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli esami per cui è stata emessa una diagnosi.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``bmr''.\\
@@ -390,8 +410,8 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC24: Richiesta informazioni esame per cui è stata emessa una diagnosi}
-\label{sec:UC24}
+\subsubsection{UC25: Richiesta informazioni esame con diagnosi}
+\label{sec:UC25}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame per cui è stata emessa una diagnosi.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``gastroenterologist''.\\
@@ -399,8 +419,8 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto correttamente i dati richiesti al sistema.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC25: Aggiornamento diagnosi per un esame}
-\label{sec:UC25}
+\subsubsection{UC26: Aggiornamento diagnosi per un esame}
+\label{sec:UC26}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole modificare la diagnosi emessa per un esame.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``bmr'', l'esame rientra tra quelli visibili.\\
@@ -408,8 +428,8 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente la diagnosi e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
-\subsubsection{UC26: Aggiornamento tabella della dieta}
-\label{sec:UC26}
+\subsubsection{UC27: Aggiornamento tabella della dieta}
+\label{sec:UC27}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare la tabella della dieta associata ad un esame.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``bmr'', l'esame rientra tra quelli visibili.\\
@@ -425,31 +445,44 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
 \textsc{\textbf{Precondizioni:}} L'attore ha accesso agli \textit{endpoint} forniti dal sistema e possiede le credenziali necessarie per l'autenticazione HMAC.\\
 \textsc{\textbf{Scenario principale:}} 
 \begin{itemize}
-    \item L'attore richiede la lista di esami il cui campione è stato raccolto (\hyperref[sec:UC27]{UC27});
-    \item L'attore aggiorna lo stato di avanzamento di un esame (\hyperref[sec:UC28]{UC28});
-    \item L'attore rifiuta il campione per un esame (\hyperref[sec:UC29]{UC29});
-    \item L'attore carica il referto delle analisi (\hyperref[sec:UC30]{UC30}).
+    \item L'attore richiede la lista di esami il cui campione è stato raccolto (\hyperref[sec:UC28]{UC28});
+    \item L'attore richiede i dati di un esame (\hyperref[sec:UC29]{UC29});
+    \item L'attore aggiorna lo stato di avanzamento di un esame (\hyperref[sec:UC30]{UC30});
+    \item L'attore rifiuta il campione per un esame (\hyperref[sec:UC31]{UC31});
+    \item L'attore carica il referto delle analisi (\hyperref[sec:UC32]{UC32}).
+    \item L'attore richiede il referto dettagliato anonimo per un esame (\hyperref[sec:UC33]{UC33})
 \end{itemize}
 \textsc{\textbf{Postcondizioni:}} L'attore ha correttamente portato a termine le operazioni desiderate.
 
-\subsubsection{UC27: Richiesta lista esami con campione}
-\label{sec:UC27}
+\subsubsection{UC28: Richiesta lista esami con campione}
+\label{sec:UC28}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere la lista degli esami il cui campione è stato raccolto, compresi quelli il cui iter di avanzamento è stato completato.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente e ha autenticato correttamente la richiesta.\\
 \textsc{\textbf{Scenario principale:}}  L'attore invia la richiesta \ref{itm:http} di sincronizzazione della lista degli esami all'\textit{endpoint} appropriato.\\
-\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta contenente i dati richiesti in formato \ref{itm:json}.
+\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta contenente i dati richiesti in formato \ref{itm:json}.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
 
-\subsubsection{UC28: Aggiornamento stato di avanzamento di un esame}
-\label{sec:UC28}
+\subsubsection{UC29: Richiesta dati di un esame}
+\label{sec:UC29}
+\textsc{\textbf{Attori:}} Gestionale laboratorio.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole ottenere i dati di un esame.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente e ha autenticato correttamente la richiesta.\\
+\textsc{\textbf{Scenario principale:}}  L'attore invia la richiesta \ref{itm:http} di ricezione dei dati dell'esame all'\textit{endpoint} appropriato.\\
+\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta contenente i dati richiesti in formato \ref{itm:json}.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
+
+\subsubsection{UC30: Aggiornamento stato di avanzamento di un esame}
+\label{sec:UC30}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare lo stato di avanzamento di un esame ad uno di quello disponibili.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente e ha autenticato correttamente la richiesta.\\
 \textsc{\textbf{Scenario principale:}}  L'attore invia la richiesta \ref{itm:http} corretta per il nuovo stato dell'esame all'\textit{endpoint} appropriato, specificando il codice campione a cui l'esame è associato.\\
-\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta che conferma il successo dell'operazione.
+\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
 
-\subsubsection{UC29: Rifiuto di un campione}
-\label{sec:UC29}
+\subsubsection{UC31: Rifiuto di un campione}
+\label{sec:UC31}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole segnalare che il campione per un determinato esame è stato rifiutato.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente e ha autenticato correttamente la richiesta.\\
@@ -458,10 +491,11 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
     \item L'attore invia la richiesta \ref{itm:http} per rifiutare del campione all'\textit{endpoint} appropriato, specificando il codice campione a cui l'esame è associato e inserendo nel \textit{body} la ragione del rifiuto.
     \item Il sistema effettua il \textit{parsing} della risposta per ottenere la ragione del rifiuto e aggiorna l'esame desiderato.
 \end{itemize}
-\textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente l'esame e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.
+\textsc{\textbf{Postcondizioni:}} Il sistema ha aggiornato correttamente l'esame e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
 
-\subsubsection{UC30: Caricamento referto delle analisi}
-\label{sec:UC30}
+\subsubsection{UC32: Caricamento referto delle analisi}
+\label{sec:UC32}
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole caricare il referto delle analisi per un esame, assieme ad eventuali appunti sul referto.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente, ha autenticato correttamente la richiesta ed è disponibile un referto da caricare.\\
@@ -469,13 +503,159 @@ Questo caso d'uso generale riassume le operazioni disponibili al software gestio
     \item L'attore invia la richiesta \ref{itm:http} di conclusione delle analisi all'\textit{endpoint} appropriato, allegando il referto ed eventuali note alle analisi e specificando il codice campione a cui l'esame è associato.
     \item Il sistema effettua il \textit{parsing} della risposta e aggiorna il record dell'esame corrispondente aggiungendo il referto ed eventuali note.
 \end{itemize}
-\textsc{\textbf{Postcondizioni:}} Il sistema ha ricevuto il referto, ha aggiornato correttamente l'esame e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.
+\textsc{\textbf{Postcondizioni:}} Il sistema ha ricevuto il referto, ha aggiornato correttamente l'esame e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
+
+\subsubsection{UC33: Richiesta referto dettagliato anonimo}
+\label{sec:UC33}
+\textsc{\textbf{Attori:}} Gestionale laboratorio.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore vuole ricevere il referto dettagliato con la diagnosi del gastroenterologo per un esame.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} corrispondente, ha autenticato correttamente la richiesta ed è disponibile un referto da visualizzare.\\
+\textsc{\textbf{Scenario principale:}}  \begin{itemize}
+    \item L'attore invia la richiesta \ref{itm:http} di visualizzazione del referto all'\textit{endpoint} appropriato.
+    \item Il sistema elabora il referto dettagliato e e lo restituisce all'attore.
+\end{itemize}
+\textsc{\textbf{Postcondizioni:}} L'attore ha ricevuto il referto dettagliato.\\
+\textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida e ottiene una risposta che segnala l'errore (\hyperref[sec:UC34]{UC34}).
+
+\subsubsection{UC34: Errore per richiesta invalida}
+\label{sec:UC34}
+\textsc{\textbf{Attori:}} Gestionale laboratorio.\\
+\textsc{\textbf{Scopo e descrizione:}} L'attore invia una richiesta contenente dati non validi.\\
+\textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha accesso all'\textit{endpoint} desiderato e ha autenticato correttamente la richiesta.\\
+\textsc{\textbf{Scenario principale:}} L'attore invia la richiesta \ref{itm:http} contenente dati non validi all'\textit{endpoint} desiderato.
+\textsc{\textbf{Postcondizioni:}} L'attore ha visualizzato un risposta di errore che descrive la violazione commessa.
+
+\setlength{\parindent}{12pt}
 
 \setlength{\parindent}{12pt}
 
 \section{Tracciamento dei requisiti}
-TBD
+Parte dell'analisi dei requisiti è stato anche, appunto, l'individuare i requisiti del prodotto con granularità più fine rispetto agli obiettivi generali pianificati; dopodiché è stato possibile tracciarne i rapporti con i casi d'uso.
+Di seguito vengono riportati i requisiti individuati in forma tabulare; per il tracciamento con i relativi casi d'uso, consultare l'\hyperref[sec:AppendixB]{appendice B}.
 \subsection{Notazione}
+Si farà riferimento ai requisiti secondo la seguente notazione:\\
+\centerline{\textbf{R\{tipo\}\{identificativo\}}}
+\begin{itemize}
+    \item \textbf{R}: indica che si tratta di un requisito;
+    \item \textbf{tipo}: indica la categoria del requisito, può essere F (funzionale), Q (qualitativo) o V (di vincolo);
+    \item \textbf{identificativo}: numero progressivo che serve a distinguere i vari sotto-requisiti.
+\end{itemize}
 \subsection{Requisiti funzionali}
+\label{tab:reqfun}
+\tabulinesep=5pt
+\begin{longtabu} to \textwidth { | c | X | }
+        \hline % linea orizzontale
+        \hspace{5pt}\textbf{Sigla}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
+        \hypertarget{RF1}{RF1} & L'utente non autenticato deve poter accedere al pannello di amministrazione. \cr\hline
+        \hypertarget{RF1.1}{RF1.1} & L'utente non autenticato deve poter inserire la propria mail. \cr\hline
+        \hypertarget{RF1.2}{RF1.2} & L'utente non autenticato deve poter inserire la propria password. \cr\hline
+        \hypertarget{RF1.3}{RF1.3} & L'utente non autenticato deve visualizzare un messaggio di errore se inserisce le credenziali errate. \cr\hline
+        \hypertarget{RF2}{RF2} & Il \textit{front end} deve poter autenticare un utente autorizzato ottenendo i parametri di una sessione attiva. \cr\hline
+        \hypertarget{RF2.1}{RF2.1} & Il \textit{front end} deve ricevere un messaggio di errore in seguito ad un tentativo di autenticazione con credenziali errate. \cr\hline
+        \hypertarget{RF3}{RF3} & Il \textit{front end} deve poter inviare una richiesta di reset della password per un utente autorizzato. \cr\hline
+        \hypertarget{RF4}{RF4} & L'amministratore deve poter gestire una categoria di record. \cr\hline
+        \hypertarget{RF4.1}{RF4.1} & L'amministratore deve poter modificare l'ordine della tabella dei record. \cr\hline
+        \hypertarget{RF4.2}{RF4.2} & L'amministratore deve poter applicare un filtro alla tabella dei record. \cr\hline
+        \hypertarget{RF4.3}{RF4.3} & L'amministratore deve poter rimuovere un filtro dalla tabella dei record. \cr\hline
+        \hypertarget{RF4.4}{RF4.4} & L'amministratore deve poter creare un nuovo record. \cr\hline       
+         \hypertarget{RF4.5}{RF4.5} & L'amministratore deve poter visualizzare un record particolare. \cr\hline
+        \hypertarget{RF4.6}{RF4.6} & L'amministratore deve poter modificare un record particolare. \cr\hline  
+        \hypertarget{RF4.7}{RF4.7} & L'amministratore deve poter rimuovere un record particolare. \cr\hline
+        \hypertarget{RF4.8}{RF4.8} & L'amministratore deve poter gestire un utente. \cr\hline
+        \hypertarget{RF4.8.1}{RF4.8.1} & L'amministratore deve poter generare una nuova password per un utente. \cr\hline
+        \hypertarget{RF4.9}{RF4.9} & L'amministratore deve poter gestire un cliente. \cr\hline  
+        \hypertarget{RF4.9.1}{RF4.9.1} & L'amministratore deve poter scaricare la \textit{privacy policy} di un cliente. \cr\hline 
+        \hypertarget{RF4.10}{RF4.10} & L'amministratore deve poter annullare una operazione. \cr\hline
+        \hypertarget{RF4.11}{RF4.11} & L'amministratore deve visualizzare un messaggio di errore se modifica un record inserendo valori invalidi. \cr\hline
+        \hypertarget{RF5}{RF5} & L'amministratore deve poter visualizzare la \textit{dashboard}. \cr\hline
+        \hypertarget{RF6}{RF6} & L'amministratore deve poter gestire il proprio profilo utente. \cr\hline
+        \hypertarget{RF7}{RF7} & L'amministratore deve potersi disconnettere dal pannello di amministrazione.     \cr\hline
+        \hypertarget{RF8}{RF8} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter modificare i dati della farmacia.\cr\hline
+        \hypertarget{RF9}{RF9} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter gestire gli utenti della stessa farmacia.\cr\hline
+        \hypertarget{RF9.1}{RF9.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere la lista degli utenti della stessa farmacia.\cr\hline
+        \hypertarget{RF9.2}{RF9.2} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter visualizzare un utente della stessa farmacia.\cr\hline
+        \hypertarget{RF9.3}{RF9.3} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere il reset della password per un utente della stessa farmacia.\cr\hline
+        \hypertarget{RF9.4}{RF9.4} & Il \textit{front end} (in possesso del \textit{token} di reset) deve poter impostare una nuova password per un utente della stessa farmacia.\cr\hline         \hypertarget{RF9.5}{RF9.5} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter creare un nuovo utente della stessa farmacia.\cr\hline
+        \hypertarget{RF9.6}{RF9.6} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter eliminare un utente farmacia.\cr\hline
+        \hypertarget{RF9.7}{RF9.7} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter aggiornare un utente della stessa farmacia.\cr\hline
+        \hypertarget{RF10}{RF10} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter gestire gli esami della farmacia.\cr\hline
+        \hypertarget{RF10.1}{RF10.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere lo storico degli esami della farmacia.\cr\hline
+        \hypertarget{RF10.1.1}{RF10.1.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere la lista degli esami in base allo stato di avanzamento della farmacia.\cr\hline
+        \hypertarget{RF10.2}{RF10.2} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere dati di un esame della farmacia.\cr\hline
+        \hypertarget{RF10.2.1}{RF10.2.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere dati di un esame della farmacia in base al codice campione.\cr\hline
+        \hypertarget{RF10.3}{RF10.3} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter creare un nuovo esame.\cr\hline
+        \hypertarget{RF10.4}{RF10.4} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter rimuovere un esame.\cr\hline
+        \hypertarget{RF10.5}{RF10.5} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter aggiornare un esame.\cr\hline
+        \hypertarget{RF10.5.1}{RF10.5.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter aggiornare le risposte al questionario di un esame.\cr\hline
+        \hypertarget{RF11}{RF11} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter gestire i clienti della farmacia.\cr\hline
+        \hypertarget{RF11.1}{RF11.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere il registro dei clienti della farmacia.\cr\hline
+        \hypertarget{RF11.2}{RF11.2} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere i dati di un cliente della farmacia.\cr\hline
+        \hypertarget{RF11.3}{RF11.3} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter creare un nuovo cliente.\cr\hline
+        \hypertarget{RF11.4}{RF11.4} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter rimuovere un cliente.\cr\hline
+        \hypertarget{RF11.5}{RF11.5} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter aggiornare un cliente.\cr\hline
+        \hypertarget{RF11.6}{RF11.6} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter inviare un codice \ref{itm:otp} per accettare la \textit{privacy policy} ad un cliente.\cr\hline
+        \hypertarget{RF11.6.1}{RF11.6.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve visualizzare un messaggio di errore se supera i tentativi giornalieri di invio di un codice \ref{itm:otp}.\cr\hline
+        \hypertarget{RF11.7}{RF11.7} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter verificare un codice \ref{itm:otp} per l'accettazione della \textit{privacy policy} da parte un cliente.\cr\hline
+        \hypertarget{RF11.8}{RF11.8} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter caricare una copia della \textit{privacy policy} firmata da un cliente.\cr\hline
+        \hypertarget{RF12}{RF12} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter gestire le spedizioni della farmacia.\cr\hline
+        \hypertarget{RF12.1}{RF12.1} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere la lista delle spedizioni della farmacia.\cr\hline
+        \hypertarget{RF12.2}{RF12.2} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter richiedere i dati di una spedizione della farmacia.\cr\hline
+        \hypertarget{RF12.3}{RF12.3} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter creare una nuova spedizione.\cr\hline
+        \hypertarget{RF12.4}{RF12.4} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter rimuovere una spedizione.\cr\hline
+        \hypertarget{RF12.5}{RF12.5} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter aggiornare una spedizione.\cr\hline
+        \hypertarget{RF12.6}{RF12.6} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter visualizzare la lettera di vettura per una spedizione.\cr\hline
+        \hypertarget{RF12.7}{RF12.7} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter prenotare una spedizione.\cr\hline
+        \hypertarget{RF13}{RF13} & Il \textit{front end} (utente autenticato con ruolo ``pharmacy'') deve poter generare un referto dettagliato per un cliente.\cr\hline
+        \hypertarget{RF14}{RF14} & Il \textit{front end} (utente autenticato con ruolo qualsiasi) deve visualizzare un messaggio di errore quando viene inviata una richiesta invalida.\cr\hline
+        \hypertarget{RF15}{RF15} & Il \textit{front end} (utente autenticato con ruolo qualsiasi) potersi disconnettere dalla piattaforma.\cr\hline
+        \hypertarget{RF16}{RF16} & Il \textit{front end} (utente autenticato con ruolo ``gastroenterologist'') deve poter richiedere la lista degli esami in attesa di diagnosi.\cr\hline
+        \hypertarget{RF17}{RF17} & Il \textit{front end} (utente autenticato con ruolo ``gastroenterologist'') deve poter richiedere i dati di un esame in attesa di diagnosi.\cr\hline
+        \hypertarget{RF18}{RF18} & Il \textit{front end} (utente autenticato con ruolo ``gastroenterologist'') deve poter inserire una diagnosi per un esame.\cr\hline
+        \hypertarget{RF19}{RF19} & Il \textit{front end} (utente autenticato con ruolo ``gastroenterologist'') deve poter inserire la tabella della dieta per un esame.\cr\hline
+        \hypertarget{RF20}{RF20} & Il \textit{front end} (utente autenticato con ruolo ``gastroenterologist'' o ``bmr'') deve poter richiedere il referto dettagliato anonimo per un esame.\cr\hline
+        \hypertarget{RF21}{RF21} & Il \textit{front end} (utente autenticato con ruolo ``bmr'') deve poter richiedere la lista degli esami per cui è stata emessa una diagnosi.\cr\hline
+        \hypertarget{RF22}{RF22} & Il \textit{front end} (utente autenticato con ruolo ``bmr'') deve poter richiedere i dati di un esame per cui è stata emessa una diagnosi.\cr\hline
+        \hypertarget{RF23}{RF23} & Il \textit{front end} (utente autenticato con ruolo ``bmr'') deve poter aggiornare la diagnosi per un esame.\cr\hline
+        \hypertarget{RF24}{RF24} & Il \textit{front end} (utente autenticato con ruolo ``bmr'') deve poter aggiornare la tabella della dieta per un esame.\cr\hline
+        \hypertarget{RF25}{RF25} & Il laboratorio deve poter richiedere la lista degli esami il cui campione è stato raccolto.\cr\hline
+        \hypertarget{RF26}{RF26} & Il laboratorio deve poter richiedere i dati di un esame.\cr\hline
+        \hypertarget{RF27}{RF27} & Il laboratorio deve poter aggiornare lo stato di avanzamento di un esame.\cr\hline
+        \hypertarget{RF28}{RF28} & Il laboratorio deve poter rifiutare il campione associato ad un esame.\cr\hline
+        \hypertarget{RF29}{RF29} & Il laboratorio deve poter caricare il referto delle analisi per un esame.\cr\hline
+        \hypertarget{RF30}{RF30} & Il laboratorio deve poter richiedere il referto dettagliato per un esame.\cr\hline
+        \hypertarget{RF31}{RF31} & Il laboratorio deve poter visualizzare una risposta di errore se effettua una richiesta non valida.\cr\hline
+    \caption{Tracciamento dei requisiti funzionali.}
+\end{longtabu}
 \subsection{Requisiti qualitativi}
+\label{tab:reqqual}
+\tabulinesep=5pt
+\begin{longtabu} to \textwidth { | c | X | }
+        \hline % linea orizzontale
+        \hspace{5pt}\textbf{Sigla}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
+        \hypertarget{RQ1}{RQ1} &  Il prodotto deve essere codificato secondo le norme esposte dalla guida stilistica della community di Ruby on Rails.\cr\hline
+        \hypertarget{RQ2}{RQ2} & Il prodotto deve essere versionato seguendo il paradigma \textit{git-flow}. \cr\hline
+        \hypertarget{RQ3}{RQ3} & Il prodotto deve essere verificato e validato prima del rilascio di una nuova \textit{feature}. \cr\hline
+        \hypertarget{RQ4}{RQ4} & Deve essere sviluppata una suite di test per il prodotto. \cr\hline
+        \hypertarget{RQ5}{RQ5} & Deve essere stesa una documentazione sufficiente per il prodotto. \cr\hline
+        \hypertarget{RQ5.1}{RQ5.1} & Deve essere redatta una precisa documentazione delle \ref{itm:api} di interazione con il sistema gestionale del laboratorio. \cr\hline
+        \hypertarget{RQ6}{RQ6} & Il prodotto deve essere progettato secondo le norme di Ruby on Rails.\cr\hline
+        \hypertarget{RQ6.1}{RQ6.1} & La progettazione del prodotto deve rispettare il principio \ref{itm:dry}.\cr\hline
+        \hypertarget{RQ6.2}{RQ6.2} & La progettazione del prodotto deve rispettare il principio \ref{itm:coc}.\cr\hline
+    \caption{Tracciamento dei requisiti qualitativi.}
+\end{longtabu}
 \subsection{Requisiti di vincolo}
+\label{tab:reqvin}
+\tabulinesep=5pt
+\begin{longtabu} to \textwidth { | c | X | }
+        \hline % linea orizzontale
+        \hspace{5pt}\textbf{Sigla}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
+        \hypertarget{RV1}{RV1} &  Il prodotto deve essere sviluppato con il \textit{framework} Ruby on Rails 5.\cr\hline
+        \hypertarget{RV1.1}{RV1.1} &  Il prodotto deve essere sviluppato con il linguaggio Ruby ed essere compatibile con la versione 2.5.5.\cr\hline
+        \hypertarget{RV2}{RV2} &  Il prodotto deve essere compatibile con il \textit{back end} esistente.\cr\hline
+        \hypertarget{RV3}{RV3} & Il prodotto deve mettere interfacciarsi con il \textit{front end} esponendo una appropriata \ref{itm:api} GraphQL. \cr\hline
+        \hypertarget{RV3.1}{RV3.1} & L'autenticazione delle richieste GraphQL deve avvenire tramite la gemma Devise.\cr\hline
+        \hypertarget{RV4}{RV4} &  Il prodotto deve mettere a disposizione una \ref{itm:api} \ref{itm:rest} per l'interazione con il software gestionale del laboratorio.\cr\hline
+        \hypertarget{RV4.1}{RV4.1} &  L'autenticazione delle richieste \ref{itm:http} deve avvenire mediante lo standard HMAC.\cr\hline
+    \caption{Tracciamento dei requisiti di vincolo.}
+\end{longtabu}

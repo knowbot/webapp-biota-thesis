@@ -7,7 +7,7 @@ Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin moles
 \end{savequote}
 
 \chapter{Verifica e validazione}
-\label{chap6}
+\label{chap5}
 \section{Premessa}
 L'applicativo sviluppato nel corso di questo progetto, come già menzionato, è entrato in fase di produzione (ovvero è stato rilasciato per l'uso da parte del cliente) relativamente presto, con aggiornamenti regolari che introducevano man mano nuove funzionalità. Tale situazione ha introdotto la forte necessità di controllare che ogni versione rilasciata del prodotto adempiesse correttamente a tutti i bisogni del cliente e fosse priva di inadeguatezze.
 
@@ -27,7 +27,7 @@ L'analisi statica è stata supportata dall'utilizzo dell'\ref{itm:ide} RubyMine,
 \subsection{Analisi dinamica}
 La tecnica di analisi dinamica è complementare a quella di analisi statica, andando ad esaminare il comportamento del programma durante la sua esecuzione. Ciò avviene attraverso la definizione e l'esecuzione di test mirati a verificare il funzionamento del prodotto o di alcune sue componenti.
 
-La realizzazione di una suite di test compare anche come requisito stabilito nella pianificazione dello stage (sezione \hyperref[sec:reqs]{2.2.3.1}, requisito \underline{D02}). I test realizzati sono principalmente test di unità, mirati a verificare il comportamento di componenti specifiche del software, e di integrazione, per testare le interazioni tra tali componenti. I test di sistema e regressione non sono stati implementati a causa della mancanza di tempo.
+La realizzazione di una suite di test compare anche come requisito stabilito nella pianificazione dello stage (sezione \hyperref[sec:reqs]{2.2.3.1}, requisito \underline{D02}). I test realizzati sono principalmente test di unità, mirati a verificare il comportamento di componenti specifiche del software, e di integrazione, per testare le interazioni tra tali componenti. I test di sistema non sono stati giudicati come rilevanti, risultando troppo complessi per essere implementati nei limiti temporali prefissati.
 
 I test sono stati implementati utilizzando il \textit{framework} RSpec, utilizzando varie gemme di supporto come Factory Bot, Shoulda Matchers e Database Cleaner. L'ambiente di \textit{testing} è stato configurato in modo da effettuare una pulizia completa del database prima dell'esecuzione di ogni test e di ogni esempio parte di un test. I servizi di spedizione, \textit{logging} e invio SMS sono rimpiazzati da classi \textit{stub} create per simularne il comportamento. Le istanze dei \textit{models} vengono create ad-hoc utilizzando Factory Bot prima dell'esecuzione di ogni gruppo di esempi.
 
@@ -43,7 +43,7 @@ I test di unità realizzati vanno a verificare il corretto comportamento dei \te
 
 Gli esempi di ogni scenario sono raggruppati in contesti, i quali descrivono un particolare stato del sistema.
 \subsubsection{Test di integrazione}
-I test di integrazione realizzati riguardano principalmente il funzionamento della \ref{iitm:api} GraphQL, che richiede appunto una perfetta integrazione tra i vari \textit{models}. Questi test sono strutturati in modo differente, dato il loro diverso scopo: si ha un test per ogni \textit{query}, che ne verifica i risultati in diversi contesti. Si compongono delle seguenti parti:
+I test di integrazione realizzati riguardano principalmente il funzionamento della \ref{itm:api} GraphQL, che richiede appunto una perfetta integrazione tra i vari \textit{models}. Questi test sono strutturati in modo differente, dato il loro diverso scopo: si ha un test per ogni \textit{query}, che ne verifica i risultati in diversi contesti. Si compongono delle seguenti parti:
 \begin{itemize}
     \item \textbf{Query}, ovvero la definizione della query da testare in linguaggio GraphQL;
     \item \textbf{Autenticazione}, effettuata da un \textit{callback} eseguito all'inizio di ogni test che fornisce i parametri di una sessione valida per fare la richiesta;

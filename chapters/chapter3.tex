@@ -7,11 +7,11 @@ Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin moles
 \end{savequote}
 
 \chapter{Progettazione e sviluppo}
-\section{Panoramica}
+\label{chap4}
 La natura di questo prodotto come parte di un ecosistema esistente e già affermato ha avuto un duplice effetto sulla fase di progettazione. Da un lato l'ha resa più semplice, potendo appoggiarsi a codice preesistente e sfruttando meccanismi e servizi già pronti all''uso come le funzionalità di autenticazione (basate sulla gemma Devise) e il \textit{mailer} configurato; dall'altro, tuttavia, ha fatto emergere diverse sfide nell'integrazione del codice necessario per implementare nuove funzionalità con il \textit{codebase} presente. L'applicazione condivide infatti buona parte della struttura di base con un altro applicativo dell'ecosistema, ed è quindi stata progettata per essere implementata in modo compatibile a quest'ultimo - un esempio è l'aggiunta di domande a risposta multipla ai questionari, che ha comportato un notevole \textit{refactoring} del codice dedicato.
 In questa sezione verrà presentata l'architettura generale dell'applicazione, inclusi i paradigmi su cui si fonda, e verranno descritte le sue parti fondamentali. Ove queste parti si sovrappongano all'architettura preesistente, verranno indicate le eventuali aggiunte o modifiche apportate nello corso della progettazione.
 
-\subsection{Progettare con Rails}
+\section{Progettare con Rails}
 Come anticipato nella sezione \hyperref[sec:2.2.3]{2.2.3}, l'utilizzo di Ruby on Rails comporta il seguire certi paradigmi nella scelta dell'architettura e nella progettazione di un'applicazione. Progettare con Rails è sicuramente stata un'esperienza molto diversa rispetto all'utilizzo di altri framework, per via della sua natura altamente integrata che guida la progettazione verso un certo stile: le applicazioni sviluppate con Rails sono fortemente orientate ad uno stile architetturale ``\textit{\ref{itm:rest}-like}'', in cui la \textit{business logic} e il database sono fortemente accoppiati in \textit{models} che costituiscono le risorse; tali risorse sono quindi gestite attraverso dei \textit{controllers}, le cui operazioni sono rese accessibili attraverso \textit{endpoint} specificati nel file di \textit{routing}, e rese visibili grazie alle \textit{views} associate ai \textit{controllers}.
 
 Altre peculiarità di Rails risiede nel fatto che, per lo stesso motivo, il classico paradigma di ereditarietà della programmazione ad oggetti non risulta ottimale per l'implementazione dei \textit{models} che sono al cuore della \textit{business logic} dell'applicativo: essendo tali classi convenzionalmente associate a tabelle del database, la loro progettazione deve tenere conto dell'aumento di complessità del database che sarebbe dovuto all'applicazione di classici \textit{design pattern}. Spesso quindi è preferibile aggiungere direttamente campi (e relativi metodi) ad un \textit{model} ed usare questi per differenziarne il comportamento in situazioni diverse. È il caso, come verrà spiegato più avanti, dei modelli che rappresentano gli esami: creare un nuovo modello per supportare gli esami in ``Biota'', separato da quello preesistente, avrebbe aumentato inutilmente la complessità del database (in quanto la maggior parte dei campi sono condivisi, risultando in due tabelle quasi identiche); avrebbe inoltre comportato la duplicazione delle query GraphQL necessarie. Sono invece stati aggiunti i campi necessari al modello esistente, grazie alla presenza di un campo \texttt{service} che agisce da discriminante sull'applicazione cui appartiene un determinato esame.
@@ -42,7 +42,7 @@ Nell'applicazione le risorse sono costituite da record del database descritte da
 La principale differenza che l'applicazione presenta rispetto ai classici sistemi \ref{itm:rest} è l'utilizzo di GraphQL anziché \ref{itm:http} per l'implementazione dell'\ref{itm:api} di comunicazione con in \textit{front end}. Il protocollo \ref{itm:http}, utilizzato come standard nella progettazione di servizi Web con architettura \ref{itm:rest}, prevede 4 metodi per il trasferimento dei dati tra client e server che corrispondono alle 4 operazioni \ref{itm:crud}:
 \begin{table}[h]
 \begin{center}
-    \begin{tabular}{|c||c|}
+    \begin{tabular}{|c|c|}
       \hline % linea orizzontale
       \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Operazione}  \\\hline\hline
       POST & Create \cr\hline
@@ -160,7 +160,7 @@ L'integrazione con la piattaforma esistente richiede una discriminazione delle s
 \label{tab:sessionrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{Customer}(alias di \texttt{User}) & Uno a molti & Un esame appartiene ad un solo cliente, un cliente può richiedere più esami. \cr\hline
         \texttt{Pharmacy} & Uno a molti & Un esame è effettuato presso una sola farmacia, la quale può avviare più esami.\cr\hline
         \texttt{QuestionnaireTemplate} & Uno a molti, opzionale & Un esame può usare un solo \textit{template} di questionario, il quale viene condiviso da più esami.\cr\hline
@@ -176,7 +176,7 @@ Nell'elencare gli attributi, vengono omesse la chiave primaria \texttt{id} (comu
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{status}} & \texttt{enum} & Stato di avanzamento dell'esame, impostato di default a ``started''. \cr\hline
         \textbf{\texttt{questionnaire\_updated\_at}} & \texttt{datetime} & Data e ora di ultima compilazione del questionario. \cr\hline
         \textbf{\texttt{sample\_code}} & \texttt{string} & Codice univoco di identificazione del campione associato all'esame; deve appartenere ad una lista fornita dal cliente. \cr\hline
@@ -198,7 +198,7 @@ Nell'elencare gli attributi, vengono omesse la chiave primaria \texttt{id} (comu
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{add\_questionnaire\_answer}} & Aggiunge una nuova risposta alla compilazione del questionario. \cr\hline
         \textbf{\texttt{add\_questionnaire\_open\_answer}} & Aggiunge una nuova risposta aperta alla compilazione del questionario. \cr\hline
         \textbf{\texttt{check\_if\_sample\_ready}} & \textit{Callback} che verifica se il campione è stato consegnato e aggiorna l'attributo \texttt{sample\_ready\_at}. \cr\hline
@@ -224,7 +224,7 @@ La relazione molti a molti che gli \texttt{User} ruolo ``customer'' hanno con il
 \label{tab:userrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{Pharmacy} & Uno a molti, opzionale & Valida solo per farmacisti; un farmacista è associato ad una sola farmacia, che ne può impiegare più di uno.\cr\hline
         \texttt{CustomerMembership} & Molti a uno & Valida solo per clienti; un cliente può avere più ``iscrizioni'' a farmacie diverse, mentre ogni iscrizione è esclusiva ad un cliente.\cr\hline
         \texttt{Pharmacy}, indiretta & Molti a molti & Valida solo per clienti; un cliente può essersi registrato presso più farmacie, ogni farmacia può avere più clienti.\cr\hline
@@ -237,7 +237,7 @@ Gli attributi, in questo particolare caso, sono quasi totalmente diversi tra cli
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{role}} & \texttt{enum} & [C,P,G,B] Ruolo assegnato all'utente. \cr\hline
         \textbf{\texttt{email}} & \texttt{string} & [C,P,G,B] Indirizzo email dell'utente. \cr\hline
         Generalità & \textit{Vari} & [C] Insieme degli attributi che descrivono le informazioni personali del cliente, inserite in fase di registrazione. Ne fa parte l'attributo \textbf{\texttt{mobile\_number}}. \cr\hline
@@ -260,7 +260,7 @@ Gli attributi, in questo particolare caso, sono quasi totalmente diversi tra cli
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{sessions}} & [C,P,G,B] Restituisce le istanze di \texttt{Session} associate all'utente, restringendone lo \textit{scope} a seconda della categoria di utente. \cr\hline
         \textbf{\texttt{password\_complexity}} & [P,G,B] Verifica che venga rispettata la complessità minima per la password. \cr\hline
         \textbf{\texttt{generate\_random\_password}} & [P,G,B]Genera una password casuale per l'utente. \cr\hline
@@ -286,7 +286,7 @@ Si tratta di un \textit{model} piuttosto semplice, che contiene semplicemente i 
 \label{tab:pharmrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{Pharmacist} (alias di \texttt{User}) & Molti a uno & Una farmacia può impiegare più farmacisti, un farmacista può essere impiegato presso una sola farmacia.\cr\hline
         \texttt{CustomerMembership} & Molti a uno & Una farmacia può avere più ``iscrizioni'' da clienti diversi, mentre ogni iscrizione è esclusiva ad una farmacia.\cr\hline
         \texttt{Customer}, indiretta & Molti a molti & Una farmacia può avere più clienti, un cliente può registrarsi presso più farmacie.\cr\hline
@@ -310,7 +310,7 @@ Rappresenta la \textit{join table} tra i \textit{models} \texttt{User} (con alia
 \label{tab:cmrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         Customer (alias di \texttt{User}) & Uno a molti & Un'iscrizione proviene da un solo cliente, il quale può iscriversi più volte.\cr\hline
         \texttt{Pharmacy} & Uno a molti & Un'iscrizione è presso una sola farmacia, che può ricevere più iscrizioni.\cr\hline
 \end{longtabu}
@@ -335,7 +335,7 @@ Serve semplicemente a raggruppare le domande in \textit{template} che possono es
 \label{tab:qtatt}
 \begin{longtabu} to \textwidth { | c | c | X | }
     \hline % linea orizzontale
-    \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+    \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
     \textbf{\texttt{name}} & \texttt{string} & Nome del \textit{template}. \cr\hline
     \textbf{\texttt{code}} & \texttt{string} & Codice univoco assegnato al \textit{template}. \cr\hline
 \caption{Tabella degli attributi del \textit{model} \texttt{QuestionnaireTemplate}.}
@@ -352,7 +352,7 @@ Le \texttt{Question} sono definite una sola volta e sono quindi riferite dalle e
 \label{tab:quesrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{QuestionnaireTemplate} & Uno a molti & Una domanda può appartenere ad un solo \textit{template}, che prevede una o più domande.\cr\hline
         \texttt{PossibleAnswers} & Molti a uno & Una domanda può avere più risposte previste, una risposta può appartenere ad una sola domanda; le domande aperte non hanno nessuna \texttt{PossibleAnswer}.\cr\hline
         \caption{Tabella delle relazioni del \textit{model} \texttt{Question}.}
@@ -363,7 +363,7 @@ Le \texttt{Question} sono definite una sola volta e sono quindi riferite dalle e
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{kind}} & \texttt{enum} & Tipo di domanda (a risposta aperta, singola o multipla). \cr\hline
         \textbf{\texttt{mandatory}} & \texttt{boolean} & Obbligatorietà della domanda, di default a \texttt{True}. \cr\hline
         \textbf{\texttt{position}} & \texttt{integer} & Posizione nell'ordine del questionario. \cr\hline
@@ -376,7 +376,7 @@ Le \texttt{Question} sono definite una sola volta e sono quindi riferite dalle e
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, forza un riordinamento delle domande nel \textit{template} associato. \cr\hline
         \textbf{\texttt{question\_expected\_answers}} & \textit{Callback} che verifica che le \texttt{PossibleAnswers} associate rispettino il tipo di domanda (le domande aperte non hanno alcuna \texttt{PossibleAnswer}). \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{Question}.}
@@ -392,7 +392,7 @@ Un insieme di istanze di \texttt{PossibleAnswer}, associate alle relative \textt
 \label{tab:parel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{Question} & Uno a molti & Una possibile risposta può appartenere ad una sola domanda, la quale può avere più risposte previste.\cr\hline
         \caption{Tabella delle relazioni del \textit{model} \texttt{PossibleAnswer}.}
 \end{longtabu}
@@ -402,7 +402,7 @@ Un insieme di istanze di \texttt{PossibleAnswer}, associate alle relative \textt
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{position}} & \texttt{integer} & Posizione nell'ordine delle risposte alla domanda associata. \cr\hline
         \textbf{\texttt{text}} & \texttt{string} & Testo della risposta.
         \cr\hline
@@ -415,7 +415,7 @@ Un insieme di istanze di \texttt{PossibleAnswer}, associate alle relative \textt
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, forza un riordinamento delle risposte possibili nella domanda associata. \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{PossibleAnswer}.}
 \end{longtabu}
@@ -432,7 +432,7 @@ Una istanza \texttt{QuestionnaireAnswer} è composta, rispettivamente, da puro t
 \label{tab:qarel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{Session} & Uno a molti & Una risposta può essere data solo alla compilazione del questionario per un esame, il cui questionario associato prevede di dare più risposte.\cr\hline
         \texttt{QuestionnaireTemplate} & Uno a molti & Una risposta è associata solo ad un \textit{template} di questionario, per cui possono essere compilate più risposte.\cr\hline
         \texttt{Question} & Uno a molti & Una risposta è data solo ad una domanda, cui possono essere associate più risposte (domande a risposta multipla, o risposte alla stessa domanda date in esami separati).\cr\hline
@@ -445,7 +445,7 @@ Una istanza \texttt{QuestionnaireAnswer} è composta, rispettivamente, da puro t
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{denormalized\_text}} & \texttt{string} & Testo della risposta, denormalizzato. \cr\hline
         \textbf{\texttt{denormalized\_value}} & \texttt{string} & Valore della risposta, denormalizzato. \cr\hline
         \textbf{\texttt{denormalized\_question\_text}} & \texttt{string} & Testo della domanda, denormalizzato. \cr\hline
@@ -458,7 +458,7 @@ Una istanza \texttt{QuestionnaireAnswer} è composta, rispettivamente, da puro t
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{denormalize}} & \textit{Callback} eseguito prima di ogni validazione per risposte a domande a scelta singola o multipla, denormalizza i testi ed i valori delle \texttt{PossibleAnswer} associate e li assegna ai rispettivi attributi \texttt{denormalized} (idem per gli attributi rilevanti della \texttt{Question} associata). \cr\hline
         \textbf{\texttt{get\_answer}} & Restituisce il valore o testo della risposta, a seconda di quale sia rilevante. \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{QuestionnaireAnswer}.}
@@ -476,7 +476,7 @@ I metodi di questo \textit{model} dunque validano che le date siano consistenti 
 \label{tab:shrel}
 \begin{longtabu} to \textwidth {|c|c|X|}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline
+        \hspace{5pt}\textbf{Model}\hspace{5pt} & \textbf{Relazione} & \textbf{Spiegazione} \\\hline\hline
         \texttt{{Pharmacy}} & Uno a molti & Una spedizione proviene da una sola farmacia, una farmacia può richiedere più spedizioni.\cr\hline
         \texttt{Session} & Molti a uno & Una spedizione comprende i campioni di più esami, un campione appartiene ad una sola spedizione.\cr\hline
         \caption{Tabella delle relazioni del \textit{model} \texttt{Shipment}.}
@@ -487,7 +487,7 @@ I metodi di questo \textit{model} dunque validano che le date siano consistenti 
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{booking}} & \texttt{string} & Codice di prenotazione. \cr\hline
         \textbf{\texttt{request\_date}} & \texttt{date} & Data di richiesta della spedizione. \cr\hline
         \textbf{\texttt{shipment\_date}} & \texttt{date} & Data di ritiro della spedizione. \cr\hline
@@ -503,7 +503,7 @@ I metodi di questo \textit{model} dunque validano che le date siano consistenti 
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{book\_shipment}} & Prenota il ritiro della spedizione, creando un'istanza di \texttt{SDA::Client} e richiedendo l'invio di una richiesta di prenotazione; in caso di successo, aggiorna la spedizione con il numero di prenotazione ricevuto. \cr\hline
         \textbf{\texttt{get\_waybill}} & Richiede la lettera di vettura della spedizione, creando un'istanza di \texttt{SDA::Client} e richiedendo l'invio di una richiesta per ottenere il documento; in caso di successo, aggiorna la spedizione allegando il documento all'istanza. \cr\hline
         \textbf{\texttt{get\_answer}} & Restituisce il valore o testo della risposta, a seconda di quale sia rilevante. \cr\hline
@@ -525,7 +525,7 @@ Si tratta di un \textit{model} creato per supportare la funzionalità  di autent
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline 
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Tipo} & \textbf{Descrizione} \\\hline\hline 
         \textbf{\texttt{name}} & \texttt{string} & Nominativo dell'account. \cr\hline
         \textbf{\texttt{access\_id}} & \texttt{string} & Identificativo di accesso. \cr\hline
         Generalità & \textit{secret} & Chiave segreta di generazione delle credenziali. \cr\hline
@@ -537,7 +537,7 @@ Si tratta di un \textit{model} creato per supportare la funzionalità  di autent
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{generate\_secret}} & \textit{Callback} eseguito alla creazione di un account, genera una nuova chiave segreta di autenticazione. \cr\hline
         \textbf{\texttt{generate\_access\_id}} & \textit{Callback} eseguito alla creazione di un account, genera l'identificativo di accesso elaborando la funzione hash MD5 del nominativo più un numero casuale. \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{Account}.}
@@ -552,7 +552,7 @@ Le \textit{views} risiedono nell'omonima cartella, e sono organizzate in sottoca
 Di seguito vengono semplicemente elencate le \textit{views} realizzate e la loro funzione:
 \begin{longtabu} to \textwidth { | c | X | }
     \hline % linea orizzontale
-    \hspace{5pt}\textbf{Nome}\hspace{5pt} & \textbf{Descrizione} \\\hline
+    \hspace{5pt}\textbf{Nome}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
     \texttt{\textbf{\_data}} & \textit{View} parziale che rappresenta i dati di un esame rilevanti per il laboratorio, quali codice campione, risposte al questionario e nome della farmacia.  \cr\hline
     \texttt{\textbf{\_sample}} & \textit{View} parziale che rappresenta i dati di un campione (codice, stato e ultimo aggiornamento).  \cr\hline
     \texttt{\textbf{check\_in}} & \textit{View} di conferma in risposta alla richiesta di check-in di un campione.  \cr\hline
@@ -579,7 +579,7 @@ Di seguito vengono riportati i metodi disponibili:
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{api\_authenticate}} & \textit{Callback} eseguito alla ricezione di una richiesta, che verifica siano presenti le credenziali di autenticazione corrette. \cr\hline
         \textbf{\texttt{process\_report}} & Gestisce la richiesta di invio del referto dettagliato con la diagnosi del gastroenterologo per un esame; il referto viene generato senza includere le generalità del paziente per proteggerne l'anonimato. \cr\hline
         \texttt{\textbf{check\_in}} & Gestisce la richiesta di \textit{check-in} di un campione (ovvero prima ricezione in laboratorio), ne aggiorna lo stato a ``delivered''; accetta come parametro il codice del campione associato.  \cr\hline
@@ -598,7 +598,7 @@ Di seguito vengono riportati i metodi disponibili:
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{process\_report}} & Gestisce la richiesta di invio del referto dettagliato con la diagnosi del gastroenterologo per un esame, includendo le generalità a seconda del ruolo dell'utente. Accetta come parametro l'identificativo della \texttt{Session} corrispondente all'esame. \cr\hline
         \textbf{\texttt{process\_report\_anonymized}} & Non gestisce direttamente una richiesta, viene invocato da \texttt{process\_report} nel caso di una richiesta da un utente con ruolo diverso da \textit{pharmacy}. Genera un referto dettagliato con la diagnosi ma senza le generalità del paziente.  \cr\hline
         \caption{Metodi del \textit{controller} \texttt{SessionController}.}
@@ -610,7 +610,7 @@ Esiste, inoltre, un ultimo \textit{controller} di interesse: quello che si occup
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{execute}} & Metodo principale che gestisce le richieste effettuate attraverso l'\textit{endpoint} dedicato; estrae i parametri e la \textit{query} GraphQL dalla richiesta, li valida ed richiede l'esecuzione della \textit{query} allo schema GraphQL definito, restituendone il risultato.\cr\hline
         \caption{Metodi del \textit{controller} \texttt{GraphqlController}.}
 \end{longtabu}
@@ -624,7 +624,7 @@ Nella descrizione degli \textit{endpoint}, i parametri passati come parte dell'i
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X |}
         \hline % linea orizzontale
-        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline
+        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline\hline
         GET & \texttt{/samples/:sample\_code} & \texttt{show}
         \cr\hline
         GET & \texttt{/samples/sync?:timestamp} & \texttt{sync}
@@ -642,7 +642,7 @@ Nella descrizione degli \textit{endpoint}, i parametri passati come parte dell'i
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X |}
         \hline % linea orizzontale
-        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline
+        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline\hline
         GET & \texttt{/session/:session\_id/report} & \texttt{process\_report}
         \cr\hline
         \caption{Elenco delle \textit{routes} previste per il \textit{controller} \texttt{SessionController}.}
@@ -652,7 +652,7 @@ Nella descrizione degli \textit{endpoint}, i parametri passati come parte dell'i
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | c | X |}
         \hline % linea orizzontale
-        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline
+        \textbf{HTTP} & \textbf{Endpoint} & \textbf{Metodo associato}\\\hline\hline
         GET & \texttt{/session/:session\_id/report} & \texttt{process\_report}
         \cr\hline
         \caption{Elenco delle \textit{routes} previste per il \textit{controller} \texttt{GraphqlController}.}
@@ -672,7 +672,7 @@ Vengono di seguito elencati i tipi definiti, corredati di una breve descrizione.
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X |}
         \hline % linea orizzontale
-        \textbf{Nome} & \textbf{Descrizione} \\\hline
+        \textbf{Nome} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{ColourEnumType}} & Tipo enumerativo per i colori della tabella della dieta. \cr\hline
         \textbf{\texttt{ImageType}} & Tipo per la rappresentazione di immagini.
         \cr\hline
@@ -702,7 +702,7 @@ Vengono di seguito elencati i tipi definiti, corredati di una breve descrizione.
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X |}
         \hline % linea orizzontale
-        \textbf{Nome} & \textbf{Descrizione} \\\hline
+        \textbf{Nome} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{AllCustomers}} & Restituisce tutti gli utenti con ruolo ``customer'' iscritti alla farmacia dell'utente che effettua la richiesta.\cr\hline
         \textbf{\texttt{AllGastroenterologistSessions}} & Restituisce tutti gli esami visibili a utenti con ruolo ``gastroenterologist'', senza le generalità dei pazienti.\cr\hline
         \textbf{\texttt{AllLabSessions}} & Restituisce tutti gli esami visibili a utenti con ruolo ``bmr'', senza le generalità dei pazienti.\cr\hline
@@ -723,7 +723,7 @@ Vengono di seguito elencati i tipi definiti, corredati di una breve descrizione.
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X |}
         \hline % linea orizzontale
-        \textbf{Nome} & \textbf{Descrizione} \\\hline
+        \textbf{Nome} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{CustomerCreate}} & Crea un nuovo cliente.\cr\hline
         \textbf{\texttt{CustomerDelete}} & Rimuove un cliente.\cr\hline
         \textbf{\texttt{CustomerSendOtp}} & Invia un codice \ref{itm:otp} ad un cliente.\cr\hline
@@ -766,7 +766,7 @@ Per poter generare anche referti anonimizzati, queste aggiunte sono state separa
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{initialize}} & Inizializza un'istanza della classe con i dati dell'esame considerato, verificando che essi siano corretti e che il referto sia stato emesso.\cr\hline
         \textbf{\texttt{process}} & Avvia la pipeline di generazione completa di tutte le modifiche e restituisce il file elaborato.\cr\hline
         \textbf{\texttt{process\_anonymized}} & Avvia la pipeline di generazione omettendo le generalità del cliente, e restituisce il file elaborato.\cr\hline
@@ -785,7 +785,7 @@ Il modulo \texttt{OtpManager} viene incluso dal \textit{model} \texttt{User} per
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{has\_otp}} & Aggiunge la colonna con l'attributo speciale al \textit{model}, permettendo di definire lunghezza e validità temporale dei codici.\cr\hline
         \textbf{\texttt{otp\_random\_secret}} & Genera la chiave segreta tramite la libreria ROTP.\cr\hline
         \textbf{\texttt{authenticate\_otp}} & Provvede alla verifica di validità di un codice, restituendo un valore booleano che ne riflette l;esito.\cr\hline
@@ -801,7 +801,7 @@ L'invio dei codici \ref{itm:otp} per SMS avviene sfruttando un servizio cloud of
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{client}} & Istanza della classe \texttt{AWS::SNS::Client}.\cr\hline
         \textbf{\texttt{logger}} & Istanza della classe \texttt{TimestampLogger}.\cr\hline
         \caption{Attributi del \textit{service} \texttt{SMS::Client}.}
@@ -810,7 +810,7 @@ L'invio dei codici \ref{itm:otp} per SMS avviene sfruttando un servizio cloud of
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{send}} & Invia un messaggio ad un numero adattando la relativa funzione di \texttt{AWS::SNS::Client} e richiamando il \textit{logger} prima e dopo la richiesta di invio.\cr\hline
         \caption{Metodi del \textit{service} \texttt{SMS::Client}.}
 \end{longtabu}
@@ -836,7 +836,7 @@ I metodi resi disponibili da questa classe eseguono le richieste invocando il me
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Attributo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{credentials}} & Credenziali di accesso alle \ref{itm:api} SDA.\cr\hline
         \textbf{\texttt{logger}} & Istanza della classe \texttt{TimestampLogger}.\cr\hline
         \caption{Attributi del \textit{service} \texttt{SDA::Client}.}
@@ -845,7 +845,7 @@ I metodi resi disponibili da questa classe eseguono le richieste invocando il me
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline
+        \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
         \textbf{\texttt{book\_shipment}} & Istanzia ed invia una richiesta \texttt{BookingRequest} di prenotazione di una spedizione, ne elabora la riposta e restituisce il codice di prenotazione.\cr\hline
         \textbf{\texttt{receive\_waybill}} & stanzia ed invia una richiesta \texttt{WaybillRequest} per la lettera di vettura di una spedizione, ne elabora la riposta e restituisce il codice della lettera di vettura e la lettera in formato PDF.\cr\hline
         \caption{Metodi del \textit{service} \texttt{SDA::Client}.}
@@ -889,7 +889,7 @@ Di seguito vengono elencate brevemente le schede realizzate o modificate nel cor
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | X |}
         \hline % linea orizzontale
-        \hspace{5pt}\textbf{Scheda}\hspace{5pt} & \textbf{\textit{Model}} & \textbf{Azioni speciali}\\\hline
+        \hspace{5pt}\textbf{Scheda}\hspace{5pt} & \textbf{\textit{Model}} & \textbf{Azioni speciali}\\\hline\hline
         Admin Users & \texttt{AdminUser} & Nessuna.\cr\hline
         Clienti & \texttt{User} con role ``customer'' & Download dell'eventuale modulo di consenso alla \textit{privacy policy} firmato.\cr\hline
         Gastroenterologi & \texttt{User} con role ``gastroenterologist'' & Reset della password.\cr\hline

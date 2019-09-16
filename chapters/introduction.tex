@@ -1,9 +1,10 @@
 %!TEX root = ../dissertation.tex
-
-% : in primis, lo sviluppo di un backend in Ruby on Rails 5 completo delle funzionalità base per completare il flusso di operazioni da parte della farmacia e di API GraphQL per l'interazione con il \textit{front end}; in secondo luogo era prevista l'implementazione di API REST utilizzabile dal laboratorio di analisi, l'integrazione con le API del corriere SDA e la realizzazione di una suite di test completa; infine sarebbe avvenuta l'implementazione di requisiti facoltativi
+\begin{savequote}[75mm]
+    Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
+    \qauthor{Quoteauthor Lastname}
+    \end{savequote}    
 \chapter{Introduzione}
 \label{introduction}
-\paragraph{}
 Il presente documento espone il lavoro svolto dal laureando Andrea Trevisin durante il periodo di stage formativo presso Moku S.r.l. al fine di realizzare il \textit{back end} dell'applicazione web ``Biota'', una piattaforma per la gestione di esami della flora gastrointestinale.
 Lo stage, della durata di 300 (trecento) ore, si è svolto tra il 15 maggio e il 17 luglio 2019 presso la sede di Roncade. Il progetto prevedeva il raggiungimento di diversi obiettivi, suddivisi in \textit{milestones}, a partire dalla realizzazione di un \textit{back end} completo delle funzionalità base della piattaforma, per poi implementare i requisiti opzionali e una suite di test completa e infine soddisfare alcuni requisiti desiderabili.
 Al termine della durata dello stage, la piattaforma è in stato di produzione e tutti gli obiettivi sono stati soddisfatti.
@@ -12,7 +13,6 @@ Al termine della durata dello stage, la piattaforma è in stato di produzione e 
 Il progetto di stage prevedeva lo sviluppo della parte \textit{back end} dell'applicazione web ``Biota''. ``Biota'' è una piattaforma per la gestione di esami della flora gastrointestinale, che permette ai clienti di una farmacia di richiedere un esame mediante la compilazione di un questionario; un campione di materia fecale viene quindi inviato al laboratorio per le analisi, al cui termine viene fornito un referto contenente i risultati delle analisi, la diagnosi del gastroenterologo affiliato e una dieta progettata per migliorare il benessere del paziente. Il \textit{back end} comprende un pannello amministrativo per la gestione dei record del database, permettendone creazione, distruzione e modifica nonché consentendo operazioni aggiuntive quali il caricamento e lo scaricamento di file per i record designati.
 
 \section{Azienda}
-\paragraph{}
 Moku S.r.l. è una startup nata nel 2013, con sede a Roncade (TV), fondata su un progetto software omonimo per una piattaforma web mirata a facilitare il lavoro condiviso su documenti di vario tipo. Si è poi evoluta diventando una società di consulenza IT che realizza prodotti software su commissione. 
 Il team di Moku usa metodologie agili, basate su Scrum, e lavora a stretto contatto con il cliente; questo permette di individuare facilmente e velocemente i requisiti del prodotto, creando prodotti di qualità che rispecchiano le esigenze del committente. I principali ambiti di sviluppo di Moku sono piattaforme web applicazioni Android/IOS.
 
@@ -24,22 +24,19 @@ Il team di Moku usa metodologie agili, basate su Scrum, e lavora a stretto conta
 
 \section{Processi aziendali}
 \subsection{Modello di ciclo di vita del software}
-\paragraph{}
 Il modello di ciclo di vita del software adottato dal team di Moku si basa sulla metodologia Scrum. Scrum è un \textit{framework} agile per la gestione del ciclo di sviluppo del software, iterativo ed incrementale, creato e sviluppato da Ken Schwaber e Jeff Sutherland nel 1995; si propone di essere leggero, semplice da imparare ma difficile da padroneggiare. Scrum si presta bene alla modalità di lavoro di Moku, in quanto è ideato per team di dimensioni ridotte e permette di gestire progetti complessi offrendo la possibilità di reagire velocemente a cambiamenti. Una delle idee chiave è infatti la "volatilità dei requisiti", ovvero riconoscere che le esigenze dei clienti possano variare in corso d'opera, e che possano sorgere complicazioni non previste - specialmente quando si usano tecnologie all'avanguardia.
 
 L'obiettivo principale è quindi la realizzazione di un prodotto software funzionante e soddisfacente a scapito di aspetti ritenuti non essenziali nell'immediato (e.g. una documentazione completa).
 
 \subsubsection{Principi della metodologia Scrum}
-\paragraph{}
 Alla base del \textit{framework} vi è la teoria dei controlli empirici dell'analisi strumentale e funzionale di processo, altrimenti nota come "empirismo", la quale afferma che la conoscenza deriva dall'esperienza e le decisioni si devono basare su ciò che si conosce. L'implementazione dei controlli empirici di processo si basa su tre concetti:
 \begin{itemize}
     \item \textbf{Trasparenza}: gli aspetti significativi del processo devono essere visibili ai responsabili del prodotto; la trasparenza richiede che tali aspetti siano definiti secondo uno standard comune in modo che gli osservatori condividano una comprensione comune di ciò che avviene.
     \item \textbf{Ispezione}: chi usa Scrum deve ispezionare spesso i prodotti della metodologia e il progresso verso l'obiettivo di uno \textit{sprint} per individuare eventuali difformità; tuttavia tale processo non dovrebbe essere frequente al punto da rallentare il lavoro. Le ispezioni danno il massimo beneficio quando eseguite da ispettori qualificati.
     \item \textbf{Adattamento}: se un'ispezione determina che uno o più aspetti sono al di fuori di certi limiti, e che il prodotto risultante è inaccettabile, il processo o il prodotto del processo vanno adattati; l'adattamento deve avvenire il prima possibile per evitare ulteriori difformità.
 \end{itemize}
-
+\vspace{-18pt}
 \subsubsection{Sprint}
-\paragraph{}
 Scrum prevede di dividere il progetto in blocchi contigui di lavoro, denominati \textit{sprint}, che prevedono un incremento del prodotto software rilasciabile al termine di ciascuno di essi.
 Uno \textit{sprint} dura da 1 a 4 settimane, ed è preceduto da una riunione di pianificazione (\textit{sprint planning}) in cui vengono discussi e definiti obiettivi e stimate le tempistiche. Gli obiettivi stabiliti per uno \textit{sprint} possono variare solo allo \textit{sprint planning} successivo; ogni giorno viene fatta una breve riunione, detta \textit{daily scrum}, in cui viene brevemente discusso il lavoro da svolgere.
 
@@ -54,7 +51,7 @@ Gli \textit{sprint} in Moku durano generalmente 10/15 giorni, seguiti da una fas
 \end{figure}    
 
 \subsubsection{Ruoli di un team Scrum}
-\indent Il \textit{framework} Scrum prevede che i team siano auto-organizzati, ovvero in grado di scegliere autonomamente il modo migliore per portare a termine il lavoro, e interfunzionali, cioè che non dipendono da altri o da parte del team per realizzare il prodotto. I team Scrum lavorano in maniera iterativa ed incrementale, massimizzando le possibilità di feedback utile. 
+Il \textit{framework} Scrum prevede che i team siano auto-organizzati, ovvero in grado di scegliere autonomamente il modo migliore per portare a termine il lavoro, e interfunzionali, cioè che non dipendono da altri o da parte del team per realizzare il prodotto. I team Scrum lavorano in maniera iterativa ed incrementale, massimizzando le possibilità di feedback utile. 
 
 In un team Scrum sono presenti i seguenti ruoli:
 \begin{itemize}
@@ -79,7 +76,7 @@ Jira mette a disposizione un'interfaccia drag-and-drop, che ne rende l'uso veloc
 
 \begin{figure}[h!]
     \includegraphics[width=\textwidth]{figures/Jira.png}
-    \caption[Jira]{Interfaccia della sezione di issue tracking di Jira
+    \caption[Interfaccia della sezione di issue tracking di Jira]{Interfaccia della sezione di issue tracking di Jira
     \label{fig:Jira}}
 \end{figure}    
 
@@ -87,12 +84,30 @@ Jira mette a disposizione un'interfaccia drag-and-drop, che ne rende l'uso veloc
 Per la gestione del versionamento del prodotto software Moku usa \textit{repository Git} sul servizio di hosting Bitbucket, parte dell'ecosistema Atlassian. Bitbucket offre la possibilità di creare gratuitamente \textit{repository} private, risultando una scelta migliore per l'azienda. Queste vengono gestite localmente tramite il client dedicato Sourcetree, anch'esso proprietario di Atlassian (quindi perfettamente integrato con Bitbucket), il quale semplifica l'uso del paradigma \textit{git-flow}, scelto come standard da Moku.
 
 \paragraph{Git-flow} Paradigma di versionamento utilizzato per il progetto, che prevede l'utilizzo sincronizzato di molteplici branch nella repository centrale del prodotto. Il branch \textbf{master} contiene l'ultima \textit{release} del prodotto software, ovvero l'ultima versione stabile che include un certo numero di funzionalità testate. I \textit{commit} a questo branch hanno sempre natura incrementale in quanto corrispondono al rilascio di una nuova versione del prodotto. Il branch \textbf{develop} invece contiene il prodotto software in lavorazione ed è soggetto a \textit{commit} più frequenti, corrispondenti allo sviluppo di una nuova funzionalità; in ogni caso, in questo branch si trova un prodotto funzionale ma incompleto. Infine è prevista la creazione di vari branch temporanei, uno per cisacuna \textit{feature} in via di sviluppo. Per aggiungere una \textit{feature} al prodotto, viene effettuato un \textit{fork} del branch \textbf{develop} e creato un branch  \textbf{feature} apposito: al completamento dello sviluppo della funzionalità, viene effettuato il \textit{merge} con il branch di sviluppo. È possibile correggere un errore propagatosi al branch principale con un \textit{hotfix} un \textit{commit} di emergenza.
-Nel progetto è stato inoltre utilizato un terzo branch, \textbf{staging}, per testare l'integrazione tra \textit{back end} e \textit{front end} prima del rilascio della nuova versione.
+Nel progetto è stato inoltre utilizzato un terzo branch, \textbf{staging}, per testare l'integrazione tra \textit{back end} e \textit{front end} prima del rilascio della nuova versione.
+
+\begin{figure}[h!]
+    \includegraphics[width=\textwidth]{figures/gitflow-1.png}
+    \caption[Rappresentazione del paradigma \textit{git-flow}]{Rappresentazione del paradigma \textit{git-flow}
+    \label{fig:gitflow}}
+\end{figure}    
 
 \subsubsection{Gestione delle comunicazioni}
 \paragraph{A livello aziendale} La corrispondenza riguardante l'avvio del progetto di stage e la collaborazione con il cliente, così come altre comunicazioni a livello aziendale, sono avvenute tramite posta elettronica.
 \paragraph{Nel team} Per facilitare la comunicazione tra i membri di ogni team di sviluppo, nonché per comunicazioni meno importanti, Moku fa uso di Slack. Slack è un applicativo \textit{cloud-based} di messaggistica e file-sharing, in cui i messaggi vengono inviati in "canali": questo permette di dividere le comunicazioni per progetto, facilitando anche la ricerca di informazioni rilevanti precedentemente inviate.
 
 \section{Organizzazione del testo}
+\textbf{\hyperref[introduction]{Il primo capitolo}} presenta una panoramica generale del progetto e dell'ambiente aziendale in cui è stato svolto.\\
+\textbf{\hyperref[chap2]{Il secondo capitolo}} entra in dettaglio nella descrizione del progetto e della sua pianificazione, e introduce le tecnologie con cui è stato realizzato.\\
+\textbf{\hyperref[chap3]{Il terzo capitolo}} espone l'analisi dei requisiti, presentando i casi d'uso individuati e il tracciamento dei requisiti del prodotto.\\
+\textbf{\hyperref[chap4]{Il quarto capitolo}} descrive la progettazione architetturale e di dettaglio dell'applicazione, dando una visione \textit{top-down} del prodotto sviluppato.\\
+\textbf{\hyperref[chap5]{Il quinto capitolo}} presenta i processi atti a garantire la qualità del prodotto.\\
+\textbf{\hyperref[conclusion]{Il sesto capitolo}}, infine, raccoglie delle valutazioni oggettive e personali sullo svolgimento e sul risultato dell'esperienza di stage.
 
 \subsection{Convenzioni tipografiche}
+Per quanto concerne la stesura di questo documento, sono state adottate le seguenti norme tipografiche:
+\begin{itemize}
+    \item Gli acronimi utilizzati sono raccolti in un elenco assieme al loro significato, all'inizio di questo documento;
+    \item I termini in lingua straniera, qualora non facenti parte del comune gergo informatico, sono segnalati in \textit{corsivo};
+    \item I nomi di file, classi, attributi, metodi e tutto ciò che è classificabile come codice viene riportato con il font \texttt{macchina da scrivere}.
+\end{itemize}

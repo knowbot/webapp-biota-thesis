@@ -29,7 +29,12 @@
 \include{chapters/chapter3}
 \include{chapters/chapter5}
 \include{chapters/conclusion}
-\include{chapters/appendixA}
+\renewcommand\appendixname{Appendice}
+\renewcommand\appendixpagename{Appendici}
+\begin{appendices}
+    \include{chapters/appendixA}
+    \include{chapters/appendixB}
+\end{appendices}
 
 \addcontentsline{toc}{chapter}{Bibliografia}
 \bibliographystyle{unstr}

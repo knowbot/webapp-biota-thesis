@@ -1,0 +1,187 @@
+%!TEX root = ../dissertation.tex
+\externaldocument{./chapter2}
+\appendix
+\cleardoublepage
+\phantomsection
+\addtocontents{toc}{\setcounter{tocdepth}{0}}
+\renewcommand{\thechapter}{B}
+\chapter{Tracciamento tra requisiti e casi d'uso}
+\label{sec:AppendixB}
+\section{Tracciamento requisiti-casi d'uso}
+\label{tab:reqcasi}
+\tabulinesep=5pt
+\begin{longtabu} to \textwidth { | c | c | }
+        \hline % linea orizzontale
+        \hspace{5pt}\textbf{Sigla}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
+        \hyperlink{RF1}{RF1}                 & \hyperref[sec:uc1]{UC1}            \cr\hline
+        \hyperlink{RF1.1}{RF1.1}             & \hyperref[sec:uc11]{UC1.1}         \cr\hline
+        \hyperlink{RF1.2}{RF1.2}             & \hyperref[sec:uc12]{UC1.2}         \cr\hline
+        \hyperlink{RF1.3}{RF1.3}             & \hyperref[sec:uc2]{UC2}            \cr\hline
+        \hyperlink{RF2}{RF2}                 & \hyperref[sec:uc3]{UC3}           \cr\hline
+        \hyperlink{RF2.1}{RF2.1}             & \hyperref[sec:UC5]{UC5}          \cr\hline
+        \hyperlink{RF3}{RF3}                 & \hyperref[sec:uc4]{UC4}       \cr\hline
+        \hyperlink{RF4}{RF4}                 & \hyperref[sec:UC6]{UC6}             \cr\hline
+        \hyperlink{RF4.1}{RF4.1}             & \hyperref[sec:UC61]{UC6.1}            \cr\hline
+        \hyperlink{RF4.2}{RF4.2}             & \hyperref[sec:UC62]{UC6.2}              \cr\hline
+        \hyperlink{RF4.3}{RF4.3}             & \hyperref[sec:UC63]{UC6.3}               \cr\hline
+        \hyperlink{RF4.4}{RF4.4}             & \hyperref[sec:UC64]{UC6.4}                \cr\hline 
+        \hyperlink{RF4.5}{RF4.5}             & \hyperref[sec:UC65]{UC6.5}                \cr\hline
+        \hyperlink{RF4.6}{RF4.6}             & \hyperref[sec:UC66]{UC6.6}                \cr\hline 
+        \hyperlink{RF4.7}{RF4.7}             & \hyperref[sec:UC67]{UC6.7}                \cr\hline
+        \hyperlink{RF4.8}{RF4.8}             & \hyperref[sec:UC610]{UC6.10}             \cr\hline
+        \hyperlink{RF4.8.1}{RF4.8.1}         & \hyperref[sec:UC6101]{UC6.10.1}          \cr\hline  
+        \hyperlink{RF4.9}{RF4.9}             & \hyperref[sec:UC611]{UC6.11}             \cr\hline  
+        \hyperlink{RF4.9.1}{RF4.9.1}         & \hyperref[sec:UC6111]{UC6.11.1}           \cr\hline 
+        \hyperlink{RF4.10}{RF4.10}           & \hyperref[sec:UC69]{UC69}               \cr\hline 
+        \hyperlink{RF4.11}{RF4.11}           & \hyperref[sec:UC68]{UC68}               \cr\hline 
+        \hyperlink{RF5}{RF5}                 & \hyperref[sec:UC7]{UC77}               \cr\hline
+        \hyperlink{RF6}{RF6}                 & \hyperref[sec:UC8]{UC8}                \cr\hline
+        \hyperlink{RF7}{RF7}                 & \hyperref[sec:UC9]{UC9}                \cr\hline
+        \hyperlink{RF8}{RF8}                 & \hyperref[sec:UC10]{UC10}                \cr\hline
+        \hyperlink{RF9}{RF9}                 & \hyperref[sec:UC11]{UC11}                \cr\hline
+        \hyperlink{RF9.1}{RF9.1}             & \hyperref[sec:UC111]{UC11.1}             \cr\hline
+        \hyperlink{RF9.2}{RF9.2}             & \hyperref[sec:UC112]{UC11.2}             \cr\hline
+        \hyperlink{RF9.3}{RF9.3}             & \hyperref[sec:UC113]{UC11.3}              \cr\hline
+        \hyperlink{RF9.4}{RF9.4}             & \hyperref[sec:UC114]{UC11.4}            \cr\hline
+        \hyperlink{RF9.5}{RF9.5}             & \hyperref[sec:UC115]{UC11.5}              \cr\hline
+        \hyperlink{RF9.6}{RF9.6}             & \hyperref[sec:UC116]{UC11.6}              \cr\hline
+        \hyperlink{RF9.7}{RF9.7}             & \hyperref[sec:UC117]{UC11.7}              \cr\hline
+        \hyperlink{RF10}{RF10}               & \hyperref[sec:UC12]{UC12}               \cr\hline
+        \hyperlink{RF10.1}{RF10.1}           & \hyperref[sec:UC121]{UC12.1}            \cr\hline
+        \hyperlink{RF10.1.1}{RF10.1.1}       & \hyperref[sec:UC122]{UC12.2}            \cr\hline
+        \hyperlink{RF10.2}{RF10.2}           & \hyperref[sec:UC123]{UC12.3}           \cr\hline
+        \hyperlink{RF10.2.1}{RF10.2.1}       & \hyperref[sec:UC124]{UC12.4}           \cr\hline
+        \hyperlink{RF10.3}{RF10.3}           & \hyperref[sec:UC125]{UC12.5}       \cr\hline
+        \hyperlink{RF10.4}{RF10.4}           & \hyperref[sec:UC126]{UC12.6}          \cr\hline
+        \hyperlink{RF10.5}{RF10.5}           & \hyperref[sec:UC127]{UC12.7}      \cr\hline
+        \hyperlink{RF10.5.1}{RF10.5.1}       & \hyperref[sec:UC128]{UC12.8}        \cr\hline
+        \hyperlink{RF11}{RF11}               & \hyperref[sec:UC13]{UC13}       \cr\hline
+        \hyperlink{RF11.1}{RF11.1}           & \hyperref[sec:UC131]{UC13.1}     \cr\hline
+        \hyperlink{RF11.2}{RF11.2}           & \hyperref[sec:UC132]{UC13.2}           \cr\hline
+        \hyperlink{RF11.3}{RF11.3}           & \hyperref[sec:UC133]{UC13.3}            \cr\hline
+        \hyperlink{RF11.4}{RF11.4}           & \hyperref[sec:UC134]{UC13.4}          \cr\hline
+        \hyperlink{RF11.5}{RF11.5}           & \hyperref[sec:UC135]{UC13.5}            \cr\hline
+        \hyperlink{RF11.6}{RF11.6}           & \hyperref[sec:UC136]{UC13.6}        \cr\hline
+        \hyperlink{RF11.6.1}{RF11.6.1}       & \hyperref[sec:UC17]{UC17}          \cr\hline
+        \hyperlink{RF11.7}{RF11.7}           & \hyperref[sec:UC137]{UC13.7}        \cr\hline
+        \hyperlink{RF11.8}{RF11.8}           & \hyperref[sec:UC138]{UC13.8}      \cr\hline
+        \hyperlink{RF12}{RF12}               & \hyperref[sec:UC14]{UC14}                \cr\hline
+        \hyperlink{RF12.1}{RF12.1}           & \hyperref[sec:UC141]{UC14.1}            \cr\hline
+        \hyperlink{RF12.2}{RF12.2}           & \hyperref[sec:UC142]{UC14.2}     \cr\hline
+        \hyperlink{RF12.3}{RF12.3}           & \hyperref[sec:UC143]{UC14.3}           \cr\hline
+        \hyperlink{RF12.4}{RF12.4}           & \hyperref[sec:UC144]{UC14.4}      \cr\hline
+        \hyperlink{RF12.5}{RF12.5}           & \hyperref[sec:UC145]{UC14.5}         \cr\hline
+        \hyperlink{RF12.6}{RF12.6}           & \hyperref[sec:UC146]{UC14.6}          \cr\hline
+        \hyperlink{RF12.7}{RF12.7}           & \hyperref[sec:UC147]{UC14.7}          \cr\hline
+        \hyperlink{RF13}{RF13}               & \hyperref[sec:UC15]{UC15}           \cr\hline
+        \hyperlink{RF14}{RF14}               & \hyperref[sec:UC16]{UC16}           \cr\hline
+        \hyperlink{RF15}{RF15}               & \hyperref[sec:UC18]{UC18}                \cr\hline
+        \hyperlink{RF16}{RF16}               & \hyperref[sec:UC19]{UC19}               \cr\hline
+        \hyperlink{RF17}{RF17}               & \hyperref[sec:UC20]{UC20}                \cr\hline
+        \hyperlink{RF18}{RF18}               & \hyperref[sec:UC21]{UC21}                \cr\hline
+        \hyperlink{RF19}{RF19}               & \hyperref[sec:UC22]{UC22}                \cr\hline
+        \hyperlink{RF20}{RF20}               & \hyperref[sec:UC23]{UC23}                \cr\hline
+        \hyperlink{RF21}{RF21}               & \hyperref[sec:UC24]{UC24}                \cr\hline
+        \hyperlink{RF22}{RF22}               & \hyperref[sec:UC25]{UC25}                \cr\hline
+        \hyperlink{RF23}{RF23}               & \hyperref[sec:UC26]{UC26}                \cr\hline
+        \hyperlink{RF24}{RF24}               & \hyperref[sec:UC27]{UC27}                \cr\hline
+        \hyperlink{RF25}{RF25}               & \hyperref[sec:UC28]{UC28}                \cr\hline
+        \hyperlink{RF26}{RF26}               & \hyperref[sec:UC29]{UC29}                \cr\hline
+        \hyperlink{RF27}{RF27}               & \hyperref[sec:UC30]{UC30}                \cr\hline
+        \hyperlink{RF28}{RF28}               & \hyperref[sec:UC31]{UC31}                \cr\hline
+        \hyperlink{RF29}{RF29}               & \hyperref[sec:UC32]{UC32}                \cr\hline
+        \hyperlink{RF30}{RF30}               & \hyperref[sec:UC33]{UC33}                \cr\hline
+        \hyperlink{RF31}{RF31}               & \hyperref[sec:UC34]{UC34}                \cr\hline
+    \caption{Tracciamento requisiti-casi d'uso.}
+\end{longtabu}
+
+\section{Tracciamento casi d'uso-requisiti}
+\label{tab:casireq}
+\tabulinesep=5pt
+\begin{longtabu} to \textwidth { | c | c | }
+        \hline % linea orizzontale
+        \hspace{5pt}\textbf{Sigla}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
+        \hyperref[sec:uc1]{UC1}             & \hyperlink{RF1}{RF1}                \cr\hline
+        \hyperref[sec:uc11]{UC1.1}          & \hyperlink{RF1.1}{RF1.1}            \cr\hline
+        \hyperref[sec:uc12]{UC1.2}          & \hyperlink{RF1.2}{RF1.2}            \cr\hline
+        \hyperref[sec:uc2]{UC2}             & \hyperlink{RF1.3}{RF1.3}            \cr\hline
+        \hyperref[sec:uc3]{UC3}             & \hyperlink{RF2}{RF2}               \cr\hline
+        \hyperref[sec:UC5]{UC5}             & \hyperlink{RF2.1}{RF2.1}            \cr\hline
+        \hyperref[sec:uc4]{UC4}             & \hyperlink{RF3}{RF3}                  \cr\hline
+        \hyperref[sec:UC6]{UC6}             & \hyperlink{RF4}{RF4}                 \cr\hline
+        \hyperref[sec:UC61]{UC6.1}          & \hyperlink{RF4.1}{RF4.1}               \cr\hline
+        \hyperref[sec:UC62]{UC6.2}          & \hyperlink{RF4.2}{RF4.2}                 \cr\hline
+        \hyperref[sec:UC63]{UC6.3}          & \hyperlink{RF4.3}{RF4.3}                  \cr\hline
+        \hyperref[sec:UC64]{UC6.4}          & \hyperlink{RF4.4}{RF4.4}                   \cr\hline 
+        \hyperref[sec:UC65]{UC6.5}          & \hyperlink{RF4.5}{RF4.5}                   \cr\hline
+        \hyperref[sec:UC66]{UC6.6}          & \hyperlink{RF4.6}{RF4.6}                   \cr\hline 
+        \hyperref[sec:UC67]{UC6.7}          & \hyperlink{RF4.7}{RF4.7}                   \cr\hline
+        \hyperref[sec:UC68]{UC68}           & \hyperlink{RF4.11}{RF4.11}               \cr\hline
+        \hyperref[sec:UC69]{UC69}           & \hyperlink{RF4.10}{RF4.10}               \cr\hline  
+        \hyperref[sec:UC610]{UC6.10}        & \hyperlink{RF4.8}{RF4.8}                  \cr\hline
+        \hyperref[sec:UC6101]{UC6.10.1}     & \hyperlink{RF4.8.1}{RF4.8.1}              \cr\hline  
+        \hyperref[sec:UC611]{UC6.11}        & \hyperlink{RF4.9}{RF4.9}                  \cr\hline  
+        \hyperref[sec:UC6111]{UC6.11.1}     & \hyperlink{RF4.9.1}{RF4.9.1}               \cr\hline 
+        \hyperref[sec:UC7]{UC77}            & \hyperlink{RF5}{RF5}                    \cr\hline
+        \hyperref[sec:UC8]{UC8}             & \hyperlink{RF6}{RF6}                    \cr\hline
+        \hyperref[sec:UC9]{UC9}             & \hyperlink{RF7}{RF7}                    \cr\hline
+        \hyperref[sec:UC10]{UC10}           & \hyperlink{RF8}{RF8}                      \cr\hline
+        \hyperref[sec:UC11]{UC11}           & \hyperlink{RF9}{RF9}                      \cr\hline
+        \hyperref[sec:UC111]{UC11.1}        & \hyperlink{RF9.1}{RF9.1}                  \cr\hline
+        \hyperref[sec:UC112]{UC11.2}        & \hyperlink{RF9.2}{RF9.2}                  \cr\hline
+        \hyperref[sec:UC113]{UC11.3}        & \hyperlink{RF9.3}{RF9.3}                   \cr\hline
+        \hyperref[sec:UC114]{UC11.4}        & \hyperlink{RF9.4}{RF9.4}                 \cr\hline
+        \hyperref[sec:UC115]{UC11.5}        & \hyperlink{RF9.5}{RF9.5}                   \cr\hline
+        \hyperref[sec:UC116]{UC11.6}        & \hyperlink{RF9.6}{RF9.6}                   \cr\hline
+        \hyperref[sec:UC117]{UC11.7}        & \hyperlink{RF9.7}{RF9.7}                   \cr\hline
+        \hyperref[sec:UC12]{UC12}           & \hyperlink{RF10}{RF10}                   \cr\hline
+        \hyperref[sec:UC121]{UC12.1}        & \hyperlink{RF10.1}{RF10.1}               \cr\hline
+        \hyperref[sec:UC122]{UC12.2}        & \hyperlink{RF10.1.1}{RF10.1.1}           \cr\hline
+        \hyperref[sec:UC123]{UC12.3}        & \hyperlink{RF10.2}{RF10.2}              \cr\hline
+        \hyperref[sec:UC124]{UC12.4}        & \hyperlink{RF10.2.1}{RF10.2.1}          \cr\hline
+        \hyperref[sec:UC125]{UC12.5}        & \hyperlink{RF10.3}{RF10.3}           \cr\hline
+        \hyperref[sec:UC126]{UC12.6}        & \hyperlink{RF10.4}{RF10.4}             \cr\hline
+        \hyperref[sec:UC127]{UC12.7}        & \hyperlink{RF10.5}{RF10.5}               \cr\hline
+        \hyperref[sec:UC128]{UC12.8}        & \hyperlink{RF10.5.1}{RF10.5.1}       \cr\hline
+        \hyperref[sec:UC13]{UC13}           & \hyperlink{RF11}{RF11}                     \cr\hline
+        \hyperref[sec:UC131]{UC13.1}        & \hyperlink{RF11.1}{RF11.1}               \cr\hline
+        \hyperref[sec:UC132]{UC13.2}        & \hyperlink{RF11.2}{RF11.2}              \cr\hline
+        \hyperref[sec:UC133]{UC13.3}        & \hyperlink{RF11.3}{RF11.3}               \cr\hline
+        \hyperref[sec:UC134]{UC13.4}        & \hyperlink{RF11.4}{RF11.4}             \cr\hline
+        \hyperref[sec:UC135]{UC13.5}        & \hyperlink{RF11.5}{RF11.5}               \cr\hline
+        \hyperref[sec:UC136]{UC13.6}        & \hyperlink{RF11.6}{RF11.6}           \cr\hline
+        \hyperref[sec:UC137]{UC13.7}        & \hyperlink{RF11.7}{RF11.7}           \cr\hline
+        \hyperref[sec:UC138]{UC13.8}        & \hyperlink{RF11.8}{RF11.8}               \cr\hline
+        \hyperref[sec:UC14]{UC14}           & \hyperlink{RF12}{RF12}                    \cr\hline
+        \hyperref[sec:UC141]{UC14.1}        & \hyperlink{RF12.1}{RF12.1}               \cr\hline
+        \hyperref[sec:UC142]{UC14.2}        & \hyperlink{RF12.2}{RF12.2}              \cr\hline
+        \hyperref[sec:UC143]{UC14.3}        & \hyperlink{RF12.3}{RF12.3}              \cr\hline
+        \hyperref[sec:UC144]{UC14.4}        & \hyperlink{RF12.4}{RF12.4}         \cr\hline
+        \hyperref[sec:UC145]{UC14.5}        & \hyperlink{RF12.5}{RF12.5}            \cr\hline
+        \hyperref[sec:UC146]{UC14.6}        & \hyperlink{RF12.6}{RF12.6}             \cr\hline
+        \hyperref[sec:UC147]{UC14.7}        & \hyperlink{RF12.7}{RF12.7}             \cr\hline
+        \hyperref[sec:UC15]{UC15}           & \hyperlink{RF13}{RF13}               \cr\hline
+        \hyperref[sec:UC16]{UC16}           & \hyperlink{RF14}{RF14}               \cr\hline
+        \hyperref[sec:UC17]{UC17}           & \hyperlink{RF11.6.1}{RF11.6.1}      \cr\hline
+        \hyperref[sec:UC18]{UC18}           & \hyperlink{RF15}{RF15}                    \cr\hline
+        \hyperref[sec:UC19]{UC19}           & \hyperlink{RF16}{RF16}                   \cr\hline
+        \hyperref[sec:UC20]{UC20}           & \hyperlink{RF17}{RF17}                    \cr\hline
+        \hyperref[sec:UC21]{UC21}           & \hyperlink{RF18}{RF18}                    \cr\hline
+        \hyperref[sec:UC22]{UC22}           & \hyperlink{RF19}{RF19}                    \cr\hline
+        \hyperref[sec:UC23]{UC23}           & \hyperlink{RF20}{RF20}                    \cr\hline
+        \hyperref[sec:UC24]{UC24}           & \hyperlink{RF21}{RF21}                    \cr\hline
+        \hyperref[sec:UC25]{UC25}           & \hyperlink{RF22}{RF22}                    \cr\hline
+        \hyperref[sec:UC26]{UC26}           & \hyperlink{RF23}{RF23}                    \cr\hline
+        \hyperref[sec:UC27]{UC27}           & \hyperlink{RF24}{RF24}                    \cr\hline
+        \hyperref[sec:UC28]{UC28}           & \hyperlink{RF25}{RF25}                    \cr\hline
+        \hyperref[sec:UC29]{UC29}           & \hyperlink{RF26}{RF26}                    \cr\hline
+        \hyperref[sec:UC30]{UC30}           & \hyperlink{RF27}{RF27}                    \cr\hline
+        \hyperref[sec:UC31]{UC31}           & \hyperlink{RF28}{RF28}                    \cr\hline
+        \hyperref[sec:UC32]{UC32}           & \hyperlink{RF29}{RF29}                    \cr\hline
+        \hyperref[sec:UC33]{UC33}           & \hyperlink{RF30}{RF30}                    \cr\hline
+        \hyperref[sec:UC34]{UC34}           & \hyperlink{RF31}{RF31}                    \cr\hline
+    \caption{Tracciamento casi d'uso-requisiti.}
+\end{longtabu}
+
+
+
