@@ -25,6 +25,7 @@ Di seguito verranno elencati solo i casi d'uso principali; per quelli secondari 
     \item \textbf{Front end}: una istanza del \textit{front end} della piattaforma;
     \item \textbf{Gestionale laboratorio}: il software gestionale del laboratorio;
 \end{itemize}
+\vspace{-12pt}
 \subsubsection{Struttura}
 Per ogni caso d'uso, identificato da un codice univoco, vengono specificati gli attori coinvolti, lo scopo da raggiungere, le azioni previste e le condizioni del sistema prima e dopo tali azioni. I casi d'uso verranno descritti dalla seguente struttura:
 \begin{itemize}
@@ -47,12 +48,25 @@ Per ogni caso d'uso, identificato da un codice univoco, vengono specificati gli 
     \item Inclusioni (se presenti)
     \item Estensioni (se presenti)
 \end{itemize}
+\vspace{-12pt}
 \subsubsection{Casi d'uso generali}
 Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto simili (principalmente quelle che possono essere richieste da un utente autenticato con un determinato ruolo) saranno raggruppate in dei casi d'uso di alto livello, d'ora in poi ``casi d'uso generali", identificati dalla lettera \textbf{G} prefissa al loro codice numerico. Tali casi d'uso servono solo per una miglior comprensione, quindi il loro codice non verrà considerato come \textbf{codice\_padre} nell'identificazione dei casi d'uso raggruppati.
 
 \setlength{\parindent}{0cm}
 \subsection{UC1: Autenticazione amministratore}
 \label{sec:uc1}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.8\textwidth]{figures/uc/uc1gen.png}
+    \caption[Diagramma UML per UC1 con estensioni]{Diagramma UML per UC1 con estensioni
+    \label{fig:uc1}}
+\end{figure}   
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=6cm]{figures/uc/uc1.png}
+    \caption[Diagramma UML per UC1 con sottocasi]{Diagramma UML per UC1 con sottocasi
+    \label{fig:uc1}}
+\end{figure}   
 \textsc{\textsc{\textbf{Attori:}}} Utente non autenticato.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione al pannello di amministrazione.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'applicativo è stato avviato con successo e l'attore ha accesso alla pagina di autenticazione.\\
@@ -79,6 +93,13 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 
 \subsection{UC3: Autenticazione front end}
 \label{sec:uc3}
+\label{sec:uc1}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc3gen.png}
+    \caption[Diagramma UML per UC3]{Diagramma UML per UC3
+    \label{fig:uc1}}
+\end{figure}   
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'applicativo è stato avviato con successo e l'attore è collegato correttamente al sistema.\\
@@ -94,7 +115,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di reset della password di accesso di un utente autorizzato.\\
 \textsc{\textbf{Postcondizioni:}} È stata generata ed inviata all'utente una nuova password,e l'attore ha ricevuto una risposta di conferma del successo dell'operazione.
 
-\subsection{UC5: Errore di autenticazione front end}
+\subsection{UC5: Errore autenticazione front end}
 \label{sec:UC5}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole effettuare la procedura di autenticazione per un utente della piattaforma.\\
@@ -108,7 +129,14 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 
 \subsection{UCG1: Operazioni amministrative}
 \label{sec:ucg1}
+\label{sec:uc1}    
 Questo caso d'uso generale riassume le operazioni disponibili ad un utente autorizzato che abbia eseguito l'accesso al pannello di amministrazione. La maggior parte delle operazioni sui record sono identiche tra loro, e verranno quindi riportate in modo generalizzato; eventuali operazioni specifiche verranno contestualizzate nel proprio caso d'uso.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.8\textwidth]{figures/uc/ucg1.png}
+    \caption[Diagramma UML per UCG1]{Diagramma UML per UCG1
+    \label{fig:ucg1}}
+\end{figure}\\
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni di amministrazione della piattaforma.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore ha ottenuto l'accesso al pannello di amministrazione.\\
@@ -123,6 +151,12 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 
 \subsubsection{UC6: Gestione categoria di record}
 \label{sec:UC6}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc6.png}
+    \caption[Diagramma UML per UC6]{Diagramma UML per UC6
+    \label{fig:uc6}}
+\end{figure}
 \textsc{\textbf{Attori:}} Amministratore.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire una particolare categoria di record.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è nella \textit{dashboard} del pannello di amministrazione.\\
@@ -171,7 +205,13 @@ Questo caso d'uso generale riassume le operazioni disponibili ad un utente autor
 
 \subsection{UCG2: Operazioni per utente ``pharmacy''}
 \label{sec:UCG2}
-Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``pharmacy''. Come anticipato, le operazioni vengono considerate non dal punto di vista dell'utente finale della piattaforma, cioè il farmacista o cliente che si interfaccia con il \textit{front end}, ma come richieste che l'istanza di \textit{front end} può effettuare alle \ref{itm:api} del servizio \textit{back end}. Non verranno, per questo motivo, quindi fatte distinzioni tra interazioni che verrebbero effettuate da un farmacista o da un cliente. Infine, va considerato implicito che ognuna delle seguenti operazioni è ristretta ai record del database resi visibili dalla sessione attiva (nella fattispecie i record associati alla farmacia a cui appartiene l'utente autenticato).\\
+Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``pharmacy''. Come anticipato, le operazioni vengono considerate non dal punto di vista dell'utente finale della piattaforma, cioè il farmacista o cliente che si interfaccia con il \textit{front end}, ma come richieste che l'istanza di \textit{front end} può effettuare alle \ref{itm:api} del servizio \textit{back end}. Non verranno, per questo motivo, quindi fatte distinzioni tra interazioni che verrebbero effettuate da un farmacista o da un cliente. Infine, va considerato implicito che ognuna delle seguenti operazioni è ristretta ai record del database resi visibili dalla sessione attiva (nella fattispecie i record associati alla farmacia a cui appartiene l'utente autenticato).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/ucg2.png}
+    \caption[Diagramma UML per UCG2]{Diagramma UML per UCG2
+    \label{fig:ucg2}}
+\end{figure}\\
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni permesse ad un utente con ruolo di ``pharmacy''.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -193,7 +233,7 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole aggiornare i dati della farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
 \textsc{\textbf{Scenario principale:}} L'attore invia una richiesta di aggiornamento del record della farmacia con i nuovi dati, potenzialmente allegando un'immagine da sostituire al logo corrente.\\
-\textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.//
+\textsc{\textbf{Postcondizioni:}} Il record corrispondente alla farmacia viene aggiornato e l'attore ha ricevuto una risposta che conferma il successo dell'operazione.\\
 \textsc{\textbf{Estensioni:}} L'attore invia una richiesta non valida (\hyperref[sec:UC16]{UC16}).
 
 

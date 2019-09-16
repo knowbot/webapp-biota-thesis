@@ -20,255 +20,255 @@
 \contentsline {subsection}{\numberline {2.1.1}Contesto di sviluppo}{9}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}Caratteristiche degli utenti}{9}{subsection.2.1.2}% 
 \contentsline {subsection}{\numberline {2.1.3}Contesto di utilizzo}{10}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}Definizione degli obiettivi}{11}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}Definizione degli obiettivi}{10}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Notazione}{11}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Piano di lavoro}{11}{subsection.2.2.2}% 
 \contentsline {subsubsection}{\numberline {2.2.2.1}Obiettivi}{11}{subsubsection.2.2.2.1}% 
 \contentsline {paragraph}{Obbligatori}{11}{subsubsection.2.2.2.1}% 
-\contentsline {paragraph}{Desiderabili}{12}{subsubsection.2.2.2.1}% 
-\contentsline {paragraph}{Facoltativi}{12}{subsubsection.2.2.2.1}% 
+\contentsline {paragraph}{Desiderabili}{11}{subsubsection.2.2.2.1}% 
+\contentsline {paragraph}{Facoltativi}{11}{subsubsection.2.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.3}Modifiche al piano}{12}{subsection.2.2.3}% 
 \contentsline {subsubsection}{\numberline {2.2.3.1}Obiettivi rivisti}{12}{subsubsection.2.2.3.1}% 
 \contentsline {paragraph}{Obbligatori}{12}{subsubsection.2.2.3.1}% 
 \contentsline {paragraph}{Desiderabili}{12}{subsubsection.2.2.3.1}% 
-\contentsline {paragraph}{Facoltativi}{13}{subsubsection.2.2.3.1}% 
+\contentsline {paragraph}{Facoltativi}{12}{subsubsection.2.2.3.1}% 
 \contentsline {section}{\numberline {2.3}Pianificazione delle attività}{13}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Tecnologie utilizzate}{14}{section.2.4}% 
 \contentsline {subsection}{\numberline {2.4.1}Ruby}{14}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Gemme}{14}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}Gemme}{15}{subsection.2.4.2}% 
 \contentsline {subsubsection}{\numberline {2.4.2.1}AWS SDK for Ruby}{15}{subsubsection.2.4.2.1}% 
 \contentsline {subsubsection}{\numberline {2.4.2.2}Database Cleaner}{15}{subsubsection.2.4.2.2}% 
 \contentsline {subsubsection}{\numberline {2.4.2.3}Factory Bot}{15}{subsubsection.2.4.2.3}% 
-\contentsline {subsubsection}{\numberline {2.4.2.4}HexaPDF}{15}{subsubsection.2.4.2.4}% 
+\contentsline {subsubsection}{\numberline {2.4.2.4}HexaPDF}{16}{subsubsection.2.4.2.4}% 
 \contentsline {subsubsection}{\numberline {2.4.2.5}Jbuilder}{16}{subsubsection.2.4.2.5}% 
 \contentsline {subsubsection}{\numberline {2.4.2.6}ROTP}{16}{subsubsection.2.4.2.6}% 
 \contentsline {subsubsection}{\numberline {2.4.2.7}RSpec}{16}{subsubsection.2.4.2.7}% 
-\contentsline {subsubsection}{\numberline {2.4.2.8}RuboCop}{16}{subsubsection.2.4.2.8}% 
+\contentsline {subsubsection}{\numberline {2.4.2.8}RuboCop}{17}{subsubsection.2.4.2.8}% 
 \contentsline {subsubsection}{\numberline {2.4.2.9}Shoulda Matchers}{17}{subsubsection.2.4.2.9}% 
 \contentsline {subsection}{\numberline {2.4.3}Ruby on Rails}{17}{subsection.2.4.3}% 
-\contentsline {subsubsection}{\numberline {2.4.3.1}Integrazione tra i componenti}{17}{subsubsection.2.4.3.1}% 
+\contentsline {subsubsection}{\numberline {2.4.3.1}Integrazione tra i componenti}{18}{subsubsection.2.4.3.1}% 
 \contentsline {subsubsection}{\numberline {2.4.3.2}Pattern architetturale}{18}{subsubsection.2.4.3.2}% 
 \contentsline {paragraph}{Model}{18}{subsubsection.2.4.3.2}% 
 \contentsline {paragraph}{Controller}{18}{subsubsection.2.4.3.2}% 
 \contentsline {paragraph}{View}{18}{subsubsection.2.4.3.2}% 
-\contentsline {subsubsection}{\numberline {2.4.3.3}Devise}{18}{subsubsection.2.4.3.3}% 
-\contentsline {subsubsection}{\numberline {2.4.3.4}ActiveAdmin}{18}{subsubsection.2.4.3.4}% 
+\contentsline {subsubsection}{\numberline {2.4.3.3}Devise}{19}{subsubsection.2.4.3.3}% 
+\contentsline {subsubsection}{\numberline {2.4.3.4}ActiveAdmin}{19}{subsubsection.2.4.3.4}% 
 \contentsline {subsection}{\numberline {2.4.4}RubyMine}{19}{subsection.2.4.4}% 
-\contentsline {subsection}{\numberline {2.4.5}GraphQL}{19}{subsection.2.4.5}% 
+\contentsline {subsection}{\numberline {2.4.5}GraphQL}{20}{subsection.2.4.5}% 
 \contentsline {subsubsection}{\numberline {2.4.5.1}Altair}{20}{subsubsection.2.4.5.1}% 
-\contentsline {subsection}{\numberline {2.4.6}HTTP}{20}{subsection.2.4.6}% 
-\contentsline {subsubsection}{\numberline {2.4.6.1}Insomnia}{21}{subsubsection.2.4.6.1}% 
-\contentsline {subsection}{\numberline {2.4.7}PostgreSQL}{21}{subsection.2.4.7}% 
-\contentsline {chapter}{\numberline {3}Analisi dei requisiti}{23}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Casi d'uso}{23}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Organizzazione dei casi d'uso}{24}{subsection.3.1.1}% 
-\contentsline {subsubsection}{\numberline {3.1.1.1}Attori}{24}{subsubsection.3.1.1.1}% 
-\contentsline {subsubsection}{\numberline {3.1.1.2}Struttura}{24}{subsubsection.3.1.1.2}% 
-\contentsline {subsubsection}{\numberline {3.1.1.3}Casi d'uso generali}{25}{subsubsection.3.1.1.3}% 
-\contentsline {subsection}{\numberline {3.1.2}UC1: Autenticazione amministratore}{25}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}UC2: Errore autenticazione amministratore}{25}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}UC3: Autenticazione front end}{26}{subsection.3.1.4}% 
-\contentsline {subsection}{\numberline {3.1.5}UC4: Reset password per accesso alla piattaforma}{26}{subsection.3.1.5}% 
-\contentsline {subsection}{\numberline {3.1.6}UC5: Errore di autenticazione front end}{27}{subsection.3.1.6}% 
-\contentsline {subsection}{\numberline {3.1.7}UCG1: Operazioni amministrative}{27}{subsection.3.1.7}% 
-\contentsline {subsubsection}{\numberline {3.1.7.1}UC6: Gestione categoria di record}{28}{subsubsection.3.1.7.1}% 
-\contentsline {subsubsection}{\numberline {3.1.7.2}UC7: Visualizzazione dashboard}{28}{subsubsection.3.1.7.2}% 
-\contentsline {subsubsection}{\numberline {3.1.7.3}UC8: Gestione profilo}{29}{subsubsection.3.1.7.3}% 
-\contentsline {subsubsection}{\numberline {3.1.7.4}UC9: Disconnessione}{29}{subsubsection.3.1.7.4}% 
-\contentsline {subsection}{\numberline {3.1.8}UCG2: Operazioni per utente ``pharmacy''}{29}{subsection.3.1.8}% 
-\contentsline {subsubsection}{\numberline {3.1.8.1}UC10: Aggiornamento dati della farmacia}{30}{subsubsection.3.1.8.1}% 
-\contentsline {subsubsection}{\numberline {3.1.8.2}UC11: Gestione utenti}{30}{subsubsection.3.1.8.2}% 
-\contentsline {subsubsection}{\numberline {3.1.8.3}UC12: Gestione esami}{31}{subsubsection.3.1.8.3}% 
-\contentsline {subsubsection}{\numberline {3.1.8.4}UC13: Gestione clienti}{32}{subsubsection.3.1.8.4}% 
-\contentsline {subsubsection}{\numberline {3.1.8.5}UC14: Gestione spedizioni}{32}{subsubsection.3.1.8.5}% 
-\contentsline {subsubsection}{\numberline {3.1.8.6}UC15: Generazione referto dettagliato}{33}{subsubsection.3.1.8.6}% 
-\contentsline {subsubsection}{\numberline {3.1.8.7}UC16: Invio di una richiesta invalida}{33}{subsubsection.3.1.8.7}% 
-\contentsline {subsubsection}{\numberline {3.1.8.8}UC17: Superamento tentativi di invio del codice OTP}{34}{subsubsection.3.1.8.8}% 
-\contentsline {subsubsection}{\numberline {3.1.8.9}UC18: Disconnessione dalla piattaforma}{34}{subsubsection.3.1.8.9}% 
-\contentsline {subsection}{\numberline {3.1.9}UCG3: Operazioni per utente ``gastroenterologist''}{34}{subsection.3.1.9}% 
-\contentsline {subsubsection}{\numberline {3.1.9.1}UC19: Richiesta lista esami in attesa di diagnosi}{35}{subsubsection.3.1.9.1}% 
-\contentsline {subsubsection}{\numberline {3.1.9.2}UC20: Richiesta informazioni per un esame in attesa di diagnosi}{35}{subsubsection.3.1.9.2}% 
-\contentsline {subsubsection}{\numberline {3.1.9.3}UC21: Inserimento diagnosi per un esame}{36}{subsubsection.3.1.9.3}% 
-\contentsline {subsubsection}{\numberline {3.1.9.4}UC22: Inserimento tabella della dieta}{36}{subsubsection.3.1.9.4}% 
-\contentsline {subsubsection}{\numberline {3.1.9.5}UC23: Generazione referto dettagliato anonimo}{36}{subsubsection.3.1.9.5}% 
-\contentsline {subsection}{\numberline {3.1.10}UCG4: Operazioni per utente ``bmr''}{37}{subsection.3.1.10}% 
-\contentsline {subsubsection}{\numberline {3.1.10.1}UC24: Richiesta lista esami con diagnosi}{38}{subsubsection.3.1.10.1}% 
-\contentsline {subsubsection}{\numberline {3.1.10.2}UC25: Richiesta informazioni esame con diagnosi}{38}{subsubsection.3.1.10.2}% 
-\contentsline {subsubsection}{\numberline {3.1.10.3}UC26: Aggiornamento diagnosi per un esame}{38}{subsubsection.3.1.10.3}% 
-\contentsline {subsubsection}{\numberline {3.1.10.4}UC27: Aggiornamento tabella della dieta}{39}{subsubsection.3.1.10.4}% 
-\contentsline {subsection}{\numberline {3.1.11}UCG5: Operazioni per il gestionale del laboratorio}{39}{subsection.3.1.11}% 
-\contentsline {subsubsection}{\numberline {3.1.11.1}UC28: Richiesta lista esami con campione}{40}{subsubsection.3.1.11.1}% 
-\contentsline {subsubsection}{\numberline {3.1.11.2}UC29: Richiesta dati di un esame}{40}{subsubsection.3.1.11.2}% 
-\contentsline {subsubsection}{\numberline {3.1.11.3}UC30: Aggiornamento stato di avanzamento di un esame}{40}{subsubsection.3.1.11.3}% 
-\contentsline {subsubsection}{\numberline {3.1.11.4}UC31: Rifiuto di un campione}{41}{subsubsection.3.1.11.4}% 
-\contentsline {subsubsection}{\numberline {3.1.11.5}UC32: Caricamento referto delle analisi}{41}{subsubsection.3.1.11.5}% 
-\contentsline {subsubsection}{\numberline {3.1.11.6}UC33: Richiesta referto dettagliato anonimo}{42}{subsubsection.3.1.11.6}% 
-\contentsline {subsubsection}{\numberline {3.1.11.7}UC34: Errore per richiesta invalida}{42}{subsubsection.3.1.11.7}% 
-\contentsline {section}{\numberline {3.2}Tracciamento dei requisiti}{43}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Notazione}{43}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Requisiti funzionali}{43}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Requisiti qualitativi}{48}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Requisiti di vincolo}{49}{subsection.3.2.4}% 
-\contentsline {chapter}{\numberline {4}Progettazione e sviluppo}{51}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Progettare con Rails}{51}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Architettura}{52}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Representational State Transfer}{53}{subsection.4.2.1}% 
-\contentsline {subsubsection}{\numberline {4.2.1.1}GraphQL e \ref {itm:http}}{54}{subsubsection.4.2.1.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Implementazione dello stile \ref {itm:rest}}{55}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Model, View, Controller}{55}{subsection.4.2.3}% 
-\contentsline {subsection}{\numberline {4.2.4}Implementazione del pattern \ref {itm:mvc}}{56}{subsection.4.2.4}% 
-\contentsline {subsubsection}{\numberline {4.2.4.1}Model}{56}{subsubsection.4.2.4.1}% 
-\contentsline {subsubsection}{\numberline {4.2.4.2}Controller}{57}{subsubsection.4.2.4.2}% 
-\contentsline {subsubsection}{\numberline {4.2.4.3}View}{58}{subsubsection.4.2.4.3}% 
-\contentsline {section}{\numberline {4.3}Struttura dell'applicazione}{58}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Database}{58}{subsection.4.3.1}% 
-\contentsline {subsubsection}{\numberline {4.3.1.1}Migrations}{59}{subsubsection.4.3.1.1}% 
-\contentsline {section}{\numberline {4.4}Models}{59}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Session}{60}{subsection.4.4.1}% 
-\contentsline {subsubsection}{\numberline {4.4.1.1}Descrizione}{60}{subsubsection.4.4.1.1}% 
-\contentsline {subsubsection}{\numberline {4.4.1.2}Relazioni}{60}{subsubsection.4.4.1.2}% 
-\contentsline {subsubsection}{\numberline {4.4.1.3}Attributi}{61}{subsubsection.4.4.1.3}% 
-\contentsline {subsubsection}{\numberline {4.4.1.4}Metodi}{62}{subsubsection.4.4.1.4}% 
-\contentsline {subsection}{\numberline {4.4.2}User}{63}{subsection.4.4.2}% 
-\contentsline {subsubsection}{\numberline {4.4.2.1}Descrizione}{63}{subsubsection.4.4.2.1}% 
-\contentsline {subsubsection}{\numberline {4.4.2.2}Relazioni}{64}{subsubsection.4.4.2.2}% 
-\contentsline {subsubsection}{\numberline {4.4.2.3}Attributi}{64}{subsubsection.4.4.2.3}% 
-\contentsline {subsubsection}{\numberline {4.4.2.4}Metodi}{66}{subsubsection.4.4.2.4}% 
-\contentsline {subsection}{\numberline {4.4.3}AdminUser}{67}{subsection.4.4.3}% 
-\contentsline {subsubsection}{\numberline {4.4.3.1}Descrizione}{67}{subsubsection.4.4.3.1}% 
-\contentsline {subsection}{\numberline {4.4.4}Pharmacy}{67}{subsection.4.4.4}% 
-\contentsline {subsubsection}{\numberline {4.4.4.1}Descrizione}{67}{subsubsection.4.4.4.1}% 
-\contentsline {subsubsection}{\numberline {4.4.4.2}Relazioni}{67}{subsubsection.4.4.4.2}% 
-\contentsline {subsubsection}{\numberline {4.4.4.3}Attributi}{68}{subsubsection.4.4.4.3}% 
-\contentsline {subsection}{\numberline {4.4.5}CustomerMembership}{68}{subsection.4.4.5}% 
-\contentsline {subsubsection}{\numberline {4.4.5.1}Descrizione}{68}{subsubsection.4.4.5.1}% 
-\contentsline {subsection}{\numberline {4.4.6}QuestionnaireTemplate}{69}{subsection.4.4.6}% 
-\contentsline {subsubsection}{\numberline {4.4.6.1}Descrizione}{69}{subsubsection.4.4.6.1}% 
-\contentsline {subsubsection}{\numberline {4.4.6.2}Relazioni}{69}{subsubsection.4.4.6.2}% 
-\contentsline {subsubsection}{\numberline {4.4.6.3}Attributi}{69}{subsubsection.4.4.6.3}% 
-\contentsline {subsection}{\numberline {4.4.7}Question}{69}{subsection.4.4.7}% 
-\contentsline {subsubsection}{\numberline {4.4.7.1}Descrizione}{69}{subsubsection.4.4.7.1}% 
-\contentsline {subsubsection}{\numberline {4.4.7.2}Relazioni}{70}{subsubsection.4.4.7.2}% 
-\contentsline {subsubsection}{\numberline {4.4.7.3}Attributi}{70}{subsubsection.4.4.7.3}% 
-\contentsline {subsubsection}{\numberline {4.4.7.4}Metodi}{70}{subsubsection.4.4.7.4}% 
-\contentsline {subsection}{\numberline {4.4.8}PossibleAnswer}{71}{subsection.4.4.8}% 
-\contentsline {subsubsection}{\numberline {4.4.8.1}Descrizione}{71}{subsubsection.4.4.8.1}% 
-\contentsline {subsubsection}{\numberline {4.4.8.2}Relazioni}{71}{subsubsection.4.4.8.2}% 
-\contentsline {subsubsection}{\numberline {4.4.8.3}Attributi}{71}{subsubsection.4.4.8.3}% 
-\contentsline {subsubsection}{\numberline {4.4.8.4}Metodi}{71}{subsubsection.4.4.8.4}% 
-\contentsline {subsection}{\numberline {4.4.9}QuestionnaireAnswer}{72}{subsection.4.4.9}% 
-\contentsline {subsubsection}{\numberline {4.4.9.1}Descrizione}{72}{subsubsection.4.4.9.1}% 
-\contentsline {subsubsection}{\numberline {4.4.9.2}Relazioni}{72}{subsubsection.4.4.9.2}% 
-\contentsline {subsubsection}{\numberline {4.4.9.3}Attributi}{73}{subsubsection.4.4.9.3}% 
-\contentsline {subsubsection}{\numberline {4.4.9.4}Metodi}{73}{subsubsection.4.4.9.4}% 
-\contentsline {subsection}{\numberline {4.4.10}Shipment}{74}{subsection.4.4.10}% 
-\contentsline {subsubsection}{\numberline {4.4.10.1}Descrizione}{74}{subsubsection.4.4.10.1}% 
-\contentsline {subsubsection}{\numberline {4.4.10.2}Relazioni}{74}{subsubsection.4.4.10.2}% 
-\contentsline {subsubsection}{\numberline {4.4.10.3}Attributi}{74}{subsubsection.4.4.10.3}% 
-\contentsline {subsubsection}{\numberline {4.4.10.4}Metodi}{75}{subsubsection.4.4.10.4}% 
-\contentsline {subsection}{\numberline {4.4.11}ApprovedCode}{75}{subsection.4.4.11}% 
-\contentsline {subsubsection}{\numberline {4.4.11.1}Descrizione}{75}{subsubsection.4.4.11.1}% 
-\contentsline {subsection}{\numberline {4.4.12}Account}{75}{subsection.4.4.12}% 
-\contentsline {subsubsection}{\numberline {4.4.12.1}Descrizione}{75}{subsubsection.4.4.12.1}% 
-\contentsline {subsubsection}{\numberline {4.4.12.2}Attributi}{76}{subsubsection.4.4.12.2}% 
-\contentsline {subsubsection}{\numberline {4.4.12.3}Metodi}{76}{subsubsection.4.4.12.3}% 
-\contentsline {section}{\numberline {4.5}Views}{76}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Controllers}{77}{section.4.6}% 
-\contentsline {subsection}{\numberline {4.6.1}API::SampleSessionController}{78}{subsection.4.6.1}% 
-\contentsline {subsection}{\numberline {4.6.2}API::SessionController}{79}{subsection.4.6.2}% 
-\contentsline {subsection}{\numberline {4.6.3}GraphqlController}{79}{subsection.4.6.3}% 
-\contentsline {subsection}{\numberline {4.6.4}Routes}{80}{subsection.4.6.4}% 
-\contentsline {section}{\numberline {4.7}API GraphQL}{81}{section.4.7}% 
-\contentsline {subsection}{\numberline {4.7.1}Types}{81}{subsection.4.7.1}% 
-\contentsline {subsection}{\numberline {4.7.2}Queries}{82}{subsection.4.7.2}% 
-\contentsline {subsection}{\numberline {4.7.3}Mutations}{83}{subsection.4.7.3}% 
-\contentsline {section}{\numberline {4.8}Services}{84}{section.4.8}% 
-\contentsline {subsection}{\numberline {4.8.1}Generazione referto dettagliato}{85}{subsection.4.8.1}% 
-\contentsline {subsection}{\numberline {4.8.2}Gestione dei codici \ref {itm:otp}}{86}{subsection.4.8.2}% 
-\contentsline {subsubsection}{\numberline {4.8.2.1}OtpManager}{86}{subsubsection.4.8.2.1}% 
-\contentsline {subsection}{\numberline {4.8.3}Client per Amazon SNS}{86}{subsection.4.8.3}% 
-\contentsline {subsection}{\numberline {4.8.4}Client per API di SDA}{87}{subsection.4.8.4}% 
-\contentsline {subsubsection}{\numberline {4.8.4.1}SDA::Client}{88}{subsubsection.4.8.4.1}% 
-\contentsline {subsubsection}{\numberline {4.8.4.2}SDA::Requests::BaseRequest}{89}{subsubsection.4.8.4.2}% 
-\contentsline {subsubsection}{\numberline {4.8.4.3}SDA::Requests::RequestWithParty}{89}{subsubsection.4.8.4.3}% 
-\contentsline {subsubsection}{\numberline {4.8.4.4}SDA::Requests::BookingRequest}{89}{subsubsection.4.8.4.4}% 
-\contentsline {subsubsection}{\numberline {4.8.4.5}SDA::Requests::WaybillRequest}{90}{subsubsection.4.8.4.5}% 
-\contentsline {subsection}{\numberline {4.8.5}Logger}{90}{subsection.4.8.5}% 
-\contentsline {section}{\numberline {4.9}Pannello di amministrazione}{90}{section.4.9}% 
-\contentsline {subsection}{\numberline {4.9.1}Struttura delle schede}{90}{subsection.4.9.1}% 
-\contentsline {subsection}{\numberline {4.9.2}Elenco delle schede}{91}{subsection.4.9.2}% 
-\contentsline {chapter}{\numberline {5}Verifica e validazione}{93}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Premessa}{93}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Norme di codifica}{93}{subsection.5.1.1}% 
-\contentsline {section}{\numberline {5.2}Verifica}{94}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Analisi statica}{94}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Analisi dinamica}{94}{subsection.5.2.2}% 
-\contentsline {subsubsection}{\numberline {5.2.2.1}Test di unità}{95}{subsubsection.5.2.2.1}% 
-\contentsline {subsubsection}{\numberline {5.2.2.2}Test di integrazione}{95}{subsubsection.5.2.2.2}% 
-\contentsline {section}{\numberline {5.3}Validazione}{96}{section.5.3}% 
-\contentsline {chapter}{\numberline {6}Conclusione}{97}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Valutazione oggettiva}{97}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}Raggiungimento degli obiettivi}{97}{subsection.6.1.1}% 
-\contentsline {subsection}{\numberline {6.1.2}Consuntivo}{98}{subsection.6.1.2}% 
-\contentsline {section}{\numberline {6.2}Valutazione personale}{99}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}Conoscenze acquisite}{99}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}Crescita personale}{100}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {2.4.6}HTTP}{21}{subsection.2.4.6}% 
+\contentsline {subsubsection}{\numberline {2.4.6.1}Insomnia}{22}{subsubsection.2.4.6.1}% 
+\contentsline {subsection}{\numberline {2.4.7}PostgreSQL}{22}{subsection.2.4.7}% 
+\contentsline {chapter}{\numberline {3}Analisi dei requisiti}{25}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Casi d'uso}{25}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Organizzazione dei casi d'uso}{26}{subsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1.1}Attori}{26}{subsubsection.3.1.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1.2}Struttura}{26}{subsubsection.3.1.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.1.3}Casi d'uso generali}{27}{subsubsection.3.1.1.3}% 
+\contentsline {subsection}{\numberline {3.1.2}UC1: Autenticazione amministratore}{27}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}UC2: Errore autenticazione amministratore}{28}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}UC3: Autenticazione front end}{28}{subsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.1.5}UC4: Reset password per accesso alla piattaforma}{29}{subsection.3.1.5}% 
+\contentsline {subsection}{\numberline {3.1.6}UC5: Errore autenticazione front end}{29}{subsection.3.1.6}% 
+\contentsline {subsection}{\numberline {3.1.7}UCG1: Operazioni amministrative}{30}{subsection.3.1.7}% 
+\contentsline {subsubsection}{\numberline {3.1.7.1}UC6: Gestione categoria di record}{31}{subsubsection.3.1.7.1}% 
+\contentsline {subsubsection}{\numberline {3.1.7.2}UC7: Visualizzazione dashboard}{32}{subsubsection.3.1.7.2}% 
+\contentsline {subsubsection}{\numberline {3.1.7.3}UC8: Gestione profilo}{32}{subsubsection.3.1.7.3}% 
+\contentsline {subsubsection}{\numberline {3.1.7.4}UC9: Disconnessione}{32}{subsubsection.3.1.7.4}% 
+\contentsline {subsection}{\numberline {3.1.8}UCG2: Operazioni per utente ``pharmacy''}{33}{subsection.3.1.8}% 
+\contentsline {subsubsection}{\numberline {3.1.8.1}UC10: Aggiornamento dati della farmacia}{34}{subsubsection.3.1.8.1}% 
+\contentsline {subsubsection}{\numberline {3.1.8.2}UC11: Gestione utenti}{34}{subsubsection.3.1.8.2}% 
+\contentsline {subsubsection}{\numberline {3.1.8.3}UC12: Gestione esami}{35}{subsubsection.3.1.8.3}% 
+\contentsline {subsubsection}{\numberline {3.1.8.4}UC13: Gestione clienti}{36}{subsubsection.3.1.8.4}% 
+\contentsline {subsubsection}{\numberline {3.1.8.5}UC14: Gestione spedizioni}{36}{subsubsection.3.1.8.5}% 
+\contentsline {subsubsection}{\numberline {3.1.8.6}UC15: Generazione referto dettagliato}{37}{subsubsection.3.1.8.6}% 
+\contentsline {subsubsection}{\numberline {3.1.8.7}UC16: Invio di una richiesta invalida}{37}{subsubsection.3.1.8.7}% 
+\contentsline {subsubsection}{\numberline {3.1.8.8}UC17: Superamento tentativi di invio del codice OTP}{38}{subsubsection.3.1.8.8}% 
+\contentsline {subsubsection}{\numberline {3.1.8.9}UC18: Disconnessione dalla piattaforma}{38}{subsubsection.3.1.8.9}% 
+\contentsline {subsection}{\numberline {3.1.9}UCG3: Operazioni per utente ``gastroenterologist''}{38}{subsection.3.1.9}% 
+\contentsline {subsubsection}{\numberline {3.1.9.1}UC19: Richiesta lista esami in attesa di diagnosi}{39}{subsubsection.3.1.9.1}% 
+\contentsline {subsubsection}{\numberline {3.1.9.2}UC20: Richiesta informazioni per un esame in attesa di diagnosi}{39}{subsubsection.3.1.9.2}% 
+\contentsline {subsubsection}{\numberline {3.1.9.3}UC21: Inserimento diagnosi per un esame}{40}{subsubsection.3.1.9.3}% 
+\contentsline {subsubsection}{\numberline {3.1.9.4}UC22: Inserimento tabella della dieta}{40}{subsubsection.3.1.9.4}% 
+\contentsline {subsubsection}{\numberline {3.1.9.5}UC23: Generazione referto dettagliato anonimo}{40}{subsubsection.3.1.9.5}% 
+\contentsline {subsection}{\numberline {3.1.10}UCG4: Operazioni per utente ``bmr''}{41}{subsection.3.1.10}% 
+\contentsline {subsubsection}{\numberline {3.1.10.1}UC24: Richiesta lista esami con diagnosi}{42}{subsubsection.3.1.10.1}% 
+\contentsline {subsubsection}{\numberline {3.1.10.2}UC25: Richiesta informazioni esame con diagnosi}{42}{subsubsection.3.1.10.2}% 
+\contentsline {subsubsection}{\numberline {3.1.10.3}UC26: Aggiornamento diagnosi per un esame}{42}{subsubsection.3.1.10.3}% 
+\contentsline {subsubsection}{\numberline {3.1.10.4}UC27: Aggiornamento tabella della dieta}{43}{subsubsection.3.1.10.4}% 
+\contentsline {subsection}{\numberline {3.1.11}UCG5: Operazioni per il gestionale del laboratorio}{43}{subsection.3.1.11}% 
+\contentsline {subsubsection}{\numberline {3.1.11.1}UC28: Richiesta lista esami con campione}{44}{subsubsection.3.1.11.1}% 
+\contentsline {subsubsection}{\numberline {3.1.11.2}UC29: Richiesta dati di un esame}{44}{subsubsection.3.1.11.2}% 
+\contentsline {subsubsection}{\numberline {3.1.11.3}UC30: Aggiornamento stato di avanzamento di un esame}{44}{subsubsection.3.1.11.3}% 
+\contentsline {subsubsection}{\numberline {3.1.11.4}UC31: Rifiuto di un campione}{45}{subsubsection.3.1.11.4}% 
+\contentsline {subsubsection}{\numberline {3.1.11.5}UC32: Caricamento referto delle analisi}{45}{subsubsection.3.1.11.5}% 
+\contentsline {subsubsection}{\numberline {3.1.11.6}UC33: Richiesta referto dettagliato anonimo}{46}{subsubsection.3.1.11.6}% 
+\contentsline {subsubsection}{\numberline {3.1.11.7}UC34: Errore per richiesta invalida}{46}{subsubsection.3.1.11.7}% 
+\contentsline {section}{\numberline {3.2}Tracciamento dei requisiti}{47}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Notazione}{47}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Requisiti funzionali}{47}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Requisiti qualitativi}{52}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Requisiti di vincolo}{53}{subsection.3.2.4}% 
+\contentsline {chapter}{\numberline {4}Progettazione e sviluppo}{55}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Progettare con Rails}{55}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Architettura}{56}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Representational State Transfer}{57}{subsection.4.2.1}% 
+\contentsline {subsubsection}{\numberline {4.2.1.1}GraphQL e \ref {itm:http}}{58}{subsubsection.4.2.1.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Implementazione dello stile \ref {itm:rest}}{59}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Model, View, Controller}{59}{subsection.4.2.3}% 
+\contentsline {subsection}{\numberline {4.2.4}Implementazione del pattern \ref {itm:mvc}}{60}{subsection.4.2.4}% 
+\contentsline {subsubsection}{\numberline {4.2.4.1}Model}{60}{subsubsection.4.2.4.1}% 
+\contentsline {subsubsection}{\numberline {4.2.4.2}Controller}{61}{subsubsection.4.2.4.2}% 
+\contentsline {subsubsection}{\numberline {4.2.4.3}View}{62}{subsubsection.4.2.4.3}% 
+\contentsline {section}{\numberline {4.3}Struttura dell'applicazione}{62}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Database}{62}{subsection.4.3.1}% 
+\contentsline {subsubsection}{\numberline {4.3.1.1}Migrations}{63}{subsubsection.4.3.1.1}% 
+\contentsline {section}{\numberline {4.4}Models}{63}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Session}{64}{subsection.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.1.1}Descrizione}{64}{subsubsection.4.4.1.1}% 
+\contentsline {subsubsection}{\numberline {4.4.1.2}Relazioni}{64}{subsubsection.4.4.1.2}% 
+\contentsline {subsubsection}{\numberline {4.4.1.3}Attributi}{65}{subsubsection.4.4.1.3}% 
+\contentsline {subsubsection}{\numberline {4.4.1.4}Metodi}{66}{subsubsection.4.4.1.4}% 
+\contentsline {subsection}{\numberline {4.4.2}User}{67}{subsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.2.1}Descrizione}{67}{subsubsection.4.4.2.1}% 
+\contentsline {subsubsection}{\numberline {4.4.2.2}Relazioni}{68}{subsubsection.4.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.4.2.3}Attributi}{68}{subsubsection.4.4.2.3}% 
+\contentsline {subsubsection}{\numberline {4.4.2.4}Metodi}{70}{subsubsection.4.4.2.4}% 
+\contentsline {subsection}{\numberline {4.4.3}AdminUser}{71}{subsection.4.4.3}% 
+\contentsline {subsubsection}{\numberline {4.4.3.1}Descrizione}{71}{subsubsection.4.4.3.1}% 
+\contentsline {subsection}{\numberline {4.4.4}Pharmacy}{71}{subsection.4.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.4.1}Descrizione}{71}{subsubsection.4.4.4.1}% 
+\contentsline {subsubsection}{\numberline {4.4.4.2}Relazioni}{71}{subsubsection.4.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.4.3}Attributi}{72}{subsubsection.4.4.4.3}% 
+\contentsline {subsection}{\numberline {4.4.5}CustomerMembership}{72}{subsection.4.4.5}% 
+\contentsline {subsubsection}{\numberline {4.4.5.1}Descrizione}{72}{subsubsection.4.4.5.1}% 
+\contentsline {subsection}{\numberline {4.4.6}QuestionnaireTemplate}{73}{subsection.4.4.6}% 
+\contentsline {subsubsection}{\numberline {4.4.6.1}Descrizione}{73}{subsubsection.4.4.6.1}% 
+\contentsline {subsubsection}{\numberline {4.4.6.2}Relazioni}{73}{subsubsection.4.4.6.2}% 
+\contentsline {subsubsection}{\numberline {4.4.6.3}Attributi}{73}{subsubsection.4.4.6.3}% 
+\contentsline {subsection}{\numberline {4.4.7}Question}{73}{subsection.4.4.7}% 
+\contentsline {subsubsection}{\numberline {4.4.7.1}Descrizione}{73}{subsubsection.4.4.7.1}% 
+\contentsline {subsubsection}{\numberline {4.4.7.2}Relazioni}{74}{subsubsection.4.4.7.2}% 
+\contentsline {subsubsection}{\numberline {4.4.7.3}Attributi}{74}{subsubsection.4.4.7.3}% 
+\contentsline {subsubsection}{\numberline {4.4.7.4}Metodi}{74}{subsubsection.4.4.7.4}% 
+\contentsline {subsection}{\numberline {4.4.8}PossibleAnswer}{75}{subsection.4.4.8}% 
+\contentsline {subsubsection}{\numberline {4.4.8.1}Descrizione}{75}{subsubsection.4.4.8.1}% 
+\contentsline {subsubsection}{\numberline {4.4.8.2}Relazioni}{75}{subsubsection.4.4.8.2}% 
+\contentsline {subsubsection}{\numberline {4.4.8.3}Attributi}{75}{subsubsection.4.4.8.3}% 
+\contentsline {subsubsection}{\numberline {4.4.8.4}Metodi}{75}{subsubsection.4.4.8.4}% 
+\contentsline {subsection}{\numberline {4.4.9}QuestionnaireAnswer}{76}{subsection.4.4.9}% 
+\contentsline {subsubsection}{\numberline {4.4.9.1}Descrizione}{76}{subsubsection.4.4.9.1}% 
+\contentsline {subsubsection}{\numberline {4.4.9.2}Relazioni}{76}{subsubsection.4.4.9.2}% 
+\contentsline {subsubsection}{\numberline {4.4.9.3}Attributi}{77}{subsubsection.4.4.9.3}% 
+\contentsline {subsubsection}{\numberline {4.4.9.4}Metodi}{77}{subsubsection.4.4.9.4}% 
+\contentsline {subsection}{\numberline {4.4.10}Shipment}{78}{subsection.4.4.10}% 
+\contentsline {subsubsection}{\numberline {4.4.10.1}Descrizione}{78}{subsubsection.4.4.10.1}% 
+\contentsline {subsubsection}{\numberline {4.4.10.2}Relazioni}{78}{subsubsection.4.4.10.2}% 
+\contentsline {subsubsection}{\numberline {4.4.10.3}Attributi}{78}{subsubsection.4.4.10.3}% 
+\contentsline {subsubsection}{\numberline {4.4.10.4}Metodi}{79}{subsubsection.4.4.10.4}% 
+\contentsline {subsection}{\numberline {4.4.11}ApprovedCode}{79}{subsection.4.4.11}% 
+\contentsline {subsubsection}{\numberline {4.4.11.1}Descrizione}{79}{subsubsection.4.4.11.1}% 
+\contentsline {subsection}{\numberline {4.4.12}Account}{79}{subsection.4.4.12}% 
+\contentsline {subsubsection}{\numberline {4.4.12.1}Descrizione}{79}{subsubsection.4.4.12.1}% 
+\contentsline {subsubsection}{\numberline {4.4.12.2}Attributi}{80}{subsubsection.4.4.12.2}% 
+\contentsline {subsubsection}{\numberline {4.4.12.3}Metodi}{80}{subsubsection.4.4.12.3}% 
+\contentsline {section}{\numberline {4.5}Views}{80}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}Controllers}{81}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}API::SampleSessionController}{82}{subsection.4.6.1}% 
+\contentsline {subsection}{\numberline {4.6.2}API::SessionController}{83}{subsection.4.6.2}% 
+\contentsline {subsection}{\numberline {4.6.3}GraphqlController}{83}{subsection.4.6.3}% 
+\contentsline {subsection}{\numberline {4.6.4}Routes}{84}{subsection.4.6.4}% 
+\contentsline {section}{\numberline {4.7}API GraphQL}{85}{section.4.7}% 
+\contentsline {subsection}{\numberline {4.7.1}Types}{85}{subsection.4.7.1}% 
+\contentsline {subsection}{\numberline {4.7.2}Queries}{86}{subsection.4.7.2}% 
+\contentsline {subsection}{\numberline {4.7.3}Mutations}{87}{subsection.4.7.3}% 
+\contentsline {section}{\numberline {4.8}Services}{88}{section.4.8}% 
+\contentsline {subsection}{\numberline {4.8.1}Generazione referto dettagliato}{89}{subsection.4.8.1}% 
+\contentsline {subsection}{\numberline {4.8.2}Gestione dei codici \ref {itm:otp}}{90}{subsection.4.8.2}% 
+\contentsline {subsubsection}{\numberline {4.8.2.1}OtpManager}{90}{subsubsection.4.8.2.1}% 
+\contentsline {subsection}{\numberline {4.8.3}Client per Amazon SNS}{90}{subsection.4.8.3}% 
+\contentsline {subsection}{\numberline {4.8.4}Client per API di SDA}{91}{subsection.4.8.4}% 
+\contentsline {subsubsection}{\numberline {4.8.4.1}SDA::Client}{92}{subsubsection.4.8.4.1}% 
+\contentsline {subsubsection}{\numberline {4.8.4.2}SDA::Requests::BaseRequest}{93}{subsubsection.4.8.4.2}% 
+\contentsline {subsubsection}{\numberline {4.8.4.3}SDA::Requests::RequestWithParty}{93}{subsubsection.4.8.4.3}% 
+\contentsline {subsubsection}{\numberline {4.8.4.4}SDA::Requests::BookingRequest}{93}{subsubsection.4.8.4.4}% 
+\contentsline {subsubsection}{\numberline {4.8.4.5}SDA::Requests::WaybillRequest}{94}{subsubsection.4.8.4.5}% 
+\contentsline {subsection}{\numberline {4.8.5}Logger}{94}{subsection.4.8.5}% 
+\contentsline {section}{\numberline {4.9}Pannello di amministrazione}{94}{section.4.9}% 
+\contentsline {subsection}{\numberline {4.9.1}Struttura delle schede}{94}{subsection.4.9.1}% 
+\contentsline {subsection}{\numberline {4.9.2}Elenco delle schede}{95}{subsection.4.9.2}% 
+\contentsline {chapter}{\numberline {5}Verifica e validazione}{97}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Premessa}{97}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Norme di codifica}{97}{subsection.5.1.1}% 
+\contentsline {section}{\numberline {5.2}Verifica}{98}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Analisi statica}{98}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Analisi dinamica}{98}{subsection.5.2.2}% 
+\contentsline {subsubsection}{\numberline {5.2.2.1}Test di unità}{99}{subsubsection.5.2.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.2.2}Test di integrazione}{99}{subsubsection.5.2.2.2}% 
+\contentsline {section}{\numberline {5.3}Validazione}{100}{section.5.3}% 
+\contentsline {chapter}{\numberline {6}Conclusione}{101}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Valutazione oggettiva}{101}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Raggiungimento degli obiettivi}{101}{subsection.6.1.1}% 
+\contentsline {subsection}{\numberline {6.1.2}Consuntivo}{102}{subsection.6.1.2}% 
+\contentsline {section}{\numberline {6.2}Valutazione personale}{103}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Conoscenze acquisite}{103}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Crescita personale}{104}{subsection.6.2.2}% 
 \global \c@tocdepth 0\relax 
-\contentsline {chapter}{Appendice \numberline {A}Casi d'uso secondari}{101}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}Casi d'uso secondari per UC1}{101}{section.A.1}% 
-\contentsline {subsection}{\numberline {A.1.1}UC1.1: Inserimento email}{101}{subsection.A.1.1}% 
-\contentsline {subsection}{\numberline {A.1.2}UC1.2: Inserimento password}{101}{subsection.A.1.2}% 
-\contentsline {section}{\numberline {A.2}Casi d'uso secondari per UC6}{102}{section.A.2}% 
-\contentsline {subsection}{\numberline {A.2.1}UC6.1: Riordinamento tabella dei record}{102}{subsection.A.2.1}% 
-\contentsline {subsection}{\numberline {A.2.2}UC6.2: Applicazione filtro alla tabella dei record}{102}{subsection.A.2.2}% 
-\contentsline {subsection}{\numberline {A.2.3}UC6.3: Rimozione filtro alla tabella dei record}{102}{subsection.A.2.3}% 
-\contentsline {subsection}{\numberline {A.2.4}UC6.4: Aggiunta di un nuovo record}{103}{subsection.A.2.4}% 
-\contentsline {subsection}{\numberline {A.2.5}UC6.5: Visualizzazione di un record}{103}{subsection.A.2.5}% 
-\contentsline {subsection}{\numberline {A.2.6}UC6.6: Modifica di un record}{104}{subsection.A.2.6}% 
-\contentsline {subsection}{\numberline {A.2.7}UC6.7: Eliminazione di un record}{105}{subsection.A.2.7}% 
-\contentsline {subsection}{\numberline {A.2.8}UC6.8: Errore nella modifica di un record}{105}{subsection.A.2.8}% 
-\contentsline {subsection}{\numberline {A.2.9}UC6.9: Annullamento operazione}{106}{subsection.A.2.9}% 
-\contentsline {subsection}{\numberline {A.2.10}UC6.10: Gestione di un utente}{106}{subsection.A.2.10}% 
-\contentsline {subsection}{\numberline {A.2.11}UC6.10.1: Generazione nuova password per un utente}{106}{subsection.A.2.11}% 
-\contentsline {subsection}{\numberline {A.2.12}UC6.11: Gestione di un cliente}{106}{subsection.A.2.12}% 
-\contentsline {subsection}{\numberline {A.2.13}UC6.11.1: Scaricamento modulo di consenso al trattamento dei dati}{107}{subsection.A.2.13}% 
-\contentsline {section}{\numberline {A.3}Casi d'uso secondari per UC11}{107}{section.A.3}% 
-\contentsline {subsection}{\numberline {A.3.1}UC11.1: Richiesta informazioni lista degli utenti}{107}{subsection.A.3.1}% 
-\contentsline {subsection}{\numberline {A.3.2}UC11.2: Richiesta informazioni utente}{108}{subsection.A.3.2}% 
-\contentsline {subsection}{\numberline {A.3.3}UC11.3: Richiesta reset della password di un utente}{108}{subsection.A.3.3}% 
-\contentsline {subsection}{\numberline {A.3.4}UC11.4: Impostazione nuova password per un utente}{108}{subsection.A.3.4}% 
-\contentsline {subsection}{\numberline {A.3.5}UC11.5: Creazione utente}{109}{subsection.A.3.5}% 
-\contentsline {subsection}{\numberline {A.3.6}UC11.6: Rimozione utente}{109}{subsection.A.3.6}% 
-\contentsline {subsection}{\numberline {A.3.7}UC11.7: Aggiornamento dati utente}{109}{subsection.A.3.7}% 
-\contentsline {section}{\numberline {A.4}Casi d'uso secondari per UC12}{110}{section.A.4}% 
-\contentsline {subsection}{\numberline {A.4.1}UC12.1: Richiesta storico degli esami}{110}{subsection.A.4.1}% 
-\contentsline {subsection}{\numberline {A.4.2}UC12.2: Richiesta storico degli esami in base all'avanzamento}{110}{subsection.A.4.2}% 
-\contentsline {subsection}{\numberline {A.4.3}UC12.3: Richiesta informazioni esame}{111}{subsection.A.4.3}% 
-\contentsline {subsection}{\numberline {A.4.4}UC12.4: Richiesta informazioni esame in base al campione}{111}{subsection.A.4.4}% 
-\contentsline {subsection}{\numberline {A.4.5}UC12.5: Creazione esame}{112}{subsection.A.4.5}% 
-\contentsline {subsection}{\numberline {A.4.6}UC12.6: Rimozione esame}{112}{subsection.A.4.6}% 
-\contentsline {subsection}{\numberline {A.4.7}UC12.7: Aggiornamento dati esame}{112}{subsection.A.4.7}% 
-\contentsline {subsection}{\numberline {A.4.8}UC12.8: Aggiornamento risposte al questionario di un esame}{113}{subsection.A.4.8}% 
-\contentsline {section}{\numberline {A.5}Casi d'uso secondari per UC13}{113}{section.A.5}% 
-\contentsline {subsection}{\numberline {A.5.1}UC13.1: Richiesta informazioni registro dei clienti}{113}{subsection.A.5.1}% 
-\contentsline {subsection}{\numberline {A.5.2}UC13.2: Richiesta informazioni cliente}{113}{subsection.A.5.2}% 
-\contentsline {subsection}{\numberline {A.5.3}UC13.3: Creazione cliente}{114}{subsection.A.5.3}% 
-\contentsline {subsection}{\numberline {A.5.4}UC13.4: Rimozione cliente}{114}{subsection.A.5.4}% 
-\contentsline {subsection}{\numberline {A.5.5}UC13.5: Aggiornamento dati cliente}{114}{subsection.A.5.5}% 
-\contentsline {subsection}{\numberline {A.5.6}UC13.6: Invio codice OTP}{115}{subsection.A.5.6}% 
-\contentsline {subsection}{\numberline {A.5.7}UC13.7: Verifica codice OTP}{115}{subsection.A.5.7}% 
-\contentsline {subsection}{\numberline {A.5.8}UC13.8: Caricamento manuale della \textit {privacy policy}}{116}{subsection.A.5.8}% 
-\contentsline {section}{\numberline {A.6}Casi d'uso secondari per UC14}{116}{section.A.6}% 
-\contentsline {subsection}{\numberline {A.6.1}UC14.1: Richiesta informazioni lista delle spedizioni}{116}{subsection.A.6.1}% 
-\contentsline {subsection}{\numberline {A.6.2}UC14.2: Richiesta informazioni spedizione}{117}{subsection.A.6.2}% 
-\contentsline {subsection}{\numberline {A.6.3}UC14.3: Creazione spedizione}{117}{subsection.A.6.3}% 
-\contentsline {subsection}{\numberline {A.6.4}UC14.4: Rimozione spedizione}{117}{subsection.A.6.4}% 
-\contentsline {subsection}{\numberline {A.6.5}UC14.5: Aggiornamento dati spedizione}{118}{subsection.A.6.5}% 
-\contentsline {subsection}{\numberline {A.6.6}UC14.6: Visualizzazione lettera di vettura}{118}{subsection.A.6.6}% 
-\contentsline {subsection}{\numberline {A.6.7}UC14.7: Prenotazione spedizione}{119}{subsection.A.6.7}% 
+\contentsline {chapter}{Appendice \numberline {A}Casi d'uso secondari}{105}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}Casi d'uso secondari per UC1}{105}{section.A.1}% 
+\contentsline {subsection}{\numberline {A.1.1}UC1.1: Inserimento email}{105}{subsection.A.1.1}% 
+\contentsline {subsection}{\numberline {A.1.2}UC1.2: Inserimento password}{105}{subsection.A.1.2}% 
+\contentsline {section}{\numberline {A.2}Casi d'uso secondari per UC6}{106}{section.A.2}% 
+\contentsline {subsection}{\numberline {A.2.1}UC6.1: Riordinamento tabella dei record}{106}{subsection.A.2.1}% 
+\contentsline {subsection}{\numberline {A.2.2}UC6.2: Applicazione filtro alla tabella dei record}{106}{subsection.A.2.2}% 
+\contentsline {subsection}{\numberline {A.2.3}UC6.3: Rimozione filtro alla tabella dei record}{106}{subsection.A.2.3}% 
+\contentsline {subsection}{\numberline {A.2.4}UC6.4: Aggiunta di un nuovo record}{107}{subsection.A.2.4}% 
+\contentsline {subsection}{\numberline {A.2.5}UC6.5: Visualizzazione di un record}{107}{subsection.A.2.5}% 
+\contentsline {subsection}{\numberline {A.2.6}UC6.6: Modifica di un record}{108}{subsection.A.2.6}% 
+\contentsline {subsection}{\numberline {A.2.7}UC6.7: Eliminazione di un record}{109}{subsection.A.2.7}% 
+\contentsline {subsection}{\numberline {A.2.8}UC6.8: Errore nella modifica di un record}{109}{subsection.A.2.8}% 
+\contentsline {subsection}{\numberline {A.2.9}UC6.9: Annullamento operazione}{110}{subsection.A.2.9}% 
+\contentsline {subsection}{\numberline {A.2.10}UC6.10: Gestione di un utente}{110}{subsection.A.2.10}% 
+\contentsline {subsection}{\numberline {A.2.11}UC6.10.1: Generazione nuova password per un utente}{110}{subsection.A.2.11}% 
+\contentsline {subsection}{\numberline {A.2.12}UC6.11: Gestione di un cliente}{110}{subsection.A.2.12}% 
+\contentsline {subsection}{\numberline {A.2.13}UC6.11.1: Scaricamento modulo di consenso al trattamento dei dati}{111}{subsection.A.2.13}% 
+\contentsline {section}{\numberline {A.3}Casi d'uso secondari per UC11}{111}{section.A.3}% 
+\contentsline {subsection}{\numberline {A.3.1}UC11.1: Richiesta informazioni lista degli utenti}{111}{subsection.A.3.1}% 
+\contentsline {subsection}{\numberline {A.3.2}UC11.2: Richiesta informazioni utente}{112}{subsection.A.3.2}% 
+\contentsline {subsection}{\numberline {A.3.3}UC11.3: Richiesta reset della password di un utente}{112}{subsection.A.3.3}% 
+\contentsline {subsection}{\numberline {A.3.4}UC11.4: Impostazione nuova password per un utente}{112}{subsection.A.3.4}% 
+\contentsline {subsection}{\numberline {A.3.5}UC11.5: Creazione utente}{113}{subsection.A.3.5}% 
+\contentsline {subsection}{\numberline {A.3.6}UC11.6: Rimozione utente}{113}{subsection.A.3.6}% 
+\contentsline {subsection}{\numberline {A.3.7}UC11.7: Aggiornamento dati utente}{113}{subsection.A.3.7}% 
+\contentsline {section}{\numberline {A.4}Casi d'uso secondari per UC12}{114}{section.A.4}% 
+\contentsline {subsection}{\numberline {A.4.1}UC12.1: Richiesta storico degli esami}{114}{subsection.A.4.1}% 
+\contentsline {subsection}{\numberline {A.4.2}UC12.2: Richiesta storico degli esami in base all'avanzamento}{114}{subsection.A.4.2}% 
+\contentsline {subsection}{\numberline {A.4.3}UC12.3: Richiesta informazioni esame}{115}{subsection.A.4.3}% 
+\contentsline {subsection}{\numberline {A.4.4}UC12.4: Richiesta informazioni esame in base al campione}{115}{subsection.A.4.4}% 
+\contentsline {subsection}{\numberline {A.4.5}UC12.5: Creazione esame}{116}{subsection.A.4.5}% 
+\contentsline {subsection}{\numberline {A.4.6}UC12.6: Rimozione esame}{116}{subsection.A.4.6}% 
+\contentsline {subsection}{\numberline {A.4.7}UC12.7: Aggiornamento dati esame}{116}{subsection.A.4.7}% 
+\contentsline {subsection}{\numberline {A.4.8}UC12.8: Aggiornamento risposte al questionario di un esame}{117}{subsection.A.4.8}% 
+\contentsline {section}{\numberline {A.5}Casi d'uso secondari per UC13}{117}{section.A.5}% 
+\contentsline {subsection}{\numberline {A.5.1}UC13.1: Richiesta informazioni registro dei clienti}{117}{subsection.A.5.1}% 
+\contentsline {subsection}{\numberline {A.5.2}UC13.2: Richiesta informazioni cliente}{117}{subsection.A.5.2}% 
+\contentsline {subsection}{\numberline {A.5.3}UC13.3: Creazione cliente}{118}{subsection.A.5.3}% 
+\contentsline {subsection}{\numberline {A.5.4}UC13.4: Rimozione cliente}{118}{subsection.A.5.4}% 
+\contentsline {subsection}{\numberline {A.5.5}UC13.5: Aggiornamento dati cliente}{118}{subsection.A.5.5}% 
+\contentsline {subsection}{\numberline {A.5.6}UC13.6: Invio codice OTP}{119}{subsection.A.5.6}% 
+\contentsline {subsection}{\numberline {A.5.7}UC13.7: Verifica codice OTP}{119}{subsection.A.5.7}% 
+\contentsline {subsection}{\numberline {A.5.8}UC13.8: Caricamento manuale della \textit {privacy policy}}{120}{subsection.A.5.8}% 
+\contentsline {section}{\numberline {A.6}Casi d'uso secondari per UC14}{120}{section.A.6}% 
+\contentsline {subsection}{\numberline {A.6.1}UC14.1: Richiesta informazioni lista delle spedizioni}{120}{subsection.A.6.1}% 
+\contentsline {subsection}{\numberline {A.6.2}UC14.2: Richiesta informazioni spedizione}{121}{subsection.A.6.2}% 
+\contentsline {subsection}{\numberline {A.6.3}UC14.3: Creazione spedizione}{121}{subsection.A.6.3}% 
+\contentsline {subsection}{\numberline {A.6.4}UC14.4: Rimozione spedizione}{121}{subsection.A.6.4}% 
+\contentsline {subsection}{\numberline {A.6.5}UC14.5: Aggiornamento dati spedizione}{122}{subsection.A.6.5}% 
+\contentsline {subsection}{\numberline {A.6.6}UC14.6: Visualizzazione lettera di vettura}{122}{subsection.A.6.6}% 
+\contentsline {subsection}{\numberline {A.6.7}UC14.7: Prenotazione spedizione}{123}{subsection.A.6.7}% 
 \global \c@tocdepth 0\relax 
-\contentsline {chapter}{Appendice \numberline {B}Tracciamento tra requisiti e casi d'uso}{121}{appendix.A}% 
-\contentsline {section}{\numberline {B.1}Tracciamento requisiti-casi d'uso}{121}{section.A.1}% 
-\contentsline {section}{\numberline {B.2}Tracciamento casi d'uso-requisiti}{124}{section.A.2}% 
-\contentsline {chapter}{Bibliografia}{128}{table.A.2}% 
-\contentsline {chapter}{Ringraziamenti}{129}{section*.47}% 
+\contentsline {chapter}{Appendice \numberline {B}Tracciamento tra requisiti e casi d'uso}{125}{appendix.A}% 
+\contentsline {section}{\numberline {B.1}Tracciamento requisiti-casi d'uso}{125}{section.A.1}% 
+\contentsline {section}{\numberline {B.2}Tracciamento casi d'uso-requisiti}{128}{section.A.2}% 
+\contentsline {chapter}{Bibliografia}{132}{table.A.2}% 
+\contentsline {chapter}{Ringraziamenti}{133}{section*.60}% 

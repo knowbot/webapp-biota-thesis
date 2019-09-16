@@ -13,12 +13,10 @@ La piattaforma fa parte di un ecosistema già esistente di servizi per la salute
 L'applicativo si compone di una parte \textit{back end} (in esecuzione su un server dedicato) e una parte \textit{front end} (eseguita all'interno del browser dell'utente) sviluppate separatamente e integrate grazie all'uso di \ref{itm:api} specifiche; obiettivo dello stage è stata la realizzazione del primo, in modo funzionale all'utilizzo con il secondo. La tecnologia principale, descritta più avanti nel documento, è Ruby on Rails 5 (\textit{framework} per lo sviluppo di applicativi web).
 
 \subsection{Caratteristiche degli utenti}
-Trattandosi di una piattaforma commerciale, ne è previsto l'utilizzo di utenti autorizzati con diversi: farmacisti, gastroenterologi e supervisori del laboratorio. Tutte le categorie di utenti autorizzati eseguono il \textit{login} nella piattaforma allo stesso modo, ma ad ognuno viene mostrata un'interfaccia con diverse funzionalità. Il cliente non fa parte degli utenti autorizzati in quanto non può accedere direttamente alla piattaforma, e tutte le operazioni che lo coinvolgono sono supervisionate dal farmacista.
-Per quanto riguarda il pannello amministrativo, ne è previsto l'utilizzo da parte di utenti autorizzati registrati separatamente; tali amministratori fanno parte della società che gestisce la piattaforma.
+``Biota'' prevede l'utilizzo da parte dii utenti autorizzati con diversi permessi: farmacisti, gastroenterologi e supervisori del laboratorio. Tutte le categorie di utenti autorizzati eseguono il \textit{login} nella piattaforma allo stesso modo, ma ad ognuno viene mostrata un'interfaccia con diverse funzionalità. Il cliente non fa parte degli utenti autorizzati in quanto non può accedere direttamente alla piattaforma, e tutte le operazioni che lo coinvolgono sono supervisionate dal farmacista.
+Per quanto riguarda il pannello amministrativo, ne è previsto l'utilizzo da parte di utenti autorizzati registrati separatamente; tali amministratori fanno parte della società che gestisce la piattaforma. Per interazioni con servizi esterni sono inoltre disponibili delle \ref{itm:api} \ref{itm:rest}, utilizzate principalmente per l'integrazione con il gestionale del laboratorio di analisi. 
 
 \subsection{Contesto di utilizzo}
-``Biota'' prevede l'utilizzo da parte di utenti registrati alla piattaforma, che possono essere farmacisti, clienti o gastroenterologi affiliati. A questi viene offerta un'interfaccia grafica facente parte del \textit{front end}. Per interazioni con servizi esterni sono inoltre disponibili delle \ref{itm:api} \ref{itm:rest}, utilizzate principalmente per l'integrazione con il gestionale del laboratorio di analisi. 
-
 Il flusso operativo previsto è il seguente: il cliente richiede al farmacista di effettuare un esame, e inserisce i propri dati registrandosi alla piattaforma; il farmacista quindi ottiene il consenso al trattamento dei dati e fa compilare un breve questionario al cliente, consegnando un kit per il prelievo del campione di materia fecale. Questo viene poi restituito, registrato al cliente ed inviato al laboratorio previa prenotazione della spedizione: grazie alla corrispondenza univoca tra il codice identificativo del campione e la sessione associata all'esame, è garantito l'anonimato del cliente. Il laboratorio, ricevuto il campione, ne effettua il check-in nel proprio gestionale (aggiornandone automaticamente lo stato nella piattaforma) e procede alle analisi necessarie. Viene quindi inviato il referto delle analisi insieme a dei dettagli aggiuntivi, che viene reso disponibile nella piattaforma al gastroenterologo affiliato che aggiunge la sua diagnosi e la dieta consigliata. Dopo un'ulteriore controllo ed eventuali modifiche da parte di un supervisore del laboratorio, il referto completo può essere generato e reso disponibile al cliente \textit{on-demand}, concludendo la procedura.
 
 L'accesso al pannello amministrativo consente di creare, distruggere e modificare alcune categorie di record del database, come ad esempio le varie tipologie di utenti o le farmacie affiliate. Esso viene utilizzato principalmente per l'inserimento di nuovi utenti autorizzati, il recupero di informazioni rilevanti quali il consenso al trattamento dei dati, e per la risoluzione di problematiche grazie all'accesso privilegiato al database.
@@ -32,6 +30,7 @@ Si farà riferimento agli obiettivi definiti secondo la seguente notazione:
     \item \textbf{D} indica un obiettivo desiderabile, non vincolante o strettamente necessario, ma dal riconoscibile valore aggiunto.
     \item \textbf{F} indica un obiettivo facoltativo, rappresentante un valore aggiunto non necessariamente competitivo.
 \end{itemize}
+\vspace{-12pt}
 \subsection{Piano di lavoro}
 Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziendale nella settimana precedente all'inizio dello stage, espone una serie di requisiti emersi dalle esigenze del cliente emerse in fase di avvio del progetto.
 \subsubsection{Obiettivi}
@@ -40,18 +39,19 @@ Il piano di lavoro, stilato in collaborazione con il relatore ed il tutor aziend
     \item \underline{O01}: Analisi ed implementazione \ref{itm:api} \ref{itm:rest} laboratorio
     \item \underline{O02}: Analisi ed implementazione \ref{itm:api} GraphQL per il flusso operativo base
 \end{itemize}
-\vspace{-15pt}
+\vspace{-12pt}
 \paragraph{Desiderabili}
 \begin{itemize}
     \item \underline{D01}: Analisi ed implementazione di test dei sistemi di pagamento e fatturazione
     \item \underline{D02}: Suite di testing del software prodotto
     \item \underline{D03}: Documentazione completa
 \end{itemize}
-\vspace{-15pt}
+\vspace{-12pt}
 \paragraph{Facoltativi}
 \begin{itemize}
     \item \underline{F01}: Ulteriori modifiche all’applicazione che esulano da quando riportato nel piano di lavoro
 \end{itemize}
+\vspace{-12pt}
 \subsection{Modifiche al piano}
 Durante il corso dello stage, nello svolgimento del ruolo di Product Owner da parte del tutor aziendale, ci sono state varie interazioni con il cliente che hanno portato a ridefinire alcuni requisiti desiderabili e a specificare in modo più preciso i requisiti facoltativi. Tali modifiche sono sempre state fatte in accordo alle possibilità di soddisfazione entro i tempi previsti, e tenendo in mente che la piattaforma sarebbe entrata in produzione al completamento delle funzionalità per l'esecuzione flusso di attività base.
 \subsubsection{Obiettivi rivisti}
@@ -91,7 +91,7 @@ La suddivisione settimanale prevista era la seguente:
     \item \textbf{Settima settimana (40 ore)}: Implementazione, test e validazione;
     \item \textbf{Ottava settimana (40 ore)}: Test e validazione, documentazione.
 \end{itemize}
-\vspace{-18pt}
+\vspace{-5pt}
 \begin{table}[h]
     \begin{center}
         \begin{tabular}{|c|c|}
@@ -114,7 +114,7 @@ La suddivisione settimanale prevista era la seguente:
     
 \begin{figure}[h!]
     \includegraphics[width=\textwidth]{figures/gantt.png}
-    \caption[ClassDia]{Diagramma di Gantt di pianificazione delle attività.
+    \caption[Diagramma di Gantt di pianificazione delle attività]{Diagramma di Gantt di pianificazione delle attività.
     \label{fig:gantt}}
 \end{figure}    
 
@@ -122,13 +122,18 @@ La suddivisione settimanale prevista era la seguente:
 Di seguito vengono discusse le tecnologie individuate per la realizzazione del progetto. Alcune di esse, quali Ruby on Rails e RubyMine, sono state richieste dell'azienda; altre (principalmente gemme per Ruby) sono state ricercate e proposte dal laureando per soddisfare alcuni dei requisiti individuati.
 
 \subsection{Ruby}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/ruby.png}
+    \caption[Logo di Ruby]{Logo di Ruby.
+    \label{fig:ruby}}
+\end{figure}
 Ruby è un linguaggio di programmazione ad alto livello, interpretato, e orientato agli oggetti con paradigma puro: ogni componente del linguaggio è trattato come un oggetto. 
 
-Alcune tra le caratteristiche più rilevanti di Ruby sono la presenza di tipizzazione dinamica, \textit{garbage collector} e \textit{duck typing} (``Se sembra un'anatra, nuota come un'anatra e starnazza come un'anatra, allora probabilmente è un'anatra.''), ovvero considera l'insieme dei metodi di un oggetto anziché il suo tipo per decidere se è valido a \textit{run-time} .
+Alcune tra le caratteristiche più rilevanti di Ruby sono la presenza di tipizzazione dinamica, \textit{garbage collector} e \textit{duck typing} (``Se sembra un'anatra, nuota come un'anatra e starnazza come un'anatra, allora probabilmente è un'anatra.''), ovvero il poter considerare l'insieme dei metodi di un oggetto anziché il suo tipo per decidere se è valido a \textit{run-time}.
 
 Si tratta un linguaggio molto flessibile che offre grande libertà allo sviluppatore e supporta pratiche come il \textit{monkey patching} (ridefinire una classe in un punto diverso dalla definizione originale) e la ridefinizione di metodi a \textit{run-time}.
-Esiste una grande varietà di programmi e librerie Ruby, noti come ``gemme'', il cui utilizzo verrà discusso in seguito.
-
+Esiste una grande varietà di programmi e librerie Ruby, noti come ``gemme'', il cui utilizzo verrà discusso in seguito.    
 \subsection{Gemme}
 Le gemme sono librerie e programmi Ruby distribuiti sotto forma di pacchetti in modo non dissimile dai moduli in Node.js: l'installazione è gestita dal \textit{package manager} RubyGem, individualmente tramite terminale (con il comando \texttt{gem install nome\_gemma}) oppure di gruppo specificando le gemme desiderate nel file \texttt{Gemfile}, che viene automaticamente letto da RubyGem con l'esecuzione del comando \texttt{bundle install}.
 
@@ -163,6 +168,12 @@ Gemma di supporto alla creazione di test, semplifica di molto la creazione di nu
 
 \subsection{Ruby on Rails}
 \label{sec:2.2.3}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/rails.png}
+    \caption[Logo di Rails]{Logo di Rails.
+    \label{fig:rails}}
+\end{figure}
 Per la realizzazione del progetto Moku ha scelto di usare Ruby on Rails 5 (noto anche come Rails), un \textit{framework} \textit{open source} per applicativi web realizzato in Ruby e utilizzato da celebri siti come GitHub (servizio di hosting per \textit{repository} Git), Twitch (servizio di \textit{live streaming}) e SoundCloud (piattaforma di distribuzione musicale). Rails è stato scelto per la caratteristica di velocizzare notevolmente lo sviluppo di nuovi applicativi, rimuovendo le parti "ripetitive": ad esempio offrendo alias concisi per operazioni di base (e.g. iterazioni su collezioni di oggetti, strutture if/else) che riducono la verbosità del codice.
 
 I principi cardine di Rails sono due:
@@ -194,9 +205,21 @@ Framework di autenticazione utenti per Rails. Si tratta di una gemma altamente m
 ActiveAdmin è un \textit{framework} per la generazione di interfacce amministrative per applicativi web realizzati con Rails. ActiveAdmin astrae pattern ricorrenti per automatizzare la generazione di elementi comuni dell'interfaccia, ad esempio operazioni quali la creazione, visualizzazione o modifica di oggetti appartenenti a uno o più \textit{models}. ActiveAdmin si integra con la configurazione presente di Devise per gestire l'autenticazione. In ActiveAdmin viene fornita un'interfaccia di default pienamente configurabile: è possibile aggiungere un pannello relativo ad una tabella particolare del database, applicarvi filtri, e decidere quali campi rendere disponibili alle operazioni di visualizzazione e modifica.
 
 \subsection{RubyMine}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/rubymine.png}
+    \caption[Logo di RubyMine]{Logo di RubyMine.
+    \label{fig:rmine}}
+\end{figure}
 Ambiente di sviluppo integrato multipiattaforma, progettato specificamente per Ruby on Rails e realizzato da JetBrains. RubyMine mette a disposizione vari strumenti per facilitare lo sviluppo, tra cui completamento automatico del codice, linting avanzato con calcolo della complessità ciclomatica, e creazione guidata di \textit{migrations} e \textit{generators}. Altre caratteristiche che hanno portato a sceglierlo come \ref{itm:ide} di riferimento sono la possibilità di testare ed eseguire l'applicativo in locale, il controllo di versione integrato (comodo per cambiare il \textit{branch} corrente senza dover utilizzare Sourcetree) e lo strumento di \textit{refactoring} che rispetta le convenzioni di Rails (e.g. modificando il nome di un \textit{model}, i rispettivi \textit{controller} e \textit{view} vengono aggiornati.) 
 
 \subsection{GraphQL}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/graphql.png}
+    \caption[Logo di GraphQL]{Logo di GraphQL.
+    \label{fig:graphql}}
+\end{figure}
 Linguaggio di query \textit{open source}, sviluppato da Facebook nel 2012 e disponibile al pubblico dal 2015. La sintassi di GraphQL è molto simile a quella del formato \ref{itm:json}, pensata per una lettura più facile da parte di operatori umani. La particolarità di GraphQL è che include anche il \textit{runtime system} e il sistema dei tipi, quindi non dipende dalla specifica implementazione del database. I tipi sono definiti dallo sviluppatore e vengono utilizzati da GraphQL per validare le richieste e respingere query errate.
 
 GraphQL offre due tipi di operazioni: query, semplici interrogazioni al database, e \textit{mutations}, ovvero operazioni di modifica del database o interazioni particolari (autenticazione, esecuzione di un comando).
@@ -207,6 +230,12 @@ Nel progetto GraphQL è stato usato per implementare l'API di comunicazione con 
 
 \subsubsection{Altair}
 Ambiente di sviluppo integrato \textit{open source} e multipiattaforma per GraphQL. Altair fornisce una semplice interfaccia per testare \ref{itm:api} GraphQL, mettendo a disposizione funzioni utili quali  formattazione automatica,generazione automatica della documentazione del sistema dei tipi e aggiunta di \textit{headers} alla richiesta. Altair è stato utilizzato per testare le \ref{itm:api} GraphQL prima di renderle disponibili al \textit{front end}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/altair.png}
+    \caption[Interfaccia di Altair]{Interfaccia di Altair.
+    \label{fig:altair}}
+\end{figure}
 
 \subsection{HTTP}
 Noto protocollo a livello applicativo per la trasmissione di informazioni in una rete. Il protocollo \ref{itm:http} prevede un'architettura di tipo \textit{client/server}, in cui il \textit{client} esegue una richiesta e il \textit{server} la elabora, fornendo una risposta adeguata.
@@ -224,9 +253,21 @@ Il messaggio di risposta segue una struttura simile, con l'eccezione della riga 
 Il protocollo HTTP è largamente utilizzato per l'implementazione di \ref{itm:rest}ful \ref{itm:api}; per quanto riguarda il progetto, è stato utilizzato per realizzare l'\ref{itm:api} che si sarebbe interfacciata con il software gestionale del laboratorio di analisi, esponendo determinati \textit{endpoint} per le richieste.
 
 \subsubsection{Insomnia}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/insomnia.jpg}
+    \caption[Logo di Insomnia]{Logo di Insomnia.
+    \label{fig:insomnia}}
+\end{figure}
 Client \textit{open source} e multipiattaforma per \ref{itm:api} GraphQL e \ref{itm:rest}, consente di gestire facilmente lo sviluppo e il testing di richieste HTTP e GraphQL; offre funzionalità di formattazione automatica, variabili d'ambiente e supporto a vari tipi di autenticazione. Insomnia è stato utilizzato per testare gli endpoint delle \ref{itm:api} per il laboratorio di analisi, nonché per sviluppare un client per le \ref{itm:api} del corriere SDA.
 
 \subsection{PostgreSQL}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[height=2.5cm]{figures/postgres.png}
+    \caption[Logo di PostgreSQL]{Logo di PostgreSQL.
+    \label{fig:posgres}}
+\end{figure}
 \ref{itm:dbms} gratuito ed \textit{open source} per la gestione di database relazionali, è considerato uno dei migliori \ref{itm:dbms} gratuiti per la realizzazione di applicazioni web. Oltre alle \textit{feature} di base che condivide con altre soluzioni simili, come l'utilizzo del linguaggio SQL per eseguire query sui dati, PostgreSQL offre delle caratteristiche che risultano molto utili: principalmente offre un sistema di tipi in cui è possibile definire tipi più complessi a partire da quelli di \textit{default} del linguaggio SQL;  permette inoltre l'ereditarietà dei tipi, facilitando un approccio \textit{object-oriented} alla progettazione del database.
 
 PostgreSQL è stato scelto per questo progetto non tanto per le sue caratteristiche peculiari quanto per la sua robustezza e flessibilità; la gestione del database, una volta configurato per funzionare con Rails, è comunque delegata a quest'ultimo.

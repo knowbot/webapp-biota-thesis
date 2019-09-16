@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  16 SEP 2019 20:48
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  16 SEP 2019 22:42
 entering extended mode
 **c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
 (c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
@@ -1451,7 +1451,20 @@ Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
 Package hyperref Info: Option `colorlinks' set `true' on input line 247.
 )
 (dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux)
-(chapters/chapter2.aux) (chapters/chapter3.aux
+(chapters/chapter2.aux
+
+LaTeX Warning: Label `fig:uc1' multiply defined.
+
+
+LaTeX Warning: Label `sec:uc1' multiply defined.
+
+
+LaTeX Warning: Label `fig:uc1' multiply defined.
+
+
+LaTeX Warning: Label `sec:uc1' multiply defined.
+
+) (chapters/chapter3.aux
 
 LaTeX Warning: Label `tab:gqmeth' multiply defined.
 
@@ -1727,11 +1740,7 @@ Chapter 2.
 
 
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-[11] [12]
+] [10] [11] [12]
 
 Package fontspec Info: Font family 'EBGaramond(2)' created for font 'EB
 (fontspec)             Garamond' with options
@@ -1773,18 +1782,41 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(2)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 97.
 LaTeX Font Info:    Font shape `TU/EBGaramond(2)/bx/n' will be
 (Font)              scaled to size 12.0pt on input line 99.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: figures/gantt.png Graphic file (type bmp)
 <figures/gantt.png>
-[13] [14] [15]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13]
+File: figures/ruby.png Graphic file (type bmp)
+<figures/ruby.png>
+ [14] [15]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 151.
+(Font)              scaled to size 8.0pt on input line 156.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 151.
- [16] [17] [18] [19] [20]) [21]
+(Font)              scaled to size 7.0pt on input line 156.
+ [16]
+File: figures/rails.png Graphic file (type bmp)
+<figures/rails.png>
+ [17] [18]
+File: figures/rubymine.png Graphic file (type bmp)
+<figures/rubymine.png>
+ [19]
+File: figures/graphql.png Graphic file (type bmp)
+<figures/graphql.png>
+File: figures/altair.png Graphic file (type bmp)
+<figures/altair.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] [21]
+File: figures/insomnia.jpg Graphic file (type bmp)
+<figures/insomnia.jpg>
+File: figures/postgres.png Graphic file (type bmp)
+<figures/postgres.png>
+) [22] [23]
 \openout2 = `chapters/chapter2.aux'.
 
  (chapters/chapter2.tex
@@ -1806,7 +1838,7 @@ No file ./appendixB.aux
 LABELS NOT IMPORTED.
  on input line 4.
 
-[22
+[24
 
 
 
@@ -1815,60 +1847,78 @@ Chapter 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-[24]
+ [25]
+[26]
+File: figures/uc/uc1gen.png Graphic file (type bmp)
+<figures/uc/uc1gen.png>
+File: figures/uc/uc1.png Graphic file (type bmp)
+<figures/uc/uc1.png>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/sc' will be
-(Font)              scaled to size 12.0pt on input line 56.
- [25] [26] [27] [28]
-Overfull \hbox (10.02887pt too wide) in paragraph at lines 166--171
+(Font)              scaled to size 12.0pt on input line 70.
+ [27]
+File: figures/uc/uc3gen.png Graphic file (type bmp)
+<figures/uc/uc3gen.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28] [29]
+File: figures/uc/ucg1.png Graphic file (type bmp)
+<figures/uc/ucg1.png>
+File: figures/uc/uc6.png Graphic file (type bmp)
+<figures/uc/uc6.png>
+ [30] [31]
+Overfull \hbox (10.02887pt too wide) in paragraph at lines 200--205
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore vi
 ene correttamente disconnesso dal pannello di amministrazione. 
  []
 
-[29] [30] [31] [32] [33] [34] [35]
-Overfull \hbox (2.42888pt too wide) in paragraph at lines 357--363
+File: figures/uc/ucg2.png Graphic file (type bmp)
+<figures/uc/ucg2.png>
+[32] [33] [34] [35] [36] [37] [38] [39]
+Overfull \hbox (2.42888pt too wide) in paragraph at lines 397--403
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia una richiesta di inserimento della diagnosi per l’esame
  []
 
-[36] [37]
-Overfull \hbox (1.1969pt too wide) in paragraph at lines 433--439
+[40] [41]
+Overfull \hbox (1.1969pt too wide) in paragraph at lines 473--479
 \TU/EBGaramond(0)/bx/sc/12 Scopo e descrizione: \TU/EBGaramond(0)/m/n/12 L’atto
 re vuole aggiornare la tabella della dieta associata ad un esame. 
  []
 
-[38] [39]
-Overfull \hbox (10.1841pt too wide) in paragraph at lines 477--483
+[42] [43]
+Overfull \hbox (10.1841pt too wide) in paragraph at lines 517--523
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia la richiesta [][]HTTP[][] corretta per il nuovo stato dell’esame
  []
 
 
-Overfull \hbox (4.68489pt too wide) in paragraph at lines 477--483
+Overfull \hbox (4.68489pt too wide) in paragraph at lines 517--523
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore ha
  ricevuto una risposta che conferma il successo dell’operazione. 
  []
 
-[40] [41]
-Overfull \hbox (19.9121pt too wide) in paragraph at lines 523--528
+[44] [45]
+Overfull \hbox (19.9121pt too wide) in paragraph at lines 563--568
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia la richiesta [][]HTTP[][] contenente dati non validi all’\TU/EBGaramon
 d(0)/m/it/12 endpoint
  []
 
-[42]
-Underfull \vbox (badness 10000) detected at line 629
+[46]
+Underfull \vbox (badness 10000) detected at line 669
  []
 
-[43] [44] [45] [46] [47]
-Underfull \vbox (badness 10000) detected at line 646
+[47] [48] [49] [50] [51]
+Underfull \vbox (badness 10000) detected at line 686
  []
 
-[48]
-Underfull \vbox (badness 10000) detected at line 661
+[52]
+Underfull \vbox (badness 10000) detected at line 701
  []
 
-) [49]
+) [53]
 \openout2 = `chapters/chapter3.aux'.
 
  (chapters/chapter3.tex
@@ -1884,17 +1934,17 @@ No file ./chapter1.aux
 LABELS NOT IMPORTED.
  on input line 3.
 
-[50
+[54
 
 
 
 ]
 Chapter 4.
-[51] [52] [53]
+[55] [56] [57]
 Underfull \vbox (badness 6775) has occurred while \output is active []
 
- [54]
-[55]
+ [58]
+[59]
 LaTeX Font Info:    Font shape `TU/EBGaramond(2)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 98.
 
@@ -1903,10 +1953,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/bx/n' will be
 (Font)              scaled to size 10.25006pt on input line 110.
-[56] [57]
+[60] [61]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/it' will be
 (Font)              scaled to size 12.0pt on input line 129.
- [58] [59]
+ [62] [63]
 Underfull \hbox (badness 4832) in paragraph at lines 170--170
 []\TU/EBGaramond(0)/m/n/12 Un esame appartiene ad un
  []
@@ -1946,7 +1996,7 @@ Underfull \hbox (badness 5431) in paragraph at lines 170--170
 Underfull \vbox (badness 10000) detected at line 170
  []
 
-[60]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 194--194
 []\TU/EBGaramond(0)/m/n/12 Stato di avanzamento
  []
@@ -2035,7 +2085,7 @@ Underfull \hbox (badness 6332) in paragraph at lines 194--194
 Underfull \vbox (badness 10000) detected at line 194
  []
 
-[61]
+[65]
 Underfull \hbox (badness 4266) in paragraph at lines 213--213
 []\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 che verifica se i
 l campione
@@ -2060,11 +2110,11 @@ Underfull \hbox (badness 6542) in paragraph at lines 213--213
 Underfull \vbox (badness 10000) detected at line 213
  []
 
-[62] [63]
+[66] [67]
 Underfull \vbox (badness 10000) detected at line 232
  []
 
-[64]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\TU/EBGaramond(0)/m/n/12 [C] Insieme degli attributi che de-
  []
@@ -2108,14 +2158,14 @@ Underfull \hbox (badness 1917) in paragraph at lines 256--256
 Underfull \vbox (badness 10000) detected at line 256
  []
 
-[65]
+[69]
 Underfull \vbox (badness 10000) detected at line 272
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+ [70]
 Underfull \hbox (badness 2065) in paragraph at lines 296--296
 []\TU/EBGaramond(0)/m/n/12 Una farmacia può fare più spedizioni,
  []
@@ -2124,14 +2174,14 @@ Underfull \hbox (badness 2065) in paragraph at lines 296--296
 Underfull \vbox (badness 10000) detected at line 296
  []
 
-[67]
+[71]
 Underfull \vbox (badness 10000) detected at line 316
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [72]
 Underfull \vbox (badness 10000) detected at line 332
  []
 
@@ -2147,7 +2197,7 @@ Underfull \hbox (badness 1983) in paragraph at lines 359--359
 
 Underfull \vbox (badness 2150) has occurred while \output is active []
 
- [69]
+ [73]
 Underfull \vbox (badness 10000) detected at line 359
  []
 
@@ -2163,7 +2213,7 @@ Underfull \vbox (badness 10000) detected at line 383
 Overfull \vbox (3.16682pt too high) has occurred while \output is active []
 
 
-[70]
+[74]
 Underfull \vbox (badness 10000) detected at line 398
  []
 
@@ -2175,7 +2225,7 @@ Underfull \vbox (badness 10000) detected at line 411
 Underfull \vbox (badness 10000) detected at line 421
  []
 
-[71]
+[75]
 Underfull \hbox (badness 1983) in paragraph at lines 441--441
 \TU/EBGaramond(0)/m/n/12 possibile può essere selezionata in più
  []
@@ -2184,7 +2234,7 @@ Underfull \hbox (badness 1983) in paragraph at lines 441--441
 Underfull \vbox (badness 10000) detected at line 441
  []
 
-[72]
+[76]
 Underfull \hbox (badness 1596) in paragraph at lines 454--454
 []\TU/EBGaramond(0)/m/n/12 Testo della risposta, denormaliz-
  []
@@ -2218,7 +2268,7 @@ Underfull \vbox (badness 10000) detected at line 465
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
+ [77]
 Underfull \vbox (badness 10000) detected at line 483
  []
 
@@ -2226,7 +2276,7 @@ Underfull \vbox (badness 10000) detected at line 483
 Underfull \vbox (badness 10000) detected at line 499
  []
 
-[74]
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 511--511
 []\TU/EBGaramond(0)/m/n/12 Prenota il ritiro della spedizione, creando un’istan
 za di
@@ -2242,7 +2292,7 @@ l’invio di una richiesta di preno-
 Underfull \vbox (badness 10000) detected at line 511
  []
 
-[75]
+[79]
 Underfull \vbox (badness 10000) detected at line 533
  []
 
@@ -2256,21 +2306,21 @@ azione di un account, genera
 Underfull \vbox (badness 10000) detected at line 544
  []
 
-[76]
+[80]
 Underfull \vbox (badness 10000) detected at line 565
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [81]
 Underfull \vbox (badness 10000) detected at line 591
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [82]
 Underfull \hbox (badness 10000) in paragraph at lines 605--605
 \TU/EBGaramond(0)/m/n/12 includendo le generalità a seconda del ruolo
  []
@@ -2286,7 +2336,7 @@ Underfull \vbox (badness 10000) detected at line 616
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [83]
 Underfull \vbox (badness 10000) detected at line 639
  []
 
@@ -2301,7 +2351,7 @@ Underfull \vbox (badness 10000) detected at line 659
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [84]
 Underfull \hbox (badness 10000) in paragraph at lines 699--699
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
@@ -2351,7 +2401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--699
 Underfull \vbox (badness 10000) detected at line 699
  []
 
-[81]
+[85]
 Underfull \hbox (badness 3240) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Restituisce tutti gli utenti con ruolo “cus-
  []
@@ -2360,11 +2410,11 @@ Underfull \hbox (badness 3240) in paragraph at lines 720--720
 Underfull \vbox (badness 10000) detected at line 720
  []
 
-[82]
+[86]
 Underfull \vbox (badness 10000) detected at line 752
  []
 
-[83] [84]
+[87] [88]
 Overfull \hbox (2.78891pt too wide) in paragraph at lines 763--764
 []\TU/EBGaramond(0)/m/n/12 Per poter generare anche referti anonimizzati, quest
 e aggiunte sono state separate in metodi
@@ -2374,11 +2424,11 @@ e aggiunte sono state separate in metodi
 Underfull \vbox (badness 10000) detected at line 777
  []
 
-[85]
+[89]
 Underfull \vbox (badness 10000) detected at line 794
  []
 
-[86]
+[90]
 Underfull \vbox (badness 10000) detected at line 808
  []
 
@@ -2392,18 +2442,18 @@ a funzione di
 Underfull \vbox (badness 10000) detected at line 816
  []
 
-[87]
+[91]
 File: figures/classdia.png Graphic file (type bmp)
 <figures/classdia.png>
 
 Underfull \vbox (badness 10000) detected at line 843
  []
 
-[88]
+[92]
 Underfull \vbox (badness 10000) detected at line 852
  []
 
-[89] [90]
+[93] [94]
 Underfull \hbox (badness 10000) in paragraph at lines 901--901
 []\TU/EBGaramond(0)/m/n/12 Download dell’eventuale mod-
  []
@@ -2418,7 +2468,7 @@ erolo-
 Underfull \vbox (badness 10000) detected at line 901
  []
 
-) [91]
+) [95]
 \openout2 = `chapters/chapter5.aux'.
 
  (chapters/chapter5.tex
@@ -2434,13 +2484,13 @@ No file ./chapter1.aux
 LABELS NOT IMPORTED.
  on input line 3.
 
-[92
+[96
 
 
 
 ]
 Chapter 5.
-[93] [94]
+[97] [98]
 Overfull \hbox (8.40091pt too wide) in paragraph at lines 32--33
 \TU/EBGaramond(0)/m/n/12 stato configurato in modo da effettuare una pulizia co
 mpleta del database prima dell’esecuzione
@@ -2452,12 +2502,12 @@ Overfull \hbox (14.56334pt too wide) in paragraph at lines 46--47
 mente il funzionamento della [][]API[][] GraphQL,
  []
 
-[95]) [96]
+[99]) [100]
 \openout2 = `chapters/conclusion.aux'.
 
  (chapters/conclusion.tex
 Chapter 6.
-[97
+[101
 
 
 
@@ -2468,11 +2518,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 1496) has occurred while \output is active []
 
- [98])
+ [102])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99]
-[100]
+ [103]
+[104]
 \openout2 = `chapters/appendixA.aux'.
 
  (chapters/appendixA.tex
@@ -2483,30 +2533,30 @@ LABELS NOT IMPORTED.
  on input line 2.
 
 Appendice A.
-[101
+[105
 
 
 
 
-] [102] [103] [104] [105]
+] [106] [107] [108] [109]
 Overfull \hbox (1.11911pt too wide) in paragraph at lines 170--170
 |[]\TU/EBGaramond(0)/bx/sc/14.4 UC6.10.1: Generazione nuova password per un ute
 nte| 
  []
 
-[106] [107]
+[110] [111]
 Overfull \hbox (0.3169pt too wide) in paragraph at lines 232--238
 \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 Il sistema 
 ha reimpostato correttamente la password per l’utente desider-
  []
 
-[108] [109]
+[112] [113]
 Overfull \hbox (53.13187pt too wide) in paragraph at lines 277--277
 |[]\TU/EBGaramond(0)/bx/sc/14.4 UC12.2: Richiesta storico degli esami in base a
 ll’avanzamento| 
  []
 
-[110] [111] [112]
+[114] [115] [116]
 Overfull \hbox (8.16489pt too wide) in paragraph at lines 341--347
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia al sistema una richiesta di aggiornamento delle risposte
@@ -2518,7 +2568,7 @@ Overfull \hbox (25.51692pt too wide) in paragraph at lines 341--347
 saggio di conferma del successo dell’operazione. 
  []
 
-[113] [114] [115]
+[117] [118] [119]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/itsc' will be
 (Font)              scaled to size 14.4pt on input line 422.
 
@@ -2532,14 +2582,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
-[116]
+[120]
 Overfull \hbox (7.3582pt too wide) in paragraph at lines 442--448
 \TU/EBGaramond(0)/m/n/12 alla farmacia corrente fornendone il codice identifica
 tivo interno. \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/
 12 L’attore
  []
 
-[117] [118]) [119]
+[121] [122]) [123]
 \openout2 = `chapters/appendixB.aux'.
 
  (chapters/appendixB.tex
@@ -2549,7 +2599,7 @@ No file ./chapter2.aux
 LABELS NOT IMPORTED.
  on input line 2.
 
-[120
+[124
 
 
 
@@ -2559,18 +2609,18 @@ Appendice B.
 Underfull \vbox (badness 10000) detected at line 96
  []
 
-[121
+[125
 
-] [122] [123]
+] [126] [127]
 Underfull \vbox (badness 10000) detected at line 184
  []
 
-[124] [125] [126]) [127]
+[128] [129] [130]) [131]
 No file dissertation.bbl.
-[128
+[132
 
 
-] (frontmatter/thanks.tex) [129
+] (frontmatter/thanks.tex) [133
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
@@ -2582,19 +2632,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: AA0FC2200DD739D2EAFC798CEE4A418F.
+(rerunfilecheck)             Checksum: 300FE4F307B89B792A223C80EB0B18BA.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 48590 strings out of 427669
- 1068459 string characters out of 3149215
- 1380223 words of memory out of 3000000
- 51899 multiletter control sequences out of 15000+200000
+ 48655 strings out of 427669
+ 1069627 string characters out of 3149215
+ 1381398 words of memory out of 3000000
+ 51949 multiletter control sequences out of 15000+200000
  541210 words of font info for 114 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  85i,11n,138p,1460b,900s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (143 pages).
+Output written on dissertation.pdf (147 pages).
