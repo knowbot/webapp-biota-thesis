@@ -128,7 +128,7 @@ Di seguito vengono discusse le tecnologie individuate per la realizzazione del p
     \caption[Logo di Ruby]{Logo di Ruby.
     \label{fig:ruby}}
 \end{figure}
-Ruby è un linguaggio di programmazione ad alto livello, interpretato, e orientato agli oggetti con paradigma puro: ogni componente del linguaggio è trattato come un oggetto. 
+Ruby è un linguaggio di programmazione ad alto livello, interpretato, e orientato agli oggetti con paradigma puro (ogni componente del linguaggio è trattato come un oggetto)\cite{Ruby}. 
 
 Alcune tra le caratteristiche più rilevanti di Ruby sono la presenza di tipizzazione dinamica, \textit{garbage collector} e \textit{duck typing} (``Se sembra un'anatra, nuota come un'anatra e starnazza come un'anatra, allora probabilmente è un'anatra.''), ovvero il poter considerare l'insieme dei metodi di un oggetto anziché il suo tipo per decidere se è valido a \textit{run-time}.
 
@@ -153,10 +153,10 @@ Libreria che permette interazioni ad alto e basso livello con file \ref{itm:pdf}
 Jbuilder è una gemma molto utile che fornisce un \ref{itm:dsl} per dichiarare strutture \ref{itm:json} anche complesse, utilizzando strutture \textit{if/else} e cicli. Un file \texttt{.jbuilder} contiene la dichiarazione di una struttura dati \ref{itm:json} che, al momento del \textit{rendering} da parte di un \textit{controller} di Ruby on Rails, viene elaborata e generata secondo i dati disponibili. Questa gemma è stata utilizzata per generare i body delle risposte HTTP date dai \textit{controller}, data la necessità di utilizzare strutture ricorsive.
 
 \subsubsection{ROTP}
-Acronimo di ``Ruby One Time Password'', questa gemma permette di generare e verificare codici \ref{itm:hotp} e \ref{itm:totp} in accordo agli standard RFC 4426 \footnote[1]{http://tools.ietf.org/html/rfc4226} e RFC 6238 \footnote[2]{http://tools.ietf.org/html/rfc6238}. ROTP è inoltre compatibile con Google Authenticator su dispositivi Android e iOS. La gemma è stata sfruttata per verificare il consenso al trattamento dei dati mediante codici TOTP inviati per SMS.
+Acronimo di ``Ruby One Time Password'', questa gemma permette di generare e verificare codici \ref{itm:hotp} e \ref{itm:totp} in accordo agli standard RFC 4426 \cite{rfc4226} e RFC 6238 \cite{rfc6238}. ROTP è inoltre compatibile con Google Authenticator su dispositivi Android e iOS. La gemma è stata sfruttata per verificare il consenso al trattamento dei dati mediante codici TOTP inviati per SMS.
 
 \subsubsection{RSpec}
-Framework di \textit{behavior-driven development} per Ruby, RSpec è un \textit{tool} per la creazione di test per codice Ruby. RSpec fornisce un \ref{itm:dsl} molto intuitivo e descrittivo per la realizzazione dei test, permettendo di definire precisamente i vari scenari in cui si desidera verificare il comportamento del codice. Il funzionamento di base di RSpec si basa su ``esempi'' e ``aspettative'': un esempio è un particolare scenario che si desidera testare, e le aspettative descrivono lo stato che il codice dovrebbe raggiungere ad un certo punto della sua esecuzione.
+Framework di \textit{behaviour-driven development} per Ruby, RSpec è un \textit{tool} per la creazione di test per codice Ruby. RSpec fornisce un \ref{itm:dsl} molto intuitivo e descrittivo per la realizzazione dei test, permettendo di definire precisamente i vari scenari in cui si desidera verificare il comportamento del codice. Il funzionamento di base di RSpec si basa su ``esempi'' e ``aspettative'': un esempio è un particolare scenario che si desidera testare, e le aspettative descrivono lo stato che il codice dovrebbe raggiungere ad un certo punto della sua esecuzione.
 RSpec, in congiunzione con altre librerie di supporto, è stato utilizzato per realizzare la suite di test per l'applicativo.
 
 \subsubsection{RuboCop}
@@ -174,11 +174,11 @@ Gemma di supporto alla creazione di test, semplifica di molto la creazione di nu
     \caption[Logo di Rails]{Logo di Rails.
     \label{fig:rails}}
 \end{figure}
-Per la realizzazione del progetto Moku ha scelto di usare Ruby on Rails 5 (noto anche come Rails), un \textit{framework} \textit{open source} per applicativi web realizzato in Ruby e utilizzato da celebri siti come GitHub (servizio di hosting per \textit{repository} Git), Twitch (servizio di \textit{live streaming}) e SoundCloud (piattaforma di distribuzione musicale). Rails è stato scelto per la caratteristica di velocizzare notevolmente lo sviluppo di nuovi applicativi, rimuovendo le parti "ripetitive": ad esempio offrendo alias concisi per operazioni di base (e.g. iterazioni su collezioni di oggetti, strutture if/else) che riducono la verbosità del codice.
+Per la realizzazione del progetto Moku ha scelto di usare Ruby on Rails 5 (noto anche come Rails), un \textit{framework} \textit{open source} per applicativi web realizzato in Ruby e utilizzato da celebri siti come GitHub (servizio di hosting per \textit{repository} Git), Twitch (servizio di \textit{live streaming}) e SoundCloud (piattaforma di distribuzione musicale)\cite{Rails}. Rails è stato scelto per la caratteristica di velocizzare notevolmente lo sviluppo di nuovi applicativi, rimuovendo le parti "ripetitive": ad esempio offrendo alias concisi per operazioni di base (e.g. iterazioni su collezioni di oggetti, strutture if/else) che riducono la verbosità del codice.
 
 I principi cardine di Rails sono due:
 \begin{itemize}
-    \item\textbf{Do not Repeat Yourself}: il principio \ref{itm:dry} sostiene che vadano evitate tutte le forme di ripetizione e ridondanza logica nell'implementazione del software; ad esempio, non è necessario specificare le colonne della tabella del database nella definizione di una classe, in quanto Rails recupera automaticamente tale informazione.
+    \item\textbf{Do not Repeat Yourself}: il principio \ref{itm:dry} sostiene che vadano evitate tutte le forme di ripetizione e ridondanza logica nell'implementazione del software \cite{DBLP:journals/corr/abs-1210-0530}; ad esempio, non è necessario specificare le colonne della tabella del database nella definizione di una classe, in quanto Rails recupera automaticamente tale informazione.
     \item\textbf{Convention over Configuration}: il principio \ref{itm:coc} sostiene che il programmatore dovrebbe esplicitare solo le parti ``non convenzionali'' del codice; ad esempio in Rails esiste per convenzione una corrispondenza tra il nome di una classe e il nome di una tabella del database, quindi essa non va specificata.
 \end{itemize}
 \vspace{-25pt}

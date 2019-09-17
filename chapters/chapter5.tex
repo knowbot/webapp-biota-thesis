@@ -2,20 +2,16 @@
 \externaldocument{../frontmatter/abbr}
 \externaldocument{./chapter1}
 \begin{savequote}[75mm]
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
-\qauthor{Quoteauthor Lastname}
+    You can prove anything you want by coldly logical reason---if you pick the proper postulates.
+\qauthor{Isaac Asimov}
 \end{savequote}
 
 \chapter{Verifica e validazione}
 \label{chap5}
-\section{Premessa}
 L'applicativo sviluppato nel corso di questo progetto, come già menzionato, è entrato in fase di produzione (ovvero è stato rilasciato per l'uso da parte del cliente) relativamente presto, con aggiornamenti regolari che introducevano man mano nuove funzionalità. Tale situazione ha introdotto la forte necessità di controllare che ogni versione rilasciata del prodotto adempiesse correttamente a tutti i bisogni del cliente e fosse priva di inadeguatezze.
 
-In questa sezione verranno esposte le convenzioni e i processi volti ad assicurare la qualità del prodotto, valutata in assenza di \textit{failure} e adempimento ai bisogni espressi dal cliente.
-\subsection{Norme di codifica}
-Il primo passo nella realizzazione di un prodotto di qualità consiste nell'adottare norme che minimizzino i rischi e gli errori che si possono verificare. Sono quindi state seguite delle precise norme di codifica volte a rendere il codice funzionale e facilmente comprensibile a sviluppatori diversi dall'autore.
+In questo capitolo i processi volti ad assicurare la qualità del prodotto, valutata termini di assenza di \textit{failure} e adempimento ai bisogni espressi dal cliente.
 
-Sono quindi state seguite pedissequamente le norme di codifica stabilite dalla community di Ruby on Rails, raccolte in una \textit{style guide} pubblicamente disponibile. L'utilizzo di tali norme ha facilitato il processo di analisi statica che verrà esposto a breve.
 \section{Verifica}
 Il processo di verifica viene attuato durante lo sviluppo del prodotto con lo scopo di accertare che nuove funzionalità introdotte non siano causa di errori o malfunzionamenti. Tale processo deve quindi valutare sia il codice scritto, per rilevare eventuali errori di codifica, che il codice in esecuzione per verificare che si comporti secondo certe aspettative. Il processo di verifica viene effettuato applicando due tecniche: \textbf{analisi statica}, che adempie al primo compito, e \textbf{analisi dinamica} che permette di svolgere il secondo.
 \subsection{Analisi statica}

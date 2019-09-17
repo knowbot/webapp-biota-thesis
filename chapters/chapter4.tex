@@ -5,5 +5,165 @@ Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin moles
 \qauthor{Quoteauthor Lastname}
 \end{savequote}
 
-\chapter{Codifica}
+\chapter{Codifica e sviluppo}
+Nonostante la fase implementativa sia stata quella che ha richiesto più tempo nella realizzazione del progetto, occupando quasi 50\% delle ore di lavoro, essa è semplicemente il risultato della fase di progettazione. In questo capitolo verranno presentati degli esempi di implementazione per i vari componenti progettati in modo da dare una miglior panoramica del lavoro svolto.
 
+\section{Norme di codifica}
+Il primo passo nella realizzazione di un prodotto di qualità consiste nell'adottare norme che minimizzino i rischi e gli errori che si possono verificare. Sono quindi state seguite delle precise norme di codifica volte a rendere il codice funzionale e facilmente comprensibile a sviluppatori diversi dall'autore.
+
+Sono quindi state seguite pedissequamente le norme di codifica stabilite dalla community di Ruby on Rails, raccolte in una \textit{style guide} pubblicamente disponibile. L'utilizzo di tali norme ha facilitato il processo di analisi statica che verrà esposto a breve.
+
+\section{Componenti MVC}
+\subsection{Esempio di \textit{model}}
+Osserviamo di seguito l'implementazione del \textit{model} \texttt{Shipment}, uno degli ultimi ad essere implementato; esso presenta tutte le caratteristiche implementative interessanti comuni agli altri \textit{models}.
+
+\begin{lstlisting}[caption={\textbf{\texttt{shipment.rb}}},captionpos=b,language=Ruby]
+require_relative '../services/sda/client'
+
+class Shipment < ApplicationRecord
+    belongs_to :pharmacy
+    has_many :sessions, dependent: :nullify
+
+    has_one_attached :waybill
+    enum status: %i[pending booked in_transit delivered]
+
+    validate :request_date_consistency
+    validate :shipment_date_consistency
+\end{lstlisting}
+
+Il codice inizia importando il client per le spedizioni e dichiarando la classe \texttt{Shipment} come sottoclasse di \texttt{ApplicationRecord}, permettendo quindi l'associazione automatica alla tabella \texttt{shipments} del database tramite ActiveRecord.
+
+Subito dopo segue la definizione delle relazioni con gli altri \textit{models}: \texttt{belongs\_to} indica l'appartenenza univoca ad un altro \textit{model} (quindi una relazione uno ad uno o uno a molti), mentre \texttt{has\_many} specifica una relazione con cardinalità multipla. L'altro modello coinvolto completerà la definizione della relazione con la stessa sintassi.
+
+Quindi osserviamo la definizione di attributi particolari: un \texttt{Attachment}, che non è definito come colonna della tabella del database ma la cui rappresentazione viene gestita da Rails, e un tipo enumerativo, rappresentato a database come un valore intero e fatto corrispondere alla relativa stringa dell'array.
+
+Infine vengono definiti dei \textit{callback} di validazione che eseguono dei controlli personalizzati quando viene creata o modificata un'istanza di \texttt{Shipment}.
+\begin{lstlisting}[caption={\textbf{\texttt{shipment.rb}}},captionpos=b,language=Ruby]
+    def receive_waybill
+        client = SDA::Client.new
+        waybill_file, waybill_code = client.receive_waybill(self)
+        waybill.attach io: waybill_file, filename: "#{waybill_code}_ldv.pdf"
+        self.waybill_code = waybill_code
+        save!
+    ensure
+        waybill_file&.unlink
+    end
+    
+    def book_shipment
+        client = SDA::Client.new
+        update! request_date: Date.today if request_date != Date.today
+        booking = client.book_shipment(self)
+        if booking.present?
+            update! booking: booking, status: 'booked'
+            sessions.each(&:set_as_dispatched)
+        end
+    end
+\end{lstlisting}
+Una volta definiti relazioni, attributi e vincoli si passa alla codifica dei metodi pubblici esposti dalla classe: nell'esempio sono riportati i metodi \texttt{receive\_waybill} e {book\_shipment}, utilizzati rispettivamente per ottenere la lettera di vettura e prenotare una spedizione. 
+
+È di nota l'utilizzo di \texttt{save} e \texttt{update} per modificare il record associato all'istanza (la quale costituisce l'oggetto \textit{this} implicito per l'invocazione dei suddetti metodi): nel primo caso, il metodo di ActiveRecord viene invocato per salvare le modifiche avvenute in precedenza; nel secondo vengono passati nuovi valori come parametri. 
+
+L'aggiunta del punto esclamativo impone una immediata interruzione dell'operazione in caso di errori di validazione, permettendo di evitare il salvataggio a database di valori scorretti per uno dei campi.
+
+I metodi non specificano un tipo di ritorno; questo permette, in Rails, di stabilire una convenzione peculiare (non applicata nell'esempio): è possibile, anzi consigliato omettere il \textit{return statement} in quanto viene considerato come valore di ritorno l'ultima variabile menzionata al di fuori di una assegnazione.
+\begin{lstlisting}[caption={\textbf{\texttt{shipment.rb}}},captionpos=b,language=Ruby]
+    private
+      
+    def request_date_consistency
+        if created_at?
+            errors.add :request_date, :invalid unless request_date >= created_at.to_date
+        else
+            errors.add :request_date, :invalid unless request_date >= Date.today
+        end
+    end
+      
+    def shipment_date_consistency
+        errors.add :shipment_date, :invalid unless shipment_date > request_date
+    end
+end
+\end{lstlisting}
+Infine, nel blocco privato, vengono definiti i vincoli aggiuntivi per il \textit{model}. L'attivazione del vincolo avviene con l'aggiunta di un errore a \texttt{errors}, che viene automaticamente registrata e segnalata da Rails. Notevole è il costrutto \texttt{unless}, che permette di evitare negazioni che offuscherebbero la chiarezza del codice.
+
+\subsection{Esempio di \textit{controller}}
+In questa sezione verranno analizzati dei segmenti dell'implementazione di \texttt{API::SampleSessionController} che presentano caratteristiche implementative di interesse.
+\begin{lstlisting}[caption={\textbf{\texttt{sample\_session\_controller.rb}}},captionpos=b,language=Ruby]
+class API::SampleSessionController < ApiController
+    before_action :api_authenticate
+    before_action :set_sample_session, only: %i[show force_dispatch ...]
+\end{lstlisting}
+ 
+La dichiarazione della classe è immediatamente seguita da due metodi definiti come \textit{callback} da eseguire prima di ogni azione del controller, grazie alla \textit{keyword} \texttt{before\_action}. Prima di eseguire il metodo corrispondente ad una richiesta, verranno eseguiti i \textit{callback} dichiarati in questo modo; essi generalmente si occupano di assegnare variabili globali o di autenticare la richiesta.
+\begin{lstlisting}[caption={\textbf{\texttt{sample\_session\_controller.rb}}},captionpos=b,language=Ruby]
+    def sync
+        time_limit = DateTime.parse(Time.at(params[:last_synchronized].to_i).to_s)
+        @sessions_to_sync = Session.where(sample_status: %w[ready dispatched analysed under_review final])
+        @sessions_to_sync = @sessions_to_sync.where('updated_at >= :time_limit', time_limit: time_limit)
+        render
+    end
+  
+    def process_report
+        @report = @sample_session.process_report_anonymized
+        send_data @report.read, filename: "#{Time.now.strftime('%Y%m%d')}_#{params[:sample_code]}.pdf", type: 'application/pdf'
+    ensure
+        @report&.unlink
+    end
+\end{lstlisting}
+Quindi vengono definiti i metodi che rispondono alle richieste ricevute dal \textit{controller}. Nell'esempio ne osserviamo due: 
+\begin{itemize}
+    \item Il primo, \texttt{sync}, effettua il \textit{parsing} del timestamp fornito come parametro e lo usa per effettuare una \textit{query} sulle istanze di \texttt{Session} da restituire. Quindi richiama la \textit{view} corrispondente con il metodo \texttt{render}, che sarà in grado di ricavare automaticamente le risorse da rappresentare;
+    \item Il secondo, \texttt{process\_report}, richiede la generazione del referto dettagliato anonimo e ne effettua l'invio richiamando \texttt{send\_data}, un metodo che permette l'invio di file come parte di una risposta \ref{itm:http}.
+\end{itemize} 
+
+Entrambi restituiscono una risposta con metodi differenti; è Rails a gestirle in modo da renderle visualizzabili dal client che ha effettuato la richiesta.
+\begin{lstlisting}[caption={\textbf{\texttt{sample\_session\_controller.rb}}},captionpos=b,language=Ruby]
+    def api_authenticate
+        @current_account = Account.find_by(access_id: ApiAuth.access_id(request))
+        head(:unauthorized) unless @current_account && (ApiAuth.authentic?(request, @current_account.secret) || Rails.env == 'test')
+    end
+    
+    # Use callbacks to share common setup or constraints between actions.
+    def set_sample_session
+        @sample_session = Session.find_by(sample_code: params[:sample_code])
+        return render(plain: "There is no session associated to sample code #{params[:sample_code]}.", status: :bad_request) unless @sample_session
+        @sample_session
+    end
+    
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def sample_session_params
+        params.permit(:sample_code, :reason, :report_notes, :gastroenterologist_notes_general, :gastroenterologist_notes_specific, :active_substance, :report, :timestamp)
+    end
+\end{lstlisting}
+Nel blocco privato, alla fine, vengono implementati i \textit{callback} da eseguire prima di ogni azione e viene definita la lista di parametri accettati: ciò permette di rendere più sicuro il \textit{controller}.
+Il primo \textit{callback} si occupa di autenticare la richiesta tramite la libreria ApiAuth, specializzata nell'aggiunta di autenticazione HMAC ad applicazioni Rails. Si tratta comunque di una funzionalità rimasta in sviluppo, qui riportata per puri scopi dimostrativi.
+
+Il secondo \textit{callback} effettua l'importante operazione di cercare l'istanza di \texttt{Session} indicata dal codice campione fornito come parametro e assegnarla come variabile globale per le operazioni del \textit{controller}. Infine avviene la già menzionata definizione della \textit{whitelist} dei parametri accettati.
+
+I metodi del \textit{controller} vengono così assegnati ai rispettivi \textit{endpoint} nel file di \textit{routing:}
+\begin{lstlisting}[language=Ruby]
+get '/samples/sync', to: 'api/sample_session#sync'
+get '/samples/:sample_code/report', to: 'api/sample_session#process_report'
+\end{lstlisting}
+Come si evince dal codice riportato, viene prima definito il metodo \ref{itm:http} della richiesta, quindi viene specificato l'\ref{itm:uri} completo di eventuali parametri, ed infine il metodo del \textit{controller} desiderato.
+
+\subsection{Esempio di \textit{view}}
+Le \textit{views} ricoprono un ruolo relativamente minore nell'applicativo; verrà quindi riportato un esempio corredato solo da una breve spiegazione.
+\begin{lstlisting}[caption={\textbf{\texttt{\_data.jbuilder}}},captionpos=b,language=Ruby]
+    json.sample_code sample_session.sample_code
+    json.sample_status sample_session.sample_status
+    json.questionnaire_answers do
+      json.array! sample_session.questionnaire_answers do |answer|
+        json.question answer.denormalized_question_text
+        json.answer answer.get_answer
+      end
+    end
+\end{lstlisting}
+Si tratta di un frammento della \textit{view} parziale usata per rappresentare una istanza di \texttt{Session}. Si può osservare come la struttura \ref{itm:json} sia costruita dichiarando il nome del campo per poi specificare il campo della risorsa che ne costituirà il valore.  Nella costruzione del campo \texttt{questionnaire\_answers} viene usata una struttura iterativa per comporre un array contenente tutte le risposte al questionario presenti. Questa \textit{view} viene elaborata in una struttura dati \ref{itm:json} direttamente da Rails tramite Jbuilder al momento opportuno.
+\section{Comunicazione}
+In questa sezione verranno presentati degli esempi di richieste e risposte per entrambi i tipi di \ref{itm:api} implementati.
+\subsection{REST}
+\paragraph{Richiesta}
+\paragraph{Risposta}
+\subsection{GraphQL}
+\paragraph{Richiesta}
+\paragraph{Risposta}
+\section{Immagini}

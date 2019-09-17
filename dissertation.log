@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  16 SEP 2019 22:42
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.8.17)  17 SEP 2019 17:49
 entering extended mode
 **c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
 (c:/Users/andre/Documents/webapp-biota-thesis/dissertation.tex
@@ -27,6 +27,35 @@ File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count89
 )
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/07/19 3.33 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/07/19 3.33 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-italian\italian.ldf
+Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/07/19 3.33 Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen103
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\xebabel.def"
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def"))
+\bbl@dirlevel=\count91
+)
+\it@lettering=\count92
+\it@doublequoteactive=\count93
+\it@ISOcompliance=\count94
+))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
 
@@ -83,14 +112,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen103
-\Hy@linkcounter=\count90
-\Hy@pagecounter=\count91
+\@linkdim=\dimen104
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count92
+\Hy@SavedSpaceFactor=\count97
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -102,17 +131,17 @@ Package hyperref Info: Plain pages OFF on input line 4565.
 Package hyperref Info: Backreferencing OFF on input line 4570.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4803.
-\c@Hy@tempcnt=\count93
+\c@Hy@tempcnt=\count98
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5156.
-\XeTeXLinkMargin=\dimen104
-\Fld@menulength=\count94
-\Field@Width=\dimen105
-\Fld@charsize=\dimen106
+\XeTeXLinkMargin=\dimen105
+\Fld@menulength=\count99
+\Field@Width=\dimen106
+\Fld@charsize=\dimen107
 Package hyperref Info: Hyper figures OFF on input line 6411.
 Package hyperref Info: Link nesting OFF on input line 6416.
 Package hyperref Info: Hyper index ON on input line 6419.
@@ -122,9 +151,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6436.
 Package hyperref Info: PDF/A mode OFF on input line 6441.
 LaTeX Info: Redefining \ref on input line 6481.
 LaTeX Info: Redefining \pageref on input line 6485.
-\Hy@abspage=\count95
-\c@Item=\count96
-\c@Hfootnote=\count97
+\Hy@abspage=\count100
+\c@Item=\count101
+\c@Hfootnote=\count102
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -139,10 +168,10 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box27
-\c@Hy@AnnotLevel=\count98
-\HyField@AnnotCount=\count99
-\Fld@listcount=\count100
-\c@bookmark@seq@number=\count101
+\c@Hy@AnnotLevel=\count103
+\HyField@AnnotCount=\count104
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -153,17 +182,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
-\Gm@bindingoffset=\dimen107
-\Gm@wd@mp=\dimen108
-\Gm@odd@mp=\dimen109
-\Gm@even@mp=\dimen110
-\Gm@layoutwidth=\dimen111
-\Gm@layoutheight=\dimen112
-\Gm@layouthoffset=\dimen113
-\Gm@layoutvoffset=\dimen114
+\Gm@cnth=\count107
+\Gm@cntv=\count108
+\c@Gm@tempcnt=\count109
+\Gm@bindingoffset=\dimen108
+\Gm@wd@mp=\dimen109
+\Gm@odd@mp=\dimen110
+\Gm@even@mp=\dimen111
+\Gm@layoutwidth=\dimen112
+\Gm@layoutheight=\dimen113
+\Gm@layouthoffset=\dimen114
+\Gm@layoutvoffset=\dimen115
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/xetexconfig\geometry.cfg"))
@@ -205,8 +234,8 @@ Package graphics Info: Driver file: xetex.def on input line 99.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\xetex.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fixltx2e.sty"
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
@@ -224,33 +253,33 @@ File: lettrine.sty 2019-04-06 v2.22 (Daniel Flipo)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/minifp\minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count105
+\MFP@loopctr=\count110
 )
-\c@DefaultLines=\count106
-\c@DefaultDepth=\count107
-\DefaultFindent=\dimen117
-\DefaultNindent=\dimen118
-\DefaultSlope=\dimen119
-\DiscardVskip=\dimen120
+\c@DefaultLines=\count111
+\c@DefaultDepth=\count112
+\DefaultFindent=\dimen118
+\DefaultNindent=\dimen119
+\DefaultSlope=\dimen120
+\DiscardVskip=\dimen121
 \L@lbox=\box28
 \L@tbox=\box29
-\c@L@lines=\count108
-\c@L@depth=\count109
-\L@Pindent=\dimen121
-\L@Findent=\dimen122
-\L@Nindent=\dimen123
-\L@lraise=\dimen124
-\L@first=\dimen125
-\L@next=\dimen126
-\L@slope=\dimen127
-\L@height=\dimen128
-\L@novskip=\dimen129
-\L@target@ht=\dimen130
-\L@target@dp=\dimen131
-\L@target@tht=\dimen132
-\LettrineWidth=\dimen133
-\LettrineHeight=\dimen134
-\LettrineDepth=\dimen135
+\c@L@lines=\count113
+\c@L@depth=\count114
+\L@Pindent=\dimen122
+\L@Findent=\dimen123
+\L@Nindent=\dimen124
+\L@lraise=\dimen125
+\L@first=\dimen126
+\L@next=\dimen127
+\L@slope=\dimen128
+\L@height=\dimen129
+\L@novskip=\dimen130
+\L@target@ht=\dimen131
+\L@target@dp=\dimen132
+\L@target@tht=\dimen133
+\LettrineWidth=\dimen134
+\LettrineHeight=\dimen135
+\LettrineDepth=\dimen136
 \Llist@everypar=\toks16
 
 Loading lettrine.cfg
@@ -310,7 +339,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen136
+\ex@=\dimen137
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fontspec\fontspec.sty"
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/l3packages/xparse\xparse.s
@@ -319,24 +348,24 @@ Package: expl3 2019-08-14 L3 programming layer (loader)
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3-code.tex
 Package: expl3 2019-08-14 L3 programming layer (code)
-\c_max_int=\count110
-\l_tmpa_int=\count111
-\l_tmpb_int=\count112
-\g_tmpa_int=\count113
-\g_tmpb_int=\count114
-\g__kernel_prg_map_int=\count115
-\c__ior_term_noprompt_ior=\count116
-\c_log_iow=\count117
-\l_iow_line_count_int=\count118
-\l__iow_line_target_int=\count119
-\l__iow_one_indent_int=\count120
-\l__iow_indent_int=\count121
-\c_zero_dim=\dimen137
-\c_max_dim=\dimen138
-\l_tmpa_dim=\dimen139
-\l_tmpb_dim=\dimen140
-\g_tmpa_dim=\dimen141
-\g_tmpb_dim=\dimen142
+\c_max_int=\count115
+\l_tmpa_int=\count116
+\l_tmpb_int=\count117
+\g_tmpa_int=\count118
+\g_tmpb_int=\count119
+\g__kernel_prg_map_int=\count120
+\c__ior_term_noprompt_ior=\count121
+\c_log_iow=\count122
+\l_iow_line_count_int=\count123
+\l__iow_line_target_int=\count124
+\l__iow_one_indent_int=\count125
+\l__iow_indent_int=\count126
+\c_zero_dim=\dimen138
+\c_max_dim=\dimen139
+\l_tmpa_dim=\dimen140
+\l_tmpb_dim=\dimen141
+\g_tmpa_dim=\dimen142
+\g_tmpb_dim=\dimen143
 \c_zero_skip=\skip58
 \c_max_skip=\skip59
 \l_tmpa_skip=\skip60
@@ -349,98 +378,98 @@ Package: expl3 2019-08-14 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count122
-\l__intarray_loop_int=\count123
-\c__intarray_sp_dim=\dimen143
-\g__intarray_font_int=\count124
-\c__fp_leading_shift_int=\count125
-\c__fp_middle_shift_int=\count126
-\c__fp_trailing_shift_int=\count127
-\c__fp_big_leading_shift_int=\count128
-\c__fp_big_middle_shift_int=\count129
-\c__fp_big_trailing_shift_int=\count130
-\c__fp_Bigg_leading_shift_int=\count131
-\c__fp_Bigg_middle_shift_int=\count132
-\c__fp_Bigg_trailing_shift_int=\count133
-\g__fp_array_int=\count134
-\l__fp_array_loop_int=\count135
-\l__sort_length_int=\count136
-\l__sort_min_int=\count137
-\l__sort_top_int=\count138
-\l__sort_max_int=\count139
-\l__sort_true_max_int=\count140
-\l__sort_block_int=\count141
-\l__sort_begin_int=\count142
-\l__sort_end_int=\count143
-\l__sort_A_int=\count144
-\l__sort_B_int=\count145
-\l__sort_C_int=\count146
-\l__str_internal_int=\count147
-\l__tl_analysis_normal_int=\count148
-\l__tl_analysis_index_int=\count149
-\l__tl_analysis_nesting_int=\count150
-\l__tl_analysis_type_int=\count151
-\l__regex_internal_a_int=\count152
-\l__regex_internal_b_int=\count153
-\l__regex_internal_c_int=\count154
-\l__regex_balance_int=\count155
-\l__regex_group_level_int=\count156
-\l__regex_mode_int=\count157
-\c__regex_cs_in_class_mode_int=\count158
-\c__regex_cs_mode_int=\count159
-\l__regex_catcodes_int=\count160
-\l__regex_default_catcodes_int=\count161
-\c__regex_catcode_L_int=\count162
-\c__regex_catcode_O_int=\count163
-\c__regex_catcode_A_int=\count164
-\c__regex_all_catcodes_int=\count165
-\l__regex_show_lines_int=\count166
-\l__regex_min_state_int=\count167
-\l__regex_max_state_int=\count168
-\l__regex_left_state_int=\count169
-\l__regex_right_state_int=\count170
-\l__regex_capturing_group_int=\count171
-\l__regex_min_pos_int=\count172
-\l__regex_max_pos_int=\count173
-\l__regex_curr_pos_int=\count174
-\l__regex_start_pos_int=\count175
-\l__regex_success_pos_int=\count176
-\l__regex_curr_char_int=\count177
-\l__regex_curr_catcode_int=\count178
-\l__regex_last_char_int=\count179
-\l__regex_case_changed_char_int=\count180
-\l__regex_curr_state_int=\count181
-\l__regex_step_int=\count182
-\l__regex_min_active_int=\count183
-\l__regex_max_active_int=\count184
-\l__regex_replacement_csnames_int=\count185
-\l__regex_match_count_int=\count186
-\l__regex_min_submatch_int=\count187
-\l__regex_submatch_int=\count188
-\l__regex_zeroth_submatch_int=\count189
-\g__regex_trace_regex_int=\count190
+\l_keys_choice_int=\count127
+\l__intarray_loop_int=\count128
+\c__intarray_sp_dim=\dimen144
+\g__intarray_font_int=\count129
+\c__fp_leading_shift_int=\count130
+\c__fp_middle_shift_int=\count131
+\c__fp_trailing_shift_int=\count132
+\c__fp_big_leading_shift_int=\count133
+\c__fp_big_middle_shift_int=\count134
+\c__fp_big_trailing_shift_int=\count135
+\c__fp_Bigg_leading_shift_int=\count136
+\c__fp_Bigg_middle_shift_int=\count137
+\c__fp_Bigg_trailing_shift_int=\count138
+\g__fp_array_int=\count139
+\l__fp_array_loop_int=\count140
+\l__sort_length_int=\count141
+\l__sort_min_int=\count142
+\l__sort_top_int=\count143
+\l__sort_max_int=\count144
+\l__sort_true_max_int=\count145
+\l__sort_block_int=\count146
+\l__sort_begin_int=\count147
+\l__sort_end_int=\count148
+\l__sort_A_int=\count149
+\l__sort_B_int=\count150
+\l__sort_C_int=\count151
+\l__str_internal_int=\count152
+\l__tl_analysis_normal_int=\count153
+\l__tl_analysis_index_int=\count154
+\l__tl_analysis_nesting_int=\count155
+\l__tl_analysis_type_int=\count156
+\l__regex_internal_a_int=\count157
+\l__regex_internal_b_int=\count158
+\l__regex_internal_c_int=\count159
+\l__regex_balance_int=\count160
+\l__regex_group_level_int=\count161
+\l__regex_mode_int=\count162
+\c__regex_cs_in_class_mode_int=\count163
+\c__regex_cs_mode_int=\count164
+\l__regex_catcodes_int=\count165
+\l__regex_default_catcodes_int=\count166
+\c__regex_catcode_L_int=\count167
+\c__regex_catcode_O_int=\count168
+\c__regex_catcode_A_int=\count169
+\c__regex_all_catcodes_int=\count170
+\l__regex_show_lines_int=\count171
+\l__regex_min_state_int=\count172
+\l__regex_max_state_int=\count173
+\l__regex_left_state_int=\count174
+\l__regex_right_state_int=\count175
+\l__regex_capturing_group_int=\count176
+\l__regex_min_pos_int=\count177
+\l__regex_max_pos_int=\count178
+\l__regex_curr_pos_int=\count179
+\l__regex_start_pos_int=\count180
+\l__regex_success_pos_int=\count181
+\l__regex_curr_char_int=\count182
+\l__regex_curr_catcode_int=\count183
+\l__regex_last_char_int=\count184
+\l__regex_case_changed_char_int=\count185
+\l__regex_curr_state_int=\count186
+\l__regex_step_int=\count187
+\l__regex_min_active_int=\count188
+\l__regex_max_active_int=\count189
+\l__regex_replacement_csnames_int=\count190
+\l__regex_match_count_int=\count191
+\l__regex_min_submatch_int=\count192
+\l__regex_submatch_int=\count193
+\l__regex_zeroth_submatch_int=\count194
+\g__regex_trace_regex_int=\count195
 \c_empty_box=\box30
 \l_tmpa_box=\box31
 \l_tmpb_box=\box32
 \g_tmpa_box=\box33
 \g_tmpb_box=\box34
-\l__box_top_dim=\dimen144
-\l__box_bottom_dim=\dimen145
-\l__box_left_dim=\dimen146
-\l__box_right_dim=\dimen147
-\l__box_top_new_dim=\dimen148
-\l__box_bottom_new_dim=\dimen149
-\l__box_left_new_dim=\dimen150
-\l__box_right_new_dim=\dimen151
+\l__box_top_dim=\dimen145
+\l__box_bottom_dim=\dimen146
+\l__box_left_dim=\dimen147
+\l__box_right_dim=\dimen148
+\l__box_top_new_dim=\dimen149
+\l__box_bottom_new_dim=\dimen150
+\l__box_left_new_dim=\dimen151
+\l__box_right_new_dim=\dimen152
 \l__box_internal_box=\box35
 \l__coffin_internal_box=\box36
-\l__coffin_internal_dim=\dimen152
-\l__coffin_offset_x_dim=\dimen153
-\l__coffin_offset_y_dim=\dimen154
-\l__coffin_x_dim=\dimen155
-\l__coffin_y_dim=\dimen156
-\l__coffin_x_prime_dim=\dimen157
-\l__coffin_y_prime_dim=\dimen158
+\l__coffin_internal_dim=\dimen153
+\l__coffin_offset_x_dim=\dimen154
+\l__coffin_offset_y_dim=\dimen155
+\l__coffin_x_dim=\dimen156
+\l__coffin_y_dim=\dimen157
+\l__coffin_x_prime_dim=\dimen158
+\l__coffin_y_prime_dim=\dimen159
 \c_empty_coffin=\box37
 \l__coffin_aligned_coffin=\box38
 \l__coffin_aligned_internal_coffin=\box39
@@ -448,57 +477,57 @@ Package: expl3 2019-08-14 L3 programming layer (code)
 \l_tmpb_coffin=\box41
 \g_tmpa_coffin=\box42
 \g_tmpb_coffin=\box43
-\l__coffin_bounding_shift_dim=\dimen159
-\l__coffin_left_corner_dim=\dimen160
-\l__coffin_right_corner_dim=\dimen161
-\l__coffin_bottom_corner_dim=\dimen162
-\l__coffin_top_corner_dim=\dimen163
-\l__coffin_scaled_total_height_dim=\dimen164
-\l__coffin_scaled_width_dim=\dimen165
+\l__coffin_bounding_shift_dim=\dimen160
+\l__coffin_left_corner_dim=\dimen161
+\l__coffin_right_corner_dim=\dimen162
+\l__coffin_bottom_corner_dim=\dimen163
+\l__coffin_top_corner_dim=\dimen164
+\l__coffin_scaled_total_height_dim=\dimen165
+\l__coffin_scaled_width_dim=\dimen166
 \c__coffin_empty_coffin=\box44
 \l__coffin_display_coffin=\box45
 \l__coffin_display_coord_coffin=\box46
 \l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen166
-\l__coffin_display_x_dim=\dimen167
-\l__coffin_display_y_dim=\dimen168
+\l__coffin_display_offset_dim=\dimen167
+\l__coffin_display_x_dim=\dimen168
+\l__coffin_display_y_dim=\dimen169
 \g__file_internal_ior=\read2
-\l__seq_internal_a_int=\count191
-\l__seq_internal_b_int=\count192
+\l__seq_internal_a_int=\count196
+\l__seq_internal_b_int=\count197
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend-xdvipd
 fmx.def
 File: l3backend-xdvipdfmx.def 2019-04-06 v L3 Experimental backend support: xdv
 ipdfmx
-\g__graphics_track_int=\count193
+\g__graphics_track_int=\count198
 \l__pdf_internal_box=\box48
-\g__pdf_backend_object_int=\count194
-\g__pdf_backend_annotation_int=\count195
+\g__pdf_backend_object_int=\count199
+\g__pdf_backend_annotation_int=\count266
 ))
 Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count196
-\g__xparse_grabber_int=\count197
-\l__xparse_m_args_int=\count198
-\l__xparse_v_nesting_int=\count199
+\l__xparse_current_arg_int=\count267
+\g__xparse_grabber_int=\count268
+\l__xparse_m_args_int=\count269
+\l__xparse_v_nesting_int=\count270
 )
 Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
  ("C:\Program Files\MiKTeX 2.9\tex/latex/fontspec\fontspec-xetex.sty"
 Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count266
-\l__fontspec_language_int=\count267
-\l__fontspec_strnum_int=\count268
-\l__fontspec_tmp_int=\count269
-\l__fontspec_tmpa_int=\count270
-\l__fontspec_tmpb_int=\count271
-\l__fontspec_tmpc_int=\count272
-\l__fontspec_em_int=\count273
-\l__fontspec_emdef_int=\count274
-\l__fontspec_strong_int=\count275
-\l__fontspec_strongdef_int=\count276
-\l__fontspec_tmpa_dim=\dimen169
-\l__fontspec_tmpb_dim=\dimen170
-\l__fontspec_tmpc_dim=\dimen171
+\l__fontspec_script_int=\count271
+\l__fontspec_language_int=\count272
+\l__fontspec_strnum_int=\count273
+\l__fontspec_tmp_int=\count274
+\l__fontspec_tmpa_int=\count275
+\l__fontspec_tmpb_int=\count276
+\l__fontspec_tmpc_int=\count277
+\l__fontspec_em_int=\count278
+\l__fontspec_emdef_int=\count279
+\l__fontspec_strong_int=\count280
+\l__fontspec_strongdef_int=\count281
+\l__fontspec_tmpa_dim=\dimen170
+\l__fontspec_tmpb_dim=\dimen171
+\l__fontspec_tmpc_dim=\dimen172
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
@@ -522,32 +551,32 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count277
+\XKV@depth=\count282
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@eu@=\count278
-\c@eu@i=\count279
-\c@mkern=\count280
+\c@eu@=\count283
+\c@eu@i=\count284
+\c@mkern=\count285
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\tabularx.sty"
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen172
+\col@sep=\dimen173
 \ar@mcellbox=\box49
-\extrarowheight=\dimen173
+\extrarowheight=\dimen174
 \NC@list=\toks23
 \extratabsurround=\skip64
 \backup@length=\skip65
 \ar@cellbox=\box50
 )
-\TX@col@width=\dimen174
-\TX@old@table=\dimen175
-\TX@old@col=\dimen176
-\TX@target=\dimen177
-\TX@delta=\dimen178
-\TX@cols=\count281
+\TX@col@width=\dimen175
+\TX@old@table=\dimen176
+\TX@old@col=\dimen177
+\TX@target=\dimen178
+\TX@delta=\dimen179
+\TX@cols=\count286
 \TX@ftn=\toks24
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
@@ -556,16 +585,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTright=\skip67
 \LTpre=\skip68
 \LTpost=\skip69
-\LTchunksize=\count282
-\LTcapwidth=\dimen179
+\LTchunksize=\count287
+\LTcapwidth=\dimen180
 \LT@head=\box51
 \LT@firsthead=\box52
 \LT@foot=\box53
 \LT@lastfoot=\box54
-\LT@cols=\count283
-\LT@rows=\count284
-\c@LT@tables=\count285
-\c@LT@chunks=\count286
+\LT@cols=\count288
+\LT@rows=\count289
+\c@LT@tables=\count290
+\c@LT@chunks=\count291
 \LT@p@ftn=\toks25
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/tabu\tabu.sty
@@ -574,25 +603,25 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box55
-\sift@deathcycles=\count287
-\@vwid@loff=\dimen180
-\@vwid@roff=\dimen181
+\sift@deathcycles=\count292
+\@vwid@loff=\dimen181
+\@vwid@roff=\dimen182
 )
-\c@taburow=\count288
-\tabu@nbcols=\count289
-\tabu@cnt=\count290
-\tabu@Xcol=\count291
-\tabu@alloc=\count292
-\tabu@nested=\count293
-\tabu@target=\dimen182
-\tabu@spreadtarget=\dimen183
-\tabu@naturalX=\dimen184
-\tabucolX=\dimen185
-\tabu@Xsum=\dimen186
-\extrarowdepth=\dimen187
-\abovetabulinesep=\dimen188
-\belowtabulinesep=\dimen189
-\tabustrutrule=\dimen190
+\c@taburow=\count293
+\tabu@nbcols=\count294
+\tabu@cnt=\count295
+\tabu@Xcol=\count296
+\tabu@alloc=\count297
+\tabu@nested=\count298
+\tabu@target=\dimen183
+\tabu@spreadtarget=\dimen184
+\tabu@naturalX=\dimen185
+\tabucolX=\dimen186
+\tabu@Xsum=\dimen187
+\extrarowdepth=\dimen188
+\abovetabulinesep=\dimen189
+\belowtabulinesep=\dimen190
+\tabustrutrule=\dimen191
 \tabu@thebody=\toks26
 \tabu@footnotes=\toks27
 \tabu@box=\box56
@@ -774,21 +803,21 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen191
-\captionmargin@=\dimen192
-\captionwidth=\dimen193
-\caption@tempdima=\dimen194
-\caption@indent=\dimen195
-\caption@parindent=\dimen196
-\caption@hangindent=\dimen197
+\captionmargin=\dimen192
+\captionmargin@=\dimen193
+\captionwidth=\dimen194
+\caption@tempdima=\dimen195
+\caption@indent=\dimen196
+\caption@parindent=\dimen197
+\caption@hangindent=\dimen198
 )
 Package caption Info: We need package `newfloat' on input line 289.
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\newfloat.sty
 Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
 )
-\c@caption@flags=\count294
-\c@ContinuedFloat=\count295
+\c@caption@flags=\count299
+\c@ContinuedFloat=\count300
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -798,11 +827,11 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype.sty
 Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
 \MT@toks=\toks28
-\MT@count=\count296
+\MT@count=\count301
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen198
+\MT@outer@kern=\dimen199
 LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
-\MT@listname@count=\count297
+\MT@listname@count=\count302
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\microtype-xetex.
 def
@@ -820,8 +849,8 @@ File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen199
-\pgfutil@tempdimb=\dimen256
+\pgfutil@tempdima=\dimen256
+\pgfutil@tempdimb=\dimen257
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon-lists.tex))
@@ -855,26 +884,26 @@ de.tex
 tered.code.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen257
-\pgf@y=\dimen258
-\pgf@xa=\dimen259
-\pgf@ya=\dimen260
-\pgf@xb=\dimen261
-\pgf@yb=\dimen262
-\pgf@xc=\dimen263
-\pgf@yc=\dimen264
-\pgf@xd=\dimen265
-\pgf@yd=\dimen266
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
+\pgf@xd=\dimen266
+\pgf@yd=\dimen267
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count298
-\c@pgf@countb=\count299
-\c@pgf@countc=\count300
-\c@pgf@countd=\count301
+\c@pgf@counta=\count303
+\c@pgf@countb=\count304
+\c@pgf@countc=\count305
+\c@pgf@countd=\count306
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count302
+\pgf@sys@id@count=\count307
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
@@ -893,13 +922,13 @@ File: pgfsys-dvipdfmx.def 2019/08/03 v3.1.4b (3.1.4b)
 ommon-pdf.def
 File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
 )
-\pgfsys@objnum=\count303
+\pgfsys@objnum=\count308
 )))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfsyssoftpath@smallbuffer@items=\count304
-\pgfsyssoftpath@bigbuffer@items=\count305
+\pgfsyssoftpath@smallbuffer@items=\count309
+\pgfsyssoftpath@bigbuffer@items=\count310
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspr
 otocol.code.tex
@@ -917,8 +946,8 @@ e.tex
 e.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.c
 ode.tex
-\pgfmath@dimen=\dimen267
-\pgfmath@count=\count306
+\pgfmath@dimen=\dimen268
+\pgfmath@count=\count311
 \pgfmath@box=\box61
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -944,39 +973,39 @@ s.misc.code.tex)
 s.integerarithmetics.code.tex)))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count307
+\c@pgfmathroundto@lastzeros=\count312
 ))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepo
 ints.code.tex
 File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@picminx=\dimen268
-\pgf@picmaxx=\dimen269
-\pgf@picminy=\dimen270
-\pgf@picmaxy=\dimen271
-\pgf@pathminx=\dimen272
-\pgf@pathmaxx=\dimen273
-\pgf@pathminy=\dimen274
-\pgf@pathmaxy=\dimen275
-\pgf@xx=\dimen276
-\pgf@xy=\dimen277
-\pgf@yx=\dimen278
-\pgf@yy=\dimen279
-\pgf@zx=\dimen280
-\pgf@zy=\dimen281
+\pgf@picminx=\dimen269
+\pgf@picmaxx=\dimen270
+\pgf@picminy=\dimen271
+\pgf@picmaxy=\dimen272
+\pgf@pathminx=\dimen273
+\pgf@pathmaxx=\dimen274
+\pgf@pathminy=\dimen275
+\pgf@pathmaxy=\dimen276
+\pgf@xx=\dimen277
+\pgf@xy=\dimen278
+\pgf@yx=\dimen279
+\pgf@yy=\dimen280
+\pgf@zx=\dimen281
+\pgf@zy=\dimen282
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@path@lastx=\dimen282
-\pgf@path@lasty=\dimen283
+\pgf@path@lastx=\dimen283
+\pgf@path@lasty=\dimen284
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thusage.code.tex
 File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@shorten@end@additional=\dimen284
-\pgf@shorten@start@additional=\dimen285
+\pgf@shorten@end@additional=\dimen285
+\pgf@shorten@start@additional=\dimen286
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresc
 opes.code.tex
@@ -984,19 +1013,19 @@ File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count308
+\pgf@picture@serial@count=\count313
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregr
 aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgflinewidth=\dimen286
+\pgflinewidth=\dimen287
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretr
 ansformations.code.tex
 File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@pt@x=\dimen287
-\pgf@pt@y=\dimen288
-\pgf@pt@temp=\dimen289
+\pgf@pt@x=\dimen288
+\pgf@pt@y=\dimen289
+\pgf@pt@temp=\dimen290
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequ
 ick.code.tex
@@ -1013,14 +1042,14 @@ File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorear
 rows.code.tex
 File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowsep=\dimen290
+\pgfarrowsep=\dimen291
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresh
 ade.code.tex
 File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@max=\dimen291
-\pgf@sys@shading@range@num=\count309
-\pgf@shadingcount=\count310
+\pgf@max=\dimen292
+\pgf@sys@shading@range@num=\count314
+\pgf@shadingcount=\count315
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreim
 age.code.tex
@@ -1059,8 +1088,8 @@ File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-0-65.sty
 Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@nodesepstart=\dimen292
-\pgf@nodesepend=\dimen293
+\pgf@nodesepstart=\dimen293
+\pgf@nodesepend=\dimen294
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-1-18.sty
@@ -1079,8 +1108,8 @@ Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.te
 x)
-\pgffor@iter=\dimen294
-\pgffor@skip=\dimen295
+\pgffor@iter=\dimen295
+\pgffor@skip=\dimen296
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
@@ -1091,34 +1120,34 @@ Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@plot@mark@count=\count311
-\pgfplotmarksize=\dimen296
+\pgf@plot@mark@count=\count316
+\pgfplotmarksize=\dimen297
 )
-\tikz@lastx=\dimen297
-\tikz@lasty=\dimen298
-\tikz@lastxsaved=\dimen299
-\tikz@lastysaved=\dimen300
-\tikz@lastmovetox=\dimen301
-\tikz@lastmovetoy=\dimen302
-\tikzleveldistance=\dimen303
-\tikzsiblingdistance=\dimen304
+\tikz@lastx=\dimen298
+\tikz@lasty=\dimen299
+\tikz@lastxsaved=\dimen300
+\tikz@lastysaved=\dimen301
+\tikz@lastmovetox=\dimen302
+\tikz@lastmovetoy=\dimen303
+\tikzleveldistance=\dimen304
+\tikzsiblingdistance=\dimen305
 \tikz@figbox=\box67
 \tikz@figbox@bg=\box68
 \tikz@tempbox=\box69
 \tikz@tempbox@bg=\box70
-\tikztreelevel=\count312
-\tikznumberofchildren=\count313
-\tikznumberofcurrentchild=\count314
-\tikz@fig@count=\count315
+\tikztreelevel=\count317
+\tikznumberofchildren=\count318
+\tikznumberofcurrentchild=\count319
+\tikz@fig@count=\count320
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfmatrixcurrentrow=\count316
-\pgfmatrixcurrentcolumn=\count317
-\pgf@matrix@numberofcolumns=\count318
+\pgfmatrixcurrentrow=\count321
+\pgfmatrixcurrentcolumn=\count322
+\pgf@matrix@numberofcolumns=\count323
 )
-\tikz@expandcount=\count319
+\tikz@expandcount=\count324
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarytopaths.code.tex
@@ -1136,9 +1165,9 @@ de.tex
 \t@pgfplots@toka=\toks41
 \t@pgfplots@tokb=\toks42
 \t@pgfplots@tokc=\toks43
-\pgfplots@tmpa=\dimen305
-\c@pgfplots@coordindex=\count320
-\c@pgfplots@scanlineindex=\count321
+\pgfplots@tmpa=\dimen306
+\c@pgfplots@coordindex=\count325
+\c@pgfplots@scanlineindex=\count326
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgfplotssys
 generic.code.tex))
@@ -1156,13 +1185,13 @@ gfplotsliststructure.code.tex)
 gfplotsliststructureext.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
 gfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count322
+\c@pgfplotsarray@tmp=\count327
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
 gfplotsmatrix.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/numtable\pgfplo
 tstableshared.code.tex
-\c@pgfplotstable@counta=\count323
+\c@pgfplotstable@counta=\count328
 \t@pgfplotstable@a=\toks44
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/liststructure\p
@@ -1175,13 +1204,13 @@ nary.data.code.tex))
 il.verb.code.tex)
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/libs\pgflibrary
 pgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count324
+\c@pgfplotslibrarysurf@no=\count329
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgflibraryp
 gfplots.surfshading.pgfsys-xetex.def
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/sys\pgflibraryp
 gfplots.surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count325
+\c@pgfplotslibrarysurf@streamlen=\count330
 ))))
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgfplots/util\pgfplotsco
 lormap.code.tex
@@ -1211,14 +1240,14 @@ code.tex)
 ibraries\tikzlibrarydecorations.code.tex
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduledec
 orations.code.tex
-\pgfdecoratedcompleteddistance=\dimen306
-\pgfdecoratedremainingdistance=\dimen307
-\pgfdecoratedinputsegmentcompleteddistance=\dimen308
-\pgfdecoratedinputsegmentremainingdistance=\dimen309
-\pgf@decorate@distancetomove=\dimen310
-\pgf@decorate@repeatstate=\count326
-\pgfdecorationsegmentamplitude=\dimen311
-\pgfdecorationsegmentlength=\dimen312
+\pgfdecoratedcompleteddistance=\dimen307
+\pgfdecoratedremainingdistance=\dimen308
+\pgfdecoratedinputsegmentcompleteddistance=\dimen309
+\pgfdecoratedinputsegmentremainingdistance=\dimen310
+\pgf@decorate@distancetomove=\dimen311
+\pgf@decorate@repeatstate=\count331
+\pgfdecorationsegmentamplitude=\dimen312
+\pgfdecorationsegmentlength=\dimen313
 )
 \tikz@lib@dec@box=\box71
 )
@@ -1230,13 +1259,13 @@ s\pgflibrarydecorations.pathmorphing.code.tex))
 ibraries\tikzlibrarydecorations.pathreplacing.code.tex
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/decoration
 s\pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count327
-\pgfplots@xmin@reg=\dimen313
-\pgfplots@xmax@reg=\dimen314
-\pgfplots@ymin@reg=\dimen315
-\pgfplots@ymax@reg=\dimen316
-\pgfplots@zmin@reg=\dimen317
-\pgfplots@zmax@reg=\dimen318
+\pgfplots@numplots=\count332
+\pgfplots@xmin@reg=\dimen314
+\pgfplots@xmax@reg=\dimen315
+\pgfplots@ymin@reg=\dimen316
+\pgfplots@ymax@reg=\dimen317
+\pgfplots@zmin@reg=\dimen318
+\pgfplots@zmax@reg=\dimen319
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibraryplotmarks.code.tex
@@ -1251,35 +1280,35 @@ File: pgflibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen319
-\lightrulewidth=\dimen320
-\cmidrulewidth=\dimen321
-\belowrulesep=\dimen322
-\belowbottomsep=\dimen323
-\aboverulesep=\dimen324
-\abovetopsep=\dimen325
-\cmidrulesep=\dimen326
-\cmidrulekern=\dimen327
-\defaultaddspace=\dimen328
-\@cmidla=\count328
-\@cmidlb=\count329
-\@aboverulesep=\dimen329
-\@belowrulesep=\dimen330
-\@thisruleclass=\count330
-\@lastruleclass=\count331
-\@thisrulewidth=\dimen331
+\heavyrulewidth=\dimen320
+\lightrulewidth=\dimen321
+\cmidrulewidth=\dimen322
+\belowrulesep=\dimen323
+\belowbottomsep=\dimen324
+\aboverulesep=\dimen325
+\abovetopsep=\dimen326
+\cmidrulesep=\dimen327
+\cmidrulekern=\dimen328
+\defaultaddspace=\dimen329
+\@cmidla=\count333
+\@cmidlb=\count334
+\@aboverulesep=\dimen330
+\@belowrulesep=\dimen331
+\@thisruleclass=\count335
+\@lastruleclass=\count336
+\@thisrulewidth=\dimen332
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip73
-\multirow@cntb=\count332
+\multirow@cntb=\count337
 \multirow@dima=\skip74
-\bigstrutjot=\dimen332
+\bigstrutjot=\dimen333
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\subcaption.sty
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count333
-\c@subtable=\count334
+\c@subfigure=\count338
+\c@subtable=\count339
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarypatterns.code.tex
@@ -1307,11 +1336,11 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/tabulary\tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-\TY@count=\count335
-\TY@linewidth=\dimen333
-\tymin=\dimen334
-\tymax=\dimen335
-\TY@tablewidth=\dimen336
+\TY@count=\count340
+\TY@linewidth=\dimen334
+\tymin=\dimen335
+\tymax=\dimen336
+\TY@tablewidth=\dimen337
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xr.sty"
 Package: xr 2019/01/05 v5.04 eXternal References (DPC)
@@ -1323,7 +1352,7 @@ nment
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count336
+\c@float@type=\count341
 \float@exts=\toks46
 \float@box=\box76
 \@float@everytoks=\toks47
@@ -1333,7 +1362,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks48
-\c@algorithm=\count337
+\c@algorithm=\count342
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithmicx\algpseudocode
 .sty
@@ -1344,15 +1373,15 @@ sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count338
-\c@ALG@rem=\count339
-\c@ALG@nested=\count340
+\c@ALG@line=\count343
+\c@ALG@rem=\count344
+\c@ALG@nested=\count345
 \ALG@tlm=\skip75
 \ALG@thistlm=\skip76
-\c@ALG@Lnr=\count341
-\c@ALG@blocknr=\count342
-\c@ALG@storecount=\count343
-\c@ALG@tmpcounter=\count344
+\c@ALG@Lnr=\count346
+\c@ALG@blocknr=\count347
+\c@ALG@storecount=\count348
+\c@ALG@tmpcounter=\count349
 \ALG@tmplength=\skip77
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1377,12 +1406,12 @@ Package: titlesec 2019/07/16 v2.11 Sectioning titles
 \ttl@box=\box78
 \beforetitleunit=\skip87
 \aftertitleunit=\skip88
-\ttl@plus=\dimen337
-\ttl@minus=\dimen338
+\ttl@plus=\dimen338
+\ttl@minus=\dimen339
 \ttl@toksa=\toks49
-\titlewidth=\dimen339
-\titlewidthlast=\dimen340
-\titlewidthfirst=\dimen341
+\titlewidth=\dimen340
+\titlewidthlast=\dimen341
+\titlewidthfirst=\dimen342
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
@@ -1422,8 +1451,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip118
 \cftfigindent=\skip119
 \cftfignumwidth=\skip120
-\c@lofdepth=\count345
-\c@lotdepth=\count346
+\c@lofdepth=\count350
+\c@lotdepth=\count351
 \cftbeforelottitleskip=\skip121
 \cftafterlottitleskip=\skip122
 \cftbeforetabskip=\skip123
@@ -1432,16 +1461,16 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/appendix\appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count347
-\c@@ppsavesec=\count348
-\c@@ppsaveapp=\count349
+\c@@pps=\count352
+\c@@ppsavesec=\count353
+\c@@ppsaveapp=\count354
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip126
 \bibsep=\skip127
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count350
+\c@NAT@ctr=\count355
 )
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/quotchap\quotchap.sty
 Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
@@ -1449,27 +1478,55 @@ Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
 )
 \mybibindent=\skip128
 Package hyperref Info: Option `colorlinks' set `true' on input line 247.
+
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.sty
+\lst@mode=\count356
+\lst@gtempboxa=\box80
+\lst@token=\toks50
+\lst@length=\count357
+\lst@currlwidth=\dimen343
+\lst@column=\count358
+\lst@pos=\count359
+\lst@lostspace=\dimen344
+\lst@width=\dimen345
+\lst@newlines=\count360
+\lst@lineno=\count361
+\lst@maxwidth=\dimen346
+
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count362
+\lst@skipnumbers=\count363
+\lst@framebox=\box81
 )
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
+(C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang2.sty
+File: lstlang2.sty 2019/02/27 1.8b listings language file
+))
 (dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux)
 (chapters/chapter2.aux
 
 LaTeX Warning: Label `fig:uc1' multiply defined.
 
 
-LaTeX Warning: Label `sec:uc1' multiply defined.
-
-
 LaTeX Warning: Label `fig:uc1' multiply defined.
-
-
-LaTeX Warning: Label `sec:uc1' multiply defined.
 
 ) (chapters/chapter3.aux
 
+LaTeX Warning: Label `fig:graphql' multiply defined.
+
+
 LaTeX Warning: Label `tab:gqmeth' multiply defined.
 
-) (chapters/chapter5.aux) (chapters/conclusion.aux) (chapters/appendixA.aux)
-(chapters/appendixB.aux))
+) (chapters/chapter4.aux) (chapters/chapter5.aux) (chapters/conclusion.aux)
+(chapters/appendixA.aux) (chapters/appendixB.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1490,7 +1547,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-\AtBeginShipoutBox=\box80
+\AtBeginShipoutBox=\box82
 Package hyperref Info: Link coloring ON on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
@@ -1499,7 +1556,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count351
+\c@section@level=\count364
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1547,6 +1604,7 @@ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 6.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package caption Info: We need package `ragged2e' on input line 6.
 LaTeX Info: Redefining \microtypecontext on input line 6.
@@ -1563,6 +1621,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
+\c@lstlisting=\count365
 (frontmatter/personalize.tex) (frontmatter/personalize.tex)
 File: resources/unipd-light.png Graphic file (type bmp)
 <resources/unipd-light.png>
@@ -1608,13 +1667,13 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (dissertation.toc
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 1.
+(Font)              scaled to size 12.0pt on input line 3.
 
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1622,7 +1681,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\andre\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1632,25 +1691,25 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 [5
 
-] [6])
+] [6]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 205.
+ [7])
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
 
- [7] [8
-
-
-] (dissertation.lof
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 5.
-)
+ [8] (dissertation.lof)
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [9] [10
+ [9
+
+
+] [10
 
 ] (dissertation.lot
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 10.25006pt on input line 11.
+(Font)              scaled to size 10.25006pt on input line 13.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceCodePro' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1680,7 +1739,7 @@ ine 2.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 2.
 
-Chapter 1.
+Capitolo 1.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 12.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
@@ -1710,7 +1769,11 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/n' will be
 (Font)              scaled to size 14.4pt on input line 26.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/sc' will be
 (Font)              scaled to size 14.4pt on input line 26.
- [2] [3]
+ [2]
+
+Package natbib Warning: Citation `scrum' on page 3 undefined on input line 32.
+
+[3]
 File: figures/agile-development-process.png Graphic file (type bmp)
 <figures/agile-development-process.png>
  [4]
@@ -1735,7 +1798,7 @@ No file ../frontmatter/abbr.aux
 LABELS NOT IMPORTED.
  on input line 2.
 
-Chapter 2.
+Capitolo 2.
 [9
 
 
@@ -1791,15 +1854,33 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [13]
 File: figures/ruby.png Graphic file (type bmp)
 <figures/ruby.png>
- [14] [15]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 156.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 156.
- [16]
+
+
+Package natbib Warning: Citation `Ruby' on page 14 undefined on input line 131.
+
+
+[14] [15]
+
+Package natbib Warning: Citation `rfc4226' on page 16 undefined on input line 1
+56.
+
+
+Package natbib Warning: Citation `rfc6238' on page 16 undefined on input line 1
+56.
+
+[16]
 File: figures/rails.png Graphic file (type bmp)
 <figures/rails.png>
- [17] [18]
+
+
+Package natbib Warning: Citation `Rails' on page 17 undefined on input line 177
+.
+
+
+Package natbib Warning: Citation `DBLP:journals/corr/abs-1210-0530' on page 17 
+undefined on input line 181.
+
+[17] [18]
 File: figures/rubymine.png Graphic file (type bmp)
 <figures/rubymine.png>
  [19]
@@ -1843,7 +1924,7 @@ LABELS NOT IMPORTED.
 
 
 ]
-Chapter 3.
+Capitolo 3.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1868,57 +1949,80 @@ File: figures/uc/ucg1.png Graphic file (type bmp)
 File: figures/uc/uc6.png Graphic file (type bmp)
 <figures/uc/uc6.png>
  [30] [31]
-Overfull \hbox (10.02887pt too wide) in paragraph at lines 200--205
-\TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore vi
-ene correttamente disconnesso dal pannello di amministrazione. 
- []
-
 File: figures/uc/ucg2.png Graphic file (type bmp)
 <figures/uc/ucg2.png>
-[32] [33] [34] [35] [36] [37] [38] [39]
-Overfull \hbox (2.42888pt too wide) in paragraph at lines 397--403
-\TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
-re invia una richiesta di inserimento della diagnosi per l’esame
- []
-
-[40] [41]
-Overfull \hbox (1.1969pt too wide) in paragraph at lines 473--479
-\TU/EBGaramond(0)/bx/sc/12 Scopo e descrizione: \TU/EBGaramond(0)/m/n/12 L’atto
-re vuole aggiornare la tabella della dieta associata ad un esame. 
- []
-
-[42] [43]
-Overfull \hbox (10.1841pt too wide) in paragraph at lines 517--523
-\TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
-re invia la richiesta [][]HTTP[][] corretta per il nuovo stato dell’esame
- []
+ [32] [33]
+File: figures/uc/uc11.png Graphic file (type bmp)
+<figures/uc/uc11.png>
 
 
-Overfull \hbox (4.68489pt too wide) in paragraph at lines 517--523
-\TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 L’attore ha
- ricevuto una risposta che conferma il successo dell’operazione. 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34]
+File: figures/uc/uc12.png Graphic file (type bmp)
+<figures/uc/uc12.png>
+ [35] [36]
+File: figures/uc/uc13.png Graphic file (type bmp)
+<figures/uc/uc13.png>
+ [37]
+File: figures/uc/uc14.png Graphic file (type bmp)
+<figures/uc/uc14.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38] [39] [40]
+File: figures/uc/ucg3.png Graphic file (type bmp)
+<figures/uc/ucg3.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[41] [42] [43]
+File: figures/uc/ucg4.png Graphic file (type bmp)
+<figures/uc/ucg4.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44] [45]
-Overfull \hbox (19.9121pt too wide) in paragraph at lines 563--568
+File: figures/uc/ucg5.png Graphic file (type bmp)
+<figures/uc/ucg5.png>
+ [46] [47] [48] [49]
+Overfull \hbox (19.9121pt too wide) in paragraph at lines 603--608
 \TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
 re invia la richiesta [][]HTTP[][] contenente dati non validi all’\TU/EBGaramon
 d(0)/m/it/12 endpoint
  []
 
-[46]
-Underfull \vbox (badness 10000) detected at line 669
+[50]
+Underfull \vbox (badness 10000) detected at line 710
  []
 
-[47] [48] [49] [50] [51]
-Underfull \vbox (badness 10000) detected at line 686
+[51] [52] [53] [54] [55]
+Underfull \vbox (badness 10000) detected at line 727
  []
 
-[52]
-Underfull \vbox (badness 10000) detected at line 701
+
+Underfull \hbox (badness 3260) in paragraph at lines 742--742
+[]\TU/EBGaramond(0)/m/n/12 Il prodotto deve mettere interfacciarsi con il \TU/E
+BGaramond(0)/m/it/12 front end \TU/EBGaramond(0)/m/n/12 esponendo una
  []
 
-) [53]
+
+Underfull \hbox (badness 1412) in paragraph at lines 742--742
+[]\TU/EBGaramond(0)/m/n/12 L’autenticazione delle richieste GraphQL deve avveni
+re tramite la gemma
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \vbox (badness 10000) detected at line 742
+ []
+
+) [57]
 \openout2 = `chapters/chapter3.aux'.
 
  (chapters/chapter3.tex
@@ -1934,541 +2038,538 @@ No file ./chapter1.aux
 LABELS NOT IMPORTED.
  on input line 3.
 
-[54
+[58
 
 
 
 ]
-Chapter 4.
-[55] [56] [57]
-Underfull \vbox (badness 6775) has occurred while \output is active []
+Capitolo 4.
+[59] [60]
+File: figures/rest.png Graphic file (type bmp)
+<figures/rest.png>
+ [61] [62]
+File: figures/graphqlhttp.png Graphic file (type bmp)
+<figures/graphqlhttp.png>
+ [63]
+File: figures/railsme.png Graphic file (type bmp)
+<figures/railsme.png>
 
- [58]
-[59]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[64]
 LaTeX Font Info:    Font shape `TU/EBGaramond(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 98.
+(Font)              scaled to size 12.0pt on input line 119.
 
+Underfull \vbox (badness 1303) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [65]
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/bx/n' will be
-(Font)              scaled to size 10.25006pt on input line 110.
-[60] [61]
+(Font)              scaled to size 10.25006pt on input line 131.
+
+[66]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/it' will be
-(Font)              scaled to size 12.0pt on input line 129.
- [62] [63]
-Underfull \hbox (badness 4832) in paragraph at lines 170--170
-[]\TU/EBGaramond(0)/m/n/12 Un esame appartiene ad un
- []
-
-
-Underfull \hbox (badness 5908) in paragraph at lines 170--170
-\TU/EBGaramond(0)/m/n/12 solo cliente, un cliente può
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 170--170
+(Font)              scaled to size 12.0pt on input line 150.
+ [67] [68]
+Underfull \hbox (badness 1515) in paragraph at lines 191--191
 []\TU/EBGaramond(0)/m/n/12 Un esame è effettuato presso
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 170--170
-[]\TU/EBGaramond(0)/m/n/12 Un esame può usare un solo
+Underfull \hbox (badness 4132) in paragraph at lines 191--191
+[]\TU/EBGaramond(0)/m/n/12 Un esame può usare un so-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\TU/EBGaramond(0)/m/it/12 template \TU/EBGaramond(0)/m/n/12 di questionario, il
-
- []
-
-
-Underfull \hbox (badness 1975) in paragraph at lines 170--170
+Underfull \hbox (badness 1975) in paragraph at lines 191--191
 \TU/EBGaramond(0)/m/n/12 quale viene condiviso da più
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 170--170
+Underfull \hbox (badness 5431) in paragraph at lines 191--191
 []\TU/EBGaramond(0)/m/n/12 Il questionario di un esame
  []
 
 
-Underfull \vbox (badness 10000) detected at line 170
+Underfull \vbox (badness 10000) detected at line 191
  []
 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Stato di avanzamento
  []
 
 
-Underfull \hbox (badness 8189) in paragraph at lines 194--194
-[]\TU/EBGaramond(0)/m/n/12 Data e ora di ultima
- []
-
-
-Underfull \hbox (badness 5203) in paragraph at lines 194--194
-\TU/EBGaramond(0)/m/n/12 compilazione del ques-
- []
-
-
-Underfull \hbox (badness 1337) in paragraph at lines 194--194
-\TU/EBGaramond(0)/m/n/12 ciato ad un esame, im-
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 194--194
+Underfull \hbox (badness 1005) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Data e ora di ricezione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-\TU/EBGaramond(0)/m/n/12 del campione dal
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 194--194
+Underfull \hbox (badness 3128) in paragraph at lines 215--215
 \TU/EBGaramond(0)/m/n/12 del campione associato
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 194--194
+Underfull \hbox (badness 2261) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Referto delle analisi in
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 194--194
+Underfull \hbox (badness 1005) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Data e ora di ricezione
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 194--194
+Underfull \hbox (badness 1314) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Note allegate al referto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\TU/EBGaramond(0)/m/n/12 Diagnosi generale del
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]\TU/EBGaramond(0)/m/n/12 Principio attivo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\TU/EBGaramond(0)/m/n/12 Diagnosi specifica del
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\TU/EBGaramond(0)/m/n/12 Principio attivo con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []\TU/EBGaramond(0)/m/n/12 Tabella della dieta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 \TU/EBGaramond(0)/m/n/12 (una rappresentazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 \TU/EBGaramond(0)/m/it/12 color-coded \TU/EBGaramond(0)/m/n/12 del benefi-
  []
 
 
-Underfull \hbox (badness 6332) in paragraph at lines 194--194
+Underfull \hbox (badness 6332) in paragraph at lines 215--215
 \TU/EBGaramond(0)/m/n/12 cio apportato da certi
  []
 
 
-Underfull \vbox (badness 10000) detected at line 194
+Underfull \vbox (badness 10000) detected at line 215
  []
 
-[65]
-Underfull \hbox (badness 4266) in paragraph at lines 213--213
+[70]
+Underfull \hbox (badness 4266) in paragraph at lines 234--234
 []\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 che verifica se i
 l campione
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 213--213
+Underfull \hbox (badness 2173) in paragraph at lines 234--234
 \TU/EBGaramond(0)/m/n/12 è stato spedito e aggiorna l’attributo
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 213--213
-[]\TU/EBGaramond(0)/m/n/12 Invoca il servizio di generazione del
+Underfull \hbox (badness 5787) in paragraph at lines 234--234
+[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 di validazione, v
+erifica che
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 213--213
-\TU/EBGaramond(0)/m/n/12 referto dettagliato, con l’opzione di
+Underfull \vbox (badness 10000) detected at line 234
+ []
+
+[71] [72]
+Underfull \vbox (badness 10000) detected at line 253
  []
 
 
-Underfull \vbox (badness 10000) detected at line 213
- []
-
-[66] [67]
-Underfull \vbox (badness 10000) detected at line 232
- []
-
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[]\TU/EBGaramond(0)/m/n/12 [C] Insieme degli attributi che de-
+Underfull \hbox (badness 1796) in paragraph at lines 277--277
+[]\TU/EBGaramond(0)/m/n/12 [P,G,B] Token per il reset della pas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-\TU/EBGaramond(0)/m/n/12 scrivono le informazioni personali
+Underfull \hbox (badness 5954) in paragraph at lines 277--277
+[]\TU/EBGaramond(0)/m/n/12 [C] Data e ora della conferma del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-\TU/EBGaramond(0)/m/n/12 del cliente, inserite in fase di reg-
- []
-
-
-Underfull \hbox (badness 7397) in paragraph at lines 256--256
-\TU/EBGaramond(0)/m/n/12 istrazione. Ne fa parte l’attributo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[]\TU/EBGaramond(0)/m/n/12 [P,G,B] Password dell’utente crit-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[]\TU/EBGaramond(0)/m/n/12 [P,G,B] Insieme di token che de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-\TU/EBGaramond(0)/m/n/12 scrivono una sessione dell’utente,
- []
-
-
-Underfull \hbox (badness 1917) in paragraph at lines 256--256
+Underfull \hbox (badness 1917) in paragraph at lines 277--277
 []\TU/EBGaramond(0)/m/n/12 [C] Data e ora dell’ultimo invio del
  []
 
 
-Underfull \vbox (badness 10000) detected at line 256
+Underfull \vbox (badness 10000) detected at line 277
  []
 
-[69]
-Underfull \vbox (badness 10000) detected at line 272
+[73] [74]
+Underfull \vbox (badness 10000) detected at line 293
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
-Underfull \hbox (badness 2065) in paragraph at lines 296--296
+ [75]
+Underfull \hbox (badness 5331) in paragraph at lines 317--317
+[]\TU/EBGaramond(0)/m/n/12 Una farmacia può avviare più esami,
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 317--317
+\TU/EBGaramond(0)/m/n/12 un esame viene fatto presso una sola
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 317--317
 []\TU/EBGaramond(0)/m/n/12 Una farmacia può fare più spedizioni,
  []
 
 
-Underfull \vbox (badness 10000) detected at line 296
- []
-
-[71]
-Underfull \vbox (badness 10000) detected at line 316
+Underfull \hbox (badness 5245) in paragraph at lines 317--317
+\TU/EBGaramond(0)/m/n/12 una spedizione proviene da una sola
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [72]
-Underfull \vbox (badness 10000) detected at line 332
- []
-
-
-Underfull \vbox (badness 10000) detected at line 342
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 359--359
-\TU/EBGaramond(0)/m/n/12 sola domanda; le domande aperte non
- []
-
-
-Underfull \vbox (badness 2150) has occurred while \output is active []
-
- [73]
-Underfull \vbox (badness 10000) detected at line 359
- []
-
-
-Underfull \vbox (badness 10000) detected at line 372
- []
-
-
-Underfull \vbox (badness 10000) detected at line 383
- []
-
-
-Overfull \vbox (3.16682pt too high) has occurred while \output is active []
-
-
-[74]
-Underfull \vbox (badness 10000) detected at line 398
- []
-
-
-Underfull \vbox (badness 10000) detected at line 411
- []
-
-
-Underfull \vbox (badness 10000) detected at line 421
- []
-
-[75]
-Underfull \hbox (badness 1983) in paragraph at lines 441--441
-\TU/EBGaramond(0)/m/n/12 possibile può essere selezionata in più
- []
-
-
-Underfull \vbox (badness 10000) detected at line 441
+Underfull \vbox (badness 10000) detected at line 317
  []
 
 [76]
-Underfull \hbox (badness 1596) in paragraph at lines 454--454
-[]\TU/EBGaramond(0)/m/n/12 Testo della risposta, denormaliz-
- []
-
-
-Underfull \vbox (badness 10000) detected at line 454
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 465--465
-[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 eseguito prima di
- ogni validazione per risposte a do-
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 465--465
-\TU/EBGaramond(0)/m/n/12 mande a scelta singola o multipla, denormalizza i test
-i ed i valori
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 465--465
-\TU/EBGaramond(0)/m/n/12 delle \TU/SourceCodePro(0)/m/n/12 PossibleAnswer \TU/E
-BGaramond(0)/m/n/12 associate e li assegna ai rispettivi attributi
- []
-
-
-Underfull \vbox (badness 10000) detected at line 465
+Underfull \vbox (badness 10000) detected at line 337
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
-Underfull \vbox (badness 10000) detected at line 483
+Underfull \vbox (badness 10000) detected at line 353
  []
 
 
-Underfull \vbox (badness 10000) detected at line 499
- []
-
-[78]
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
-[]\TU/EBGaramond(0)/m/n/12 Prenota il ritiro della spedizione, creando un’istan
-za di
+Underfull \vbox (badness 10000) detected at line 363
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 511--511
-\TU/SourceCodePro(0)/m/n/12 SDA::Client \TU/EBGaramond(0)/m/n/12 e richiedendo 
-l’invio di una richiesta di preno-
+Underfull \hbox (badness 1983) in paragraph at lines 380--380
+\TU/EBGaramond(0)/m/n/12 sola domanda; le domande aperte non
  []
 
 
-Underfull \vbox (badness 10000) detected at line 511
+Underfull \vbox (badness 2150) has occurred while \output is active []
+
+ [78]
+Underfull \vbox (badness 10000) detected at line 380
  []
+
+
+Underfull \vbox (badness 10000) detected at line 393
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 404
+ []
+
+
+Overfull \vbox (3.16682pt too high) has occurred while \output is active []
+
 
 [79]
-Underfull \vbox (badness 10000) detected at line 533
+Underfull \vbox (badness 10000) detected at line 419
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 544--544
-[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 eseguito alla cre
-azione di un account, genera
+Underfull \hbox (badness 6691) in paragraph at lines 432--432
+[]\TU/EBGaramond(0)/m/n/12 Posizione nell’ordine delle risposte alla domanda
  []
 
 
-Underfull \vbox (badness 10000) detected at line 544
+Underfull \vbox (badness 10000) detected at line 432
  []
+
+
+Underfull \vbox (badness 10000) detected at line 442
+ []
+
+
+Overfull \vbox (7.93672pt too high) has occurred while \output is active []
+
 
 [80]
-Underfull \vbox (badness 10000) detected at line 565
+Underfull \vbox (badness 10000) detected at line 462
+ []
+
+[81]
+Underfull \vbox (badness 10000) detected at line 475
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1292) in paragraph at lines 486--486
+[]\TU/EBGaramond(0)/m/it/12 Callback \TU/EBGaramond(0)/m/n/12 eseguito prima di
+ ogni validazione per risposte a doman-
+ []
 
- [81]
-Underfull \vbox (badness 10000) detected at line 591
+
+Underfull \hbox (badness 5726) in paragraph at lines 486--486
+\TU/EBGaramond(0)/m/n/12 de a scelta singola o multipla, denormalizza i testi e
+d i valori
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 486--486
+\TU/EBGaramond(0)/m/n/12 delle \TU/SourceCodePro(0)/m/n/12 PossibleAnswer \TU/E
+BGaramond(0)/m/n/12 associate e li assegna ai rispettivi attribu-
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 486--486
+\TU/EBGaramond(0)/m/n/12 ti \TU/SourceCodePro(0)/m/n/12 denormalized \TU/EBGara
+mond(0)/m/n/12 (idem per gli attributi rilevanti della \TU/SourceCodePro(0)/m/n
+/12 Question
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 486
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [82]
-Underfull \hbox (badness 10000) in paragraph at lines 605--605
-\TU/EBGaramond(0)/m/n/12 includendo le generalità a seconda del ruolo
+Underfull \vbox (badness 10000) detected at line 504
  []
 
 
-Underfull \vbox (badness 10000) detected at line 605
+Underfull \hbox (badness 1748) in paragraph at lines 520--520
+[]\TU/EBGaramond(0)/m/n/12 Stato di avanzamento della spedizione; non pie-
  []
 
 
-Underfull \vbox (badness 10000) detected at line 616
+Underfull \vbox (badness 10000) detected at line 520
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
+[]\TU/EBGaramond(0)/m/n/12 Prenota il ritiro della spedizione, creando un’istan
+za di
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 532--532
+\TU/SourceCodePro(0)/m/n/12 SDA::Client \TU/EBGaramond(0)/m/n/12 e richiedendo 
+l’invio di una richiesta di preno-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 532
+ []
+
+[84]
+Underfull \vbox (badness 10000) detected at line 554
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 565
+ []
+
+[85]
+Underfull \hbox (badness 1052) in paragraph at lines 586--586
+[]\TU/EBGaramond(0)/m/it/12 View \TU/EBGaramond(0)/m/n/12 di conferma in rispos
+ta alla richiesta di inizio delle analisi di un
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 586
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
-Underfull \vbox (badness 10000) detected at line 639
- []
-
-
-Underfull \vbox (badness 10000) detected at line 649
- []
-
-
-Underfull \vbox (badness 10000) detected at line 659
+ [86]
+Underfull \vbox (badness 10000) detected at line 612
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+ [87]
+Underfull \vbox (badness 10000) detected at line 626
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 637--637
+\TU/EBGaramond(0)/m/n/12 dedicato; estrae i parametri e la \TU/EBGaramond(0)/m/
+it/12 query \TU/EBGaramond(0)/m/n/12 GraphQL dalla richiesta, li va-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 637
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [88]
+Underfull \vbox (badness 10000) detected at line 660
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 670
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 680
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89]
+Underfull \hbox (badness 1400) in paragraph at lines 720--720
+[]\TU/EBGaramond(0)/m/n/12 Tipo enumerativo per i colori della tabella della
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 699--699
+Underfull \hbox (badness 3724) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo enumerativo per la rappresentazione della
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 699--699
+Underfull \hbox (badness 1371) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo enumerativo per la rappresentazione di un
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 720--720
 []\TU/EBGaramond(0)/m/n/12 Tipo per la rappresentazione di un \TU/EBGaramond(0)
 /m/it/12 model
- []
-
-
-Underfull \vbox (badness 10000) detected at line 699
- []
-
-[85]
-Underfull \hbox (badness 3240) in paragraph at lines 720--720
-[]\TU/EBGaramond(0)/m/n/12 Restituisce tutti gli utenti con ruolo “cus-
  []
 
 
 Underfull \vbox (badness 10000) detected at line 720
  []
 
-[86]
-Underfull \vbox (badness 10000) detected at line 752
- []
-
-[87] [88]
-Overfull \hbox (2.78891pt too wide) in paragraph at lines 763--764
-[]\TU/EBGaramond(0)/m/n/12 Per poter generare anche referti anonimizzati, quest
-e aggiunte sono state separate in metodi
- []
-
-
-Underfull \vbox (badness 10000) detected at line 777
- []
-
-[89]
-Underfull \vbox (badness 10000) detected at line 794
- []
-
 [90]
-Underfull \vbox (badness 10000) detected at line 808
+Underfull \hbox (badness 5175) in paragraph at lines 741--741
+[]\TU/EBGaramond(0)/m/n/12 Restituisce tutti gli utenti con ruolo “cu-
  []
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 816--816
+Underfull \hbox (badness 1424) in paragraph at lines 741--741
+\TU/EBGaramond(0)/m/n/12 stomer” iscritti alla farmacia dell’utente che
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 741
+ []
+
+[91]
+Underfull \vbox (badness 10000) detected at line 773
+ []
+
+[92] [93]
+Underfull \hbox (badness 6300) in paragraph at lines 798--798
+[]\TU/EBGaramond(0)/m/n/12 Avvia la pipeline di generazione completa di tutte l
+e
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 798
+ []
+
+[94]
+Underfull \vbox (badness 10000) detected at line 815
+ []
+
+[95]
+Underfull \vbox (badness 10000) detected at line 829
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 837--837
 []\TU/EBGaramond(0)/m/n/12 Invia un messaggio ad un numero adattando la relativ
 a funzione di
  []
 
 
-Underfull \vbox (badness 10000) detected at line 816
+Underfull \vbox (badness 10000) detected at line 837
  []
 
-[91]
+[96]
 File: figures/classdia.png Graphic file (type bmp)
 <figures/classdia.png>
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 864
  []
 
-[92]
-Underfull \vbox (badness 10000) detected at line 852
+[97]
+Underfull \vbox (badness 10000) detected at line 873
  []
 
-[93] [94]
-Underfull \hbox (badness 10000) in paragraph at lines 901--901
-[]\TU/EBGaramond(0)/m/n/12 Download dell’eventuale mod-
+[98] [99]
+Underfull \vbox (badness 10000) detected at line 922
+ []
+
+) [100]
+\openout2 = `chapters/chapter4.aux'.
+
+ (chapters/chapter4.tex
+
+Package xr Warning: 
+No file ../frontmatter/abbr.aux
+LABELS NOT IMPORTED.
+ on input line 2.
+
+Capitolo 5.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/itsc' will be
+(Font)              scaled to size 14.4pt on input line 17.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101
+
+
+
+]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 20.
+LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/bx/n' will be
+(Font)              scaled to size 8.54172pt on input line 32.
+
+[102] [103]
+Overfull \hbox (91.55443pt too wide) in paragraph at lines 88--89
+\TU/EBGaramond(0)/m/n/12 In questa sezione verranno analizzati dei segmenti del
+l’implementazione di \TU/SourceCodePro(0)/m/n/12 API::SampleSessionController
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 901--901
-[]\TU/SourceCodePro(0)/m/n/12 User \TU/EBGaramond(0)/m/n/12 con role “gastroent
-erolo-
- []
+Underfull \vbox (badness 1400) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) detected at line 901
- []
-
-) [95]
+ [104]
+[105] [106] [107]) [108]
 \openout2 = `chapters/chapter5.aux'.
 
  (chapters/chapter5.tex
@@ -2484,45 +2585,25 @@ No file ./chapter1.aux
 LABELS NOT IMPORTED.
  on input line 3.
 
-[96
+Capitolo 6.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109
 
 
 
 ]
-Chapter 5.
-[97] [98]
-Overfull \hbox (8.40091pt too wide) in paragraph at lines 32--33
-\TU/EBGaramond(0)/m/n/12 stato configurato in modo da effettuare una pulizia co
-mpleta del database prima dell’esecuzione
- []
-
-
-Overfull \hbox (14.56334pt too wide) in paragraph at lines 46--47
-\TU/EBGaramond(0)/m/n/12 I test di integrazione realizzati riguardano principal
-mente il funzionamento della [][]API[][] GraphQL,
- []
-
-[99]) [100]
+[110] [111]) [112]
 \openout2 = `chapters/conclusion.aux'.
 
  (chapters/conclusion.tex
-Chapter 6.
-[101
+Capitolo 7.
+[113
 
 
 
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 1496) has occurred while \output is active []
-
- [102])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [103]
-[104]
+] [114]) [115] [116]
 \openout2 = `chapters/appendixA.aux'.
 
  (chapters/appendixA.tex
@@ -2533,63 +2614,25 @@ LABELS NOT IMPORTED.
  on input line 2.
 
 Appendice A.
-[105
+[117
 
 
 
 
-] [106] [107] [108] [109]
-Overfull \hbox (1.11911pt too wide) in paragraph at lines 170--170
-|[]\TU/EBGaramond(0)/bx/sc/14.4 UC6.10.1: Generazione nuova password per un ute
-nte| 
- []
+] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128]
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
-[110] [111]
-Overfull \hbox (0.3169pt too wide) in paragraph at lines 232--238
-\TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/12 Il sistema 
-ha reimpostato correttamente la password per l’utente desider-
- []
-
-[112] [113]
-Overfull \hbox (53.13187pt too wide) in paragraph at lines 277--277
-|[]\TU/EBGaramond(0)/bx/sc/14.4 UC12.2: Richiesta storico degli esami in base a
-ll’avanzamento| 
- []
-
-[114] [115] [116]
-Overfull \hbox (8.16489pt too wide) in paragraph at lines 341--347
-\TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
-re invia al sistema una richiesta di aggiornamento delle risposte
- []
-
-
-Overfull \hbox (25.51692pt too wide) in paragraph at lines 341--347
-\TU/EBGaramond(0)/m/n/12 ato all’esame desiderato e l’attore ha ricevuto un mes
-saggio di conferma del successo dell’operazione. 
- []
-
-[117] [118] [119]
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/bx/itsc' will be
-(Font)              scaled to size 14.4pt on input line 422.
-
-Overfull \hbox (11.83289pt too wide) in paragraph at lines 424--430
-\TU/EBGaramond(0)/bx/sc/12 Scenario principale: \TU/EBGaramond(0)/m/n/12 L’atto
-re invia al sistema una richiesta di registrazione dell’accettazione
- []
-
-
+ [129]
+[130] [131]
 Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
-[120]
-Overfull \hbox (7.3582pt too wide) in paragraph at lines 442--448
-\TU/EBGaramond(0)/m/n/12 alla farmacia corrente fornendone il codice identifica
-tivo interno. \TU/EBGaramond(0)/bx/sc/12 Postcondizioni: \TU/EBGaramond(0)/m/n/
-12 L’attore
- []
 
-[121] [122]) [123]
+Underfull \vbox (badness 1629) has occurred while \output is active []
+
+ [132]
+[133] [134]) [135]
 \openout2 = `chapters/appendixB.aux'.
 
  (chapters/appendixB.tex
@@ -2599,7 +2642,7 @@ No file ./chapter2.aux
 LABELS NOT IMPORTED.
  on input line 2.
 
-[124
+[136
 
 
 
@@ -2609,42 +2652,45 @@ Appendice B.
 Underfull \vbox (badness 10000) detected at line 96
  []
 
-[125
+[137
 
-] [126] [127]
+] [138] [139]
 Underfull \vbox (badness 10000) detected at line 184
  []
 
-[128] [129] [130]) [131]
+[140] [141] [142]) [143]
 No file dissertation.bbl.
-[132
+[144
 
 
-] (frontmatter/thanks.tex) [133
+] (frontmatter/thanks.tex) [145
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
- (dissertation.aux
-(chapters/introduction.aux) (chapters/chapter1.aux) (chapters/chapter2.aux)
-(chapters/chapter3.aux) (chapters/chapter5.aux) (chapters/conclusion.aux)
-(chapters/appendixA.aux) (chapters/appendixB.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+(dissertation.aux (chapters/introduction.aux) (chapters/chapter1.aux)
+(chapters/chapter2.aux) (chapters/chapter3.aux) (chapters/chapter4.aux)
+(chapters/chapter5.aux) (chapters/conclusion.aux) (chapters/appendixA.aux)
+(chapters/appendixB.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 300FE4F307B89B792A223C80EB0B18BA.
+(rerunfilecheck)             Checksum: C5743DD1703613615016A0C1817ADE0D.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 48655 strings out of 427669
- 1069627 string characters out of 3149215
- 1381398 words of memory out of 3000000
- 51949 multiletter control sequences out of 15000+200000
- 541210 words of font info for 114 fonts, out of 3000000 for 9000
+ 50654 strings out of 427669
+ 1097741 string characters out of 3149215
+ 1579419 words of memory out of 3000000
+ 53899 multiletter control sequences out of 15000+200000
+ 539503 words of font info for 105 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 85i,11n,138p,1460b,900s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 85i,11n,138p,1460b,1796s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on dissertation.pdf (147 pages).
+Output written on dissertation.pdf (159 pages).

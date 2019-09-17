@@ -17,7 +17,7 @@
 % Options
 %
 \RequirePackage{etoolbox}
-
+\usepackage[italian]{babel}
 % Line spacing: dsingle/ddouble
 %   Whether to use single- or doublespacing.
 \newtoggle{DissertateSingleSpace}
@@ -244,6 +244,19 @@
     filecolor=black,
     linkcolor=black,
     urlcolor=SchoolColor,
+}
+\usepackage{listings}
+
+\lstloadlanguages{Ruby}
+\lstset{%
+	basicstyle=\ttfamily\color{black},
+	commentstyle = \ttfamily\color{red},
+	keywordstyle=\ttfamily\color{blue},
+	stringstyle=\color{orange},
+	showstringspaces=false,
+	tabsize=2,
+	breaklines=true,
+	breakatwhitespace=false,
 }
 
 

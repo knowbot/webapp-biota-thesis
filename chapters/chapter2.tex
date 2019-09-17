@@ -2,9 +2,9 @@
 \externaldocument{../frontmatter/abbr}
 \externaldocument{./appendixA}
 \externaldocument{./appendixB}
-\begin{savequote}[75mm]
-This is some random quote to start off the chapter.
-\qauthor{Firstname lastname}
+    \begin{savequote}[75mm]
+        You insist that there is something a machine cannot do. If you tell me precisely what it is a machine cannot do, then I can always make a machine which will do just that.
+\qauthor{John von Neumann}
 \end{savequote}
 \chapter{Analisi dei requisiti}
 \label{chap3}
@@ -93,7 +93,6 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 
 \subsection{UC3: Autenticazione front end}
 \label{sec:uc3}
-\label{sec:uc1}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{figures/uc/uc3gen.png}
@@ -128,8 +127,7 @@ Per una miglior suddivisione, le operazioni che avvengono sotto condizioni molto
 \textsc{\textbf{Postcondizioni:}} L'utente specificato dall'attore non viene riconosciuto e non ha ricevuto i dati di una sessione valida.
 
 \subsection{UCG1: Operazioni amministrative}
-\label{sec:ucg1}
-\label{sec:uc1}    
+\label{sec:ucg1}  
 Questo caso d'uso generale riassume le operazioni disponibili ad un utente autorizzato che abbia eseguito l'accesso al pannello di amministrazione. La maggior parte delle operazioni sui record sono identiche tra loro, e verranno quindi riportate in modo generalizzato; eventuali operazioni specifiche verranno contestualizzate nel proprio caso d'uso.
 \begin{figure}[h!]
     \centering
@@ -239,6 +237,12 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsubsection{UC11: Gestione utenti}
 \label{sec:UC11}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc11.png}
+    \caption[Diagramma UML per UC11]{Diagramma UML per UC11
+    \label{fig:uc11}}
+\end{figure}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti con ruolo ``pharmacy'' appartenenti alla farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -256,6 +260,12 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsubsection{UC12: Gestione esami}
 \label{sec:UC12}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc12.png}
+    \caption[Diagramma UML per UC12]{Diagramma UML per UC12
+    \label{fig:uc12}}
+\end{figure}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire gli altri utenti con ruolo ``pharmacy'' appartenenti alla farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -274,6 +284,12 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsubsection{UC13: Gestione clienti}
 \label{sec:UC13}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc13.png}
+    \caption[Diagramma UML per UC13]{Diagramma UML per UC13
+    \label{fig:uc13}}
+\end{figure}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire i clienti appartenenti alla farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -292,6 +308,12 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsubsection{UC14: Gestione spedizioni}
 \label{sec:UC14}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/uc14.png}
+    \caption[Diagramma UML per UC14]{Diagramma UML per UC14
+    \label{fig:uc14}}
+\end{figure}
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole gestire le spedizioni per la farmacia corrente.\\
 \textsc{\textsc{\textbf{Precondizioni:}}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``pharmacy''.\\
@@ -359,7 +381,13 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsection{UCG3: Operazioni per utente ``gastroenterologist''}
 \label{sec:UCG3}
-Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``gastroenterologist''. Valgono le stesse considerazioni fatte per \hyperref[sec:UCG2]{UCG2}, con l'eccezione dei record disponibili: nella descrizione dei seguenti casi d'uso le operazioni non sono ristrette ai record associati ad una farmacia, ma escludono rigorosamente i dati personali dei clienti.\\
+Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``gastroenterologist''. Valgono le stesse considerazioni fatte per \hyperref[sec:UCG2]{UCG2}, con l'eccezione dei record disponibili: nella descrizione dei seguenti casi d'uso le operazioni non sono ristrette ai record associati ad una farmacia, ma escludono rigorosamente i dati personali dei clienti.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/ucg3.png}
+    \caption[Diagramma UML per UCG3]{Diagramma UML per UCG3
+    \label{fig:ucg3}}
+\end{figure}\\
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni permesse ad un utente con ruolo di ``gastroenterologist''.\\
 \textsc{\textbf{Precondizioni:}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``gastroenterologist''.\\
@@ -427,6 +455,12 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 \subsection{UCG4: Operazioni per utente ``bmr''}
 \label{sec:UCG4}
 Questo caso d'uso generale riassume le operazioni disponibili al \textit{front end} quando è attiva una sessione per un utente con ruolo di ``bmr'' (supervisore del laboratorio). Valgono le stesse considerazioni fatte per \hyperref[sec:UCG3]{UCG3}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/ucg4.png}
+    \caption[Diagramma UML per UCG4]{Diagramma UML per UCG4
+    \label{fig:ucg4}}
+\end{figure}\\
 \textsc{\textbf{Attori:}} Front end.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni permesse ad un utente con ruolo di ``bmr''.\\
 \textsc{\textbf{Precondizioni:}} L'attore è collegato al sistema e possiede una sessione attiva per un utente con ruolo ``bmr''.\\
@@ -479,7 +513,13 @@ Questo caso d'uso generale riassume le operazioni disponibili al \textit{front e
 
 \subsection{UCG5: Operazioni per il gestionale del laboratorio}
 \label{sec:UCG5}
-Questo caso d'uso generale riassume le operazioni disponibili al software gestionale del laboratorio attraverso gli appositi \textit{endpoint} \ref{itm:http}. Si prevede che le richieste \ref{itm:http} contengano, nella sezione \textit{header}, le credenziali necessarie per l'autenticazione tramite HMAC.\\ 
+Questo caso d'uso generale riassume le operazioni disponibili al software gestionale del laboratorio attraverso gli appositi \textit{endpoint} \ref{itm:http}. Si prevede che le richieste \ref{itm:http} contengano, nella sezione \textit{header}, le credenziali necessarie per l'autenticazione tramite HMAC.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/uc/ucg5.png}
+    \caption[Diagramma UML per UCG5]{Diagramma UML per UCG5
+    \label{fig:ucg5}}
+\end{figure}\\ 
 \textsc{\textbf{Attori:}} Gestionale laboratorio.\\
 \textsc{\textbf{Scopo e descrizione:}} L'attore vuole eseguire operazioni rese disponibili dagli \textit{endpoint} esposti.\\
 \textsc{\textbf{Precondizioni:}} L'attore ha accesso agli \textit{endpoint} forniti dal sistema e possiede le credenziali necessarie per l'autenticazione HMAC.\\
@@ -581,6 +621,7 @@ Si farà riferimento ai requisiti secondo la seguente notazione:\\
     \item \textbf{tipo}: indica la categoria del requisito, può essere F (funzionale), Q (qualitativo) o V (di vincolo);
     \item \textbf{identificativo}: numero progressivo che serve a distinguere i vari sotto-requisiti.
 \end{itemize}
+\vspace{-12pt}
 \subsection{Requisiti funzionali}
 \label{tab:reqfun}
 \tabulinesep=5pt

@@ -2,13 +2,13 @@
 \externaldocument{../frontmatter/abbr}
 \externaldocument{./chapter1}
 \begin{savequote}[75mm]
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
-\qauthor{Quoteauthor Lastname}
+        I'll be more enthusiastic about encouraging thinking outside the box when there's evidence of any thinking going on inside it.
+\qauthor{Terry Pratchett}
 \end{savequote}
 
-\chapter{Progettazione e sviluppo}
+\chapter{Progettazione}
 \label{chap4}
-La natura di questo prodotto come parte di un ecosistema esistente e già affermato ha avuto un duplice effetto sulla fase di progettazione. Da un lato l'ha resa più semplice, potendo appoggiarsi a codice preesistente e sfruttando meccanismi e servizi già pronti all''uso come le funzionalità di autenticazione (basate sulla gemma Devise) e il \textit{mailer} configurato; dall'altro, tuttavia, ha fatto emergere diverse sfide nell'integrazione del codice necessario per implementare nuove funzionalità con il \textit{codebase} presente. L'applicazione condivide infatti buona parte della struttura di base con un altro applicativo dell'ecosistema, ed è quindi stata progettata per essere implementata in modo compatibile a quest'ultimo - un esempio è l'aggiunta di domande a risposta multipla ai questionari, che ha comportato un notevole \textit{refactoring} del codice dedicato.
+La natura di questo prodotto come parte di un ecosistema esistente e già affermato ha avuto un duplice effetto sulla fase di progettazione. Da un lato l'ha resa più semplice, potendo appoggiarsi a codice preesistente e sfruttando meccanismi e servizi già pronti all''uso come le funzionalità di autenticazione (basate sulla gemma Devise) e il \textit{mailer} configurato; dall'altro, tuttavia, ha fatto emergere diverse sfide nell'integrazione del codice necessario per implementare nuove funzionalità con il \textit{code base} presente. L'applicazione condivide infatti buona parte della struttura di base con un altro applicativo dell'ecosistema, ed è quindi stata progettata per essere implementata in modo compatibile a quest'ultimo - un esempio è l'aggiunta di domande a risposta multipla ai questionari, che ha comportato un notevole \textit{refactoring} del codice dedicato.
 In questa sezione verrà presentata l'architettura generale dell'applicazione, inclusi i paradigmi su cui si fonda, e verranno descritte le sue parti fondamentali. Ove queste parti si sovrappongano all'architettura preesistente, verranno indicate le eventuali aggiunte o modifiche apportate nello corso della progettazione.
 
 \section{Progettare con Rails}
@@ -26,7 +26,14 @@ Il paradigma architetturale principale, già menzionato più volte, è \ref{itm:
 
 Un sistema \ref{itm:rest}ful si compone di due parti: un \textbf{client} che richiede delle risorse e un \textbf{server} che possiede e gestisce tali risorse. Il client ed il server comunicano attraverso una apposita interfaccia detta \ref{itm:api} che implementa un protocollo di comunicazione tra le due entità e permette l'invio di richieste da parte del client, e l'invio di risorse da parte del server.
 
-L'elemento fondamentale dello stile \ref{itm:rest} sono le risorse, unità di informazione basilari identificate univocamente da un \ref{itm:url} che assomigliano, in un certo senso, ai classici oggetti alla base dell'\textit{object-oriented programming}. Le risorse risiedono sul server e sono soggette a quattro tipi di operazioni, note come \textit{\ref{itm:crud}} (\textit{Create, Read, Update, Delete}):
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.7\textwidth]{figures/rest.png}
+        \caption[Rappresentazione semplificata dello stile REST]{Rappresentazione semplificata dello stile REST.
+        \label{fig:rest1}}
+\end{figure}   
+
+L'elemento fondamentale dello stile \ref{itm:rest} sono, appunto, le risorse: unità di informazione basilari identificate univocamente da un \ref{itm:url} che assomigliano, in un certo senso, ai classici oggetti alla base dell'\textit{object-oriented programming}. Le risorse risiedono sul server e sono soggette a quattro tipi di operazioni, note come \textit{\ref{itm:crud}} (\textit{Create, Read, Update, Delete}):
 \begin{itemize}
     \item \textbf{Create}: crea una nuova risorsa;
     \item \textbf{Read}: rende disponibile una rappresentazione della risorsa;
@@ -61,6 +68,14 @@ In GraphQL viene definito uno \textbf{schema} di tipi \textit{server-side}, che 
  
 Nell'operazione di ottenimento dei dati il client può inviare \textit{query} diverse allo stesso \textit{endpoint}: in questo modo, con una \textit{query} appropriata, il client può ottenere esattamente i dati necessari risolvendo i problemi di \textit{overfetching} e \textit{underfetching} caratteristici dello stile \ref{itm:rest}. GraphQL mantiene il concetto di risorsa, l'invio di richieste mediante il protocollo \ref{itm:http} e l'utilizzo dello standard \ref{itm:json}; tuttavia separa la rappresentazione della risorsa dal metodo per ottenerla, permettendo al client di richiedere esattamente le informazioni necessarie.
 
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.7\textwidth]{figures/graphqlhttp.png}
+        \caption[Differenza tra API REST classiche e API GraphQL]{Differenza tra API REST classiche e API GraphQL.
+        \label{fig:graphql}}
+\end{figure}   
+
+
 \subsection{Implementazione dello stile \ref{itm:rest}}
 Lo stile architetturale appena descritto, che riguarda l'intera piattaforma, è implementato  nel seguente modo:
 \begin{itemize}
@@ -72,8 +87,7 @@ Lo stile architetturale appena descritto, che riguarda l'intera piattaforma, è 
         \item Il software gestionale del laboratorio di analisi invece effettua richieste \ref{itm:http} presso degli \textit{endpoint} appositi; la scelta di usare il protocollo \ref{itm:http} è dovuta sia al supporto più diffuso, trattandosi di un servizio esterno, che al fatto che questo client necessita sempre dello stesso tipo di rappresentazione delle risorse. 
     \end{enumerate} 
 \end{itemize}
-\vspace{-15pt}
-\vspace{-15pt}
+\vspace{-12pt}
 \subsection{Model, View, Controller}
 Il pattern architetturale adottato per la progettazione del \textit{back end}, in accordo all'architettura preesistente e alle convenzioni di Rails, è di tipo \ref{itm:mvc}. Esso è tradizionalmente utilizzato per lo sviluppo di applicativi desktop con interfaccia grafica, ma risulta molto popolare anche per lo sviluppo di applicazioni web. Il pattern \ref{itm:mvc} prevede di separare della logica dell'applicativo software in tre componenti interconnessi:
 \begin{itemize}
@@ -81,9 +95,16 @@ Il pattern architetturale adottato per la progettazione del \textit{back end}, i
     \item \textsc{\textbf{View}}: componente corrispondente all'interfaccia dell'applicativo, si occupa di rendere visibili all'utente i dati e le operazioni permesse; contiene i vari elementi grafici dell'interfaccia e le rappresentazioni esterne dei dati.
     \item \textsc{\textbf{Controller}}: componente che contiene la \textit{application logic}: accetta gli input immessi dall'utente tramite la \textbf{view}, gli elabora in operazioni da richiedere al \textbf{model} e restituisce un output che viene visualizzato sempre dalla \textbf{view}.
 \end{itemize}
-
+\vspace{12pt}
 \subsection{Implementazione del pattern \ref{itm:mvc}}
 Il pattern architetturale \ref{itm:mvc} viene implementato nella progettazione dell'applicativo nel modo seguente (N.B.: da qui, \textbf{\{model/view/controller\}} si riferisce rispettivo al componente del pattern \ref{itm:mvc}, mentre \textit{\{model/view/controller\}} si riferisce alla rispettiva classe di oggetti).
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/railsme.png}
+        \caption[Implementazione del pattern MVC in Rails]{Implementazione del pattern MVC in Rails
+        \label{fig:mvcrails}}
+    \end{figure}  
 
 \subsubsection{Model}
 Il \textbf{model} è costituito dall'insieme dei \textit{models} Active Record. Active Record è un modulo di Rails dedicato all'implementazione del \textbf{model} di un'applicazione sfruttando la tecnica detta \textit{Object Relational Mapping}, che permette di connettere classi di oggetti di un'applicazione a tabelle in un database relazionale. Usando tale tecnica le proprietà e relazioni degli oggetti dell'applicazione possono essere conservate nel e lette dal database senza dover impiegare comandi SQL.
@@ -377,7 +398,7 @@ Le \texttt{Question} sono definite una sola volta e sono quindi riferite dalle e
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
         \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
-        \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, forza un riordinamento delle domande nel \textit{template} associato. \cr\hline
+        \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, riordina le domande nel \textit{template} associato. \cr\hline
         \textbf{\texttt{question\_expected\_answers}} & \textit{Callback} che verifica che le \texttt{PossibleAnswers} associate rispettino il tipo di domanda (le domande aperte non hanno alcuna \texttt{PossibleAnswer}). \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{Question}.}
 \end{longtabu}
@@ -416,7 +437,7 @@ Un insieme di istanze di \texttt{PossibleAnswer}, associate alle relative \textt
 \begin{longtabu} to \textwidth { | c | X | }
         \hline % linea orizzontale
         \hspace{5pt}\textbf{Metodo}\hspace{5pt} & \textbf{Descrizione} \\\hline\hline
-        \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, forza un riordinamento delle risposte possibili nella domanda associata. \cr\hline
+        \textbf{\texttt{fix\_positions}} &\textit{Callback} eseguito dopo eventuali modifiche al valore dell'attributo \texttt{position}, riordina le risposte possibili nella domanda associata. \cr\hline
     \caption{Tabella dei metodi del \textit{model} \texttt{PossibleAnswer}.}
 \end{longtabu}
 
@@ -796,7 +817,7 @@ Il modulo \texttt{OtpManager} viene incluso dal \textit{model} \texttt{User} per
 \subsection{Client per Amazon SNS}
 L'invio dei codici \ref{itm:otp} per SMS avviene sfruttando un servizio cloud offerto da Amazon, AWS Simple Notification Service, noto anche come \ref{itm:sns}. \ref{itm:sns} permette di inviare messaggi di notifica personalizzati quasi istantaneamente ad un piccolo costo, ed è supportato dal \ref{itm:sdk} in Ruby offerto da Amazon per l'interazione con i propri servizi.
 
-È stato progettato quindi un modulo \texttt{SMS} per comunicare con il servizio; viene in particolare implementata la classe \texttt{SMS::Client}, che definisce il client di comunicazione con \ref{itm:sns}. Si tratta di una classe molto snella, che offre solamente funzionalità di base, e implementa un pattern \textit{adapter} per la classe \texttt{AWS::SNS::Client}. Il client è accoppiato ad un \textit{logger} che tiene traccia dei messaggi inviati per scopi di debug.
+È stata progettata quindi la classe \texttt{SMS::Client}, che definisce il client di comunicazione con \ref{itm:sns}. Si tratta di una classe molto snella, che offre solamente funzionalità di base, e implementa un pattern \textit{adapter} per la classe \texttt{AWS::SNS::Client}. Il client è accoppiato ad un \textit{logger} che tiene traccia dei messaggi inviati per scopi di debug.
 \label{tab:snsattr}
 \tabulinesep=5pt
 \begin{longtabu} to \textwidth { | c | X | }
@@ -824,7 +845,7 @@ Il funzionamento quindi è il seguente: il client vuole inviare un tipo di richi
 
 \begin{figure}[h!]
     \includegraphics[width=\textwidth]{figures/classdia.png}
-    \caption[ClassDia]{Diagramma UML delle classi
+    \caption[Diagramma UML delle classi]{Diagramma UML delle classi
     \label{fig:classdia}}
 \end{figure}    
 
